@@ -1,0 +1,356 @@
+---
+title: "AXE: (A)pproximate (X)cross-validation (E)stimates for Bayesian hierarchical regression models"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{AXE_paper_overview}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# AXE
+
+This R package provides all code and data to reproduce the examples from our paper
+
+Zhang, A. X., Bao, L., & Daniels, M. J. (2020). Approximate Cross-validated Mean Estimates for Bayesian Hierarchical Regression Models. _arXiv preprint arXiv:2011.14238_.
+
+For full details, refer to our paper. In short, AXE is a fast and accurate method for approximating $E[Y_j | Y_{-j}]$, where $Y_j$ is the vector of test data, and $Y_{-j}$ a vector of training data. We have generally found it to improve upon existing CV approximation methods and is an order of magnitude faster than other CV methods for leave-a-cluster-out CV. By conditioning on the variance-covariance parameters, we shift the CV problem from probability-based sampling to a simple and familiar optimization problem.
+
+ Let $Y \in \RR^N$ denote a continuous response vector that follows
+
+$$ Y | \beta, \tau \sim N(X_1\beta_1 + X_2\beta_2, \tau^2I), \\
+ \beta_1 \sim N(\alpha_1, C), \quad \beta_2 | \Sigma \sim N(\alpha_2, \Sigma), \\
+ \Sigma  \sim f(\Sigma), \quad \tau \sim f(\tau),
+$$
+
+where 
+
+- $C \in \RR^{P_1 \times P_1}$ is positive-definite and typically a diagonal matrix,
+
+- $\Sigma \in \RR^{P_2 \times P_2}$ is positive-definite, 
+
+- $\tau \in \RR_+$
+
+- $X \coloneqq \begin{bmatrix}X_1 & X_2\end{bmatrix} \in \RR^{N\times P}$ is the design matrix,
+
+- $\beta_1 \in \RR^{P_1}$ denote fixed effects, $\beta_2 \in \RR^{P_2}$ random effects s.t. $\beta \coloneqq \begin{bmatrix}\beta_1' & \beta_2'\end{bmatrix}' \in \RR^{P}$, 
+
+- WLOG, $\alpha_1 = \alpha_2 = 0.$ 
+
+
+AXE approximates cross-validated mean estimates using the posterior means for $\hat{\Sigma}$ and $\hat{\tau}$ as plug-in estimates. Let us refer to $j$ as the test data indices, so $Y_j$ denotes the vector of test data and $Y_{-j}$ the vector of training data. The AXE approximation for CV mean estimate $E[Y_j | Y_{-j}]$ is
+$$
+    \hat{Y}_{j}^{\text{AXE}} = E[X\beta | Y_{-j}, \hat{\Sigma}, \hat{\tau}] = \frac{1}{\hat{\tau}^{2}}X_j\left(\frac{1}{\hat{\tau}_{-j}^{2}}X_{-j}'X_{-j} + \begin{bmatrix}0 & 0 \\ 0 & \Sigma^{-1}\end{bmatrix}\right)^{-1}X_{-j}'Y_{-j}.
+$$
+
+Kass and Steffey (1989) showed that  $E[\beta | Y] = E[\beta | Y, \hat{\tau}_{\text{EB}}, \hat{\Sigma}_{\text{EB}}]\left(1 + \mathcal{O}\left({P_2^{-1}}\right)\right)$, where $\hat{\tau}_{\text{EB}}, \hat{\Sigma}_{\text{EB}}$ denote the Empirical Bayes estimates. That is, the conditional posterior given variance parameters can approximate the posterior mean for $\beta$ when $P_2$ is large enough (whether $P_2$ is large enough can be determined by deriving $E[X\beta| \hat{\Sigma}, \hat{\tau}, Y]$ and comparing to the posterior mean estimates). Then, so long as the posterior means $\hat{\Sigma}$ and $\hat{\tau}$ are stable enough across cross-validation folds, they can be used as plug-in estimates in the conditional mean in $E[X\beta | Y_{-j}, \hat{\Sigma}, \hat{\tau}]$ to produce approximations of   $E[X\beta | Y_{-j}]$. 
+AXE shifts the CV problem to the same form as maximum likelihood methods for simple linear regression} and is likewise $\mathcal{O}\left(N^2P + P^3 right)$ in time for each CV fold. It can be adapted to generalized linear mixed models (GLMMs) and it can be used with any CV schema, e.g. K-fold, leave-one-out (LOO), and leave-one-cluster-out (LCO). Full details and theoretical results are in our paper. 
+
+# Recreating paper examples
+
+`data-raw/run_examples.R` contains the code to obtain MCV ground truth values and CV approximations for $E[Y_j | Y_{-j}]$ using the following LCO methods:
+
+- AXE
+
+- integrated importance sampling
+
+   + iIS-C
+   Longhai Li, Shi Qiu, Bei Zhang, and Cindy X Feng. Approximating cross-validatory predictiveevaluation in bayesian latent variable models with integrated is and waic.Statistics andComputing, 26(4):881–897, 2016
+   
+   + iIS-A: 
+   Aki Vehtari, Tommi Mononen, Ville Tolvanen, Tuomas Sivula, and Ole Winther. Bayesianleave-one-out cross-validation approximations for gaussian latent variable models.TheJournal of Machine Learning Research, 17(1):3581–3618, 2016
+   
+- GHOST
+EC Marshall and DJ Spiegelhalter. Approximate cross-validatory predictive checks in diseasemapping models.Statistics in Medicine, 22(10):1649–1660, 2003
+
+- PSIS-LOO (in those cases that LOO-CV = LCO-CV)
+Aki Vehtari, Andrew Gelman, and Jonah Gabry. Practical bayesian model evaluation usingleave-one-out cross-validation and waic.Statistics and Computing, 5(27):1413–1432, 2016a
+
+
+To use the functions in `run_examples.R`, load all code in `R` folder:
+
+```{r}
+for (file in list.files("../R")) {
+    source(file.path("R", file))
+}
+
+```
+
+As example, the eight schools example in the paper is recreated below:
+
+
+```{r}
+
+# accesses and/or saves data for the example + scenario parameters
+# e.g. data scaling factor alpha or number of clusters
+eight <- prep_eight() # function in R/prep_data.R
+
+# runs MCV and saves estimates; also records the time
+# examine using str(eight$cv_yhats)
+eight$cv_yhats  <- mcv_eight() # R/run_mcv.R
+
+# fits models to full data and saves posterior means of variance parameters
+eight$posteriors <- pfit_eight() #R/fit_posteriors.R
+
+# runs AXE and saves estimates; also records the time
+eight$axe_yhats <- axe_eight() #  R/run_axe.R
+
+```
+
+## Figure 1
+
+All posterior means, LCO approximations, and MCV ground-truth values are saved within the package. 
+
+To get the graphs used in the paper, first get results for each of the examples:
+
+```{r}
+library(tidyverse)
+
+# to use Computer Modern font for figure text; must have Computer Modern installed
+# and loaded via extrafont
+library(extrafont) 
+loadfonts()
+
+
+eight_results <- results_eight() %>%  
+  select(-contains("_iis_")) %>% group_by(loop, data_scale)
+r1_results <- results_radon_full() %>% group_by(model, loop) %>%
+    select(-contains("_iis_"), -yhat_axe2) # !!! Key step
+r2_results <- results_radon_simul() %>% rename(yhat_cv = cv_yhat) %>%
+    mutate(loop = interaction(model, perc, n_clusters, iter)) %>%
+    group_by(model, perc, n_clusters, iter, loop) %>%
+    # rename(yhat_psiis_im = yhat_psiis_im.value) %>%
+    select(-yhat_post_axe, -yhat_post,-contains("_iis_"))
+lol_results <-  results_lol() %>%  select(-contains("_iis_")) %>%
+    group_by(loop) %>%
+    mutate(n = n()) %>%
+    group_by(loop, n) %>%
+    select(-yhat_post) #%>%
+slc_results <- results_slc() %>%  select(-contains("_iis_"), -yhat_post) %>%
+    group_by(loop)
+srd_results <- results_air() %>%
+    select(-yhat_post) %>% select(-contains("_iis_")) %>%
+    group_by(loop)
+
+```
+
+
+Obtain each panel in Figure 1 individually.
+```{r, output = F}
+
+p_8 <-  df_compare_methods(eight_results, "yhat") %>%
+    mutate(
+        alpha = case_when(data_scale < 1 ~ "low",
+                          data_scale < 2 ~ "mid",
+                          data_scale >= 2 ~ "high") %>%
+            factor(levels = c("low", "mid", "high"), ordered = T)#,
+    ) %>%
+ggplot(aes(x = method, y = dif, fill = alpha)) +
+    geom_boxplot() +
+    theme_bw() +
+    theme(
+        legend.key.size = unit(0.75, "lines"),
+        legend.background = element_rect(
+            fill = alpha('white', 0)),
+        text = element_text(family = "CMU Serif")
+    ) +
+    labs(x = NULL, fill = NULL, y = NULL, title = "A) Eight schools") +
+    scale_fill_brewer(palette = "BuGn", type = "seq",
+                      # labels = scales::parse_format())+
+                      labels = c(expression( alpha < 1),
+                                 expression(1 <= {alpha < 2}),
+                                 expression(alpha >= 2),
+                                 expression(123456))) +
+    geom_hline(yintercept = 0)
+
+p_8 <- lemon::reposition_legend(p_8, position = "bottom left")
+
+p_r1 <- ggplot(
+    df_compare_methods(results_r1, "yhat"),
+    aes(x = method, y = dif, fill = sprintf("Model %s", model))) +
+    geom_boxplot() +
+    theme_bw() +
+    theme(
+        legend.key.size = unit(0.75, "lines"),
+        legend.background = element_rect(
+            fill = alpha('white', 0)),
+        text = element_text(family = "CMU Serif")
+    ) + labs(x = NULL, fill = NULL, y = NULL, title = "B) Radon") +
+    scale_fill_brewer(palette = "Set2") +
+    geom_hline(yintercept = 0)
+p_r1 <- lemon::reposition_legend(p_r1, position = "bottom left")
+
+
+r2_cutoff <- data.frame(
+    dif = -1,
+    model = 3,
+    method = c("GHOST", 'iIS-C')
+)
+
+p_r2 <- df_compare_methods(r2_results, "yhat") %>%
+    ggplot(aes(x = method, y = dif)) +
+    geom_boxplot(aes(fill = sprintf("Model %s", model))) +
+    ylim(-1, 1) +
+    geom_point(
+        aes(group = model),
+        position=position_nudge(x=.25),
+        data = r2_cutoff, shape = 3
+    ) +
+    theme_bw() +
+    theme(
+        legend.key.size = unit(0.75, "lines"),
+        legend.background = element_rect(
+            fill = alpha('white', 0)),
+        text = element_text(family = "CMU Serif")
+    ) +    labs(x = NULL, fill = NULL, y = NULL,
+                         title = "C) Radon subsets") +
+    scale_fill_brewer(palette = "Set2")+
+    geom_hline(yintercept = 0)
+p_r2 <- lemon::reposition_legend(p_r2, position = "bottom left")
+
+
+p_lol <- df_compare_methods(lol_results, "yhat") %>% plot_compare_methods("yhat") +
+  labs(y = NULL, title = "D) ESP")
+p_slc <- df_compare_methods(slc_results, "yaht") %>% 
+  plot_compare_methods("yhat") +
+    labs(y = NULL, title = "E) SLC")
+p_air <- df_compare_methods(air_results, "yaht") %>% 
+  plot_compare_methods("yhat") +
+    labs(y = NULL, subtitle = "F) SRD")
+
+
+```
+
+Plot together using the cowplot package.
+
+```{r, fig.width = 10, fig.height = 5}
+library(cowplot)
+plot_grid(p_8, p_r1, p_r2, p_lol, p_slc, p_air, nrow = 2)
+
+```
+
+
+
+## Figure 2
+
+```{r}
+library(AXEexamples)
+library(tidyverse)
+library(extrafont) # to use Computer Modern font for figure text
+eight_results <- results_eight() %>%  
+  select(-contains("_iis_")) %>% group_by(loop, data_scale)
+r1_results <- results_radon_full() %>% group_by(model, loop) %>%
+    select(-contains("_iis_"), -yhat_axe2) # !!! Key step
+r2_results <- results_radon_simul() %>% rename(yhat_cv = cv_yhat) %>%
+    mutate(loop = interaction(model, perc, n_clusters, iter)) %>%
+    group_by(model, perc, n_clusters, iter, loop) %>%
+    # rename(yhat_psiis_im = yhat_psiis_im.value) %>%
+    select(-yhat_post_axe, -yhat_post,-contains("_iis_"))
+lol_results <-  results_lol() %>%  select(-contains("_iis_")) %>%
+    group_by(loop) %>%
+    mutate(n = n()) %>%
+    group_by(loop, n) %>%
+    select(-yhat_post) #%>%
+slc_results <- results_slc() %>%  select(-contains("_iis_"), -yhat_post) %>%
+    group_by(loop)
+srd_results <- results_air() %>%
+    select(-yhat_post) %>% select(-contains("_iis_")) %>%
+    group_by(loop)
+
+```
+
+Combine results into one DF
+```{r}
+datasets <- c("Eight schools", "Radon", "Radon subsets", "ESP", "SLC", "SRD")
+yhats_all <- dplyr::bind_rows(
+    purrr::map2(
+        list(results_8, results_r1, results_r2, lol_results, results_slc, results_air),
+        as.list(datasets),
+        function(df, dname) {
+            df %>% dplyr::mutate(data = dname) %>%
+                dplyr::ungroup() %>%
+                dplyr::select(data, yhat_cv, yhat_axe, yhat_ghst_c, yhat_psiis_fm)
+        }
+    )
+) %>%
+    tidyr::pivot_longer(cols = c(yhat_axe, yhat_ghst_c, yhat_psiis_fm),
+                        names_to = "method", values_to = "yhat") %>%
+
+    dplyr::mutate(
+        method = stringr::str_replace(method, "yhat_", "") %>%
+            rename_methods(),
+        data = factor(data, levels = datasets, ordered = T)
+    )
+```
+
+
+```{r}
+#To keep the same axes across both panels, create data frame with min/max values. 
+yhats_minmax <- yhats_all %>% dplyr::group_by(data) %>%
+    dplyr::summarise(min = min(yhat), max = max(yhat), yhat_cv = yhat_cv[1]) %>%
+    tidyr::pivot_longer(cols = c(min, max), names_to = "range", values_to = "yhat")
+
+ptbypt_axe <-
+    yhats_all %>% filter(method == "AXE") %>%
+    ggplot(aes(x = yhat_cv, y = yhat)) +
+    theme_bw() +
+    geom_point() +
+    lemon::facet_rep_wrap(~data, scales = 'free', nrow = 1) +
+    labs(y = "AXE approximation", x = "MCV estimate") +
+    geom_abline(slope = 1, intercept = 0) +
+    theme(
+        text = element_text(family = "CMU Serif"),
+        strip.background = element_rect(size = 0, fill = 'white'),
+        strip.text = element_text(hjust = 0, size = 12)
+    ) +
+    # invisible points at each data set's min/max to keep y-axis consistent
+    geom_point(data = yhats_minmax, alpha = 0)
+
+
+
+colors <-  RColorBrewer::brewer.pal(6, "Dark2")[4:6]
+
+
+
+p <- yhats_all %>%
+    filter(method != "iIS-A") %>%
+    ggplot(aes(x = yhat_cv, y = yhat)) +
+    geom_point(aes(color = method, shape = method)) +
+    scale_color_manual(values = c("black", colors)) +
+    labs(y = "LCO Approximation", x = "MCV estimate",
+                  color = NULL, shape = NULL) +
+
+    theme_bw() +
+    lemon::facet_rep_wrap(~data, scales = 'free', nrow = 1) +
+    geom_abline(slope = 1, intercept = 0) +
+    theme_bw() +
+    theme(
+        text = element_text(family = "CMU Serif"),
+        legend.key.size = unit(0.3, "lines"),
+        legend.background = element_rect(
+            fill = alpha('white', 0)
+        ),
+        strip.background = element_rect(size = 0, fill = 'white'),
+        strip.text = element_text(hjust = 0, size = 12)
+    ) +
+    geom_point(data = yhats_minmax, alpha = 0)
+
+
+cowplot::plot_grid(
+    ptbypt_axe,
+    lemon::reposition_legend(
+        p, panel = "panel-1-1", position = 'top left', offset = c(0, -0.1)
+    ),
+    ncol = 1, labels = sprintf("%s)", LETTERS[1:2]),
+    label_fontfamily = "CMU Serif"
+)
+```
+
+
+# Code
