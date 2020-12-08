@@ -40,7 +40,7 @@ crossval_eight <-  function(loop, data, loops, X, seed, ...) {
     cv_dat$test_idx <- as.array(which(test_mask))
     cv_dat$H = sum(test_mask)
 
-    fit_cv <- rstan::sampling(stanmodels$eightschools_sim, data = cv_dat,
+    fit_cv <- rstan::stan("inst/stan/eightschools_sim.stan", data = cv_dat,
                               refresh = 0, seed = seed, ...)
 
     cv_betas <- t(do.call("cbind",
@@ -259,7 +259,7 @@ crossval_slc <- function(loop, info, loops, seed, ...) {
     sdat_cv <- list(n = info$n,
                  p = info$p, X = X_cv, y_train = info$y[!test_mask],
                  log_offset = loff_cv, W = W_cv, test_idx = info$n)
-    cv_fit <- rstan::sampling(stanmodels$carslp_cv,
+    cv_fit <- rstan::stan("inst/stan/carslp_cv.stan",
                         data = sdat_cv,
                         seed = seed, refresh = 0, iter = 10e3, thin = 5
     )
@@ -356,8 +356,7 @@ mcv_eight <- function(info = eight, n_cores = 7,
 
         if (n_cores > 1) {
             cl <- snow::makeCluster(n_cores, outfile = '')
-            snow::clusterExport(cl, list("%>%"),
-                                envir = environment())
+            snow::clusterExport(cl, list("%>%")) # pkg: change to envir = environment()
 
             yhats <- snow::parLapply(cl,loops, crossval_eight,
                                      scld_dat, loops, X, seed)

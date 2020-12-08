@@ -101,10 +101,10 @@ plot_compare_methods <- function(df, type = c("yhat", "elpd")) {
         ggplot2::geom_hline(yintercept = 0) +
         ggplot2::theme_bw() +
         ggplot2::theme(
-            legend.key.size = ggplot2::unit(0.3, "lines"),
+          # text = ggplot2::element_text(family = "CMU Serif"),
+          legend.key.size = ggplot2::unit(0.3, "lines"),
             legend.background = ggplot2::element_rect(
-                fill = ggplot2::alpha('white', 0)),
-            text = ggplot2::element_text(family = "CMU Serif")
+                fill = ggplot2::alpha('white', 0))
         ) +
         ggplot2::labs(
             y = ylab,
@@ -460,8 +460,8 @@ time_radon_simul <- function(info = radon_2) {
 
 results_lol <- function(info = lol, posteriors = lol$posteriors,
                              axe = lol$axe_yhats, mcv_vals = lol$cv_yhats) {
-
-    make_results_df(posteriors, axe, mcv_vals) %>%
+  mcv <- do.call("rbind", mcv_vals)
+    make_results_df(posteriors, axe, mcv) %>%
         dplyr::full_join(info$data %>%
                              dplyr::mutate(idx = 1:dplyr::n()) %>%
                              dplyr::select(idx, kills) %>%
@@ -472,6 +472,7 @@ results_lol <- function(info = lol, posteriors = lol$posteriors,
 
 results_slc <- function(info = slc, posteriors = slc$posteriors,
                         axe = slc$axe_yhats, mcv_vals = slc$cv_yhats) {
+
 
     make_results_df(posteriors, axe, mcv_vals) %>%
         dplyr::full_join(
@@ -497,7 +498,7 @@ time_slc <- function(info = slc) {
 make_results_df <- function(posteriors, axe,  mcv_vals) {
     res <-  dplyr::full_join(
         posteriors$df,
-        axe$df
+        axe$df, by = c()
     ) %>%
         dplyr::full_join(mcv_vals)
 
@@ -514,7 +515,8 @@ results_air <- function(info = air, posteriors = air$posteriors,
             data.frame(
                 y = info$data$df$observed,
                 idx = 1:nrow(info$data$df)
-            )
+            ),
+            by = "idx"
         )
 
 }

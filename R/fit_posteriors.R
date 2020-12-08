@@ -121,14 +121,15 @@ aq_psis_waic_m <- function(seed, sig_samps, tau_samps, mu_samps, b_samps, Y, j_i
 
 pfit_eight <- function(info = eight, seed = 238972, nodes = 6, ...) {
 
-  # cl <- snow::makeCluster(nodes, outfile = "")
-  # snow::clusterExport(cl, list("stanmodels", "info", "seed", "%>%", "ly_sigtau"))
+  cl <- snow::makeCluster(nodes, outfile = "")
+  snow::clusterExport(cl, list("info", "seed", "%>%", "ly_sigtau"), # !!add stanmodels
+                      envir = environment())
 
   purrr::map((info$data_scale), function(scl) {
     message(scl)
     scld_dat <- scale_dat(info$stan_list, scl)
     # fit to full data
-    fit_sch8 <- rstan::sampling(stanmodels$eightschools_sim, data = scld_dat,
+    fit_sch8 <- rstan::stan("inst/stan/eightschools_sim.stan", data = scld_dat,
                                 seed = seed, refresh = 0, ...)
 
 
@@ -223,9 +224,9 @@ pfit_eight <- function(info = eight, seed = 238972, nodes = 6, ...) {
       )
 
   })
-  # snow::stopCluster(cl)
+  snow::stopCluster(cl)
 
-  # pfit
+  pfit
 
 }
 
@@ -546,7 +547,7 @@ pfit_slc <- function(info = slc$data, seed = 29873, ...) {
   sdat <- list(n = info$n, p = info$p, X = info$X, y = info$y,
                log_offset = info$log_offset, W_n = info$W_n, W = info$W,
                D_sparse = rowSums(info$W))
-  pfit <- rstan::sampling(stanmodels$sparsecar_slp,
+  pfit <- rstan::stan("inst/stan/sparsecar_slp.stan",
                           data = sdat,
                           seed = seed, refresh = 0,
                           iter = 4e3, ...)
