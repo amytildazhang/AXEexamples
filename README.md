@@ -13,46 +13,39 @@ Cross-validated Mean Estimates for Bayesian Hierarchical Regression
 Models. [*arXiv preprint
 arXiv:2011.14238*](https://arxiv.org/abs/2011.14238).
 
-The paper presents a novel method for approximating \(E[Y_j | Y_{-j}]\),
-where \(Y_j\) is the vector of test data, and \(Y_{-j}\) a vector of
-training data.
+The paper presents a novel method for approximating  ![equation](doc/equations/eyj.png), the cross-validated posterior mean for vector of test data $Y_j$ given the vector of training data $Y_{-j}$. 
+
 
 ## AXE method
 
-Let \(Y \in I\!\!R\) denote a continuous response vector that follows
+Let Y denote a continuous response vector that follows
 
-\[ Y | \beta, \tau \sim N(X_1\beta_1 + X_2\beta_2, \tau^2I), \\
- \beta_1 \sim N(\alpha_1, C), \quad \beta_2 | \Sigma \sim N(\alpha_2, \Sigma), \\
- \Sigma  \sim f(\Sigma), \quad \tau \sim f(\tau),
-\]
+![equation](doc/equations/axedefn.png)
 
 where
 
-  - \(C \in I\!\!R^{P_1 \times P_1}\) is positive-definite and typically
-    a diagonal matrix,
+  - C is a positive-definite P_1 x P_1 (and typically
+    diagonal) matrix,
 
-  - \(\Sigma \in I\!\!R^{P_2 \times P_2}\) is positive-definite,
+  - Sigma is a P_2 x P_2 positive-definite matrix,
 
-  - \(\tau \in I\!\!R_+\)
+  - tau is a positive real value,
 
-  - \(X :=\begin{bmatrix}X_1 & X_2\end{bmatrix} \in I\!\!R^{N\times P}\)
-    is the design matrix,
+  - X := [X_1  X_2] is the design matrix,
 
-  - \(\beta_1 \in I\!\!R^{P_1}\) denote fixed effects,
-    \(\beta_2 \in I\!\!R^{P_2}\) random effects s.t.
-    \(\beta :=\begin{bmatrix}\beta_1' & \beta_2'\end{bmatrix}' \in I\!\!R^{P}\),
+  - the vector beta_1 denotes fixed effects,
+    beta_2 random effects s.t.
+    beta :=[\beta_1'  \beta_2'],
 
-  - WLOG, \(\alpha_1 = \alpha_2 = 0.\)
+  - WLOG, alpha_1 = alpha_2 = 0.
 
 AXE approximates cross-validated mean estimates using the posterior
-means for \(\hat{\Sigma}\) and \(\hat{\tau}\) as plug-in estimates. Let
+means for Sigma and tau as plug-in estimates. Let
 us refer to \(j\) as the test data indices, so \(Y_j\) denotes the
 vector of test data and \(Y_{-j}\) the vector of training data. The AXE
 approximation for CV mean estimate \(E[Y_j | Y_{-j}]\) is
 
-\[
-    \hat{Y}_{j}^{\text{AXE}} = E[X\beta | Y_{-j}, \hat{\Sigma}, \hat{\tau}] = \frac{1}{\hat{\tau}^{2}}X_j\left(\frac{1}{\hat{\tau}_{-j}^{2}}X_{-j}'X_{-j} + \begin{bmatrix}0 & 0 \\ 0 & \Sigma^{-1}\end{bmatrix}\right)^{-1}X_{-j}'Y_{-j}.
-\]
+![equation](doc/equations/axeeqn.png)
 
 The basic reasoning is that the conditional posterior
 \(E[\beta | Y, \hat{\Sigma}, \hat{\tau}]\) given variance parameters can

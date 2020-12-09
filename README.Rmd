@@ -17,7 +17,7 @@ This R package provides code and data to reproduce all examples from the paper
 
 Zhang, A. X., Bao, L., & Daniels, M. J. (2020). Approximate Cross-validated Mean Estimates for Bayesian Hierarchical Regression Models. [_arXiv preprint arXiv:2011.14238_](https://arxiv.org/abs/2011.14238).
 
-The paper presents a novel method for approximating $E[Y_j | Y_{-j}]$, where $Y_j$ is the vector of test data, and $Y_{-j}$ a vector of training data. 
+The paper presents a novel method for approximating  $E[Y_j | Y_{-j}]$, the cross-validated posterior mean for vector of test data $Y_j$ given the vector of training data $Y_{-j}$. 
 
 
 ## AXE method
