@@ -1,166 +1,185 @@
 
 # These are functions which produce graphs and tables used int he paper
 
+#' @export
 rename_methods <- function(vec) {
-    vec <- stringr::str_replace(vec, "_fm$", "-C") %>%
-        stringr::str_replace("_im$", "-A") %>%
-        stringr::str_replace("ghst_c", "GHOST") %>%
-        stringr::str_replace("_", "-") %>%
-        stringr::str_to_upper()
+  vec <- stringr::str_replace(vec, "_fm$", "-C") %>%
+    stringr::str_replace("_im$", "-A") %>%
+    stringr::str_replace("ghst_c", "GHOST") %>%
+    stringr::str_replace("_", "-") %>%
+    stringr::str_to_upper()
 
 
-    dplyr::case_when(
-        stringr::str_detect(vec, "WAIC") | stringr::str_detect(vec, "DIC")~ sprintf("i%s", vec),
-        stringr::str_detect(vec, "PSIIS") ~ stringr::str_replace(vec, "PSIIS", "iIS"),
-        vec == "PSIS-C" ~ "PSIS-LOO",
-        T ~ vec
+  dplyr::case_when(
+    stringr::str_detect(vec, "WAIC") | stringr::str_detect(vec, "DIC") ~ sprintf("i%s", vec),
+    stringr::str_detect(vec, "PSIIS") ~ stringr::str_replace(vec, "PSIIS", "iIS"),
+    vec == "PSIS-C" ~ "PSIS-LOO",
+    T ~ vec
+  )
+}
+
+#' @export
+method_colors <- function(type = c("elpds", "yhats"),
+                          methods = c(
+                            "AXE", "AXE-IIS", "AXE-MAP", "GHOST",
+                            "iIS-C", "iIS-A",
+                            "DIC-C", "DIC-A", "WAIC-C", "WAIC-A"
+                          )) {
+  if (type == "elpd") {
+    cols <- RColorBrewer::brewer.pal(length(methods), "Paired")
+  } else if (type == "yhat") {
+    cols <- RColorBrewer::brewer.pal(length(methods), "Dark2")
+  }
+
+
+  names(cols) <- unique(methods)
+  cols
+}
+
+
+#' @export
+df_compare_methods <- function(df, type = c("yhat", "elpd")) {
+  # df requirements: must have loop column, actual response value y, and
+  # columns with method approximations must contain "yhat" or "elpd
+  if (type == "yhat") {
+    df %>%
+      # calculate RMSE for each loop
+      dplyr::summarise_at(
+        dplyr::vars(dplyr::contains("yhat")),
+        ~ sqrt(mean((. - y)^2))
+      ) %>%
+      # set aside ground truth MCV values
+      dplyr::rename(ref_y = yhat_cv) %>%
+      tidyr::pivot_longer(
+        cols = dplyr::contains("yhat"),
+        names_to = "method", values_to = "yhat"
+      ) %>%
+      dplyr::mutate(
+        dif = (log((yhat / ref_y))),
+        method = stringr::str_replace(method, "yhat_", "") %>%
+          rename_methods()
+      )
+  } else {
+    df %>%
+      dplyr::summarise_at(
+        dplyr::vars(dplyr::contains("elpd")),
+        function(elpd) {
+          if (length(unique(elpd)) == 1) {
+            elpd[1]
+          } else {
+            sum(elpd)
+          }
+        }
+      ) %>%
+      dplyr::rename(ref_elpd = elpd_cv) %>%
+      tidyr::pivot_longer(
+        cols = dplyr::starts_with("elpd"),
+        names_to = "method", values_to = "elpd"
+      ) %>%
+      dplyr::mutate(
+        dif = abs((ref_elpd - elpd) / ref_elpd),
+        method = stringr::str_replace(method, "elpd_", "") %>%
+          rename_methods()
+      )
+  }
+}
+
+#' @export
+plot_compare_methods <- function(df, type = c("yhat", "elpd")) {
+  if (type == "yhat") {
+    colors <- method_colors(
+      type = "yhat",
+      methods = c("AXE", "GHOST", "iIS-C", "PSiIS-C", "iIS-A", "PSiIS-A")
+    )
+    ylab <- "log | Y-hat Method/MCV|"
+  } else {
+    colors <- method_colors(
+      type = "elpd",
+      methods = c(
+        "iDIC-C", "iDIC-A",
+        "iWAIC-C", "iWAIC-A",
+        "iIS-C", "iIS-A",
+        "GHOST"
+      )
+    )
+    ylab <- "|(ELPD Method - MCV)/MCV|"
+  }
+
+  ggplot2::ggplot(df, ggplot2::aes(x = method, y = dif)) +
+    ggplot2::geom_boxplot() +
+    ggplot2::geom_hline(yintercept = 0) +
+    ggplot2::theme_bw() +
+    ggplot2::theme(
+      # text = ggplot2::element_text(family = "CMU Serif"),
+      legend.key.size = ggplot2::unit(0.3, "lines"),
+      legend.background = ggplot2::element_rect(
+        fill = ggplot2::alpha("white", 0)
+      )
+    ) +
+    ggplot2::labs(
+      y = ylab,
+      x = NULL,
+      fill = NULL, color = NULL
     )
 }
 
-method_colors <- function(type = c("elpds", "yhats"),
-                          methods = c("AXE", "AXE-IIS", "AXE-MAP", "GHOST",
-                                      "iIS-C", "iIS-A",
-                                      "DIC-C", "DIC-A", "WAIC-C", "WAIC-A")) {
-
-    if (type == "elpd") {
-        cols <- RColorBrewer::brewer.pal(length(methods), "Paired")
-    } else if (type == "yhat") {
-
-        cols <- RColorBrewer::brewer.pal(length(methods), "Dark2")
-    }
-
-
-    names(cols) <- unique(methods)
-    cols
-}
-
-
-df_compare_methods <- function(df, type = c("yhat", "elpd")) {
-    # df requirements: must have loop column, actual response value y, and
-    # columns with method approximations must contain "yhat" or "elpd
-    if (type == "yhat") {
-        df %>%
-            # calculate RMSE for each loop
-            dplyr::summarise_at(
-                dplyr::vars(dplyr::contains("yhat")),
-                ~sqrt(mean((. - y)^2))
-            ) %>%
-            # set aside ground truth MCV values
-            dplyr::rename(ref_y = yhat_cv) %>%
-            tidyr::pivot_longer(cols = dplyr::contains("yhat"),
-                                names_to = "method", values_to = "yhat") %>%
-            dplyr::mutate(
-                dif = (log((yhat/ref_y))),
-                method = stringr::str_replace(method, "yhat_", "") %>%
-                    rename_methods()
-            )
-    } else {
-        df %>%
-            dplyr::summarise_at(
-                dplyr::vars(dplyr::contains("elpd")),
-                function(elpd) {
-                    if (length(unique(elpd)) == 1) {
-                        elpd[1]
-                    } else {
-                        sum(elpd)
-                    }
-                }
-            ) %>%
-            dplyr::rename(ref_elpd = elpd_cv) %>%
-            tidyr::pivot_longer(cols = dplyr::starts_with("elpd"),
-                                names_to = "method", values_to = "elpd") %>%
-            dplyr::mutate(dif = abs((ref_elpd- elpd)/ref_elpd),
-                          method = stringr::str_replace(method, "elpd_", "") %>%
-                              rename_methods()
-            )
-    }
-}
-
-plot_compare_methods <- function(df, type = c("yhat", "elpd")) {
-
-    if (type == "yhat") {
-        colors <- method_colors(
-            type = "yhat",
-            methods = c("AXE", "GHOST", "iIS-C", "PSiIS-C", "iIS-A", "PSiIS-A")
-        )
-        ylab <-  "log | Y-hat Method/MCV|"
-    } else {
-        colors <- method_colors(
-            type = "elpd",
-            methods = c("iDIC-C", "iDIC-A",
-                        "iWAIC-C", "iWAIC-A",
-                        "iIS-C", "iIS-A",
-                        "GHOST")
-        )
-        ylab <- "|(ELPD Method - MCV)/MCV|"
-
-    }
-
-    ggplot2::ggplot(df, ggplot2::aes(x = method, y = dif)) +
-        ggplot2::geom_boxplot()  +
-        ggplot2::geom_hline(yintercept = 0) +
-        ggplot2::theme_bw() +
-        ggplot2::theme(
-          # text = ggplot2::element_text(family = "CMU Serif"),
-          legend.key.size = ggplot2::unit(0.3, "lines"),
-            legend.background = ggplot2::element_rect(
-                fill = ggplot2::alpha('white', 0))
-        ) +
-        ggplot2::labs(
-            y = ylab,
-            x = NULL,
-            fill = NULL, color = NULL
-        )
-}
-
+#' @export
 time_eight <- function(info = eight) {
-    times_df <- purrr::map_df(1:length(info$cv_yhats), function(i) {
-        data.frame(
-            idx = info$cv_yhats[[i]]$idx,
-            time_cv = info$cv_yhats[[i]]$time_cv,
-            data_scale = info$cv_yhats[[i]]$data_scale,
-            loop = 1:8,
-            time_iis_fm = info$posteriors[[i]]$time_iis_fm,
-            time_iis_im = info$posteriors[[i]]$time_iis_im,
-            time_ghst_c = info$posteriors[[i]]$time_iis_im
-        )
-    }) %>% dplyr::select(loop, dplyr::starts_with("time")) %>% unique() %>%
-        dplyr::summarise_all(sum) %>%
-        dplyr::select(-loop)
+  times_df <- purrr::map_df(1:length(info$cv_yhats), function(i) {
+    data.frame(
+      idx = info$cv_yhats[[i]]$idx,
+      time_cv = info$cv_yhats[[i]]$time_cv,
+      data_scale = info$cv_yhats[[i]]$data_scale,
+      loop = 1:8,
+      time_iis_fm = info$posteriors[[i]]$time_iis_fm,
+      time_iis_im = info$posteriors[[i]]$time_iis_im,
+      time_ghst_c = info$posteriors[[i]]$time_iis_im
+    )
+  }) %>%
+    dplyr::select(loop, dplyr::starts_with("time")) %>%
+    unique() %>%
+    dplyr::summarise_all(sum) %>%
+    dplyr::select(-loop)
 
 
-    times_df %>% dplyr::mutate(time_axe = info$axe_yhats$time)
-
-
+  times_df %>% dplyr::mutate(time_axe = info$axe_yhats$time)
 }
 
+#' Dataframe collating LCO, MCV, and AXE results
+#'
+#' `results_*()` combines the output from `mcv_*`, `axe_*`, and `pfit_*`
+#'     into one dataframe.
+#'
+#' @return Dataframe
+#'
+#'  @export
 results_eight <- function(info = eight, mcv_vals = eight$cv_yhats, axe_vals = eight$axe_yhats$axe,
                           posteriors = eight$posteriors) {
-    purrr::map_df(1:length(axe_vals), function(i) {
+  purrr::map_df(1:length(axe_vals), function(i) {
 
-        # sanity checks
-        stopifnot(axe_vals[[i]]$data_scale == mcv_vals[[i]]$data_scale)
-        stopifnot(posteriors[[i]]$data_scale[1] == mcv_vals[[i]]$data_scale)
+    # sanity checks
+    stopifnot(axe_vals[[i]]$data_scale == mcv_vals[[i]]$data_scale)
+    stopifnot(posteriors[[i]]$data_scale[1] == mcv_vals[[i]]$data_scale)
 
 
-        # convenience objects
-        cvhat <- mcv_vals[[i]]
-        axehat <- axe_vals[[i]]
-        psishat <- posteriors[[i]]
+    # convenience objects
+    cvhat <- mcv_vals[[i]]
+    axehat <- axe_vals[[i]]
+    psishat <- posteriors[[i]]
 
-        # save estimates for Xbeta via all three methods
-        posteriors[[i]] %>%
-            dplyr::mutate(
-                school_idx = letters[school_idx],
+    # save estimates for Xbeta via all three methods
+    posteriors[[i]] %>%
+      dplyr::mutate(
+        school_idx = letters[school_idx],
 
-                yhat_cv = cvhat$cv_yhat[cvhat$idx],
-                yhat_axe = axehat$axe_yhat[axehat$idx],
-                elpd_mcv_c = cvhat$cv_elppd,
-                elpd_mcv_m = cvhat$cv_lco,
-                time_cv = cvhat$time_cv[cvhat$idx]
-            )
-    }) %>%
-        dplyr::mutate(y = info$df$y[loop]*data_scale)
+        yhat_cv = cvhat$cv_yhat[cvhat$idx],
+        yhat_axe = axehat$axe_yhat[axehat$idx],
+        elpd_mcv_c = cvhat$cv_elppd,
+        elpd_mcv_m = cvhat$cv_lco,
+        time_cv = cvhat$time_cv[cvhat$idx]
+      )
+  }) %>%
+    dplyr::mutate(y = info$df$y[loop] * data_scale)
 }
 
 #
@@ -219,39 +238,41 @@ results_eight <- function(info = eight, mcv_vals = eight$cv_yhats, axe_vals = ei
 
 #########
 
+#' @describeIn results_eight
+#'  @export
 results_radon_full <- function(info = radon_1,
                                posteriors = radon_1$posteriors,
                                mcv_vals = radon_1$cv_yhats,
                                axe_vals = radon_1$axe_yhats) {
-    purrr::map_df(1:length(info$models_axe), function(i) {
-       resdf <-  dplyr::full_join(
-            info$data %>% dplyr::mutate(idx = 1:nrow(info$data)),
-            mcv_vals[[i]] %>% dplyr::select(-loop), by = c()
-        ) %>%
-            dplyr::full_join(
-                posteriors[[i]] %>% dplyr::mutate(loop = as.numeric(loop)),
-                by = c("idx" = "i"))
-        J <- length(unique(resdf$loop))
+  purrr::map_df(1:length(info$models_axe), function(i) {
+    resdf <- dplyr::full_join(
+      info$data %>% dplyr::mutate(idx = 1:nrow(info$data)),
+      mcv_vals[[i]] %>% dplyr::select(-loop),
+      by = c()
+    ) %>%
+      dplyr::full_join(
+        posteriors[[i]] %>% dplyr::mutate(loop = as.numeric(loop)),
+        by = c("idx" = "i")
+      )
+    J <- length(unique(resdf$loop))
 
-        resdf %>% dplyr::mutate(time_axe = axe_vals$time/J)
-
-    }) %>% dplyr::full_join(axe_vals$axe, by = c("idx" = "i", "model")) %>%
-        dplyr::rename(y = log_radon)
-
+    resdf %>% dplyr::mutate(time_axe = axe_vals$time / J)
+  }) %>%
+    dplyr::full_join(axe_vals$axe, by = c("idx" = "i", "model")) %>%
+    dplyr::rename(y = log_radon)
 }
 
 time_radon_full <- function(info = radon_1) {
-    cvdf <- dplyr::bind_rows(info$cv_yhats)
-    posdf <- dplyr::bind_rows(info$posteriors) %>% dplyr::mutate(loop = as.numeric(loop))
+  cvdf <- dplyr::bind_rows(info$cv_yhats)
+  posdf <- dplyr::bind_rows(info$posteriors) %>% dplyr::mutate(loop = as.numeric(loop))
 
-    dplyr::full_join(cvdf, posdf) %>%
-        dplyr::group_by(loop, model) %>%
-        dplyr::select(dplyr::starts_with("time")) %>% unique() %>%
-        dplyr::ungroup() %>%
-        dplyr::summarise_at(dplyr::vars(dplyr::starts_with("time")), sum) %>%
-        dplyr::mutate(time_axe = info$axe_yhats$time)
-
-
+  dplyr::full_join(cvdf, posdf) %>%
+    dplyr::group_by(loop, model) %>%
+    dplyr::select(dplyr::starts_with("time")) %>%
+    unique() %>%
+    dplyr::ungroup() %>%
+    dplyr::summarise_at(dplyr::vars(dplyr::starts_with("time")), sum) %>%
+    dplyr::mutate(time_axe = info$axe_yhats$time)
 }
 
 # figure_radon_full <- function(results) {
@@ -315,33 +336,33 @@ time_radon_full <- function(info = radon_1) {
 
 #####################
 
+#' @describeIn results_eight
+#'  @export
 results_radon_simul <- function(info = radon_2, mcv_vals = radon_2$cv_yhats,
                                 axe_vals = radon_2$axe_yhats, posteriors = radon_2$posteriors) {
-    agg <- dplyr::full_join(
-        mcv_vals,
-        axe_vals, by = c()
-    )  %>%
-        dplyr::full_join(posteriors) %>%
-        dplyr::rename(elpd_cv_rst = rst_elpd) %>%
-        dplyr::group_by(iter, perc, n_clusters, model, n_tot)
+  agg <- dplyr::full_join(
+    mcv_vals,
+    axe_vals,
+    by = c()
+  ) %>%
+    dplyr::full_join(posteriors) %>%
+    dplyr::rename(elpd_cv_rst = rst_elpd) %>%
+    dplyr::group_by(iter, perc, n_clusters, model, n_tot)
 
 
-    agg
-
-
+  agg
 }
 
 
 
 time_radon_simul <- function(info = radon_2) {
-
-    dplyr::full_join(info$cv_yhats, info$posteriors) %>%
-        dplyr::full_join(info$axe_yhats) %>%
-        dplyr::group_by(iter, perc, n_clusters, model) %>%
-        dplyr::select(dplyr::contains("time")) %>% unique() %>%
-        dplyr::ungroup() %>%
-        dplyr::summarise_at(dplyr::vars(dplyr::contains("time")), sum)
-
+  dplyr::full_join(info$cv_yhats, info$posteriors) %>%
+    dplyr::full_join(info$axe_yhats) %>%
+    dplyr::group_by(iter, perc, n_clusters, model) %>%
+    dplyr::select(dplyr::contains("time")) %>%
+    unique() %>%
+    dplyr::ungroup() %>%
+    dplyr::summarise_at(dplyr::vars(dplyr::contains("time")), sum)
 }
 
 # figure_radon_simul <- function(results, info = radon_2) {
@@ -458,67 +479,72 @@ time_radon_simul <- function(info = radon_2) {
 
 
 
+#' @describeIn results_eight
+#'  @export
 results_lol <- function(info = lol, posteriors = lol$posteriors,
-                             axe = lol$axe_yhats, mcv_vals = lol$cv_yhats) {
+                        axe = lol$axe_yhats, mcv_vals = lol$cv_yhats) {
   mcv <- do.call("rbind", mcv_vals)
-    make_results_df(posteriors, axe, mcv) %>%
-        dplyr::full_join(info$data %>%
-                             dplyr::mutate(idx = 1:dplyr::n()) %>%
-                             dplyr::select(idx, kills) %>%
-                             dplyr::rename(y = kills))
-
+  make_results_df(posteriors, axe, mcv) %>%
+    dplyr::full_join(info$data %>%
+      dplyr::mutate(idx = 1:dplyr::n()) %>%
+      dplyr::select(idx, kills) %>%
+      dplyr::rename(y = kills))
 }
 
 
+#' @describeIn results_eight
+#'  @export
 results_slc <- function(info = slc, posteriors = slc$posteriors,
                         axe = slc$axe_yhats, mcv_vals = slc$cv_yhats) {
-
-
-    make_results_df(posteriors, axe, mcv_vals) %>%
-        dplyr::full_join(
-            data.frame(
-                y = info$data$y,
-                idx = 1:length(info$data$y)
-            )
-        )
-
+  make_results_df(posteriors, axe, mcv_vals) %>%
+    dplyr::full_join(
+      data.frame(
+        y = info$data$y,
+        idx = 1:length(info$data$y)
+      )
+    )
 }
 
 
 
 time_slc <- function(info = slc) {
-    dplyr::full_join(info$cv_yhats, info$posteriors$df) %>%
-        dplyr::group_by(loop) %>%
-        dplyr::select(dplyr::contains("time")) %>% unique() %>%
-        dplyr::ungroup() %>% dplyr::select(-loop) %>%
-        dplyr::summarise_all(sum) %>%
-        dplyr::mutate(time_axe = info$axe_yhats$time)
+  dplyr::full_join(info$cv_yhats, info$posteriors$df) %>%
+    dplyr::group_by(loop) %>%
+    dplyr::select(dplyr::contains("time")) %>%
+    unique() %>%
+    dplyr::ungroup() %>%
+    dplyr::select(-loop) %>%
+    dplyr::summarise_all(sum) %>%
+    dplyr::mutate(time_axe = info$axe_yhats$time)
 }
 
-make_results_df <- function(posteriors, axe,  mcv_vals) {
-    res <-  dplyr::full_join(
-        posteriors$df,
-        axe$df, by = c()
-    ) %>%
-        dplyr::full_join(mcv_vals)
+make_results_df <- function(posteriors, axe, mcv_vals) {
+  res <- dplyr::full_join(
+    posteriors$df,
+    axe$df,
+    by = c()
+  ) %>%
+    dplyr::full_join(mcv_vals)
 
-    # add AXE time
-    J <- length(unique(res$loop))
-    res %>% dplyr::group_by(loop) %>% dplyr::mutate(time_axe = axe$time/J)
+  # add AXE time
+  J <- length(unique(res$loop))
+  res %>%
+    dplyr::group_by(loop) %>%
+    dplyr::mutate(time_axe = axe$time / J)
 }
 
+#' @describeIn results_eight
+#'  @export
 results_air <- function(info = air, posteriors = air$posteriors,
                         axe = air$axe_yhats, mcv_vals = air$cv_yhats) {
-
   make_results_df(posteriors, axe, mcv_vals) %>%
-        dplyr::full_join(
-            data.frame(
-                y = info$data$df$observed,
-                idx = 1:nrow(info$data$df)
-            ),
-            by = "idx"
-        )
-
+    dplyr::full_join(
+      data.frame(
+        y = info$data$df$observed,
+        idx = 1:nrow(info$data$df)
+      ),
+      by = "idx"
+    )
 }
 
 
@@ -526,11 +552,9 @@ results_air <- function(info = air, posteriors = air$posteriors,
 
 
 compare_time <- function(resdf) {
-    resdf %>% dplyr::group_by(loop) %>%
-        dplyr::select(dplyr::contains("time")) %>%
-        unique() %>% dplyr::summarise_at(-loop, sum)
+  resdf %>%
+    dplyr::group_by(loop) %>%
+    dplyr::select(dplyr::contains("time")) %>%
+    unique() %>%
+    dplyr::summarise_at(-loop, sum)
 }
-
-
-
-

@@ -4,7 +4,7 @@
 
 
 for (file in list.files("R")) {
-    source(file.path("R", file))
+  source(file.path("R", file))
 }
 
 
@@ -18,7 +18,7 @@ eight <- prep_eight()
 
 # runs MCV and saves estimates; also records the time
 # examine using str(eight$cv_yhats)
-eight$cv_yhats  <- mcv_eight()
+eight$cv_yhats <- mcv_eight()
 
 # fits models to full data and saves posterior means of variance parameters
 eight$posteriors <- pfit_eight()
@@ -50,16 +50,16 @@ radon_2$posterior_summary <- pfit_radon_simul(use_saved = F)
 # Next, run each LCO method individually on posterior samples
 radon_2$lco <- list()
 radon_2$lco$ghst_yhats <- lco_radon_simul(method = "ghost")
- radon_2$lco$iisfm_yhats <- lco_radon_simul(method = "iis_fm")
+radon_2$lco$iisfm_yhats <- lco_radon_simul(method = "iis_fm")
 radon_2$lco$iisim_yhats <- lco_radon_simul(method = "iis_im")
 
 # re-combine LCO methods with posteriors, to be in line with other datasets
 radon_2$posteriors <- dplyr::full_join(
-    radon_2$posterior_summary,
-    radon_2$lco$iisfm_yhats
+  radon_2$posterior_summary,
+  radon_2$lco$iisfm_yhats
 ) %>%
-    dplyr::full_join(radon_2$lco$iisim_yhats) %>%
-    dplyr::full_join(radon_2$lco$ghst_yhats )
+  dplyr::full_join(radon_2$lco$iisim_yhats) %>%
+  dplyr::full_join(radon_2$lco$ghst_yhats)
 
 radon_2$cv_yhats <- mcv_radon_simul()
 
@@ -102,8 +102,5 @@ air <- list()
 air$data <- prep_air()
 air$cv_yhats <- mcv_air()
 air$posteriors <- pfit_air()
- air$axe_yhats <- axe_air()
+air$axe_yhats <- axe_air()
 # usethis::use_data(air, overwrite = T)
-
-
-
