@@ -74,7 +74,7 @@ Figure 2 from the paper gives point-by-point comparisons of ground truth manual 
 # Code
 The R package here bundles together all code used to produce the examples in the paper. To use, install from github with the following code:
 
-```{r}
+```{r, eval = F}
 library(devtools)
 install_github("amytildazhang/AXEexamples")
 
@@ -125,7 +125,7 @@ The object `eight` is available in the package, listed in the `data` folder. Eac
 - `lol`: Esports players
 - `slc`: Scottish lip cancer
 - `air`: Scottish respiratory disease
-Access simply by loading the package (`library(AXEexamples)`) and calling the name of the data, e.g. `eight; str(eight)`.
+Access by loading the package (`library(AXEexamples)`) and calling the name of the data, e.g. `eight; str(eight)`.
 
 For code to produce paper figures, see the vignette in `doc/overview.html`
 
