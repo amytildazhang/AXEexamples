@@ -28,17 +28,13 @@ library(tidyverse)
 
 - integrated importance sampling
 
-   + iIS-C
-   Longhai Li, Shi Qiu, Bei Zhang, and Cindy X Feng. Approximating cross-validatory predictiveevaluation in bayesian latent variable models with integrated is and waic.Statistics andComputing, 26(4):881–897, 2016
+   + iIS-C [@li2016approximating]
    
-   + iIS-A: 
-   Aki Vehtari, Tommi Mononen, Ville Tolvanen, Tuomas Sivula, and Ole Winther. Bayesianleave-one-out cross-validation approximations for gaussian latent variable models.TheJournal of Machine Learning Research, 17(1):3581–3618, 2016
+   + iIS-A [@vehtari2016bayesian]
    
-- GHOST
-EC Marshall and DJ Spiegelhalter. Approximate cross-validatory predictive checks in diseasemapping models.Statistics in Medicine, 22(10):1649–1660, 2003
+- GHOST [@marshall2003approximate]
 
-- PSIS-LOO (in those cases that LOO-CV = LCO-CV)
-Aki Vehtari, Andrew Gelman, and Jonah Gabry. Practical bayesian model evaluation using leave-one-out cross-validation and waic.Statistics and Computing, 5(27):1413–1432, 2016a
+- PSIS-LOO [@vehtari2016practical] (in those cases that LOO-CV = LCO-CV)
 
 As example, the eight schools example in the paper is recreated below:
 

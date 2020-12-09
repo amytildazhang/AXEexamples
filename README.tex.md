@@ -35,7 +35,7 @@ $$
     \hat{Y}_{j}^{\text{AXE}} = E[X\beta | Y_{-j}, \hat{\Sigma}, \hat{\tau}] = \frac{1}{\hat{\tau}^{2}}X_j\left(\frac{1}{\hat{\tau}_{-j}^{2}}X_{-j}'X_{-j} + \begin{bmatrix}0 & 0 \\ 0 & \Sigma^{-1}\end{bmatrix}\right)^{-1}X_{-j}'Y_{-j}.
 $$
 
-The basic reasoning is that  $E[\beta | Y] = E[\beta | Y, \hat{\tau}_{\text{EB}}, \hat{\Sigma}_{\text{EB}}]\left(1 + O\left({P_2^{-1}}\right)\right)$, where $\hat{\tau}_{\text{EB}}, \hat{\Sigma}_{\text{EB}}$ denote the Empirical Bayes estimates [@kass1989approximate]. That is, the conditional posterior given variance parameters can approximate the posterior mean for $\beta$ when $P_2$ is large enough (whether $P_2$ is large enough can be determined by deriving $E[X\beta| \hat{\Sigma}, \hat{\tau}, Y]$ and comparing to the posterior mean estimates). Then, so long as the posterior means $\hat{\Sigma}$ and $\hat{\tau}$ are stable enough across cross-validation folds, they can be used as plug-in estimates in the conditional mean in $E[X\beta | Y_{-j}, \hat{\Sigma}, \hat{\tau}]$ to produce approximations of   $E[X\beta | Y_{-j}]$. 
+The basic reasoning is that  $E[\beta | Y] = E[\beta | Y, \hat{\tau}_{\text{EB}}, \hat{\Sigma}_{\text{EB}}]\left(1 + O\left({P_2^{-1}}\right)\right)$, where $\hat{\tau}_{\text{EB}}, \hat{\Sigma}_{\text{EB}}$ denote the Empirical Bayes estimates [Kass and Steffey, 1989]. That is, the conditional posterior given variance parameters can approximate the posterior mean for $\beta$ when $P_2$ is large enough (whether $P_2$ is large enough can be determined by deriving $E[X\beta| \hat{\Sigma}, \hat{\tau}, Y]$ and comparing to the posterior mean estimates). Then, so long as the posterior means $\hat{\Sigma}$ and $\hat{\tau}$ are stable enough across cross-validation folds, they can be used as plug-in estimates in the conditional mean in $E[X\beta | Y_{-j}, \hat{\Sigma}, \hat{\tau}]$ to produce approximations of   $E[X\beta | Y_{-j}]$. 
 
 By conditioning on the variance-covariance parameters, we shift the CV problem from probability-based sampling to the same form as maximum likelihood methods for simple linear regression} and is likewise $\mathcal{O}\left(N^2P + P^3 right)$ in time for each CV fold. It can be used with any CV schema, e.g. K-fold, leave-one-out (LOO), and leave-one-cluster-out (LCO). Our paper focuses on LCO-CV.
 
@@ -84,7 +84,7 @@ install_github("amytildazhang/AXEexamples")
 
 ```
 
-Alternatively, download and load/source the appropriate files, i.e. in R
+Alternatively, download and load/source the appropriate files, i.e. in R do:
 
 ```{r}
 for (file in list.files("R")) {
@@ -97,7 +97,7 @@ for (obj in list.files("data")) {
 
 ```
 
-The main functions in the package are summarized below:
+The main functions in the package are
 
 - `prep_*()`: Creates a list with data for each example
    + `prep_eight()`: Eight schools (LMM)
@@ -111,8 +111,7 @@ The main functions in the package are summarized below:
 - `mcv_*()`: Runs manual cross-validation and saves $E[Y_j | Y_{-j}]$.
 
 
-Example results are obtained by calling each of the functions for each example in turn, e.g. for the Eight schools example:
-
+Example results are obtained by calling the above functions for each example in turn, e.g. the Eight schools results are generated using the following code:
 ```{r eightex, eval=FALSE}
 eight <- prep_eight() 
 eight$cv_yhats  <- mcv_eight() 
@@ -120,14 +119,23 @@ eight$posteriors <- pfit_eight()
 eight$axe_yhats <- axe_eight() 
 
 ```
-The objects in `data` are the result of calling the above (or similar) procedure for each of the examples
+
+The object `eight` is available in the package, listed in the `data` folder. Each of the paper's examples is saved in  `data` under the following names:
 - `eight`: Eight schools
 - `radon_1`: Radon
 - `radon_2`: Radon subsets
 - `lol`: Esports players
 - `slc`: Scottish lip cancer
 - `air`: Scottish respiratory disease
+Access simply by loading the package (`library(AXEexamples)`) and calling the name of the data, e.g. `eight; str(eight)`.
 
-For code to produce paper figures, see the `overview.Rmd` vignette.
+For code to produce paper figures, see the vignette in `doc/overview.html`
+
+
+# References
+
+Robert E Kass and Duane Steffey. Approximate Bayesian inference in conditionally independent hierarchical models (parametric empirical Bayes models). Journal of the American Statistical Association, 84(407):717–726, 1989.
+
+
 
 

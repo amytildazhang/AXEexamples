@@ -1,6 +1,10 @@
 
 # These are functions which produce graphs and tables used int he paper
 
+#' Rename character vector with methods
+#'
+#' Change internal method names to plot output
+#'
 #' @export
 rename_methods <- function(vec) {
   vec <- stringr::str_replace(vec, "_fm$", "-C") %>%
@@ -18,6 +22,10 @@ rename_methods <- function(vec) {
   )
 }
 
+#' Colors for each method in plots
+#'
+#' Returns named vector of colors for each method, for use in `ggplot2::scale_color_manual()`.`
+#'
 #' @export
 method_colors <- function(type = c("elpds", "yhats"),
                           methods = c(
@@ -37,6 +45,10 @@ method_colors <- function(type = c("elpds", "yhats"),
 }
 
 
+#' Create a dataframe which compares methods.
+#'
+#' Creates dataframe with LRRs, as defined in paper.
+#'
 #' @export
 df_compare_methods <- function(df, type = c("yhat", "elpd")) {
   # df requirements: must have loop column, actual response value y, and
@@ -84,6 +96,11 @@ df_compare_methods <- function(df, type = c("yhat", "elpd")) {
   }
 }
 
+#' Plot comparison of methods (LRR)
+#'
+#' Assumes use of `df_compare_methods`
+#'
+#' @param df Output from `df_compare_methods`
 #' @export
 plot_compare_methods <- function(df, type = c("yhat", "elpd")) {
   if (type == "yhat") {
@@ -123,7 +140,6 @@ plot_compare_methods <- function(df, type = c("yhat", "elpd")) {
     )
 }
 
-#' @export
 time_eight <- function(info = eight) {
   times_df <- purrr::map_df(1:length(info$cv_yhats), function(i) {
     data.frame(
@@ -149,10 +165,8 @@ time_eight <- function(info = eight) {
 #'
 #' `results_*()` combines the output from `mcv_*`, `axe_*`, and `pfit_*`
 #'     into one dataframe.
-#'
-#' @return Dataframe
-#'
-#'  @export
+#' @return data.frame
+#' @export
 results_eight <- function(info = eight, mcv_vals = eight$cv_yhats, axe_vals = eight$axe_yhats$axe,
                           posteriors = eight$posteriors) {
   purrr::map_df(1:length(axe_vals), function(i) {
@@ -239,7 +253,7 @@ results_eight <- function(info = eight, mcv_vals = eight$cv_yhats, axe_vals = ei
 #########
 
 #' @describeIn results_eight
-#'  @export
+#' @export
 results_radon_full <- function(info = radon_1,
                                posteriors = radon_1$posteriors,
                                mcv_vals = radon_1$cv_yhats,
@@ -337,7 +351,7 @@ time_radon_full <- function(info = radon_1) {
 #####################
 
 #' @describeIn results_eight
-#'  @export
+#' @export
 results_radon_simul <- function(info = radon_2, mcv_vals = radon_2$cv_yhats,
                                 axe_vals = radon_2$axe_yhats, posteriors = radon_2$posteriors) {
   agg <- dplyr::full_join(
@@ -480,7 +494,7 @@ time_radon_simul <- function(info = radon_2) {
 
 
 #' @describeIn results_eight
-#'  @export
+#' @export
 results_lol <- function(info = lol, posteriors = lol$posteriors,
                         axe = lol$axe_yhats, mcv_vals = lol$cv_yhats) {
   mcv <- do.call("rbind", mcv_vals)
@@ -493,7 +507,7 @@ results_lol <- function(info = lol, posteriors = lol$posteriors,
 
 
 #' @describeIn results_eight
-#'  @export
+#' @export
 results_slc <- function(info = slc, posteriors = slc$posteriors,
                         axe = slc$axe_yhats, mcv_vals = slc$cv_yhats) {
   make_results_df(posteriors, axe, mcv_vals) %>%
@@ -534,7 +548,7 @@ make_results_df <- function(posteriors, axe, mcv_vals) {
 }
 
 #' @describeIn results_eight
-#'  @export
+#' @export
 results_air <- function(info = air, posteriors = air$posteriors,
                         axe = air$axe_yhats, mcv_vals = air$cv_yhats) {
   make_results_df(posteriors, axe, mcv_vals) %>%
