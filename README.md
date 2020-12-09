@@ -13,93 +13,25 @@ Cross-validated Mean Estimates for Bayesian Hierarchical Regression
 Models. [*arXiv preprint
 arXiv:2011.14238*](https://arxiv.org/abs/2011.14238).
 
-The paper presents a novel method for approximating  ![equation](doc/equations/eyj.png), the cross-validated posterior mean for vector of test data $Y_j$ given the vector of training data $Y_{-j}$. 
-
-
-## AXE method
-
-Let Y denote a continuous response vector that follows
-
-![equation](doc/equations/axedefn.png)
-
-where
-
-  - C is a positive-definite P_1 x P_1 (and typically
-    diagonal) matrix,
-
-  - Sigma is a P_2 x P_2 positive-definite matrix,
-
-  - tau is a positive real value,
-
-  - X := [X_1  X_2] is the design matrix,
-
-  - the vector beta_1 denotes fixed effects,
-    beta_2 random effects s.t.
-    beta :=[\beta_1'  \beta_2'],
-
-  - WLOG, alpha_1 = alpha_2 = 0.
-
-AXE approximates cross-validated mean estimates using the posterior
-means for Sigma and tau as plug-in estimates. Let
-us refer to \(j\) as the test data indices, so \(Y_j\) denotes the
-vector of test data and \(Y_{-j}\) the vector of training data. The AXE
-approximation for CV mean estimate \(E[Y_j | Y_{-j}]\) is
-
-![equation](doc/equations/axeeqn.png)
-
-The basic reasoning is that the conditional posterior
-\(E[\beta | Y, \hat{\Sigma}, \hat{\tau}]\) given variance parameters can
-approximate the posterior mean for \(E[\beta | Y]\) when \(P_2\) is
-large enough \[Kass and Steffey 1989\] (whether \(P_2\) is large enough
-can be determined by deriving \(E[X\beta| \hat{\Sigma}, \hat{\tau}, Y]\)
-and comparing to the posterior mean estimates). Then, so long as the
-posterior means \(\hat{\Sigma}\) and \(\hat{\tau}\) are stable enough
-across cross-validation folds, they can be used as plug-in estimates in
-the conditional mean in \(E[X\beta | Y_{-j}, \hat{\Sigma}, \hat{\tau}]\)
-to produce approximations of \(E[X\beta | Y_{-j}]\).
-
-By conditioning on the variance-covariance parameters, we shift the CV
-problem from probability-based sampling to the same form as maximum
-likelihood methods for simple linear regression} and is likewise
-\(O\left(N^2P + P^3 \right)\) in time for each CV fold. It can be used
-with any CV schema, e.g. K-fold, leave-one-out (LOO), and
-leave-one-cluster-out (LCO). Our paper focuses on LCO-CV.
-
-## Leave-one-cluster-out cross-validation (LCO-CV)
-
-LCO-CV is commonly used in models with complex dependency structures,
-such as spatio-temporal models or models with repeated measures. In such
-models, the dependency among the data can cause \(K\)-fold CV to select
-models which overfit \[@arlot2010survey, @opsomer2001nonparametric\].
-Reducing the amount of correlation between the training and test data
-typically results in non-random, structured CV, of which LCO-CV is one
-commoon example. Under LCO-CV, the data are partitioned based on the
-unique values of one or more random intercepts, e.g. for a mixed-effects
-model with repeated measures, all repeated measures for a test unit are
-set aside from the training data. This provides a more realistic
-estimate of a model’s predictive capability for a new unit.
-
-In general, we have found that AXE improves upon existing LCO-CV methods
-in accuracy and is typically an order of magnitude faster.
-
-## Generalized Linear Mixed Models (GLMMs)
-
-Essentially, we use expectation propagation with a Gaussian
-approximating density, the first-stage of the hierarchical model is
-approximated with a normal distribution with matching moments. This
-allows us to use the same equations as the LMM case, just with the
-transformed response and variance parameters.
-
-# Examples
+The paper presents a novel method for approximating \(E[Y_j | Y_{-j}]\),
+the cross-validated posterior mean for vector of test data \(Y_j\) given
+the vector of training data \(Y_{-j}\). The method applies to any CV
+scheme; we compared AXE specifically to existing CV approximations
+methods under the challenging leave-a-cluster-out CV scheme. In general,
+we have found that AXE improves upon existing LCO-CV methods in accuracy
+and is typically an order of magnitude faster.
 
 ![Figure 2 from paper](data-raw/p_both.png) Figure 2 from the paper
 gives point-by-point comparisons of ground truth manual cross-validation
 (x-axis) against AXE approximations (panel A, y-axis). Point-by-point
-comparisons for other LCO methods iIS-C and GHOST are also included.
-(iIS-A is omitted to preserve the scale of the axes; results summarized
-in Figure 1 of paper.)
+comparisons for other LCO methods integrated importance sampling (iIS-C)
+and ghosting (GHOST) are also included. (iIS-A is omitted to preserve
+the scale of the axes; results summarized in Figure 1 of paper.)
 
-# Code
+For detailed description of the AXE method, see the “Overview” vignette
+(`vignettes("overview")`).
+
+# Code description
 
 The R package here bundles together all code used to produce the
 examples in the paper. To use, install from github with the following
@@ -112,8 +44,8 @@ install_github("amytildazhang/AXEexamples")
 
 Note that this installs all source code for producing the examples,
 including compiled STAN models which can take time and may not be of
-interest (and, until the next version of rstan hits CRAN, compiling STAN
-models within R packages on Windows can be a frustrating endeavor).
+interest (and, until the next version of `rstan` hits CRAN, compiling
+STAN models within R packages on Windows can be a frustrating endeavor).
 Alternatively, manually download and load/source the appropriate files,
 i.e. in R do:
 
@@ -167,12 +99,5 @@ cancer - `air`: Scottish respiratory disease Access by loading the
 package (`library(AXEexamples)`) and calling the name of the data, e.g.
 `eight; str(eight)`.
 
-For code to produce paper figures, see the vignette in
-`doc/overview.html`
-
-# References
-
-Robert E Kass and Duane Steffey. Approximate Bayesian inference in
-conditionally independent hierarchical models (parametric empirical
-Bayes models). Journal of the American Statistical Association,
-84(407):717–726, 1989.
+For code to reproduce paper figures, see the “Overview” vignette
+(`vignettes("overview")`).
