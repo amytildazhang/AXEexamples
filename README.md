@@ -23,12 +23,13 @@ and is typically an order of magnitude faster.
 
 ![Figure 2 from paper](data-raw/p_both.png) Figure 2 from the paper
 gives point-by-point comparisons of ground truth manual cross-validation
-(x-axis) against AXE approximations (panel A, y-axis). Point-by-point
-comparisons for other LCO methods integrated importance sampling (iIS-C)
-and ghosting (GHOST) are also included. (iIS-A is omitted to preserve
-the scale of the axes; results summarized in Figure 1 of paper.)
+(x-axis) against AXE approximations (panel A, y-axis). In general, AXE approximations lie on or near the 45-degree one-to-one line.
+Point-by-point comparisons for other LCO methods integrated importance sampling (iIS-C)
+and ghosting (GHOST) are also included, in panel B. (iIS-A is omitted to preserve
+the scale of the axes; results summarized in Figure 1 of paper.) For other LCO methods,
+the variance of points around the 45-degree line is higher than for AXE.
 
-For detailed description of the AXE method, see the “Overview” vignette
+For a description of how to obtain AXE approximations, see the “Overview” vignette
 (`vignettes("overview")`).
 
 # Code description
