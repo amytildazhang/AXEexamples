@@ -1,15 +1,24 @@
 library(extrafont)
 library(tidyverse)
 
+# These files are organized as an R package, with functions in the "R" folder
+# and fitted models and output in the 'data' folder
 
+# Loads into the environment all functions in 'R' folder
 for (file in list.files("R")) {
   source(file.path("R", file))
 }
-
+# Loads into the nevironment all models and output in 'data' folder
 for (obj in list.files("data")) {
   load(file.path("data", obj))
 }
 
+# convenient vector of data set names
+datasets <- c("Eight schools", "Radon", "Radon subsets", "ESP", "SLC", "SRD")
+
+
+# compile data frame with point-by-point, method-specific, and model-specific
+# results in one data frame
 eight_results <- results_eight() %>%
   select(-contains("_iis_")) %>%
   group_by(loop, data_scale)
@@ -36,26 +45,78 @@ srd_results <- results_air() %>%
   select(-contains("_iis_")) %>%
   group_by(loop)
 
+# group results df in a list
+results_list <- list(eight_results, r1_results, r2_results,
+                     lol_results, slc_results, srd_results)
 
-
-yhats_eight <- results_8 %>%
+# re-formats the 'results' data frames for plotting
+yhats_eight <- eight_results %>%
   df_compare_methods("yhat")
-yhats_radon1 <- results_r1 %>%
+yhats_radon1 <- r1_results %>%
   dplyr::mutate(n = dplyr::n()) %>%
   dplyr::group_by(model, loop, n) %>%
   df_compare_methods("yhat")
-yhats_radon2 <- df_compare_methods(results_r2, "yhat")
+yhats_radon2 <- df_compare_methods(r2_results, "yhat")
 # dplyr::mutate_at(dplyr::vars(dplyr::starts_with("yhat")), exp)
 yhats_lol <- df_compare_methods(lol_results, "yhat")
-yhats_slc <- df_compare_methods(results_slc, "yhat")
-yhats_air <- df_compare_methods(results_air, "yhat")
+yhats_slc <- df_compare_methods(slc_results, "yhat")
+yhats_srd <- df_compare_methods(srd_results, "yhat")
 
 
-# Figure 1
-datasets <- c("Eight schools", "Radon", "Radon subsets", "ESP", "SLC", "SRD")
+
+# Create table 4 comparing results
+# Calculates RMSE for each loop and combines all results outputs into one dataframe
+rmse_all <- dplyr::bind_rows(
+  purrr::map2(
+    as.list(datasets),
+    results_list,
+    function(dname, dset) {
+      dset %>%
+        summarise_at(vars(starts_with("yhat_")), ~sqrt(mean((. - y)^2))) %>%
+        mutate(data = dname, loop = as.numeric(factor(loop)))
+    })
+) %>%
+  mutate(
+    grouping = case_when(
+      !is.na(data_scale) & data_scale < 1 ~ "alpha < 1",
+      !is.na(data_scale) & data_scale < 2 ~ "1 <= alpha < 2",
+      !is.na(data_scale) & data_scale >= 2 ~ "2 <= alpha",
+      !is.na(model) ~ as.character(model),
+      T ~ as.character(NA)
+    )
+  ) %>%
+  select(data, loop, grouping, yhat_psiis_fm, yhat_psiis_im, yhat_ghst_c, yhat_axe, yhat_cv)
+
+lrr_all <-
+  rmse_all %>%
+  # rename methods be consistent with other tables/figures
+  mutate_at(vars(starts_with("yhat_")), ~log(./yhat_cv)) %>%  select(-yhat_cv) %>%
+  pivot_longer(starts_with("yhat"), names_to = "statistic", values_to = "lrr") %>%
+  mutate(statistic = rename_methods(statistic) %>%
+           str_replace("YHAT-", "")) %>%
+  # calculate lrr mean, median, and sd
+group_by(data, grouping, statistic) %>%
+  summarise(mean_lrr = mean(lrr),
+            sd_lrr = sd(lrr)#,
+            # med_lrr = median(lrr)
+            ) %>%
+    # re-shape df and re-order columns for paper
+  mutate_if(is.numeric, ~round(., digits = 2)) %>%
+  pivot_wider(id_cols = c(data, grouping),
+              names_from = statistic,
+              names_glue = "{statistic}_{.value}",
+              values_from = c(mean_lrr, sd_lrr)) %>%
+  unite("data", data:grouping) %>%
+select(data, contains("AXE"), contains("GHOST"),
+         contains("iIS-A"), contains("iIS-C"))
+
+# LaTeX output for table 4
+knitr::kable(lrr_all, "latex")
+
+# Combine yhat dataframes into one dataframe
 yhats_all <- dplyr::bind_rows(
   purrr::map2(
-    list(results_8, results_r1, results_r2, lol_results, results_slc, results_air),
+    results_list,
     as.list(datasets),
     function(df, dname) {
       df %>%
@@ -76,12 +137,13 @@ yhats_all <- dplyr::bind_rows(
   )
 
 
-# df with min/max values
+# Creates sub-plots for Figure 2
+# df with min/max values, to keep axes on the same scale for Figure 2
 yhats_minmax <- yhats_all %>%
   dplyr::group_by(data) %>%
   dplyr::summarise(min = min(yhat), max = max(yhat), yhat_cv = yhat_cv[1]) %>%
   tidyr::pivot_longer(cols = c(min, max), names_to = "range", values_to = "yhat")
-
+# row A
 ptbypt_axe <-
   yhats_all %>%
   filter(method == "AXE") %>%
@@ -100,11 +162,8 @@ ptbypt_axe <-
   geom_point(data = yhats_minmax, alpha = 0)
 
 
-
+# row B
 colors <- RColorBrewer::brewer.pal(6, "Dark2")[4:6]
-
-
-
 p <- yhats_all %>%
   dplyr::filter(method != "iIS-A") %>%
   ggplot(aes(x = yhat_cv, y = yhat)) +
@@ -129,7 +188,7 @@ p <- yhats_all %>%
   ) +
   geom_point(data = yhats_minmax, alpha = 0)
 
-
+# combine rows A and B
 p_both <- cowplot::plot_grid(
   ptbypt_axe,
   lemon::reposition_legend(
@@ -140,12 +199,12 @@ p_both <- cowplot::plot_grid(
   label_fontfamily = "CMU Serif"
 )
 
-ggsave("data-raw/p_all.png", width = 10, height = 6, plot = p_all)
+# saves Figure 2 and an additional plot with only row A
+# ggsave("data-raw/p_all.png", width = 10, height = 6, plot = p_all)
+# ggsave("data-raw/p_both.png", width = 10, height = 4.5, plot = p_both)
 
-ggsave("data-raw/p_both.png", width = 10, height = 4.5, plot = p_both)
 
-
-# Figure 2
+# Subplots for Figure 1
 p_8 <- yhats_eight %>%
   mutate(
     alpha = case_when(
@@ -205,6 +264,7 @@ p_r1 <- ggplot(
 p_r1 <- lemon::reposition_legend(p_r1, position = "bottom left")
 
 
+
 r2_cutoff <- data.frame(
   dif = -1,
   model = 3,
@@ -250,7 +310,7 @@ ggsave("data-raw/compare_all.png", plot = p_boxpl, width = 10, height = 5)
 
 
 
-# radon subsets, with more clusters
+# radon subsets, limited to scenarios with at least 9 clusters
 yhats_radon2 %>%
   filter(n_clusters > 9) %>%
   ggplot(aes(x = method, y = dif, fill = sprintf("Model %s", model))) +
@@ -265,3 +325,4 @@ yhats_radon2 %>%
   ) +
   labs(x = NULL, fill = NULL, y = NULL, title = "C) Radon subsets") +
   scale_fill_brewer(palette = "Set2")
+# Not too different so
