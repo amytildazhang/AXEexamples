@@ -29,9 +29,6 @@ and ghosting (GHOST) are also included. (Other methdos are omitted to
 preserve the scale of the axes; results summarized in Figure 1 of
 paper.)
 
-For detailed description of the AXE method, see the “Overview” vignette
-(`vignettes("overview")`).
-
 # Code description
 
 The code contains the following directories:
@@ -73,17 +70,26 @@ for (obj in list.files("data")) {
 The main functions in `R` folder are:
 
 -   `prep_*()`: Creates a list with data for each example
+
     -   `prep_eight()`: Eight schools (LMM)
+
     -   `prep_radon_full()`: Radon (LMM)
+
     -   `prep_radon_simul()`: Radon subsets (LMM)
+
     -   `prep_lol()`: Esports players (GLMM)
+
     -   `prep_slc()`: Scottish lip cancer (GLMM, CAR)
+
     -   `prep_air()`: Scottish respiratory disease (GLMM,
         spatio-temporal CAR)
+
 -   `pfit_*()`: Fits model to full data and produces LCO approximations,
     based on posterior samples, for iIS, Vehtari, and GHOST methods.
+
 -   `axe_*()`: Uses co/variance posterior means to produce AXE
     estimates.
+
 -   `mcv_*()`: Runs manual cross-validation and saves $E[Y_j | Y_{-j}]$.
 
 Example results are obtained by calling the above functions for each
@@ -99,6 +105,16 @@ eight$axe_yhats <- axe_eight()
 
 The object `eight` is available in the package, listed in the `data`
 folder. Each of the paper’s examples is saved in `data` under the
-following names: - `eight`: Eight schools - `radon_1`: Radon -
-`radon_2`: Radon subsets - `lol`: Esports players - `slc`: Scottish lip
-cancer - `air`: Scottish respiratory disease
+following names:
+
+-   `eight`: Eight schools
+
+-   `radon_1`: Radon
+
+-   `radon_2`: Radon subsets
+
+-   `lol`: Esports players
+
+-   `slc`: Scottish lip cancer
+
+-   `air`: Scottish respiratory disease
