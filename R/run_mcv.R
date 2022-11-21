@@ -1,6 +1,4 @@
 ##### helper functions for MCV
-
-
 .collate_folds <- function(objs) {
   obj_names <- names(objs[[1]])
 
@@ -27,9 +25,26 @@
   }) %>% purrr::set_names(obj_names)
 }
 
+.posterior_mode <- function(vec) {
+  density_estimate <- density(vec)
+  density_estimate$x[which.max(density_estimate$y)]
+}
+
+
+posterior_mode <- function(samps) {
+  if (is.null(dim(samps))) {
+    .posterior_mode(samps)
+  } else {
+    apply(samps, 2, function(parsamps) {
+      .posterior_mode(parsamps)
+    })
+  }
+}
+
+
 ###### functions within each fold
 
-crossval_eight <- function(loop, data, loops, X, seed, ...) {
+crossval_eight <- function(loop, data, loops, X, seed, cmdmod, ...) {
   a <- Sys.time()
   test_mask <- loop == loops
   cv_dat <- data
@@ -38,59 +53,40 @@ crossval_eight <- function(loop, data, loops, X, seed, ...) {
   cv_dat$test_idx <- as.array(which(test_mask))
   cv_dat$H <- sum(test_mask)
 
-  fit_cv <- rstan::sampling(stanmodels$eightschools_sim,
-    data = cv_dat,
-    refresh = 0, seed = seed, ...
-  )
-
-  cv_betas <- t(do.call(
-    "cbind",
-    rstan::extract(fit_cv, pars = c("mu", "theta"))
-  ))
-  cv_samps <- X %*% cv_betas
-  cv_taus <- rstan::extract(fit_cv, pars = "tau")$tau
-
-  cv_elppd <- -log(mean(dnorm(data$y[test_mask],
-    mean = cv_samps[test_mask, ],
-    sd = data$sigma[test_mask]
-  )))
-  P <- data$sigma^2
-  X_t <- X[!test_mask, ]
-  P_t <- P[!test_mask]
-  logliks_y <- lapply(1:length(cv_taus), function(s) {
-    sigi_diag <- rep(0, ncol(X))
-    sigi_diag[2:9] <- 1 / cv_taus[s]^2
-    Sig_inv <- diag(sigi_diag)
+  fit_cv <- cmdmod$sample(data = cv_dat,
+                          refresh = 0,
+                          seed = seed,
+                          ...)
 
 
-    V <- solve(t(X_t) %*% diag(1 / P_t) %*% X_t + Sig_inv)
-    axe_yhat <- X[test_mask, , drop = F] %*%
-      V %*% t(X_t) %*% diag(1 / P_t) %*%
-      data$y[!test_mask]
 
-    sd <- X[test_mask, , drop = F] %*%
-      V %*% t(X[test_mask, , drop = F])
-    list(
-      loglik = dnorm(data$y[test_mask], mean = axe_yhat, sd = sqrt(as.vector(sd)), log = T),
-      yhat = axe_yhat
-    )
-  })
-  logliks <- sapply(logliks_y, function(l) l$loglik)
-  yhat <- sapply(logliks_y, function(l) l$yhat)
-
-
-  cv_lco_elppd <- -log(mean(exp(logliks)))
-
+  cv_betas <- fit_cv$draws(variables = c("mu", "theta"),
+                           format = "draws_matrix")
+  cv_samps <- X %*% t(cv_betas)
   b <- Sys.time()
+  cv_taus <- apply(fit_cv$draws(variables = "tau"), 3, c)
 
 
+  stansummary <- fit_cv$summary()
+
+  map_idx <- which.max(fit_cv$draws(variables = "lp__",
+                                    format = "draws_matrix"))
+
+  yhat_sij <- cv_betas[map_idx, "mu"]
   list(
     idx = which(test_mask), cv_yhat = mean(cv_samps[test_mask, ]),
-    sighat_mcv = mean(cv_taus), time_cv = difftime(b, a, units = "secs"),
-    cv_elppd = cv_elppd, cv_lco = cv_lco_elppd, dif = mean(yhat) - mean(cv_samps[test_mask, ])
+    sighat_mcv = mean(cv_taus),
+    time_cv = as.numeric(difftime(b, a, units = "secs")),
+    max_rhat = max(stansummary$rhat),
+    mean_rhat = mean(stansummary$rhat),
+    yhat_cv_sij = as.vector(yhat_sij),
+    min_ess_bulk = min(stansummary$ess_bulk),
+    mean_ess_bulk = mean(stansummary$ess_bulk),
+    min_ess_tail = min(stansummary$ess_tail),
+    mean_ess_tail = mean(stansummary$ess_tail)
+
   )
 }
-
 
 crossval_radon <- function(loop, data, loops, X, formula, seed, ...) {
   a <- Sys.time()
@@ -101,11 +97,11 @@ crossval_radon <- function(loop, data, loops, X, formula, seed, ...) {
     seed = seed, refresh = 0, ...
   )
   yhat <- rstanarm::posterior_predict(rfit,
-    newdata = dplyr::filter(data, test_mask),
-    draws = 500
-  ) %>% apply(2, mean)
+                                      newdata = dplyr::filter(data, test_mask),
+                                      draws = 1e3
+  )
   b <- Sys.time()
-  stopifnot(length(yhat) == sum(test_mask))
+  stopifnot(ncol(yhat) == sum(test_mask))
   samples <- rstan::extract(rfit$stanfit)
 
   tau <- mean(samples$aux)
@@ -113,13 +109,17 @@ crossval_radon <- function(loop, data, loops, X, formula, seed, ...) {
 
   Y_t <- data$log_radon[test_mask]
   if ("beta" %in% names(samples)) {
-    coeff_samps <- cbind(samples$alpha, samples$beta, samples$b)
+    fixef <- cbind(samples$alpha, samples$beta)
   } else {
-    coeff_samps <- cbind(samples$alpha, samples$b)
+    fixef <- samples$alpha
   }
+  coeff_samps <- cbind(fixef, samples$b)
 
-  # since test county is not provided, it is present in samples as last column in samples$b
-  test_col <- which(apply(X, 2, function(col) all(col == as.numeric(test_mask))))
+  # since test county is not provided, it is present in
+  # samples as last column in samples$b
+  test_col <- which(apply(X, 2, function(col) {
+    all(col == as.numeric(test_mask))
+  }))
   ind <- X[, test_col]
   X <- cbind(X[, -test_col], ind)
 
@@ -128,9 +128,13 @@ crossval_radon <- function(loop, data, loops, X, formula, seed, ...) {
     log(mean(dnorm(Y_t[i], mean = mean[, i], sd = samples$aux)))
   })
 
+  map_idx <- which.max(samples$lp__)
+  yhat_sij <- posterior_mode(yhat)
+  # posterior mode
   data.frame(
     idx = which(test_mask),
-    yhat_cv = yhat,
+    yhat_cv = apply(yhat, 2, mean),
+    yhat_cv_sij = yhat_sij,
     tauhat_cv = tau,
     time_cv = as.double(difftime(b, a, units = "secs")),
     sighat_cv = sqrt(sig2),
@@ -138,7 +142,8 @@ crossval_radon <- function(loop, data, loops, X, formula, seed, ...) {
   )
 }
 
-crossval_radon_simul <- function(mod_no, dat, n, perc, subset_idx, info, seed, ...) {
+crossval_radon_simul <- function(mod_no, dat, n, perc,
+                                 subset_idx, info, seed, ...) {
   mod <- info$models_mcv[[mod_no]]
 
   test_mask <- dat$county == info$c_county
@@ -150,19 +155,23 @@ crossval_radon_simul <- function(mod_no, dat, n, perc, subset_idx, info, seed, .
     mod,
     data = dat[train_mask, ],
     seed = seed,
-    refresh = 0, ...
+    refresh = 0, iter = 1e4, thin = 5, ...
   )
   yhat_cv <- rstanarm::posterior_predict(
     cv_fit,
     newdata = dplyr::filter(dat, test_mask),
-    draws = 500
-  ) %>%
-    apply(2, mean)
+    draws = 1e3
+  )
 
   end_time <- Sys.time()
 
 
   cv_samps <- rstan::extract(cv_fit$stanfit)
+  sf <- radon_simul_samples(perc, n, subset_idx, mod_no, cv = TRUE)
+  readr::write_rds(cv_samps, sf)
+
+
+  samps <- as.array(cv_fit$stanfit)
 
   # log lik
   elpd <- rstanarm::log_lik(cv_fit, newdata = dplyr::filter(dat, test_mask)) %>%
@@ -171,43 +180,49 @@ crossval_radon_simul <- function(mod_no, dat, n, perc, subset_idx, info, seed, .
     log()
 
 
-  X <- mm_radon(mod_no, dat, info$models_axe[[mod_no]], cv = T)
+
+  X <- mm_radon(mod_no, dat, info$models_axe[[mod_no]])
 
   county_col <- which(apply(X, 2, function(col) {
     all(col == as.numeric(test_mask))
   }))
   X <- cbind(X[, -county_col], X[county_col])
   colnames(X) <- c(colnames(X)[-ncol(X)], sprintf("county%s", info$c_county))
-  coeffs <- coeffs_radon(cv_samps, cv = T)
+  coeffs <- coeffs_radon(cv_samps, cv = TRUE)
 
   tau_samps <- cv_samps$aux
-  lpd <- do.call("cbind", purrr::map(1:nrow(coeffs), function(mit) {
+  lpd <- do.call("cbind", purrr::map((1:nrow(coeffs)), function(mit) {
     dnorm(
       dat$log_radon[test_mask],
-      mean = X[test_mask, ] %*% t(coeffs[mit, , drop = F]),
+      mean = X[test_mask, ] %*% t(coeffs[mit, , drop = FALSE]),
       sd = tau_samps[mit]
     )
   })) %>%
     apply(1, mean) %>%
     log()
 
-
   # cond_lp
 
   sigma2 <- mean(cv_samps$theta_L)
   sig_inv <- rep(0, ncol(X))
   sig_inv[stringr::str_detect(colnames(X), "county")] <- 1 / sigma2
-  cond_lpd <- axe_ll(diag(sig_inv), mean(tau_samps), X, test_mask, dat$log_radon)
+  cond_lpd <- axe_ll(diag(sig_inv), mean(tau_samps),
+                     X, test_mask, dat$log_radon)
+  cv_ycond <- axe(diag(sig_inv), mean(tau_samps)^2,
+                  X, dat$county == info$c_county, dat$log_radon)
 
   data.frame(
     y = dat$log_radon[test_mask],
     rst_elpd = elpd,
     elpd_cv = lpd,
     elpd_cv_cond = cond_lpd,
-
-    cv_yhat = yhat_cv,
+    yhat_cv_sij = posterior_mode(yhat_cv),
+    cv_yhat = apply(yhat_cv, 2, mean),
+    cv_ycond = cv_ycond,
     tau2_cv = mean(tau_samps)^2,
-    sig2_cv = sigma2
+    sig2_cv = sigma2,
+    max_rhat = max(cv_fit$stan_summary[, "Rhat"]),
+    min_rhat = min(cv_fit$stan_summary[, "Rhat"])
   ) %>%
     dplyr::mutate(
       time_cv = as.double(difftime(end_time, start_time, units = "secs"))
@@ -217,7 +232,7 @@ crossval_radon_simul <- function(mod_no, dat, n, perc, subset_idx, info, seed, .
 
 
 
-crossval_lol <- function(loop, data, loops, seed, ...) {
+crossval_lol <- function(loop, data, loops, seed, X, ...) {
   test_mask <- loop == loops
   a <- Sys.time()
   cv_fit <- rstanarm::stan_glmer(
@@ -227,34 +242,33 @@ crossval_lol <- function(loop, data, loops, seed, ...) {
     seed = seed, refresh = 0, ...
   )
 
+
   yhats <- rstanarm::posterior_predict(
     cv_fit,
     newdata = dplyr::filter(data, test_mask)
-  ) %>%
-    apply(2, mean)
+  )
   b <- Sys.time()
-
 
   data.frame(
     time_cv = as.double(difftime(b, a, units = "secs")),
     loop = loop,
     idx = which(test_mask),
-    yhat_cv = yhats
+    yhat_cv = apply(yhats, 2, mean),
+    yhat_cv_sij = posterior_mode(yhats)
   )
 }
 
 
-crossval_slc <- function(loop, info, loops, seed, ...) {
+crossval_slc <- function(loop, info, loops, seed, cmdmod, ...) {
   message(loop)
   test_mask <- loop == loops
   a <- Sys.time()
 
   D <- diag(rowSums(info$W))
-  D_rr <- D[!test_mask, !test_mask]
   W_rr <- info$W[!test_mask, !test_mask]
   W_ir <- info$W[test_mask, !test_mask]
 
-  X_cv <- rbind(info$X[!test_mask, ], info$X[test_mask, , drop = F])
+  X_cv <- rbind(info$X[!test_mask, ], info$X[test_mask, , drop = FALSE])
   W_cv <- cbind(
     rbind(W_rr, W_ir),
     c((W_ir), 0)
@@ -263,22 +277,19 @@ crossval_slc <- function(loop, info, loops, seed, ...) {
   sdat_cv <- list(
     n = info$n,
     p = info$p, X = X_cv, y_train = info$y[!test_mask],
-    log_offset = loff_cv, W = W_cv, test_idx = info$n
+    log_offset = loff_cv, W = W_cv, test_idx = info$n,
+    D_sparse = rowSums(W_cv), W_n = info$W_n
   )
-  cv_fit <- rstan::sampling(stanmodels$carslp_cv,
-    data = sdat_cv,
-    seed = seed, refresh = 0, iter = 10e3, thin = 5
-  )
+  cv_fit <- cmdmod$sample(data = sdat_cv, iter_warmup = 5e3,
+                          refresh = 0,
+                          iter_sampling = 5e3, thin = 5)
+
+  yhats <- apply(cv_fit$draws(), 3, c)[, "y_test"]
+
   b <- Sys.time()
 
 
-  samples <- rstan::extract(cv_fit)
 
-
-  set.seed(seed)
-
-
-  yhats <- samples$y_test
 
   logliks <- sapply(yhats, function(y) {
     dpois(info$y[test_mask], yhats)
@@ -292,6 +303,7 @@ crossval_slc <- function(loop, info, loops, seed, ...) {
     loop = loop,
     idx = which(test_mask),
     yhat_cv = mean(yhats),
+    yhat_cv_sij = posterior_mode(yhats),
     elpd_cv = logliks
   )
 }
@@ -310,17 +322,17 @@ crossval_air <- function(loop, info, loops, seed, formula, ...) {
   chain1 <- CARBayesST::ST.CARar(
     formula = formula, family = "poisson",
     data = cvdat, W = info$W, burnin = 20000, n.sample = 220000,
-    thin = 100
+    thin = 100, AR = 1
   )
   chain2 <- CARBayesST::ST.CARar(
     formula = formula, family = "poisson",
     data = cvdat, W = info$W, burnin = 20000, n.sample = 220000,
-    thin = 100
+    thin = 100, AR = 1
   )
   chain3 <- CARBayesST::ST.CARar(
     formula = formula, family = "poisson",
     data = cvdat, W = info$W, burnin = 20000, n.sample = 220000,
-    thin = 100
+    thin = 100, AR = 1
   )
 
   samples <- purrr::map(names(chain1$samples), function(param) {
@@ -346,22 +358,159 @@ crossval_air <- function(loop, info, loops, seed, formula, ...) {
     loop = loop,
     idx = which(test_mask),
     yhat_cv = apply(yhats, 2, mean),
+    yhat_cv_sij = posterior_mode(yhats),
     elpd_cv = logliks
   )
 }
 
+
+gp_cmvn <- function(a, alpha, rho, f, X, test_mask) {
+  sigma <- cov_exp_quad(X, alpha, rho)
+
+  sig_train_inv <- solve(sigma[!test_mask, !test_mask])
+  sig12 <- sigma[test_mask, !test_mask, drop = FALSE]
+  sig11 <- sigma[test_mask, test_mask]
+
+
+  # draw fi
+  mean <- a + sig12 %*% sig_train_inv %*% f
+  sd <- sqrt(sig11 - sig12 %*% sig_train_inv %*% t(sig12))
+
+  list(mean = mean, sd = sd)
+
+}
+
+predict_boston <- function(a, alpha, rho, f, X, test_mask, sigma) {
+  pars <- gp_cmvn(a, alpha, rho, f, X, test_mask)
+  # draw fi
+  fi <- rnorm(1, mean = pars$mean, sd = pars$sd)
+
+  rnorm(1, fi, sigma)
+
+}
+
+predict_sonar <- function(a, alpha, rho, f, X, test_mask) {
+  # sigma
+  pars <- gp_cmvn(a, alpha, rho, f, X, test_mask)
+
+  # draw fi
+  fi <- rnorm(1, mean = pars$mean, sd = pars$sd)
+
+  # draw from poisson
+  rbinom(1, 1, pnorm(fi))
+
+}
+
+crossval_sonar <- function(loop, info, loops, seed, cmdmod, ...) {
+  message(loop)
+  tryCatch({
+
+    test_mask <- loop == loops
+
+    X <- t(standardize_x_sonar(t(info$X), test_mask))
+    set.seed(seed)
+    a <- Sys.time()
+
+    cvinfo <- list(
+      X = t(X)[!test_mask, ],
+      y = info$y[!test_mask],
+      N = info$N - sum(test_mask),
+      D = info$D
+    )
+    cvfit <- cmdmod$sample(data = cvinfo,
+                           refresh = 0,
+                           seed = seed,
+                           ...)
+
+    samples <- cvfit$draws(variables = c("a", "alpha", "rho"))
+    as <- as.vector(samples[, , 1])
+    alphas <- as.vector(samples[, , 2])
+    rhos <- as.vector(samples[, , 3])
+    f <-  apply(cvfit$draws(variables = "f"), 3, c)
+
+
+    yhats <- sapply(seq_along(as), function(s) {
+      predict_sonar(as[s], alphas[s], rhos[s], f[s, ], X, test_mask)
+    })
+
+
+    b <- Sys.time()
+
+
+    data.frame(
+      time_cv = as.double(difftime(b, a, units = "secs")),
+      loop = loop,
+      idx = which(test_mask),
+      yhat_cv = mean(yhats)
+    )
+  },
+  error = function(cond) {
+    message(cond)
+    return(NA)
+  })
+
+}
+
+crossval_boston <- function(loop, info, loops, seed, cmdmod, ...) {
+  message(loop)
+  tryCatch({
+
+    test_mask <- loop == loops
+
+    X <- t(standardize_x_sonar(t(info$X), test_mask))
+    set.seed(seed)
+    a <- Sys.time()
+
+    cvinfo <- list(
+      X = t(X)[!test_mask, ],
+      y = info$y[!test_mask],
+      N = info$N - sum(test_mask),
+      D = info$D
+    )
+    cvfit <- cmdmod$sample(data = cvinfo,
+                           refresh = 0,
+                           seed = seed,
+                           ...)
+
+    samples <- apply(cvfit$draws(variables = c("alpha", "rho", "sigma", "f")),
+                     3, c)
+
+    yhats <- sapply(seq_along(as), function(s) {
+      predict_boston(0, samples[s, "alpha"], samples[s, "rho"],
+                     samples[s, 4:ncol(samples)], X, test_mask,
+                     samples[s, "sigma"])
+    })
+
+
+    b <- Sys.time()
+
+
+    data.frame(
+      time_cv = as.double(difftime(b, a, units = "secs")),
+      loop = loop,
+      idx = which(test_mask),
+      yhat_cv = mean(yhats)
+    )
+  },
+  error = function(cond) {
+    message(cond)
+    return(NA)
+  })
+
+}
 
 #####
 
 # "..." captures parameters passed to underlying STAN model.
 #' Manual cross-validation for AXE paper examples
 #'
-#' `mcv_*()` are high-level functions which obtain posterior predictive samples Y_j | Y_-j
-#'     for each cross-validation loop
+#' `mcv_*()` are high-level functions which obtain posterior predictive
+#' samples Y_j | Y_-j for each cross-validation loop
 #'
 #' @param info All. List of data to use for CV folds; assumes list is created by
 #'     `prep_*()`.
-#' @param n_cores All. Number of cores to use, if parallelizing. Default value varies.
+#' @param n_cores All. Number of cores to use, if parallelizing. Default value
+#'   varies.
 #' @param seed Random seed generator passed to model sampling method.
 #' @param ... Additional arguments passed to modeling method.
 #'
@@ -371,34 +520,48 @@ crossval_air <- function(loop, info, loops, seed, formula, ...) {
 mcv_eight <- function(info = eight, n_cores = 7,
                       data_scale = seq(0.1, 4, by = 0.1),
                       seed = 238972, ...) {
-  X <- model.matrix(~school,
+  X <- model.matrix(
+    ~school,
     data = info$df,
-    contrasts.arg = list(school = contrasts(info$df$school, contrasts = F))
+    contrasts.arg = list(school = contrasts(info$df$school, contrasts = FALSE))
   )
+  cmdmod <- cmdstanr::cmdstan_model("data-raw/stan/eightschools_sim.stan")
   loops <- 1:8
   purrr::map(data_scale, function(scl) {
     scld_dat <- scale_dat(info$stan_list, scl)
-
+    if (any(round(scl -  c(2.2, 2.4, 2.8, 4), digits = 1) == 0)) {
+      n_warmup <- 4000
+      n_iter <- 2000
+      thin <- 2
+    } else {
+      n_warmup <- 1000
+      n_iter <- 1000
+      thin <- 1
+    }
     if (n_cores > 1) {
       cl <- snow::makeCluster(n_cores, outfile = "")
-      snow::clusterExport(cl, list("%>%"), envir = environment())
+      snow::clusterExport(cl, list("posterior_mode", ".posterior_mode"),
+                          envir = environment())
 
       yhats <- snow::parLapply(
         cl, loops, crossval_eight,
-        scld_dat, loops, X, seed
+        scld_dat, loops, X, seed, cmdmod, iter_warmup = n_warmup,
+        iter_sampling = n_iter, thin = thin
       )
 
       snow::stopCluster(cl)
     } else {
       yhats <- lapply(
         loops, crossval_eight,
-        scld_dat, loops, X, seed, ...
-      )
+        scld_dat, loops, X, seed, cmdmod, iter_warmup = n_warmup,
+        iter_sampling = n_iter, thin = thin)
     }
     objs <- .collate_folds(yhats)
     c(objs, data_scale = scl)
   })
 }
+
+
 
 #' @describeIn mcv_eight
 #'
@@ -412,17 +575,19 @@ mcv_radon_full <- function(info = radon_1, models = radon_1$models_mcv,
   loops <- as.character(info$data$county)
   y <- info$data$log_radon
 
-  purrr::map(1:length(models), function(mod_no) {
+  purrr::map(seq_along(models), function(mod_no) {
     print(mod_no)
     X <- model.matrix(info$models_axe[[mod_no]],
-      data = xdat,
-      contrasts = contrasts_for_pooling(xdat)
+                      data = xdat,
+                      contrasts = contrasts_for_pooling(xdat)
     )
 
     if (n_cores > 1) {
       cl <- snow::makeCluster(n_cores, outfile = "")
-      snow::clusterExport(cl, list("X", "%>%"),
-        envir = environment()
+      snow::clusterExport(cl, list("X", "%>%",
+                                   "posterior_mode", ".posterior_mode",
+                                   "radon2_prefix"),
+                          envir = environment()
       )
 
       objs <- snow::parLapply(
@@ -457,7 +622,10 @@ mcv_radon_simul <- function(info = radon_2,
                             seed = 9871, n_cores = 5, ...) {
   loop_over_radon_simul(
     info = info, seed = seed, n_cores = n_cores,
-    export = list("mm_radon", "coeffs_radon", "axe_ll", "axe", "axe_v"),
+    export = list("mm_radon", "coeffs_radon", "axe_ll", "axe",
+                  "axe_v", "radon_simul_samples",
+                  "posterior_mode", ".posterior_mode",
+                  "radon2_prefix"),
     expenv = environment(),
     FUN = crossval_radon_simul,
 
@@ -480,20 +648,20 @@ mcv_lol <- function(info = lol,
 
   if (n_cores > 1) {
     cl <- snow::makeCluster(n_cores, outfile = "")
-    snow::clusterExport(cl, list("%>%"),
-      envir = environment()
+    snow::clusterExport(cl, list("%>%", "posterior_mode", ".posterior_mode"),
+                        envir = environment()
     )
 
     objs <- snow::parLapply(
       cl, unique(loops), crossval_lol,
-      info$data, loops, seed, ...
+      info$data, loops, seed, info$X, ...
     )
 
     snow::stopCluster(cl)
   } else {
     objs <- lapply(
       unique(loops), crossval_lol,
-      info$data, loops, seed, ...
+      info$data, loops, seed, info$X, ...
     )
   }
 
@@ -507,22 +675,24 @@ mcv_lol <- function(info = lol,
 mcv_slc <- function(info = slc, seed = 29873, n_cores = 3, ...) {
   loops <- info$data$loops
 
+  cmdmod <- cmdstanr::cmdstan_model("data-raw/stan/sparsecar_slp_cv.stan")
   if (n_cores > 1) {
     cl <- snow::makeCluster(n_cores, outfile = "")
-    snow::clusterExport(cl, list("%>%", "stanmodels"),
-      envir = environment()
+    snow::clusterExport(cl, list("stanmodels", "posterior_mode",
+                                 ".posterior_mode"),
+                        envir = environment()
     )
 
     objs <- snow::parLapply(
       cl, unique(loops), crossval_slc,
-      info$data, loops, seed, ...
+      info$data, loops, seed, cmdmod, ...
     )
 
     snow::stopCluster(cl)
   } else {
     objs <- lapply(
       unique(loops), crossval_slc,
-      info$data, loops, seed, ...
+      info$data, loops, seed, cmdmod, ...
     )
   }
 
@@ -539,8 +709,8 @@ mcv_air <- function(info = air, seed = 69872, n_cores = 3, ...) {
 
   if (n_cores > 1) {
     cl <- snow::makeCluster(n_cores, outfile = "")
-    snow::clusterExport(cl, list("%>%"),
-      envir = environment()
+    snow::clusterExport(cl, list("posterior_mode", ".posterior_mode"),
+                        envir = environment()
     )
 
     objs <- snow::parLapply(

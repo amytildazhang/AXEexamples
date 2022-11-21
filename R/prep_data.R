@@ -11,12 +11,11 @@ create_schema <- function(c_county, c_size, dperc, nclusters, sizes,
     print(perc)
     total <- round(c_size / perc)
 
-
     purrr::map(nclusters, function(nc) {
       print(nc)
-
       n <- nc - 1
-      combns <- RcppAlgos::comboGeneral(sizes,
+      combns <- RcppAlgos::comboGeneral(
+        sizes,
         m = n, upper = 1e3,
         limitConstraints = c(round(0.9 * total), round(1.1 * total)),
         constraintFun = "sum",
@@ -36,16 +35,17 @@ create_schema <- function(c_county, c_size, dperc, nclusters, sizes,
         prob_weights[is.infinite(prob_weights)] <- 1
 
 
-        chosen <- sample(1:nrow(combns), max_combns, prob = prob_weights)
+        chosen <- sample((1:nrow(combns)),
+                         max_combns, prob = prob_weights)
 
-        combns <- combns[chosen, , drop = F]
+        combns <- combns[chosen, , drop = FALSE]
       }
 
 
       # for each combination, choose counties
       do.call(
         "rbind",
-        purrr::map(1:nrow(combns), function(i) {
+        purrr::map((1:nrow(combns)), function(i) {
           nums_chosen <- combns[i, ]
           names_chosen <- purrr::map(unique(nums_chosen), function(size) {
             n_size <- sum(nums_chosen == size)
@@ -62,32 +62,37 @@ create_schema <- function(c_county, c_size, dperc, nclusters, sizes,
           total_length <- prod(lengths)
 
 
-          county_combn <- do.call("cbind", purrr::map(1:length(names_chosen), function(j) {
-            if (j > 1) {
-              n_each <- prod(lengths[1:(j - 1)])
-            } else {
-              n_each <- 1
-            }
+          county_combn <- do.call(
+            "cbind",
+            purrr::map(seq_along(length(names_chosen)), function(j) {
+              if (j > 1) {
+                n_each <- prod(lengths[1:(j - 1)])
+              } else {
+                n_each <- 1
+              }
 
-            n_rep <- total_length / (n_each * lengths[j])
-            if (round(n_rep) != n_rep) stop("Unequal divisions")
-            idx <- rep(1:nrow(names_chosen[[j]]), times = n_rep, each = n_each)
-            names_chosen[[j]][idx, , drop = F]
-            # rep_mat(names_chosen[[j]], times = n_rep, each = n_each)
-          }))
+              n_rep <- total_length / (n_each * lengths[j])
+              if (round(n_rep) != n_rep) stop("Unequal divisions")
+              idx <- rep((1:nrow(names_chosen[[j]])),
+                         times = n_rep, each = n_each)
+              names_chosen[[j]][idx, , drop = FALSE]
+            }))
 
-          if (ncol(county_combn) != n) stop(sprintf("Incorrect number of columns in %s", i))
+          if (ncol(county_combn) != n) {
+            stop(sprintf("Incorrect number of columns in %s", i))
+          }
 
           has_na <- apply(county_combn, 1, function(row) all(is.na(row)))
-          county_combn <- county_combn[!has_na, , drop = F]
+          county_combn <- county_combn[!has_na, , drop = FALSE]
 
 
           # sample 1
-          county_combn[sample(1:nrow(county_combn), max_times), , drop = F]
+          county_combn[sample((1:nrow(county_combn)), max_times), ,
+                       drop = FALSE]
         })
       )
-    }) %>% purrr::set_names(sprintf("cluster%s", nclusters))
-  }) %>% purrr::set_names(sprintf("perc%s", dperc))
+    }) |> purrr::set_names(sprintf("cluster%s", nclusters))
+  }) |> purrr::set_names(sprintf("perc%s", dperc))
 }
 
 
@@ -99,10 +104,12 @@ create_schema <- function(c_county, c_size, dperc, nclusters, sizes,
 #'
 #' @param data_scale Eight schools. Value of alpha (see paper)
 #' @param c_county Radon subsets. Name of test county
-#' @param source Radon subsets. List with dataframe to use (default is `radon_1`).
+#' @param source Radon subsets. List with dataframe to use
+#'   (default is `radon_1`).
 #' @param data_perc Radon subsets. Test data percentage.
 #' @param n_clusters Radon subsets. Number of counties in data subset.
-#' @param max_combn Radon subsets. Max number of subsets for each `data_perc` and `n_clusters.`
+#' @param max_combn Radon subsets. Max number of subsets for each
+#'   `data_perc` and `n_clusters.`
 #' @param max_times Radon subsets. Number of times to iterate.
 #' @param seed Radon subsets. Seed for subset generation.
 #'
@@ -116,19 +123,20 @@ prep_eight <- function(data_scale = seq(0.1, 4, by = 0.1)) {
     y = c(28, 8, -3, 7, -1, 1, 18, 12),
     sd = c(15, 10, 16, 11, 9, 11, 10, 18)
   )
-  X <- model.matrix(~school,
+  X <- model.matrix(
+    ~school,
     data = dat,
-    contrasts.arg = list(school = contrasts(dat$school, contrasts = F))
+    contrasts.arg = list(school = contrasts(dat$school, contrasts = FALSE))
   )
   schools_dat <- list(
     J = J,
     y = dat$y,
     school_idx = school_idx,
     sigma = dat$sd,
-    sigma_idx = 1:J,
+    sigma_idx = seq_along(J),
     N = nrow(X),
     H = 0,
-    train_idx = 1:nrow(dat),
+    train_idx = (1:nrow(dat)),
     test_idx = vector()
   )
 
@@ -160,8 +168,6 @@ prep_radon_full <- function() {
     ~ -1 + floor + county,
     ~ -1 + floor + log_uranium + county
   )
-
-
 
   raw_radon
 }
@@ -202,58 +208,59 @@ prep_radon_simul <- function(c_county = "OLMSTED", source = radon_1,
 #'
 #' @export
 prep_lol <- function() {
-  df <- read.csv("data-raw/lolesp.csv") %>%
-    dplyr::filter(league == "LCS", position != "team") %>%
-    dplyr::select(kills, team, player, champion, gamelength, dpm, wpm, earned.gpm, teamkills, position) %>%
-    dplyr::mutate_at(dplyr::vars(player, champion, position, team), function(vec) {
-      factor(stringr::str_replace_all(vec, "\\W", ""))
-    }) %>%
+  df <- read.csv("data-raw/lolesp.csv") |>
+    dplyr::filter(league == "LCS", position != "team") |>
+    dplyr::select(kills, team, player, champion, gamelength,
+                  dpm, wpm, earned.gpm, teamkills, position) |>
+    dplyr::mutate_at(
+      dplyr::vars(player, champion, position, team), function(vec) {
+        factor(stringr::str_replace_all(vec, "\\W", ""))
+      }) |>
     dplyr::mutate(
       teamkills = teamkills - kills,
       log_dpm = log(dpm),
       log_egpm = log(earned.gpm),
-      idx = 1:dplyr::n()
+      idx = seq_along(dplyr::n())
     )
 
 
   contr <- contrasts_for_pooling(df, c("player", "champion"))
-  X <- model.matrix(dpm ~ position + team +
-    log_dpm + log_egpm + champion + player, data = df, contrasts = contr)
+  X <- model.matrix(
+    dpm ~ position + team +
+      log_dpm + log_egpm + champion + player, data = df, contrasts = contr)
 
 
   list(data = df, X = X, loops = as.character(df$player))
 }
 
 
-#
-# combns <- function(names) {
-#     combn(sort(names), 2)
-# }
-
-
-#' @describeIn prep_eight Function to get data for Scottish Lung Cancer (SLC) example.
+#' @describeIn prep_eight
+#' Function to get data for Scottish Lip Cancer (SLC) example.
 #'
 #' @export
 prep_slc <- function() {
-  c(raw_slcdat, list(loops = 1:data$n))
+  load("data/raw_slcdat.rda")
+  c(raw_slcdat, list(loops = 1:raw_slcdat$n))
 }
 
 
 
-#' @describeIn prep_eight Function to get data for Scottish Respiratory Disease example.
+#' @describeIn prep_eight
+#' Function to get data for Scottish Respiratory Disease example.
 #'
 #' @export
 prep_air <- function() {
-  df <- raw_airdat$df %>% dplyr::mutate(
+  load("data/raw_airdat.rda")
+  df <- raw_airdat$df |> dplyr::mutate(
     SMR = observed / expected,
     logSMR = log(SMR)
   )
 
-  SMR.av <- dplyr::group_by(df, IG) %>%
+  SMR.av <- dplyr::group_by(df, IG) |>
     dplyr::summarise(SMR.mean = mean(SMR), .groups = "drop")
   raw_airdat$spatial@data$SMR <- SMR.av$SMR.mean
 
-  W.nb <- spdep::poly2nb(air_dat$spatial, row.names = SMR.av$IG)
+  W.nb <- spdep::poly2nb(raw_airdat$spatial, row.names = SMR.av$IG)
   W.list <- spdep::nb2listw(W.nb, style = "B")
   W <- spdep::nb2mat(W.nb, style = "B")
   formula <- observed ~ offset(log(expected)) + jsa + price + pm10
@@ -264,3 +271,4 @@ prep_air <- function() {
     loops = df$IG, X = X, formula = formula
   )
 }
+

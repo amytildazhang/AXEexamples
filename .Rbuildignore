@@ -1,5 +1,4 @@
-^.*\.Rproj$
+^AXEexamples\.Rproj$
 ^\.Rproj\.user$
-^LICENSE\.md$
-^doc$
-^Meta$
+^\data-raw\pretrained\*
+^data-raw$

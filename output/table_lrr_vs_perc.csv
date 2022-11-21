@@ -1,0 +1,3821 @@
+data,method,round_lrr,reference,n,n_under,perc_under
+A) Eight schools,AXE,0,mean,21,21,0.065625
+A) Eight schools,AXE,0.01,mean,47,68,0.2125
+A) Eight schools,AXE,0.02,mean,30,98,0.30625
+A) Eight schools,AXE,0.03,mean,20,118,0.36875
+A) Eight schools,AXE,0.04,mean,13,131,0.409375
+A) Eight schools,AXE,0.05,mean,11,142,0.44375
+A) Eight schools,AXE,0.06,mean,12,154,0.48125
+A) Eight schools,AXE,0.07,mean,13,167,0.521875
+A) Eight schools,AXE,0.08,mean,10,177,0.553125
+A) Eight schools,AXE,0.09,mean,9,186,0.58125
+A) Eight schools,AXE,0.1,mean,19,205,0.640625
+A) Eight schools,AXE,0.11,mean,11,216,0.675
+A) Eight schools,AXE,0.12,mean,6,222,0.69375
+A) Eight schools,AXE,0.13,mean,4,226,0.70625
+A) Eight schools,AXE,0.14,mean,6,232,0.725
+A) Eight schools,AXE,0.15,mean,5,237,0.740625
+A) Eight schools,AXE,0.16,mean,8,245,0.765625
+A) Eight schools,AXE,0.17,mean,5,250,0.78125
+A) Eight schools,AXE,0.18,mean,3,253,0.790625
+A) Eight schools,AXE,0.19,mean,3,256,0.8
+A) Eight schools,AXE,0.2,mean,1,257,0.803125
+A) Eight schools,AXE,0.21,mean,2,259,0.809375
+A) Eight schools,AXE,0.22,mean,6,265,0.828125
+A) Eight schools,AXE,0.23,mean,2,267,0.834375
+A) Eight schools,AXE,0.24,mean,1,268,0.8375
+A) Eight schools,AXE,0.26,mean,1,269,0.840625
+A) Eight schools,AXE,0.27,mean,1,270,0.84375
+A) Eight schools,AXE,0.28,mean,1,271,0.846875
+A) Eight schools,AXE,0.29,mean,3,274,0.85625
+A) Eight schools,AXE,0.3,mean,1,275,0.859375
+A) Eight schools,AXE,0.32,mean,2,277,0.865625
+A) Eight schools,AXE,0.34,mean,1,278,0.86875
+A) Eight schools,AXE,0.36,mean,4,282,0.88125
+A) Eight schools,AXE,0.39,mean,1,283,0.884375
+A) Eight schools,AXE,0.41,mean,1,284,0.8875
+A) Eight schools,AXE,0.43,mean,4,288,0.9
+A) Eight schools,AXE,0.44,mean,1,289,0.903125
+A) Eight schools,AXE,0.52,mean,1,290,0.90625
+A) Eight schools,AXE,0.53,mean,1,291,0.909375
+A) Eight schools,AXE,0.54,mean,1,292,0.9125
+A) Eight schools,AXE,0.6,mean,1,293,0.915625
+A) Eight schools,AXE,0.66,mean,1,294,0.91875
+A) Eight schools,AXE,0.67,mean,1,295,0.921875
+A) Eight schools,AXE,0.68,mean,1,296,0.925
+A) Eight schools,AXE,0.71,mean,1,297,0.928125
+A) Eight schools,AXE,0.72,mean,2,299,0.934375
+A) Eight schools,AXE,0.73,mean,1,300,0.9375
+A) Eight schools,AXE,0.78,mean,1,301,0.940625
+A) Eight schools,AXE,0.8,mean,1,302,0.94375
+A) Eight schools,AXE,0.83,mean,1,303,0.946875
+A) Eight schools,AXE,0.84,mean,1,304,0.95
+A) Eight schools,AXE,0.88,mean,1,305,0.953125
+A) Eight schools,AXE,1,mean,1,306,0.95625
+A) Eight schools,AXE,1.05,mean,1,307,0.959375
+A) Eight schools,AXE,1.12,mean,1,308,0.9625
+A) Eight schools,AXE,1.15,mean,1,309,0.965625
+A) Eight schools,AXE,1.16,mean,1,310,0.96875
+A) Eight schools,AXE,1.29,mean,1,311,0.971875
+A) Eight schools,AXE,1.43,mean,1,312,0.975
+A) Eight schools,AXE,1.51,mean,1,313,0.978125
+A) Eight schools,AXE,1.65,mean,1,314,0.98125
+A) Eight schools,AXE,1.73,mean,1,315,0.984375
+A) Eight schools,AXE,1.83,mean,1,316,0.9875
+A) Eight schools,AXE,2.16,mean,1,317,0.990625
+A) Eight schools,AXE,2.34,mean,1,318,0.99375
+A) Eight schools,AXE,2.54,mean,1,319,0.996875
+A) Eight schools,AXE,3.56,mean,1,320,1
+A) Eight schools,AXE,NA,mode,320,320,1
+A) Eight schools,GHOST,0,mean,2,2,0.00625
+A) Eight schools,GHOST,0.01,mean,5,7,0.021875
+A) Eight schools,GHOST,0.02,mean,5,12,0.0375
+A) Eight schools,GHOST,0.03,mean,5,17,0.053125
+A) Eight schools,GHOST,0.04,mean,10,27,0.084375
+A) Eight schools,GHOST,0.05,mean,5,32,0.1
+A) Eight schools,GHOST,0.06,mean,4,36,0.1125
+A) Eight schools,GHOST,0.07,mean,11,47,0.146875
+A) Eight schools,GHOST,0.08,mean,6,53,0.165625
+A) Eight schools,GHOST,0.09,mean,7,60,0.1875
+A) Eight schools,GHOST,0.1,mean,23,83,0.259375
+A) Eight schools,GHOST,0.11,mean,14,97,0.303125
+A) Eight schools,GHOST,0.12,mean,22,119,0.371875
+A) Eight schools,GHOST,0.13,mean,16,135,0.421875
+A) Eight schools,GHOST,0.14,mean,24,159,0.496875
+A) Eight schools,GHOST,0.15,mean,13,172,0.5375
+A) Eight schools,GHOST,0.16,mean,16,188,0.5875
+A) Eight schools,GHOST,0.17,mean,20,208,0.65
+A) Eight schools,GHOST,0.18,mean,14,222,0.69375
+A) Eight schools,GHOST,0.19,mean,10,232,0.725
+A) Eight schools,GHOST,0.2,mean,9,241,0.753125
+A) Eight schools,GHOST,0.21,mean,5,246,0.76875
+A) Eight schools,GHOST,0.22,mean,7,253,0.790625
+A) Eight schools,GHOST,0.23,mean,6,259,0.809375
+A) Eight schools,GHOST,0.24,mean,5,264,0.825
+A) Eight schools,GHOST,0.25,mean,1,265,0.828125
+A) Eight schools,GHOST,0.26,mean,1,266,0.83125
+A) Eight schools,GHOST,0.27,mean,1,267,0.834375
+A) Eight schools,GHOST,0.28,mean,2,269,0.840625
+A) Eight schools,GHOST,0.3,mean,6,275,0.859375
+A) Eight schools,GHOST,0.31,mean,1,276,0.8625
+A) Eight schools,GHOST,0.34,mean,2,278,0.86875
+A) Eight schools,GHOST,0.36,mean,2,280,0.875
+A) Eight schools,GHOST,0.37,mean,2,282,0.88125
+A) Eight schools,GHOST,0.38,mean,1,283,0.884375
+A) Eight schools,GHOST,0.39,mean,2,285,0.890625
+A) Eight schools,GHOST,0.4,mean,2,287,0.896875
+A) Eight schools,GHOST,0.43,mean,1,288,0.9
+A) Eight schools,GHOST,0.45,mean,1,289,0.903125
+A) Eight schools,GHOST,0.46,mean,2,291,0.909375
+A) Eight schools,GHOST,0.47,mean,1,292,0.9125
+A) Eight schools,GHOST,0.49,mean,1,293,0.915625
+A) Eight schools,GHOST,0.5,mean,1,294,0.91875
+A) Eight schools,GHOST,0.53,mean,1,295,0.921875
+A) Eight schools,GHOST,0.56,mean,1,296,0.925
+A) Eight schools,GHOST,0.62,mean,1,297,0.928125
+A) Eight schools,GHOST,0.64,mean,1,298,0.93125
+A) Eight schools,GHOST,0.69,mean,1,299,0.934375
+A) Eight schools,GHOST,0.77,mean,1,300,0.9375
+A) Eight schools,GHOST,0.8,mean,1,301,0.940625
+A) Eight schools,GHOST,0.82,mean,2,303,0.946875
+A) Eight schools,GHOST,0.89,mean,1,304,0.95
+A) Eight schools,GHOST,0.97,mean,2,306,0.95625
+A) Eight schools,GHOST,0.98,mean,1,307,0.959375
+A) Eight schools,GHOST,1.09,mean,1,308,0.9625
+A) Eight schools,GHOST,1.17,mean,1,309,0.965625
+A) Eight schools,GHOST,1.21,mean,1,310,0.96875
+A) Eight schools,GHOST,1.26,mean,2,312,0.975
+A) Eight schools,GHOST,1.27,mean,1,313,0.978125
+A) Eight schools,GHOST,1.28,mean,1,314,0.98125
+A) Eight schools,GHOST,1.96,mean,1,315,0.984375
+A) Eight schools,GHOST,2.07,mean,1,316,0.9875
+A) Eight schools,GHOST,2.49,mean,1,317,0.990625
+A) Eight schools,GHOST,2.87,mean,1,318,0.99375
+A) Eight schools,GHOST,3.17,mean,1,319,0.996875
+A) Eight schools,GHOST,3.78,mean,1,320,1
+A) Eight schools,GHOST,NA,mode,320,320,1
+A) Eight schools,iIS,0,mean,28,28,0.0875
+A) Eight schools,iIS,0.01,mean,52,80,0.25
+A) Eight schools,iIS,0.02,mean,43,123,0.384375
+A) Eight schools,iIS,0.03,mean,32,155,0.484375
+A) Eight schools,iIS,0.04,mean,27,182,0.56875
+A) Eight schools,iIS,0.05,mean,7,189,0.590625
+A) Eight schools,iIS,0.06,mean,10,199,0.621875
+A) Eight schools,iIS,0.07,mean,8,207,0.646875
+A) Eight schools,iIS,0.08,mean,11,218,0.68125
+A) Eight schools,iIS,0.09,mean,3,221,0.690625
+A) Eight schools,iIS,0.1,mean,8,229,0.715625
+A) Eight schools,iIS,0.11,mean,2,231,0.721875
+A) Eight schools,iIS,0.12,mean,4,235,0.734375
+A) Eight schools,iIS,0.14,mean,3,238,0.74375
+A) Eight schools,iIS,0.15,mean,2,240,0.75
+A) Eight schools,iIS,0.16,mean,6,246,0.76875
+A) Eight schools,iIS,0.17,mean,3,249,0.778125
+A) Eight schools,iIS,0.18,mean,1,250,0.78125
+A) Eight schools,iIS,0.19,mean,2,252,0.7875
+A) Eight schools,iIS,0.2,mean,4,256,0.8
+A) Eight schools,iIS,0.21,mean,2,258,0.80625
+A) Eight schools,iIS,0.22,mean,1,259,0.809375
+A) Eight schools,iIS,0.23,mean,2,261,0.815625
+A) Eight schools,iIS,0.24,mean,3,264,0.825
+A) Eight schools,iIS,0.25,mean,1,265,0.828125
+A) Eight schools,iIS,0.26,mean,3,268,0.8375
+A) Eight schools,iIS,0.27,mean,3,271,0.846875
+A) Eight schools,iIS,0.28,mean,4,275,0.859375
+A) Eight schools,iIS,0.3,mean,2,277,0.865625
+A) Eight schools,iIS,0.31,mean,2,279,0.871875
+A) Eight schools,iIS,0.32,mean,1,280,0.875
+A) Eight schools,iIS,0.33,mean,1,281,0.878125
+A) Eight schools,iIS,0.35,mean,2,283,0.884375
+A) Eight schools,iIS,0.36,mean,2,285,0.890625
+A) Eight schools,iIS,0.38,mean,2,287,0.896875
+A) Eight schools,iIS,0.42,mean,3,290,0.90625
+A) Eight schools,iIS,0.43,mean,2,292,0.9125
+A) Eight schools,iIS,0.5,mean,1,293,0.915625
+A) Eight schools,iIS,0.55,mean,1,294,0.91875
+A) Eight schools,iIS,0.59,mean,1,295,0.921875
+A) Eight schools,iIS,0.63,mean,1,296,0.925
+A) Eight schools,iIS,0.66,mean,1,297,0.928125
+A) Eight schools,iIS,0.69,mean,1,298,0.93125
+A) Eight schools,iIS,0.7,mean,1,299,0.934375
+A) Eight schools,iIS,0.76,mean,1,300,0.9375
+A) Eight schools,iIS,0.77,mean,3,303,0.946875
+A) Eight schools,iIS,0.85,mean,1,304,0.95
+A) Eight schools,iIS,0.86,mean,1,305,0.953125
+A) Eight schools,iIS,0.9,mean,1,306,0.95625
+A) Eight schools,iIS,0.98,mean,1,307,0.959375
+A) Eight schools,iIS,0.99,mean,2,309,0.965625
+A) Eight schools,iIS,1.06,mean,1,310,0.96875
+A) Eight schools,iIS,1.14,mean,1,311,0.971875
+A) Eight schools,iIS,1.33,mean,1,312,0.975
+A) Eight schools,iIS,1.36,mean,1,313,0.978125
+A) Eight schools,iIS,1.83,mean,1,314,0.98125
+A) Eight schools,iIS,2.06,mean,1,315,0.984375
+A) Eight schools,iIS,2.1,mean,1,316,0.9875
+A) Eight schools,iIS,2.16,mean,1,317,0.990625
+A) Eight schools,iIS,2.28,mean,1,318,0.99375
+A) Eight schools,iIS,3.12,mean,1,319,0.996875
+A) Eight schools,iIS,3.39,mean,1,320,1
+A) Eight schools,iIS,NA,mode,320,320,1
+A) Eight schools,iIS-A,NA,mean,320,320,1
+A) Eight schools,iIS-A,NA,mode,320,320,1
+A) Eight schools,IJ-A,0,mode,1,1,0.003125
+A) Eight schools,IJ-A,0.01,mode,2,3,0.009375
+A) Eight schools,IJ-A,0.02,mode,2,5,0.015625
+A) Eight schools,IJ-A,0.03,mode,3,8,0.025
+A) Eight schools,IJ-A,0.04,mode,4,12,0.0375
+A) Eight schools,IJ-A,0.05,mode,5,17,0.053125
+A) Eight schools,IJ-A,0.06,mode,1,18,0.05625
+A) Eight schools,IJ-A,0.07,mode,3,21,0.065625
+A) Eight schools,IJ-A,0.08,mode,2,23,0.071875
+A) Eight schools,IJ-A,0.09,mode,2,25,0.078125
+A) Eight schools,IJ-A,0.1,mode,5,30,0.09375
+A) Eight schools,IJ-A,0.12,mode,3,33,0.103125
+A) Eight schools,IJ-A,0.13,mode,2,35,0.109375
+A) Eight schools,IJ-A,0.14,mode,3,38,0.11875
+A) Eight schools,IJ-A,0.15,mode,4,42,0.13125
+A) Eight schools,IJ-A,0.16,mode,3,45,0.140625
+A) Eight schools,IJ-A,0.17,mode,3,48,0.15
+A) Eight schools,IJ-A,0.18,mode,1,49,0.153125
+A) Eight schools,IJ-A,0.19,mode,1,50,0.15625
+A) Eight schools,IJ-A,0.2,mode,3,53,0.165625
+A) Eight schools,IJ-A,0.21,mode,1,54,0.16875
+A) Eight schools,IJ-A,0.22,mode,5,59,0.184375
+A) Eight schools,IJ-A,0.23,mode,2,61,0.190625
+A) Eight schools,IJ-A,0.24,mode,1,62,0.19375
+A) Eight schools,IJ-A,0.25,mode,3,65,0.203125
+A) Eight schools,IJ-A,0.26,mode,5,70,0.21875
+A) Eight schools,IJ-A,0.27,mode,3,73,0.228125
+A) Eight schools,IJ-A,0.28,mode,2,75,0.234375
+A) Eight schools,IJ-A,0.29,mode,1,76,0.2375
+A) Eight schools,IJ-A,0.3,mode,5,81,0.253125
+A) Eight schools,IJ-A,0.31,mode,2,83,0.259375
+A) Eight schools,IJ-A,0.33,mode,2,85,0.265625
+A) Eight schools,IJ-A,0.34,mode,3,88,0.275
+A) Eight schools,IJ-A,0.35,mode,3,91,0.284375
+A) Eight schools,IJ-A,0.36,mode,5,96,0.3
+A) Eight schools,IJ-A,0.37,mode,3,99,0.309375
+A) Eight schools,IJ-A,0.38,mode,1,100,0.3125
+A) Eight schools,IJ-A,0.39,mode,1,101,0.315625
+A) Eight schools,IJ-A,0.4,mode,4,105,0.328125
+A) Eight schools,IJ-A,0.41,mode,1,106,0.33125
+A) Eight schools,IJ-A,0.42,mode,5,111,0.346875
+A) Eight schools,IJ-A,0.43,mode,3,114,0.35625
+A) Eight schools,IJ-A,0.45,mode,1,115,0.359375
+A) Eight schools,IJ-A,0.47,mode,3,118,0.36875
+A) Eight schools,IJ-A,0.48,mode,2,120,0.375
+A) Eight schools,IJ-A,0.5,mode,2,122,0.38125
+A) Eight schools,IJ-A,0.51,mode,2,124,0.3875
+A) Eight schools,IJ-A,0.52,mode,2,126,0.39375
+A) Eight schools,IJ-A,0.53,mode,1,127,0.396875
+A) Eight schools,IJ-A,0.54,mode,1,128,0.4
+A) Eight schools,IJ-A,0.55,mode,4,132,0.4125
+A) Eight schools,IJ-A,0.56,mode,3,135,0.421875
+A) Eight schools,IJ-A,0.57,mode,2,137,0.428125
+A) Eight schools,IJ-A,0.58,mode,1,138,0.43125
+A) Eight schools,IJ-A,0.59,mode,1,139,0.434375
+A) Eight schools,IJ-A,0.6,mode,2,141,0.440625
+A) Eight schools,IJ-A,0.61,mode,5,146,0.45625
+A) Eight schools,IJ-A,0.62,mode,4,150,0.46875
+A) Eight schools,IJ-A,0.63,mode,2,152,0.475
+A) Eight schools,IJ-A,0.64,mode,4,156,0.4875
+A) Eight schools,IJ-A,0.65,mode,2,158,0.49375
+A) Eight schools,IJ-A,0.66,mode,1,159,0.496875
+A) Eight schools,IJ-A,0.67,mode,1,160,0.5
+A) Eight schools,IJ-A,0.68,mode,1,161,0.503125
+A) Eight schools,IJ-A,0.69,mode,2,163,0.509375
+A) Eight schools,IJ-A,0.7,mode,1,164,0.5125
+A) Eight schools,IJ-A,0.72,mode,5,169,0.528125
+A) Eight schools,IJ-A,0.74,mode,1,170,0.53125
+A) Eight schools,IJ-A,0.75,mode,1,171,0.534375
+A) Eight schools,IJ-A,0.77,mode,1,172,0.5375
+A) Eight schools,IJ-A,0.78,mode,1,173,0.540625
+A) Eight schools,IJ-A,0.79,mode,1,174,0.54375
+A) Eight schools,IJ-A,0.8,mode,3,177,0.553125
+A) Eight schools,IJ-A,0.81,mode,1,178,0.55625
+A) Eight schools,IJ-A,0.82,mode,3,181,0.565625
+A) Eight schools,IJ-A,0.83,mode,1,182,0.56875
+A) Eight schools,IJ-A,0.84,mode,2,184,0.575
+A) Eight schools,IJ-A,0.85,mode,3,187,0.584375
+A) Eight schools,IJ-A,0.86,mode,1,188,0.5875
+A) Eight schools,IJ-A,0.87,mode,2,190,0.59375
+A) Eight schools,IJ-A,0.89,mode,1,191,0.596875
+A) Eight schools,IJ-A,0.9,mode,3,194,0.60625
+A) Eight schools,IJ-A,0.91,mode,1,195,0.609375
+A) Eight schools,IJ-A,0.93,mode,2,197,0.615625
+A) Eight schools,IJ-A,0.94,mode,2,199,0.621875
+A) Eight schools,IJ-A,0.95,mode,1,200,0.625
+A) Eight schools,IJ-A,0.96,mode,2,202,0.63125
+A) Eight schools,IJ-A,0.97,mode,3,205,0.640625
+A) Eight schools,IJ-A,0.99,mode,3,208,0.65
+A) Eight schools,IJ-A,1,mode,2,210,0.65625
+A) Eight schools,IJ-A,1.01,mode,1,211,0.659375
+A) Eight schools,IJ-A,1.03,mode,1,212,0.6625
+A) Eight schools,IJ-A,1.04,mode,3,215,0.671875
+A) Eight schools,IJ-A,1.05,mode,1,216,0.675
+A) Eight schools,IJ-A,1.06,mode,3,219,0.684375
+A) Eight schools,IJ-A,1.07,mode,2,221,0.690625
+A) Eight schools,IJ-A,1.09,mode,2,223,0.696875
+A) Eight schools,IJ-A,1.1,mode,4,227,0.709375
+A) Eight schools,IJ-A,1.11,mode,1,228,0.7125
+A) Eight schools,IJ-A,1.12,mode,1,229,0.715625
+A) Eight schools,IJ-A,1.13,mode,1,230,0.71875
+A) Eight schools,IJ-A,1.14,mode,1,231,0.721875
+A) Eight schools,IJ-A,1.16,mode,2,233,0.728125
+A) Eight schools,IJ-A,1.17,mode,1,234,0.73125
+A) Eight schools,IJ-A,1.19,mode,1,235,0.734375
+A) Eight schools,IJ-A,1.2,mode,2,237,0.740625
+A) Eight schools,IJ-A,1.23,mode,2,239,0.746875
+A) Eight schools,IJ-A,1.24,mode,2,241,0.753125
+A) Eight schools,IJ-A,1.25,mode,3,244,0.7625
+A) Eight schools,IJ-A,1.32,mode,3,247,0.771875
+A) Eight schools,IJ-A,1.33,mode,1,248,0.775
+A) Eight schools,IJ-A,1.35,mode,1,249,0.778125
+A) Eight schools,IJ-A,1.37,mode,1,250,0.78125
+A) Eight schools,IJ-A,1.39,mode,1,251,0.784375
+A) Eight schools,IJ-A,1.45,mode,1,252,0.7875
+A) Eight schools,IJ-A,1.46,mode,1,253,0.790625
+A) Eight schools,IJ-A,1.49,mode,3,256,0.8
+A) Eight schools,IJ-A,1.5,mode,1,257,0.803125
+A) Eight schools,IJ-A,1.52,mode,1,258,0.80625
+A) Eight schools,IJ-A,1.53,mode,1,259,0.809375
+A) Eight schools,IJ-A,1.54,mode,1,260,0.8125
+A) Eight schools,IJ-A,1.56,mode,1,261,0.815625
+A) Eight schools,IJ-A,1.57,mode,1,262,0.81875
+A) Eight schools,IJ-A,1.58,mode,1,263,0.821875
+A) Eight schools,IJ-A,1.6,mode,1,264,0.825
+A) Eight schools,IJ-A,1.64,mode,1,265,0.828125
+A) Eight schools,IJ-A,1.65,mode,1,266,0.83125
+A) Eight schools,IJ-A,1.71,mode,2,268,0.8375
+A) Eight schools,IJ-A,1.77,mode,1,269,0.840625
+A) Eight schools,IJ-A,1.78,mode,1,270,0.84375
+A) Eight schools,IJ-A,1.82,mode,2,272,0.85
+A) Eight schools,IJ-A,1.83,mode,1,273,0.853125
+A) Eight schools,IJ-A,1.85,mode,1,274,0.85625
+A) Eight schools,IJ-A,1.86,mode,2,276,0.8625
+A) Eight schools,IJ-A,1.87,mode,1,277,0.865625
+A) Eight schools,IJ-A,1.92,mode,1,278,0.86875
+A) Eight schools,IJ-A,1.93,mode,1,279,0.871875
+A) Eight schools,IJ-A,1.97,mode,1,280,0.875
+A) Eight schools,IJ-A,1.98,mode,1,281,0.878125
+A) Eight schools,IJ-A,2,mode,1,282,0.88125
+A) Eight schools,IJ-A,2.02,mode,1,283,0.884375
+A) Eight schools,IJ-A,2.03,mode,1,284,0.8875
+A) Eight schools,IJ-A,2.04,mode,2,286,0.89375
+A) Eight schools,IJ-A,2.05,mode,1,287,0.896875
+A) Eight schools,IJ-A,2.11,mode,1,288,0.9
+A) Eight schools,IJ-A,2.15,mode,1,289,0.903125
+A) Eight schools,IJ-A,2.16,mode,1,290,0.90625
+A) Eight schools,IJ-A,2.18,mode,1,291,0.909375
+A) Eight schools,IJ-A,2.19,mode,1,292,0.9125
+A) Eight schools,IJ-A,2.29,mode,1,293,0.915625
+A) Eight schools,IJ-A,2.38,mode,1,294,0.91875
+A) Eight schools,IJ-A,2.5,mode,2,296,0.925
+A) Eight schools,IJ-A,2.53,mode,1,297,0.928125
+A) Eight schools,IJ-A,2.54,mode,1,298,0.93125
+A) Eight schools,IJ-A,2.59,mode,1,299,0.934375
+A) Eight schools,IJ-A,2.6,mode,1,300,0.9375
+A) Eight schools,IJ-A,2.63,mode,1,301,0.940625
+A) Eight schools,IJ-A,2.74,mode,1,302,0.94375
+A) Eight schools,IJ-A,2.81,mode,1,303,0.946875
+A) Eight schools,IJ-A,2.83,mode,1,304,0.95
+A) Eight schools,IJ-A,2.9,mode,1,305,0.953125
+A) Eight schools,IJ-A,2.97,mode,1,306,0.95625
+A) Eight schools,IJ-A,3.06,mode,1,307,0.959375
+A) Eight schools,IJ-A,3.09,mode,1,308,0.9625
+A) Eight schools,IJ-A,3.1,mode,1,309,0.965625
+A) Eight schools,IJ-A,3.11,mode,1,310,0.96875
+A) Eight schools,IJ-A,3.14,mode,1,311,0.971875
+A) Eight schools,IJ-A,3.29,mode,1,312,0.975
+A) Eight schools,IJ-A,3.46,mode,1,313,0.978125
+A) Eight schools,IJ-A,3.65,mode,1,314,0.98125
+A) Eight schools,IJ-A,3.67,mode,1,315,0.984375
+A) Eight schools,IJ-A,4.23,mode,1,316,0.9875
+A) Eight schools,IJ-A,4.35,mode,1,317,0.990625
+A) Eight schools,IJ-A,4.76,mode,1,318,0.99375
+A) Eight schools,IJ-A,4.97,mode,1,319,0.996875
+A) Eight schools,IJ-A,5.89,mode,1,320,1
+A) Eight schools,IJ-A,NA,mean,320,320,1
+A) Eight schools,IJ-C,0,mode,2,2,0.00625
+A) Eight schools,IJ-C,0.03,mode,1,3,0.009375
+A) Eight schools,IJ-C,0.04,mode,2,5,0.015625
+A) Eight schools,IJ-C,0.05,mode,4,9,0.028125
+A) Eight schools,IJ-C,0.06,mode,3,12,0.0375
+A) Eight schools,IJ-C,0.07,mode,1,13,0.040625
+A) Eight schools,IJ-C,0.08,mode,3,16,0.05
+A) Eight schools,IJ-C,0.09,mode,2,18,0.05625
+A) Eight schools,IJ-C,0.1,mode,1,19,0.059375
+A) Eight schools,IJ-C,0.11,mode,2,21,0.065625
+A) Eight schools,IJ-C,0.12,mode,3,24,0.075
+A) Eight schools,IJ-C,0.14,mode,2,26,0.08125
+A) Eight schools,IJ-C,0.15,mode,2,28,0.0875
+A) Eight schools,IJ-C,0.18,mode,4,32,0.1
+A) Eight schools,IJ-C,0.2,mode,1,33,0.103125
+A) Eight schools,IJ-C,0.21,mode,1,34,0.10625
+A) Eight schools,IJ-C,0.22,mode,1,35,0.109375
+A) Eight schools,IJ-C,0.23,mode,3,38,0.11875
+A) Eight schools,IJ-C,0.25,mode,2,40,0.125
+A) Eight schools,IJ-C,0.26,mode,1,41,0.128125
+A) Eight schools,IJ-C,0.27,mode,1,42,0.13125
+A) Eight schools,IJ-C,0.28,mode,1,43,0.134375
+A) Eight schools,IJ-C,0.29,mode,1,44,0.1375
+A) Eight schools,IJ-C,0.3,mode,1,45,0.140625
+A) Eight schools,IJ-C,0.33,mode,3,48,0.15
+A) Eight schools,IJ-C,0.36,mode,2,50,0.15625
+A) Eight schools,IJ-C,0.37,mode,2,52,0.1625
+A) Eight schools,IJ-C,0.38,mode,2,54,0.16875
+A) Eight schools,IJ-C,0.4,mode,4,58,0.18125
+A) Eight schools,IJ-C,0.41,mode,2,60,0.1875
+A) Eight schools,IJ-C,0.42,mode,2,62,0.19375
+A) Eight schools,IJ-C,0.44,mode,1,63,0.196875
+A) Eight schools,IJ-C,0.47,mode,3,66,0.20625
+A) Eight schools,IJ-C,0.48,mode,1,67,0.209375
+A) Eight schools,IJ-C,0.49,mode,1,68,0.2125
+A) Eight schools,IJ-C,0.51,mode,2,70,0.21875
+A) Eight schools,IJ-C,0.55,mode,2,72,0.225
+A) Eight schools,IJ-C,0.56,mode,6,78,0.24375
+A) Eight schools,IJ-C,0.57,mode,1,79,0.246875
+A) Eight schools,IJ-C,0.58,mode,3,82,0.25625
+A) Eight schools,IJ-C,0.59,mode,2,84,0.2625
+A) Eight schools,IJ-C,0.6,mode,3,87,0.271875
+A) Eight schools,IJ-C,0.62,mode,1,88,0.275
+A) Eight schools,IJ-C,0.63,mode,1,89,0.278125
+A) Eight schools,IJ-C,0.64,mode,2,91,0.284375
+A) Eight schools,IJ-C,0.68,mode,1,92,0.2875
+A) Eight schools,IJ-C,0.7,mode,1,93,0.290625
+A) Eight schools,IJ-C,0.72,mode,2,95,0.296875
+A) Eight schools,IJ-C,0.73,mode,2,97,0.303125
+A) Eight schools,IJ-C,0.75,mode,1,98,0.30625
+A) Eight schools,IJ-C,0.76,mode,1,99,0.309375
+A) Eight schools,IJ-C,0.77,mode,1,100,0.3125
+A) Eight schools,IJ-C,0.78,mode,2,102,0.31875
+A) Eight schools,IJ-C,0.81,mode,3,105,0.328125
+A) Eight schools,IJ-C,0.82,mode,1,106,0.33125
+A) Eight schools,IJ-C,0.83,mode,2,108,0.3375
+A) Eight schools,IJ-C,0.84,mode,3,111,0.346875
+A) Eight schools,IJ-C,0.85,mode,3,114,0.35625
+A) Eight schools,IJ-C,0.86,mode,1,115,0.359375
+A) Eight schools,IJ-C,0.9,mode,4,119,0.371875
+A) Eight schools,IJ-C,0.92,mode,1,120,0.375
+A) Eight schools,IJ-C,0.96,mode,3,123,0.384375
+A) Eight schools,IJ-C,0.98,mode,1,124,0.3875
+A) Eight schools,IJ-C,1,mode,2,126,0.39375
+A) Eight schools,IJ-C,1.01,mode,2,128,0.4
+A) Eight schools,IJ-C,1.02,mode,1,129,0.403125
+A) Eight schools,IJ-C,1.06,mode,4,133,0.415625
+A) Eight schools,IJ-C,1.07,mode,3,136,0.425
+A) Eight schools,IJ-C,1.09,mode,4,140,0.4375
+A) Eight schools,IJ-C,1.11,mode,1,141,0.440625
+A) Eight schools,IJ-C,1.12,mode,3,144,0.45
+A) Eight schools,IJ-C,1.13,mode,3,147,0.459375
+A) Eight schools,IJ-C,1.14,mode,3,150,0.46875
+A) Eight schools,IJ-C,1.17,mode,1,151,0.471875
+A) Eight schools,IJ-C,1.18,mode,2,153,0.478125
+A) Eight schools,IJ-C,1.19,mode,1,154,0.48125
+A) Eight schools,IJ-C,1.2,mode,2,156,0.4875
+A) Eight schools,IJ-C,1.21,mode,3,159,0.496875
+A) Eight schools,IJ-C,1.22,mode,2,161,0.503125
+A) Eight schools,IJ-C,1.23,mode,1,162,0.50625
+A) Eight schools,IJ-C,1.24,mode,1,163,0.509375
+A) Eight schools,IJ-C,1.25,mode,3,166,0.51875
+A) Eight schools,IJ-C,1.26,mode,1,167,0.521875
+A) Eight schools,IJ-C,1.27,mode,1,168,0.525
+A) Eight schools,IJ-C,1.28,mode,3,171,0.534375
+A) Eight schools,IJ-C,1.29,mode,2,173,0.540625
+A) Eight schools,IJ-C,1.3,mode,4,177,0.553125
+A) Eight schools,IJ-C,1.32,mode,3,180,0.5625
+A) Eight schools,IJ-C,1.35,mode,1,181,0.565625
+A) Eight schools,IJ-C,1.37,mode,1,182,0.56875
+A) Eight schools,IJ-C,1.38,mode,1,183,0.571875
+A) Eight schools,IJ-C,1.39,mode,3,186,0.58125
+A) Eight schools,IJ-C,1.42,mode,1,187,0.584375
+A) Eight schools,IJ-C,1.44,mode,2,189,0.590625
+A) Eight schools,IJ-C,1.46,mode,1,190,0.59375
+A) Eight schools,IJ-C,1.47,mode,1,191,0.596875
+A) Eight schools,IJ-C,1.49,mode,1,192,0.6
+A) Eight schools,IJ-C,1.5,mode,1,193,0.603125
+A) Eight schools,IJ-C,1.52,mode,3,196,0.6125
+A) Eight schools,IJ-C,1.54,mode,1,197,0.615625
+A) Eight schools,IJ-C,1.56,mode,2,199,0.621875
+A) Eight schools,IJ-C,1.57,mode,3,202,0.63125
+A) Eight schools,IJ-C,1.58,mode,3,205,0.640625
+A) Eight schools,IJ-C,1.59,mode,1,206,0.64375
+A) Eight schools,IJ-C,1.62,mode,3,209,0.653125
+A) Eight schools,IJ-C,1.63,mode,1,210,0.65625
+A) Eight schools,IJ-C,1.64,mode,1,211,0.659375
+A) Eight schools,IJ-C,1.67,mode,2,213,0.665625
+A) Eight schools,IJ-C,1.71,mode,2,215,0.671875
+A) Eight schools,IJ-C,1.72,mode,1,216,0.675
+A) Eight schools,IJ-C,1.75,mode,1,217,0.678125
+A) Eight schools,IJ-C,1.76,mode,1,218,0.68125
+A) Eight schools,IJ-C,1.78,mode,1,219,0.684375
+A) Eight schools,IJ-C,1.8,mode,2,221,0.690625
+A) Eight schools,IJ-C,1.82,mode,2,223,0.696875
+A) Eight schools,IJ-C,1.83,mode,3,226,0.70625
+A) Eight schools,IJ-C,1.84,mode,2,228,0.7125
+A) Eight schools,IJ-C,1.85,mode,1,229,0.715625
+A) Eight schools,IJ-C,1.87,mode,1,230,0.71875
+A) Eight schools,IJ-C,1.88,mode,1,231,0.721875
+A) Eight schools,IJ-C,1.89,mode,2,233,0.728125
+A) Eight schools,IJ-C,1.95,mode,1,234,0.73125
+A) Eight schools,IJ-C,1.96,mode,1,235,0.734375
+A) Eight schools,IJ-C,1.98,mode,3,238,0.74375
+A) Eight schools,IJ-C,1.99,mode,1,239,0.746875
+A) Eight schools,IJ-C,2.01,mode,5,244,0.7625
+A) Eight schools,IJ-C,2.02,mode,2,246,0.76875
+A) Eight schools,IJ-C,2.04,mode,1,247,0.771875
+A) Eight schools,IJ-C,2.05,mode,1,248,0.775
+A) Eight schools,IJ-C,2.06,mode,2,250,0.78125
+A) Eight schools,IJ-C,2.07,mode,1,251,0.784375
+A) Eight schools,IJ-C,2.13,mode,1,252,0.7875
+A) Eight schools,IJ-C,2.15,mode,1,253,0.790625
+A) Eight schools,IJ-C,2.17,mode,2,255,0.796875
+A) Eight schools,IJ-C,2.18,mode,1,256,0.8
+A) Eight schools,IJ-C,2.19,mode,1,257,0.803125
+A) Eight schools,IJ-C,2.21,mode,2,259,0.809375
+A) Eight schools,IJ-C,2.22,mode,1,260,0.8125
+A) Eight schools,IJ-C,2.24,mode,1,261,0.815625
+A) Eight schools,IJ-C,2.25,mode,2,263,0.821875
+A) Eight schools,IJ-C,2.26,mode,1,264,0.825
+A) Eight schools,IJ-C,2.27,mode,1,265,0.828125
+A) Eight schools,IJ-C,2.28,mode,2,267,0.834375
+A) Eight schools,IJ-C,2.3,mode,1,268,0.8375
+A) Eight schools,IJ-C,2.31,mode,1,269,0.840625
+A) Eight schools,IJ-C,2.35,mode,2,271,0.846875
+A) Eight schools,IJ-C,2.37,mode,1,272,0.85
+A) Eight schools,IJ-C,2.38,mode,1,273,0.853125
+A) Eight schools,IJ-C,2.44,mode,1,274,0.85625
+A) Eight schools,IJ-C,2.46,mode,1,275,0.859375
+A) Eight schools,IJ-C,2.51,mode,1,276,0.8625
+A) Eight schools,IJ-C,2.53,mode,1,277,0.865625
+A) Eight schools,IJ-C,2.55,mode,3,280,0.875
+A) Eight schools,IJ-C,2.56,mode,1,281,0.878125
+A) Eight schools,IJ-C,2.58,mode,1,282,0.88125
+A) Eight schools,IJ-C,2.64,mode,1,283,0.884375
+A) Eight schools,IJ-C,2.7,mode,1,284,0.8875
+A) Eight schools,IJ-C,2.76,mode,2,286,0.89375
+A) Eight schools,IJ-C,2.78,mode,1,287,0.896875
+A) Eight schools,IJ-C,2.79,mode,1,288,0.9
+A) Eight schools,IJ-C,2.81,mode,1,289,0.903125
+A) Eight schools,IJ-C,2.82,mode,1,290,0.90625
+A) Eight schools,IJ-C,2.85,mode,1,291,0.909375
+A) Eight schools,IJ-C,2.88,mode,2,293,0.915625
+A) Eight schools,IJ-C,2.89,mode,1,294,0.91875
+A) Eight schools,IJ-C,3.04,mode,1,295,0.921875
+A) Eight schools,IJ-C,3.06,mode,1,296,0.925
+A) Eight schools,IJ-C,3.1,mode,1,297,0.928125
+A) Eight schools,IJ-C,3.19,mode,1,298,0.93125
+A) Eight schools,IJ-C,3.2,mode,1,299,0.934375
+A) Eight schools,IJ-C,3.22,mode,1,300,0.9375
+A) Eight schools,IJ-C,3.26,mode,1,301,0.940625
+A) Eight schools,IJ-C,3.3,mode,1,302,0.94375
+A) Eight schools,IJ-C,3.33,mode,1,303,0.946875
+A) Eight schools,IJ-C,3.4,mode,1,304,0.95
+A) Eight schools,IJ-C,3.41,mode,1,305,0.953125
+A) Eight schools,IJ-C,3.42,mode,1,306,0.95625
+A) Eight schools,IJ-C,3.44,mode,1,307,0.959375
+A) Eight schools,IJ-C,3.47,mode,1,308,0.9625
+A) Eight schools,IJ-C,3.58,mode,1,309,0.965625
+A) Eight schools,IJ-C,3.6,mode,1,310,0.96875
+A) Eight schools,IJ-C,3.63,mode,2,312,0.975
+A) Eight schools,IJ-C,3.7,mode,1,313,0.978125
+A) Eight schools,IJ-C,3.83,mode,1,314,0.98125
+A) Eight schools,IJ-C,3.89,mode,1,315,0.984375
+A) Eight schools,IJ-C,4.15,mode,1,316,0.9875
+A) Eight schools,IJ-C,5,mode,1,317,0.990625
+A) Eight schools,IJ-C,5.21,mode,1,318,0.99375
+A) Eight schools,IJ-C,5.37,mode,1,319,0.996875
+A) Eight schools,IJ-C,5.5,mode,1,320,1
+A) Eight schools,IJ-C,NA,mean,320,320,1
+A) Eight schools,NS-A,0,mode,1,1,0.003125
+A) Eight schools,NS-A,0.01,mode,2,3,0.009375
+A) Eight schools,NS-A,0.06,mode,2,5,0.015625
+A) Eight schools,NS-A,0.09,mode,1,6,0.01875
+A) Eight schools,NS-A,0.1,mode,1,7,0.021875
+A) Eight schools,NS-A,0.11,mode,1,8,0.025
+A) Eight schools,NS-A,0.12,mode,1,9,0.028125
+A) Eight schools,NS-A,0.13,mode,2,11,0.034375
+A) Eight schools,NS-A,0.17,mode,1,12,0.0375
+A) Eight schools,NS-A,0.18,mode,4,16,0.05
+A) Eight schools,NS-A,0.19,mode,2,18,0.05625
+A) Eight schools,NS-A,0.2,mode,2,20,0.0625
+A) Eight schools,NS-A,0.21,mode,1,21,0.065625
+A) Eight schools,NS-A,0.22,mode,1,22,0.06875
+A) Eight schools,NS-A,0.26,mode,2,24,0.075
+A) Eight schools,NS-A,0.27,mode,1,25,0.078125
+A) Eight schools,NS-A,0.28,mode,4,29,0.090625
+A) Eight schools,NS-A,0.3,mode,2,31,0.096875
+A) Eight schools,NS-A,0.32,mode,2,33,0.103125
+A) Eight schools,NS-A,0.33,mode,1,34,0.10625
+A) Eight schools,NS-A,0.34,mode,1,35,0.109375
+A) Eight schools,NS-A,0.35,mode,1,36,0.1125
+A) Eight schools,NS-A,0.37,mode,3,39,0.121875
+A) Eight schools,NS-A,0.38,mode,1,40,0.125
+A) Eight schools,NS-A,0.4,mode,1,41,0.128125
+A) Eight schools,NS-A,0.41,mode,3,44,0.1375
+A) Eight schools,NS-A,0.42,mode,1,45,0.140625
+A) Eight schools,NS-A,0.43,mode,1,46,0.14375
+A) Eight schools,NS-A,0.44,mode,2,48,0.15
+A) Eight schools,NS-A,0.45,mode,1,49,0.153125
+A) Eight schools,NS-A,0.46,mode,1,50,0.15625
+A) Eight schools,NS-A,0.48,mode,2,52,0.1625
+A) Eight schools,NS-A,0.5,mode,2,54,0.16875
+A) Eight schools,NS-A,0.51,mode,1,55,0.171875
+A) Eight schools,NS-A,0.52,mode,1,56,0.175
+A) Eight schools,NS-A,0.54,mode,2,58,0.18125
+A) Eight schools,NS-A,0.56,mode,2,60,0.1875
+A) Eight schools,NS-A,0.57,mode,2,62,0.19375
+A) Eight schools,NS-A,0.6,mode,5,67,0.209375
+A) Eight schools,NS-A,0.61,mode,2,69,0.215625
+A) Eight schools,NS-A,0.62,mode,2,71,0.221875
+A) Eight schools,NS-A,0.63,mode,2,73,0.228125
+A) Eight schools,NS-A,0.64,mode,2,75,0.234375
+A) Eight schools,NS-A,0.65,mode,1,76,0.2375
+A) Eight schools,NS-A,0.68,mode,2,78,0.24375
+A) Eight schools,NS-A,0.69,mode,2,80,0.25
+A) Eight schools,NS-A,0.7,mode,1,81,0.253125
+A) Eight schools,NS-A,0.71,mode,1,82,0.25625
+A) Eight schools,NS-A,0.72,mode,1,83,0.259375
+A) Eight schools,NS-A,0.73,mode,2,85,0.265625
+A) Eight schools,NS-A,0.75,mode,1,86,0.26875
+A) Eight schools,NS-A,0.76,mode,1,87,0.271875
+A) Eight schools,NS-A,0.78,mode,5,92,0.2875
+A) Eight schools,NS-A,0.81,mode,2,94,0.29375
+A) Eight schools,NS-A,0.82,mode,2,96,0.3
+A) Eight schools,NS-A,0.84,mode,2,98,0.30625
+A) Eight schools,NS-A,0.85,mode,2,100,0.3125
+A) Eight schools,NS-A,0.86,mode,1,101,0.315625
+A) Eight schools,NS-A,0.88,mode,3,104,0.325
+A) Eight schools,NS-A,0.89,mode,2,106,0.33125
+A) Eight schools,NS-A,0.92,mode,3,109,0.340625
+A) Eight schools,NS-A,0.93,mode,1,110,0.34375
+A) Eight schools,NS-A,0.94,mode,1,111,0.346875
+A) Eight schools,NS-A,0.95,mode,1,112,0.35
+A) Eight schools,NS-A,0.97,mode,3,115,0.359375
+A) Eight schools,NS-A,0.98,mode,3,118,0.36875
+A) Eight schools,NS-A,0.99,mode,1,119,0.371875
+A) Eight schools,NS-A,1.01,mode,1,120,0.375
+A) Eight schools,NS-A,1.04,mode,2,122,0.38125
+A) Eight schools,NS-A,1.06,mode,1,123,0.384375
+A) Eight schools,NS-A,1.09,mode,1,124,0.3875
+A) Eight schools,NS-A,1.11,mode,1,125,0.390625
+A) Eight schools,NS-A,1.13,mode,1,126,0.39375
+A) Eight schools,NS-A,1.16,mode,1,127,0.396875
+A) Eight schools,NS-A,1.18,mode,1,128,0.4
+A) Eight schools,NS-A,1.19,mode,1,129,0.403125
+A) Eight schools,NS-A,1.2,mode,1,130,0.40625
+A) Eight schools,NS-A,1.21,mode,1,131,0.409375
+A) Eight schools,NS-A,1.22,mode,1,132,0.4125
+A) Eight schools,NS-A,1.23,mode,1,133,0.415625
+A) Eight schools,NS-A,1.24,mode,1,134,0.41875
+A) Eight schools,NS-A,1.25,mode,4,138,0.43125
+A) Eight schools,NS-A,1.26,mode,2,140,0.4375
+A) Eight schools,NS-A,1.27,mode,1,141,0.440625
+A) Eight schools,NS-A,1.28,mode,1,142,0.44375
+A) Eight schools,NS-A,1.29,mode,2,144,0.45
+A) Eight schools,NS-A,1.3,mode,1,145,0.453125
+A) Eight schools,NS-A,1.31,mode,1,146,0.45625
+A) Eight schools,NS-A,1.33,mode,2,148,0.4625
+A) Eight schools,NS-A,1.34,mode,3,151,0.471875
+A) Eight schools,NS-A,1.38,mode,1,152,0.475
+A) Eight schools,NS-A,1.39,mode,1,153,0.478125
+A) Eight schools,NS-A,1.45,mode,1,154,0.48125
+A) Eight schools,NS-A,1.46,mode,2,156,0.4875
+A) Eight schools,NS-A,1.47,mode,2,158,0.49375
+A) Eight schools,NS-A,1.48,mode,4,162,0.50625
+A) Eight schools,NS-A,1.49,mode,1,163,0.509375
+A) Eight schools,NS-A,1.51,mode,2,165,0.515625
+A) Eight schools,NS-A,1.52,mode,1,166,0.51875
+A) Eight schools,NS-A,1.53,mode,1,167,0.521875
+A) Eight schools,NS-A,1.55,mode,2,169,0.528125
+A) Eight schools,NS-A,1.56,mode,3,172,0.5375
+A) Eight schools,NS-A,1.57,mode,2,174,0.54375
+A) Eight schools,NS-A,1.59,mode,1,175,0.546875
+A) Eight schools,NS-A,1.6,mode,1,176,0.55
+A) Eight schools,NS-A,1.62,mode,3,179,0.559375
+A) Eight schools,NS-A,1.63,mode,3,182,0.56875
+A) Eight schools,NS-A,1.64,mode,5,187,0.584375
+A) Eight schools,NS-A,1.65,mode,2,189,0.590625
+A) Eight schools,NS-A,1.69,mode,1,190,0.59375
+A) Eight schools,NS-A,1.7,mode,2,192,0.6
+A) Eight schools,NS-A,1.72,mode,1,193,0.603125
+A) Eight schools,NS-A,1.73,mode,2,195,0.609375
+A) Eight schools,NS-A,1.74,mode,3,198,0.61875
+A) Eight schools,NS-A,1.75,mode,2,200,0.625
+A) Eight schools,NS-A,1.77,mode,1,201,0.628125
+A) Eight schools,NS-A,1.78,mode,1,202,0.63125
+A) Eight schools,NS-A,1.8,mode,2,204,0.6375
+A) Eight schools,NS-A,1.81,mode,1,205,0.640625
+A) Eight schools,NS-A,1.82,mode,1,206,0.64375
+A) Eight schools,NS-A,1.83,mode,3,209,0.653125
+A) Eight schools,NS-A,1.85,mode,1,210,0.65625
+A) Eight schools,NS-A,1.86,mode,2,212,0.6625
+A) Eight schools,NS-A,1.89,mode,3,215,0.671875
+A) Eight schools,NS-A,1.9,mode,1,216,0.675
+A) Eight schools,NS-A,1.93,mode,1,217,0.678125
+A) Eight schools,NS-A,1.95,mode,3,220,0.6875
+A) Eight schools,NS-A,1.96,mode,1,221,0.690625
+A) Eight schools,NS-A,1.97,mode,1,222,0.69375
+A) Eight schools,NS-A,1.98,mode,1,223,0.696875
+A) Eight schools,NS-A,2.01,mode,4,227,0.709375
+A) Eight schools,NS-A,2.02,mode,1,228,0.7125
+A) Eight schools,NS-A,2.05,mode,1,229,0.715625
+A) Eight schools,NS-A,2.06,mode,2,231,0.721875
+A) Eight schools,NS-A,2.07,mode,1,232,0.725
+A) Eight schools,NS-A,2.08,mode,1,233,0.728125
+A) Eight schools,NS-A,2.1,mode,2,235,0.734375
+A) Eight schools,NS-A,2.11,mode,1,236,0.7375
+A) Eight schools,NS-A,2.13,mode,1,237,0.740625
+A) Eight schools,NS-A,2.15,mode,1,238,0.74375
+A) Eight schools,NS-A,2.17,mode,1,239,0.746875
+A) Eight schools,NS-A,2.18,mode,2,241,0.753125
+A) Eight schools,NS-A,2.2,mode,1,242,0.75625
+A) Eight schools,NS-A,2.21,mode,1,243,0.759375
+A) Eight schools,NS-A,2.22,mode,2,245,0.765625
+A) Eight schools,NS-A,2.23,mode,2,247,0.771875
+A) Eight schools,NS-A,2.3,mode,1,248,0.775
+A) Eight schools,NS-A,2.31,mode,1,249,0.778125
+A) Eight schools,NS-A,2.32,mode,3,252,0.7875
+A) Eight schools,NS-A,2.33,mode,1,253,0.790625
+A) Eight schools,NS-A,2.34,mode,1,254,0.79375
+A) Eight schools,NS-A,2.36,mode,1,255,0.796875
+A) Eight schools,NS-A,2.37,mode,1,256,0.8
+A) Eight schools,NS-A,2.38,mode,2,258,0.80625
+A) Eight schools,NS-A,2.4,mode,1,259,0.809375
+A) Eight schools,NS-A,2.41,mode,1,260,0.8125
+A) Eight schools,NS-A,2.42,mode,1,261,0.815625
+A) Eight schools,NS-A,2.43,mode,1,262,0.81875
+A) Eight schools,NS-A,2.46,mode,1,263,0.821875
+A) Eight schools,NS-A,2.47,mode,2,265,0.828125
+A) Eight schools,NS-A,2.55,mode,1,266,0.83125
+A) Eight schools,NS-A,2.56,mode,2,268,0.8375
+A) Eight schools,NS-A,2.62,mode,1,269,0.840625
+A) Eight schools,NS-A,2.63,mode,1,270,0.84375
+A) Eight schools,NS-A,2.66,mode,1,271,0.846875
+A) Eight schools,NS-A,2.68,mode,1,272,0.85
+A) Eight schools,NS-A,2.7,mode,4,276,0.8625
+A) Eight schools,NS-A,2.72,mode,2,278,0.86875
+A) Eight schools,NS-A,2.74,mode,1,279,0.871875
+A) Eight schools,NS-A,2.86,mode,1,280,0.875
+A) Eight schools,NS-A,2.88,mode,2,282,0.88125
+A) Eight schools,NS-A,2.9,mode,2,284,0.8875
+A) Eight schools,NS-A,2.93,mode,1,285,0.890625
+A) Eight schools,NS-A,2.96,mode,1,286,0.89375
+A) Eight schools,NS-A,3.06,mode,1,287,0.896875
+A) Eight schools,NS-A,3.16,mode,1,288,0.9
+A) Eight schools,NS-A,3.24,mode,1,289,0.903125
+A) Eight schools,NS-A,3.28,mode,1,290,0.90625
+A) Eight schools,NS-A,3.29,mode,1,291,0.909375
+A) Eight schools,NS-A,3.3,mode,1,292,0.9125
+A) Eight schools,NS-A,3.31,mode,1,293,0.915625
+A) Eight schools,NS-A,3.35,mode,1,294,0.91875
+A) Eight schools,NS-A,3.39,mode,2,296,0.925
+A) Eight schools,NS-A,3.4,mode,1,297,0.928125
+A) Eight schools,NS-A,3.41,mode,1,298,0.93125
+A) Eight schools,NS-A,3.44,mode,1,299,0.934375
+A) Eight schools,NS-A,3.61,mode,1,300,0.9375
+A) Eight schools,NS-A,3.74,mode,1,301,0.940625
+A) Eight schools,NS-A,3.88,mode,1,302,0.94375
+A) Eight schools,NS-A,3.92,mode,1,303,0.946875
+A) Eight schools,NS-A,3.97,mode,1,304,0.95
+A) Eight schools,NS-A,4,mode,2,306,0.95625
+A) Eight schools,NS-A,4.04,mode,1,307,0.959375
+A) Eight schools,NS-A,4.14,mode,1,308,0.9625
+A) Eight schools,NS-A,4.24,mode,1,309,0.965625
+A) Eight schools,NS-A,4.36,mode,1,310,0.96875
+A) Eight schools,NS-A,4.43,mode,1,311,0.971875
+A) Eight schools,NS-A,4.51,mode,1,312,0.975
+A) Eight schools,NS-A,4.57,mode,1,313,0.978125
+A) Eight schools,NS-A,4.82,mode,1,314,0.98125
+A) Eight schools,NS-A,4.86,mode,1,315,0.984375
+A) Eight schools,NS-A,5.15,mode,1,316,0.9875
+A) Eight schools,NS-A,5.2,mode,1,317,0.990625
+A) Eight schools,NS-A,6.05,mode,1,318,0.99375
+A) Eight schools,NS-A,6.44,mode,1,319,0.996875
+A) Eight schools,NS-A,7.51,mode,1,320,1
+A) Eight schools,NS-A,NA,mean,320,320,1
+A) Eight schools,NS-C,0.02,mode,1,1,0.003125
+A) Eight schools,NS-C,0.04,mode,1,2,0.00625
+A) Eight schools,NS-C,0.06,mode,3,5,0.015625
+A) Eight schools,NS-C,0.08,mode,1,6,0.01875
+A) Eight schools,NS-C,0.11,mode,2,8,0.025
+A) Eight schools,NS-C,0.12,mode,1,9,0.028125
+A) Eight schools,NS-C,0.14,mode,2,11,0.034375
+A) Eight schools,NS-C,0.15,mode,1,12,0.0375
+A) Eight schools,NS-C,0.16,mode,5,17,0.053125
+A) Eight schools,NS-C,0.19,mode,1,18,0.05625
+A) Eight schools,NS-C,0.2,mode,2,20,0.0625
+A) Eight schools,NS-C,0.27,mode,1,21,0.065625
+A) Eight schools,NS-C,0.28,mode,2,23,0.071875
+A) Eight schools,NS-C,0.29,mode,1,24,0.075
+A) Eight schools,NS-C,0.3,mode,1,25,0.078125
+A) Eight schools,NS-C,0.31,mode,2,27,0.084375
+A) Eight schools,NS-C,0.32,mode,1,28,0.0875
+A) Eight schools,NS-C,0.34,mode,1,29,0.090625
+A) Eight schools,NS-C,0.37,mode,1,30,0.09375
+A) Eight schools,NS-C,0.38,mode,2,32,0.1
+A) Eight schools,NS-C,0.41,mode,1,33,0.103125
+A) Eight schools,NS-C,0.42,mode,1,34,0.10625
+A) Eight schools,NS-C,0.43,mode,1,35,0.109375
+A) Eight schools,NS-C,0.44,mode,1,36,0.1125
+A) Eight schools,NS-C,0.45,mode,1,37,0.115625
+A) Eight schools,NS-C,0.48,mode,1,38,0.11875
+A) Eight schools,NS-C,0.5,mode,1,39,0.121875
+A) Eight schools,NS-C,0.52,mode,1,40,0.125
+A) Eight schools,NS-C,0.53,mode,1,41,0.128125
+A) Eight schools,NS-C,0.54,mode,1,42,0.13125
+A) Eight schools,NS-C,0.55,mode,2,44,0.1375
+A) Eight schools,NS-C,0.57,mode,1,45,0.140625
+A) Eight schools,NS-C,0.62,mode,1,46,0.14375
+A) Eight schools,NS-C,0.63,mode,2,48,0.15
+A) Eight schools,NS-C,0.66,mode,2,50,0.15625
+A) Eight schools,NS-C,0.7,mode,1,51,0.159375
+A) Eight schools,NS-C,0.71,mode,2,53,0.165625
+A) Eight schools,NS-C,0.72,mode,2,55,0.171875
+A) Eight schools,NS-C,0.74,mode,1,56,0.175
+A) Eight schools,NS-C,0.76,mode,1,57,0.178125
+A) Eight schools,NS-C,0.77,mode,1,58,0.18125
+A) Eight schools,NS-C,0.79,mode,1,59,0.184375
+A) Eight schools,NS-C,0.8,mode,1,60,0.1875
+A) Eight schools,NS-C,0.82,mode,3,63,0.196875
+A) Eight schools,NS-C,0.83,mode,1,64,0.2
+A) Eight schools,NS-C,0.86,mode,1,65,0.203125
+A) Eight schools,NS-C,0.9,mode,2,67,0.209375
+A) Eight schools,NS-C,0.91,mode,2,69,0.215625
+A) Eight schools,NS-C,0.92,mode,1,70,0.21875
+A) Eight schools,NS-C,0.93,mode,1,71,0.221875
+A) Eight schools,NS-C,0.94,mode,1,72,0.225
+A) Eight schools,NS-C,0.95,mode,1,73,0.228125
+A) Eight schools,NS-C,0.96,mode,1,74,0.23125
+A) Eight schools,NS-C,1,mode,1,75,0.234375
+A) Eight schools,NS-C,1.03,mode,1,76,0.2375
+A) Eight schools,NS-C,1.05,mode,1,77,0.240625
+A) Eight schools,NS-C,1.07,mode,1,78,0.24375
+A) Eight schools,NS-C,1.09,mode,1,79,0.246875
+A) Eight schools,NS-C,1.1,mode,1,80,0.25
+A) Eight schools,NS-C,1.15,mode,1,81,0.253125
+A) Eight schools,NS-C,1.16,mode,1,82,0.25625
+A) Eight schools,NS-C,1.21,mode,1,83,0.259375
+A) Eight schools,NS-C,1.22,mode,2,85,0.265625
+A) Eight schools,NS-C,1.23,mode,2,87,0.271875
+A) Eight schools,NS-C,1.26,mode,1,88,0.275
+A) Eight schools,NS-C,1.28,mode,2,90,0.28125
+A) Eight schools,NS-C,1.29,mode,1,91,0.284375
+A) Eight schools,NS-C,1.3,mode,1,92,0.2875
+A) Eight schools,NS-C,1.32,mode,1,93,0.290625
+A) Eight schools,NS-C,1.4,mode,2,95,0.296875
+A) Eight schools,NS-C,1.48,mode,2,97,0.303125
+A) Eight schools,NS-C,1.49,mode,2,99,0.309375
+A) Eight schools,NS-C,1.5,mode,1,100,0.3125
+A) Eight schools,NS-C,1.52,mode,1,101,0.315625
+A) Eight schools,NS-C,1.55,mode,1,102,0.31875
+A) Eight schools,NS-C,1.56,mode,1,103,0.321875
+A) Eight schools,NS-C,1.57,mode,1,104,0.325
+A) Eight schools,NS-C,1.74,mode,1,105,0.328125
+A) Eight schools,NS-C,1.81,mode,1,106,0.33125
+A) Eight schools,NS-C,1.83,mode,2,108,0.3375
+A) Eight schools,NS-C,1.84,mode,1,109,0.340625
+A) Eight schools,NS-C,1.85,mode,1,110,0.34375
+A) Eight schools,NS-C,1.96,mode,1,111,0.346875
+A) Eight schools,NS-C,1.97,mode,1,112,0.35
+A) Eight schools,NS-C,1.98,mode,1,113,0.353125
+A) Eight schools,NS-C,1.99,mode,1,114,0.35625
+A) Eight schools,NS-C,2.09,mode,1,115,0.359375
+A) Eight schools,NS-C,2.11,mode,1,116,0.3625
+A) Eight schools,NS-C,2.12,mode,1,117,0.365625
+A) Eight schools,NS-C,2.14,mode,1,118,0.36875
+A) Eight schools,NS-C,2.15,mode,1,119,0.371875
+A) Eight schools,NS-C,2.16,mode,1,120,0.375
+A) Eight schools,NS-C,2.17,mode,1,121,0.378125
+A) Eight schools,NS-C,2.19,mode,1,122,0.38125
+A) Eight schools,NS-C,2.24,mode,1,123,0.384375
+A) Eight schools,NS-C,2.26,mode,1,124,0.3875
+A) Eight schools,NS-C,2.29,mode,1,125,0.390625
+A) Eight schools,NS-C,2.31,mode,1,126,0.39375
+A) Eight schools,NS-C,2.35,mode,1,127,0.396875
+A) Eight schools,NS-C,2.37,mode,1,128,0.4
+A) Eight schools,NS-C,2.38,mode,1,129,0.403125
+A) Eight schools,NS-C,2.39,mode,1,130,0.40625
+A) Eight schools,NS-C,2.54,mode,1,131,0.409375
+A) Eight schools,NS-C,2.72,mode,1,132,0.4125
+A) Eight schools,NS-C,2.74,mode,1,133,0.415625
+A) Eight schools,NS-C,2.75,mode,1,134,0.41875
+A) Eight schools,NS-C,2.82,mode,1,135,0.421875
+A) Eight schools,NS-C,2.84,mode,2,137,0.428125
+A) Eight schools,NS-C,2.9,mode,1,138,0.43125
+A) Eight schools,NS-C,2.96,mode,2,140,0.4375
+A) Eight schools,NS-C,3.07,mode,2,142,0.44375
+A) Eight schools,NS-C,3.19,mode,1,143,0.446875
+A) Eight schools,NS-C,3.31,mode,1,144,0.45
+A) Eight schools,NS-C,3.45,mode,1,145,0.453125
+A) Eight schools,NS-C,3.48,mode,1,146,0.45625
+A) Eight schools,NS-C,3.49,mode,1,147,0.459375
+A) Eight schools,NS-C,3.83,mode,1,148,0.4625
+A) Eight schools,NS-C,4.05,mode,1,149,0.465625
+A) Eight schools,NS-C,4.39,mode,1,150,0.46875
+A) Eight schools,NS-C,4.6,mode,1,151,0.471875
+A) Eight schools,NS-C,5.14,mode,1,152,0.475
+A) Eight schools,NS-C,7.47,mode,1,153,0.478125
+A) Eight schools,NS-C,7.48,mode,1,154,0.48125
+A) Eight schools,NS-C,7.84,mode,1,155,0.484375
+A) Eight schools,NS-C,8.29,mode,1,156,0.4875
+A) Eight schools,NS-C,8.45,mode,1,157,0.490625
+A) Eight schools,NS-C,8.95,mode,1,158,0.49375
+A) Eight schools,NS-C,10.01,mode,1,159,0.496875
+A) Eight schools,NS-C,10.24,mode,1,160,0.5
+A) Eight schools,NS-C,11.77,mode,1,161,0.503125
+A) Eight schools,NS-C,11.88,mode,1,162,0.50625
+A) Eight schools,NS-C,12.13,mode,1,163,0.509375
+A) Eight schools,NS-C,12.43,mode,1,164,0.5125
+A) Eight schools,NS-C,12.69,mode,1,165,0.515625
+A) Eight schools,NS-C,13.4,mode,1,166,0.51875
+A) Eight schools,NS-C,14.07,mode,1,167,0.521875
+A) Eight schools,NS-C,14.08,mode,1,168,0.525
+A) Eight schools,NS-C,14.35,mode,1,169,0.528125
+A) Eight schools,NS-C,14.61,mode,1,170,0.53125
+A) Eight schools,NS-C,14.73,mode,1,171,0.534375
+A) Eight schools,NS-C,14.8,mode,1,172,0.5375
+A) Eight schools,NS-C,17.24,mode,1,173,0.540625
+A) Eight schools,NS-C,17.86,mode,1,174,0.54375
+A) Eight schools,NS-C,18.07,mode,1,175,0.546875
+A) Eight schools,NS-C,18.83,mode,1,176,0.55
+A) Eight schools,NS-C,18.98,mode,1,177,0.553125
+A) Eight schools,NS-C,19.36,mode,1,178,0.55625
+A) Eight schools,NS-C,20.24,mode,1,179,0.559375
+A) Eight schools,NS-C,21.23,mode,1,180,0.5625
+A) Eight schools,NS-C,21.25,mode,1,181,0.565625
+A) Eight schools,NS-C,21.3,mode,1,182,0.56875
+A) Eight schools,NS-C,21.34,mode,1,183,0.571875
+A) Eight schools,NS-C,22.3,mode,1,184,0.575
+A) Eight schools,NS-C,22.71,mode,1,185,0.578125
+A) Eight schools,NS-C,23.5,mode,1,186,0.58125
+A) Eight schools,NS-C,23.52,mode,1,187,0.584375
+A) Eight schools,NS-C,23.62,mode,1,188,0.5875
+A) Eight schools,NS-C,24.04,mode,1,189,0.590625
+A) Eight schools,NS-C,24.49,mode,1,190,0.59375
+A) Eight schools,NS-C,24.9,mode,1,191,0.596875
+A) Eight schools,NS-C,25,mode,1,192,0.6
+A) Eight schools,NS-C,25.29,mode,1,193,0.603125
+A) Eight schools,NS-C,25.65,mode,1,194,0.60625
+A) Eight schools,NS-C,26.28,mode,1,195,0.609375
+A) Eight schools,NS-C,26.63,mode,1,196,0.6125
+A) Eight schools,NS-C,27.12,mode,1,197,0.615625
+A) Eight schools,NS-C,27.94,mode,1,198,0.61875
+A) Eight schools,NS-C,28.12,mode,1,199,0.621875
+A) Eight schools,NS-C,28.94,mode,1,200,0.625
+A) Eight schools,NS-C,29.48,mode,2,202,0.63125
+A) Eight schools,NS-C,29.58,mode,1,203,0.634375
+A) Eight schools,NS-C,29.9,mode,1,204,0.6375
+A) Eight schools,NS-C,30.23,mode,1,205,0.640625
+A) Eight schools,NS-C,30.35,mode,1,206,0.64375
+A) Eight schools,NS-C,30.62,mode,1,207,0.646875
+A) Eight schools,NS-C,31.48,mode,1,208,0.65
+A) Eight schools,NS-C,32.03,mode,2,210,0.65625
+A) Eight schools,NS-C,32.27,mode,1,211,0.659375
+A) Eight schools,NS-C,32.28,mode,1,212,0.6625
+A) Eight schools,NS-C,32.72,mode,1,213,0.665625
+A) Eight schools,NS-C,32.79,mode,1,214,0.66875
+A) Eight schools,NS-C,34.71,mode,1,215,0.671875
+A) Eight schools,NS-C,52.24,mode,1,216,0.675
+A) Eight schools,NS-C,52.61,mode,1,217,0.678125
+A) Eight schools,NS-C,53.12,mode,1,218,0.68125
+A) Eight schools,NS-C,53.13,mode,1,219,0.684375
+A) Eight schools,NS-C,53.34,mode,1,220,0.6875
+A) Eight schools,NS-C,53.48,mode,1,221,0.690625
+A) Eight schools,NS-C,54.29,mode,1,222,0.69375
+A) Eight schools,NS-C,58.77,mode,1,223,0.696875
+A) Eight schools,NS-C,59.52,mode,1,224,0.7
+A) Eight schools,NS-C,59.74,mode,1,225,0.703125
+A) Eight schools,NS-C,60.48,mode,1,226,0.70625
+A) Eight schools,NS-C,60.63,mode,1,227,0.709375
+A) Eight schools,NS-C,60.92,mode,1,228,0.7125
+A) Eight schools,NS-C,60.97,mode,1,229,0.715625
+A) Eight schools,NS-C,61.92,mode,1,230,0.71875
+A) Eight schools,NS-C,62.41,mode,1,231,0.721875
+A) Eight schools,NS-C,62.48,mode,1,232,0.725
+A) Eight schools,NS-C,62.79,mode,1,233,0.728125
+A) Eight schools,NS-C,63.19,mode,1,234,0.73125
+A) Eight schools,NS-C,64.17,mode,1,235,0.734375
+A) Eight schools,NS-C,64.23,mode,1,236,0.7375
+A) Eight schools,NS-C,68.33,mode,1,237,0.740625
+A) Eight schools,NS-C,68.42,mode,1,238,0.74375
+A) Eight schools,NS-C,68.77,mode,1,239,0.746875
+A) Eight schools,NS-C,68.86,mode,1,240,0.75
+A) Eight schools,NS-C,69.05,mode,1,241,0.753125
+A) Eight schools,NS-C,69.46,mode,1,242,0.75625
+A) Eight schools,NS-C,69.51,mode,1,243,0.759375
+A) Eight schools,NS-C,91.48,mode,1,244,0.7625
+A) Eight schools,NS-C,91.98,mode,1,245,0.765625
+A) Eight schools,NS-C,92.1,mode,1,246,0.76875
+A) Eight schools,NS-C,93.1,mode,1,247,0.771875
+A) Eight schools,NS-C,93.37,mode,1,248,0.775
+A) Eight schools,NS-C,93.67,mode,1,249,0.778125
+A) Eight schools,NS-C,93.86,mode,1,250,0.78125
+A) Eight schools,NS-C,98.06,mode,1,251,0.784375
+A) Eight schools,NS-C,98.19,mode,1,252,0.7875
+A) Eight schools,NS-C,98.53,mode,1,253,0.790625
+A) Eight schools,NS-C,98.77,mode,1,254,0.79375
+A) Eight schools,NS-C,98.96,mode,1,255,0.796875
+A) Eight schools,NS-C,99.75,mode,1,256,0.8
+A) Eight schools,NS-C,100.19,mode,1,257,0.803125
+A) Eight schools,NS-C,102.81,mode,1,258,0.80625
+A) Eight schools,NS-C,103.1,mode,1,259,0.809375
+A) Eight schools,NS-C,103.2,mode,1,260,0.8125
+A) Eight schools,NS-C,103.27,mode,1,261,0.815625
+A) Eight schools,NS-C,103.53,mode,1,262,0.81875
+A) Eight schools,NS-C,103.59,mode,1,263,0.821875
+A) Eight schools,NS-C,105,mode,1,264,0.825
+A) Eight schools,NS-C,107.16,mode,1,265,0.828125
+A) Eight schools,NS-C,107.4,mode,1,266,0.83125
+A) Eight schools,NS-C,107.95,mode,1,267,0.834375
+A) Eight schools,NS-C,108.66,mode,1,268,0.8375
+A) Eight schools,NS-C,109.63,mode,1,269,0.840625
+A) Eight schools,NS-C,109.75,mode,1,270,0.84375
+A) Eight schools,NS-C,110.94,mode,1,271,0.846875
+A) Eight schools,NS-C,112.44,mode,1,272,0.85
+A) Eight schools,NS-C,113.22,mode,1,273,0.853125
+A) Eight schools,NS-C,113.28,mode,1,274,0.85625
+A) Eight schools,NS-C,113.31,mode,1,275,0.859375
+A) Eight schools,NS-C,113.47,mode,1,276,0.8625
+A) Eight schools,NS-C,113.87,mode,1,277,0.865625
+A) Eight schools,NS-C,115.38,mode,1,278,0.86875
+A) Eight schools,NS-C,121.88,mode,1,279,0.871875
+A) Eight schools,NS-C,122.48,mode,1,280,0.875
+A) Eight schools,NS-C,122.87,mode,1,281,0.878125
+A) Eight schools,NS-C,123.16,mode,1,282,0.88125
+A) Eight schools,NS-C,123.45,mode,1,283,0.884375
+A) Eight schools,NS-C,124.09,mode,1,284,0.8875
+A) Eight schools,NS-C,126.47,mode,1,285,0.890625
+A) Eight schools,NS-C,132,mode,1,286,0.89375
+A) Eight schools,NS-C,132.27,mode,1,287,0.896875
+A) Eight schools,NS-C,132.58,mode,1,288,0.9
+A) Eight schools,NS-C,132.61,mode,1,289,0.903125
+A) Eight schools,NS-C,133.43,mode,1,290,0.90625
+A) Eight schools,NS-C,133.9,mode,1,291,0.909375
+A) Eight schools,NS-C,133.94,mode,1,292,0.9125
+A) Eight schools,NS-C,137.48,mode,1,293,0.915625
+A) Eight schools,NS-C,138.4,mode,1,294,0.91875
+A) Eight schools,NS-C,138.42,mode,1,295,0.921875
+A) Eight schools,NS-C,138.54,mode,1,296,0.925
+A) Eight schools,NS-C,138.66,mode,1,297,0.928125
+A) Eight schools,NS-C,139.68,mode,1,298,0.93125
+A) Eight schools,NS-C,139.91,mode,1,299,0.934375
+A) Eight schools,NS-C,199.72,mode,1,300,0.9375
+A) Eight schools,NS-C,199.9,mode,1,301,0.940625
+A) Eight schools,NS-C,200.11,mode,1,302,0.94375
+A) Eight schools,NS-C,200.38,mode,1,303,0.946875
+A) Eight schools,NS-C,200.52,mode,1,304,0.95
+A) Eight schools,NS-C,200.76,mode,1,305,0.953125
+A) Eight schools,NS-C,200.87,mode,1,306,0.95625
+A) Eight schools,NS-C,211.46,mode,1,307,0.959375
+A) Eight schools,NS-C,211.68,mode,1,308,0.9625
+A) Eight schools,NS-C,211.75,mode,1,309,0.965625
+A) Eight schools,NS-C,211.76,mode,1,310,0.96875
+A) Eight schools,NS-C,212.16,mode,1,311,0.971875
+A) Eight schools,NS-C,212.66,mode,1,312,0.975
+A) Eight schools,NS-C,212.71,mode,1,313,0.978125
+A) Eight schools,NS-C,212.9,mode,1,314,0.98125
+A) Eight schools,NS-C,213.11,mode,1,315,0.984375
+A) Eight schools,NS-C,213.27,mode,1,316,0.9875
+A) Eight schools,NS-C,213.73,mode,1,317,0.990625
+A) Eight schools,NS-C,213.95,mode,1,318,0.99375
+A) Eight schools,NS-C,214.25,mode,1,319,0.996875
+A) Eight schools,NS-C,215.3,mode,1,320,1
+A) Eight schools,NS-C,NA,mean,320,320,1
+A) Eight schools,PSIS-LOO,0,mean,3,3,0.009375
+A) Eight schools,PSIS-LOO,0.01,mean,6,9,0.028125
+A) Eight schools,PSIS-LOO,0.02,mean,12,21,0.065625
+A) Eight schools,PSIS-LOO,0.03,mean,8,29,0.090625
+A) Eight schools,PSIS-LOO,0.04,mean,16,45,0.140625
+A) Eight schools,PSIS-LOO,0.05,mean,6,51,0.159375
+A) Eight schools,PSIS-LOO,0.06,mean,13,64,0.2
+A) Eight schools,PSIS-LOO,0.07,mean,10,74,0.23125
+A) Eight schools,PSIS-LOO,0.08,mean,4,78,0.24375
+A) Eight schools,PSIS-LOO,0.09,mean,9,87,0.271875
+A) Eight schools,PSIS-LOO,0.1,mean,6,93,0.290625
+A) Eight schools,PSIS-LOO,0.11,mean,4,97,0.303125
+A) Eight schools,PSIS-LOO,0.12,mean,2,99,0.309375
+A) Eight schools,PSIS-LOO,0.13,mean,4,103,0.321875
+A) Eight schools,PSIS-LOO,0.14,mean,4,107,0.334375
+A) Eight schools,PSIS-LOO,0.15,mean,6,113,0.353125
+A) Eight schools,PSIS-LOO,0.16,mean,5,118,0.36875
+A) Eight schools,PSIS-LOO,0.17,mean,3,121,0.378125
+A) Eight schools,PSIS-LOO,0.18,mean,4,125,0.390625
+A) Eight schools,PSIS-LOO,0.19,mean,3,128,0.4
+A) Eight schools,PSIS-LOO,0.2,mean,3,131,0.409375
+A) Eight schools,PSIS-LOO,0.21,mean,2,133,0.415625
+A) Eight schools,PSIS-LOO,0.22,mean,4,137,0.428125
+A) Eight schools,PSIS-LOO,0.23,mean,4,141,0.440625
+A) Eight schools,PSIS-LOO,0.24,mean,4,145,0.453125
+A) Eight schools,PSIS-LOO,0.25,mean,2,147,0.459375
+A) Eight schools,PSIS-LOO,0.26,mean,2,149,0.465625
+A) Eight schools,PSIS-LOO,0.27,mean,2,151,0.471875
+A) Eight schools,PSIS-LOO,0.28,mean,1,152,0.475
+A) Eight schools,PSIS-LOO,0.29,mean,1,153,0.478125
+A) Eight schools,PSIS-LOO,0.3,mean,1,154,0.48125
+A) Eight schools,PSIS-LOO,0.31,mean,1,155,0.484375
+A) Eight schools,PSIS-LOO,0.32,mean,5,160,0.5
+A) Eight schools,PSIS-LOO,0.33,mean,1,161,0.503125
+A) Eight schools,PSIS-LOO,0.34,mean,4,165,0.515625
+A) Eight schools,PSIS-LOO,0.35,mean,2,167,0.521875
+A) Eight schools,PSIS-LOO,0.37,mean,1,168,0.525
+A) Eight schools,PSIS-LOO,0.38,mean,2,170,0.53125
+A) Eight schools,PSIS-LOO,0.39,mean,2,172,0.5375
+A) Eight schools,PSIS-LOO,0.4,mean,2,174,0.54375
+A) Eight schools,PSIS-LOO,0.42,mean,1,175,0.546875
+A) Eight schools,PSIS-LOO,0.43,mean,8,183,0.571875
+A) Eight schools,PSIS-LOO,0.44,mean,1,184,0.575
+A) Eight schools,PSIS-LOO,0.45,mean,1,185,0.578125
+A) Eight schools,PSIS-LOO,0.46,mean,3,188,0.5875
+A) Eight schools,PSIS-LOO,0.47,mean,2,190,0.59375
+A) Eight schools,PSIS-LOO,0.48,mean,1,191,0.596875
+A) Eight schools,PSIS-LOO,0.49,mean,2,193,0.603125
+A) Eight schools,PSIS-LOO,0.51,mean,1,194,0.60625
+A) Eight schools,PSIS-LOO,0.52,mean,3,197,0.615625
+A) Eight schools,PSIS-LOO,0.53,mean,3,200,0.625
+A) Eight schools,PSIS-LOO,0.54,mean,3,203,0.634375
+A) Eight schools,PSIS-LOO,0.55,mean,1,204,0.6375
+A) Eight schools,PSIS-LOO,0.56,mean,1,205,0.640625
+A) Eight schools,PSIS-LOO,0.57,mean,2,207,0.646875
+A) Eight schools,PSIS-LOO,0.6,mean,1,208,0.65
+A) Eight schools,PSIS-LOO,0.61,mean,1,209,0.653125
+A) Eight schools,PSIS-LOO,0.62,mean,1,210,0.65625
+A) Eight schools,PSIS-LOO,0.63,mean,2,212,0.6625
+A) Eight schools,PSIS-LOO,0.64,mean,3,215,0.671875
+A) Eight schools,PSIS-LOO,0.66,mean,2,217,0.678125
+A) Eight schools,PSIS-LOO,0.67,mean,3,220,0.6875
+A) Eight schools,PSIS-LOO,0.69,mean,1,221,0.690625
+A) Eight schools,PSIS-LOO,0.7,mean,1,222,0.69375
+A) Eight schools,PSIS-LOO,0.72,mean,4,226,0.70625
+A) Eight schools,PSIS-LOO,0.73,mean,3,229,0.715625
+A) Eight schools,PSIS-LOO,0.76,mean,2,231,0.721875
+A) Eight schools,PSIS-LOO,0.77,mean,1,232,0.725
+A) Eight schools,PSIS-LOO,0.78,mean,2,234,0.73125
+A) Eight schools,PSIS-LOO,0.79,mean,2,236,0.7375
+A) Eight schools,PSIS-LOO,0.8,mean,2,238,0.74375
+A) Eight schools,PSIS-LOO,0.84,mean,2,240,0.75
+A) Eight schools,PSIS-LOO,0.85,mean,1,241,0.753125
+A) Eight schools,PSIS-LOO,0.86,mean,1,242,0.75625
+A) Eight schools,PSIS-LOO,0.87,mean,1,243,0.759375
+A) Eight schools,PSIS-LOO,0.89,mean,1,244,0.7625
+A) Eight schools,PSIS-LOO,0.91,mean,2,246,0.76875
+A) Eight schools,PSIS-LOO,0.92,mean,2,248,0.775
+A) Eight schools,PSIS-LOO,0.93,mean,1,249,0.778125
+A) Eight schools,PSIS-LOO,0.94,mean,1,250,0.78125
+A) Eight schools,PSIS-LOO,0.95,mean,1,251,0.784375
+A) Eight schools,PSIS-LOO,0.96,mean,1,252,0.7875
+A) Eight schools,PSIS-LOO,0.97,mean,2,254,0.79375
+A) Eight schools,PSIS-LOO,0.98,mean,3,257,0.803125
+A) Eight schools,PSIS-LOO,1.01,mean,2,259,0.809375
+A) Eight schools,PSIS-LOO,1.02,mean,1,260,0.8125
+A) Eight schools,PSIS-LOO,1.06,mean,2,262,0.81875
+A) Eight schools,PSIS-LOO,1.11,mean,1,263,0.821875
+A) Eight schools,PSIS-LOO,1.12,mean,1,264,0.825
+A) Eight schools,PSIS-LOO,1.13,mean,1,265,0.828125
+A) Eight schools,PSIS-LOO,1.18,mean,1,266,0.83125
+A) Eight schools,PSIS-LOO,1.19,mean,1,267,0.834375
+A) Eight schools,PSIS-LOO,1.2,mean,1,268,0.8375
+A) Eight schools,PSIS-LOO,1.21,mean,1,269,0.840625
+A) Eight schools,PSIS-LOO,1.22,mean,1,270,0.84375
+A) Eight schools,PSIS-LOO,1.23,mean,1,271,0.846875
+A) Eight schools,PSIS-LOO,1.26,mean,1,272,0.85
+A) Eight schools,PSIS-LOO,1.29,mean,1,273,0.853125
+A) Eight schools,PSIS-LOO,1.31,mean,1,274,0.85625
+A) Eight schools,PSIS-LOO,1.33,mean,1,275,0.859375
+A) Eight schools,PSIS-LOO,1.34,mean,1,276,0.8625
+A) Eight schools,PSIS-LOO,1.36,mean,2,278,0.86875
+A) Eight schools,PSIS-LOO,1.38,mean,1,279,0.871875
+A) Eight schools,PSIS-LOO,1.44,mean,1,280,0.875
+A) Eight schools,PSIS-LOO,1.45,mean,1,281,0.878125
+A) Eight schools,PSIS-LOO,1.47,mean,1,282,0.88125
+A) Eight schools,PSIS-LOO,1.52,mean,1,283,0.884375
+A) Eight schools,PSIS-LOO,1.54,mean,1,284,0.8875
+A) Eight schools,PSIS-LOO,1.58,mean,1,285,0.890625
+A) Eight schools,PSIS-LOO,1.6,mean,1,286,0.89375
+A) Eight schools,PSIS-LOO,1.62,mean,1,287,0.896875
+A) Eight schools,PSIS-LOO,1.65,mean,1,288,0.9
+A) Eight schools,PSIS-LOO,1.68,mean,3,291,0.909375
+A) Eight schools,PSIS-LOO,1.69,mean,1,292,0.9125
+A) Eight schools,PSIS-LOO,1.71,mean,1,293,0.915625
+A) Eight schools,PSIS-LOO,1.74,mean,1,294,0.91875
+A) Eight schools,PSIS-LOO,1.76,mean,2,296,0.925
+A) Eight schools,PSIS-LOO,1.8,mean,1,297,0.928125
+A) Eight schools,PSIS-LOO,1.81,mean,1,298,0.93125
+A) Eight schools,PSIS-LOO,1.82,mean,2,300,0.9375
+A) Eight schools,PSIS-LOO,1.84,mean,1,301,0.940625
+A) Eight schools,PSIS-LOO,1.9,mean,1,302,0.94375
+A) Eight schools,PSIS-LOO,1.95,mean,1,303,0.946875
+A) Eight schools,PSIS-LOO,2.15,mean,1,304,0.95
+A) Eight schools,PSIS-LOO,2.16,mean,1,305,0.953125
+A) Eight schools,PSIS-LOO,2.21,mean,1,306,0.95625
+A) Eight schools,PSIS-LOO,2.36,mean,1,307,0.959375
+A) Eight schools,PSIS-LOO,2.43,mean,1,308,0.9625
+A) Eight schools,PSIS-LOO,2.48,mean,1,309,0.965625
+A) Eight schools,PSIS-LOO,2.49,mean,1,310,0.96875
+A) Eight schools,PSIS-LOO,2.5,mean,1,311,0.971875
+A) Eight schools,PSIS-LOO,2.61,mean,1,312,0.975
+A) Eight schools,PSIS-LOO,2.63,mean,1,313,0.978125
+A) Eight schools,PSIS-LOO,2.98,mean,1,314,0.98125
+A) Eight schools,PSIS-LOO,3.25,mean,1,315,0.984375
+A) Eight schools,PSIS-LOO,3.46,mean,1,316,0.9875
+A) Eight schools,PSIS-LOO,3.74,mean,1,317,0.990625
+A) Eight schools,PSIS-LOO,4.37,mean,1,318,0.99375
+A) Eight schools,PSIS-LOO,5.32,mean,1,319,0.996875
+A) Eight schools,PSIS-LOO,7.5,mean,1,320,1
+A) Eight schools,PSIS-LOO,NA,mode,320,320,1
+A) Eight schools,VEHTARI,0.04,mean,1,1,0.003125
+A) Eight schools,VEHTARI,0.05,mean,2,3,0.009375
+A) Eight schools,VEHTARI,0.1,mean,2,5,0.015625
+A) Eight schools,VEHTARI,0.11,mean,1,6,0.01875
+A) Eight schools,VEHTARI,0.13,mean,1,7,0.021875
+A) Eight schools,VEHTARI,0.15,mean,1,8,0.025
+A) Eight schools,VEHTARI,0.16,mean,2,10,0.03125
+A) Eight schools,VEHTARI,0.17,mean,2,12,0.0375
+A) Eight schools,VEHTARI,0.18,mean,1,13,0.040625
+A) Eight schools,VEHTARI,0.19,mean,1,14,0.04375
+A) Eight schools,VEHTARI,0.2,mean,3,17,0.053125
+A) Eight schools,VEHTARI,0.21,mean,1,18,0.05625
+A) Eight schools,VEHTARI,0.22,mean,2,20,0.0625
+A) Eight schools,VEHTARI,0.23,mean,1,21,0.065625
+A) Eight schools,VEHTARI,0.24,mean,4,25,0.078125
+A) Eight schools,VEHTARI,0.25,mean,4,29,0.090625
+A) Eight schools,VEHTARI,0.26,mean,3,32,0.1
+A) Eight schools,VEHTARI,0.27,mean,4,36,0.1125
+A) Eight schools,VEHTARI,0.28,mean,2,38,0.11875
+A) Eight schools,VEHTARI,0.29,mean,2,40,0.125
+A) Eight schools,VEHTARI,0.3,mean,1,41,0.128125
+A) Eight schools,VEHTARI,0.31,mean,3,44,0.1375
+A) Eight schools,VEHTARI,0.33,mean,4,48,0.15
+A) Eight schools,VEHTARI,0.34,mean,5,53,0.165625
+A) Eight schools,VEHTARI,0.35,mean,2,55,0.171875
+A) Eight schools,VEHTARI,0.36,mean,4,59,0.184375
+A) Eight schools,VEHTARI,0.37,mean,2,61,0.190625
+A) Eight schools,VEHTARI,0.38,mean,1,62,0.19375
+A) Eight schools,VEHTARI,0.39,mean,3,65,0.203125
+A) Eight schools,VEHTARI,0.4,mean,2,67,0.209375
+A) Eight schools,VEHTARI,0.42,mean,4,71,0.221875
+A) Eight schools,VEHTARI,0.43,mean,2,73,0.228125
+A) Eight schools,VEHTARI,0.44,mean,1,74,0.23125
+A) Eight schools,VEHTARI,0.45,mean,1,75,0.234375
+A) Eight schools,VEHTARI,0.46,mean,2,77,0.240625
+A) Eight schools,VEHTARI,0.47,mean,1,78,0.24375
+A) Eight schools,VEHTARI,0.48,mean,2,80,0.25
+A) Eight schools,VEHTARI,0.49,mean,2,82,0.25625
+A) Eight schools,VEHTARI,0.5,mean,3,85,0.265625
+A) Eight schools,VEHTARI,0.51,mean,1,86,0.26875
+A) Eight schools,VEHTARI,0.52,mean,1,87,0.271875
+A) Eight schools,VEHTARI,0.53,mean,3,90,0.28125
+A) Eight schools,VEHTARI,0.55,mean,1,91,0.284375
+A) Eight schools,VEHTARI,0.56,mean,4,95,0.296875
+A) Eight schools,VEHTARI,0.57,mean,1,96,0.3
+A) Eight schools,VEHTARI,0.61,mean,2,98,0.30625
+A) Eight schools,VEHTARI,0.62,mean,2,100,0.3125
+A) Eight schools,VEHTARI,0.63,mean,1,101,0.315625
+A) Eight schools,VEHTARI,0.64,mean,1,102,0.31875
+A) Eight schools,VEHTARI,0.65,mean,2,104,0.325
+A) Eight schools,VEHTARI,0.66,mean,1,105,0.328125
+A) Eight schools,VEHTARI,0.67,mean,1,106,0.33125
+A) Eight schools,VEHTARI,0.68,mean,1,107,0.334375
+A) Eight schools,VEHTARI,0.69,mean,2,109,0.340625
+A) Eight schools,VEHTARI,0.7,mean,3,112,0.35
+A) Eight schools,VEHTARI,0.72,mean,1,113,0.353125
+A) Eight schools,VEHTARI,0.73,mean,1,114,0.35625
+A) Eight schools,VEHTARI,0.76,mean,1,115,0.359375
+A) Eight schools,VEHTARI,0.78,mean,2,117,0.365625
+A) Eight schools,VEHTARI,0.79,mean,1,118,0.36875
+A) Eight schools,VEHTARI,0.8,mean,2,120,0.375
+A) Eight schools,VEHTARI,0.82,mean,2,122,0.38125
+A) Eight schools,VEHTARI,0.84,mean,3,125,0.390625
+A) Eight schools,VEHTARI,0.87,mean,1,126,0.39375
+A) Eight schools,VEHTARI,0.88,mean,1,127,0.396875
+A) Eight schools,VEHTARI,0.9,mean,1,128,0.4
+A) Eight schools,VEHTARI,0.91,mean,1,129,0.403125
+A) Eight schools,VEHTARI,0.92,mean,1,130,0.40625
+A) Eight schools,VEHTARI,0.94,mean,2,132,0.4125
+A) Eight schools,VEHTARI,0.95,mean,1,133,0.415625
+A) Eight schools,VEHTARI,0.96,mean,2,135,0.421875
+A) Eight schools,VEHTARI,0.97,mean,1,136,0.425
+A) Eight schools,VEHTARI,0.98,mean,1,137,0.428125
+A) Eight schools,VEHTARI,1,mean,1,138,0.43125
+A) Eight schools,VEHTARI,1.02,mean,3,141,0.440625
+A) Eight schools,VEHTARI,1.04,mean,1,142,0.44375
+A) Eight schools,VEHTARI,1.08,mean,1,143,0.446875
+A) Eight schools,VEHTARI,1.09,mean,1,144,0.45
+A) Eight schools,VEHTARI,1.1,mean,2,146,0.45625
+A) Eight schools,VEHTARI,1.11,mean,1,147,0.459375
+A) Eight schools,VEHTARI,1.12,mean,1,148,0.4625
+A) Eight schools,VEHTARI,1.15,mean,1,149,0.465625
+A) Eight schools,VEHTARI,1.2,mean,2,151,0.471875
+A) Eight schools,VEHTARI,1.22,mean,2,153,0.478125
+A) Eight schools,VEHTARI,1.23,mean,1,154,0.48125
+A) Eight schools,VEHTARI,1.24,mean,4,158,0.49375
+A) Eight schools,VEHTARI,1.25,mean,1,159,0.496875
+A) Eight schools,VEHTARI,1.26,mean,1,160,0.5
+A) Eight schools,VEHTARI,1.27,mean,1,161,0.503125
+A) Eight schools,VEHTARI,1.28,mean,2,163,0.509375
+A) Eight schools,VEHTARI,1.29,mean,2,165,0.515625
+A) Eight schools,VEHTARI,1.3,mean,2,167,0.521875
+A) Eight schools,VEHTARI,1.35,mean,1,168,0.525
+A) Eight schools,VEHTARI,1.37,mean,1,169,0.528125
+A) Eight schools,VEHTARI,1.38,mean,1,170,0.53125
+A) Eight schools,VEHTARI,1.4,mean,1,171,0.534375
+A) Eight schools,VEHTARI,1.44,mean,2,173,0.540625
+A) Eight schools,VEHTARI,1.45,mean,3,176,0.55
+A) Eight schools,VEHTARI,1.48,mean,1,177,0.553125
+A) Eight schools,VEHTARI,1.54,mean,1,178,0.55625
+A) Eight schools,VEHTARI,1.56,mean,1,179,0.559375
+A) Eight schools,VEHTARI,1.57,mean,2,181,0.565625
+A) Eight schools,VEHTARI,1.58,mean,1,182,0.56875
+A) Eight schools,VEHTARI,1.6,mean,1,183,0.571875
+A) Eight schools,VEHTARI,1.61,mean,1,184,0.575
+A) Eight schools,VEHTARI,1.64,mean,1,185,0.578125
+A) Eight schools,VEHTARI,1.65,mean,1,186,0.58125
+A) Eight schools,VEHTARI,1.66,mean,3,189,0.590625
+A) Eight schools,VEHTARI,1.67,mean,2,191,0.596875
+A) Eight schools,VEHTARI,1.69,mean,1,192,0.6
+A) Eight schools,VEHTARI,1.7,mean,1,193,0.603125
+A) Eight schools,VEHTARI,1.71,mean,2,195,0.609375
+A) Eight schools,VEHTARI,1.73,mean,2,197,0.615625
+A) Eight schools,VEHTARI,1.74,mean,1,198,0.61875
+A) Eight schools,VEHTARI,1.76,mean,1,199,0.621875
+A) Eight schools,VEHTARI,1.8,mean,3,202,0.63125
+A) Eight schools,VEHTARI,1.82,mean,2,204,0.6375
+A) Eight schools,VEHTARI,1.83,mean,1,205,0.640625
+A) Eight schools,VEHTARI,1.85,mean,1,206,0.64375
+A) Eight schools,VEHTARI,1.86,mean,1,207,0.646875
+A) Eight schools,VEHTARI,1.88,mean,1,208,0.65
+A) Eight schools,VEHTARI,1.89,mean,2,210,0.65625
+A) Eight schools,VEHTARI,1.9,mean,1,211,0.659375
+A) Eight schools,VEHTARI,1.91,mean,1,212,0.6625
+A) Eight schools,VEHTARI,1.93,mean,1,213,0.665625
+A) Eight schools,VEHTARI,1.95,mean,2,215,0.671875
+A) Eight schools,VEHTARI,1.97,mean,1,216,0.675
+A) Eight schools,VEHTARI,1.98,mean,2,218,0.68125
+A) Eight schools,VEHTARI,1.99,mean,1,219,0.684375
+A) Eight schools,VEHTARI,2,mean,2,221,0.690625
+A) Eight schools,VEHTARI,2.01,mean,1,222,0.69375
+A) Eight schools,VEHTARI,2.02,mean,2,224,0.7
+A) Eight schools,VEHTARI,2.04,mean,3,227,0.709375
+A) Eight schools,VEHTARI,2.05,mean,1,228,0.7125
+A) Eight schools,VEHTARI,2.07,mean,1,229,0.715625
+A) Eight schools,VEHTARI,2.08,mean,1,230,0.71875
+A) Eight schools,VEHTARI,2.09,mean,1,231,0.721875
+A) Eight schools,VEHTARI,2.1,mean,1,232,0.725
+A) Eight schools,VEHTARI,2.13,mean,1,233,0.728125
+A) Eight schools,VEHTARI,2.14,mean,2,235,0.734375
+A) Eight schools,VEHTARI,2.16,mean,1,236,0.7375
+A) Eight schools,VEHTARI,2.17,mean,1,237,0.740625
+A) Eight schools,VEHTARI,2.2,mean,1,238,0.74375
+A) Eight schools,VEHTARI,2.22,mean,1,239,0.746875
+A) Eight schools,VEHTARI,2.24,mean,1,240,0.75
+A) Eight schools,VEHTARI,2.27,mean,3,243,0.759375
+A) Eight schools,VEHTARI,2.28,mean,1,244,0.7625
+A) Eight schools,VEHTARI,2.29,mean,2,246,0.76875
+A) Eight schools,VEHTARI,2.34,mean,1,247,0.771875
+A) Eight schools,VEHTARI,2.38,mean,2,249,0.778125
+A) Eight schools,VEHTARI,2.39,mean,1,250,0.78125
+A) Eight schools,VEHTARI,2.4,mean,1,251,0.784375
+A) Eight schools,VEHTARI,2.41,mean,2,253,0.790625
+A) Eight schools,VEHTARI,2.42,mean,1,254,0.79375
+A) Eight schools,VEHTARI,2.45,mean,1,255,0.796875
+A) Eight schools,VEHTARI,2.47,mean,1,256,0.8
+A) Eight schools,VEHTARI,2.51,mean,1,257,0.803125
+A) Eight schools,VEHTARI,2.52,mean,1,258,0.80625
+A) Eight schools,VEHTARI,2.53,mean,1,259,0.809375
+A) Eight schools,VEHTARI,2.55,mean,2,261,0.815625
+A) Eight schools,VEHTARI,2.56,mean,1,262,0.81875
+A) Eight schools,VEHTARI,2.57,mean,1,263,0.821875
+A) Eight schools,VEHTARI,2.58,mean,1,264,0.825
+A) Eight schools,VEHTARI,2.59,mean,1,265,0.828125
+A) Eight schools,VEHTARI,2.62,mean,1,266,0.83125
+A) Eight schools,VEHTARI,2.63,mean,1,267,0.834375
+A) Eight schools,VEHTARI,2.64,mean,1,268,0.8375
+A) Eight schools,VEHTARI,2.7,mean,1,269,0.840625
+A) Eight schools,VEHTARI,2.71,mean,1,270,0.84375
+A) Eight schools,VEHTARI,2.75,mean,3,273,0.853125
+A) Eight schools,VEHTARI,2.78,mean,2,275,0.859375
+A) Eight schools,VEHTARI,2.79,mean,1,276,0.8625
+A) Eight schools,VEHTARI,2.88,mean,1,277,0.865625
+A) Eight schools,VEHTARI,2.89,mean,1,278,0.86875
+A) Eight schools,VEHTARI,2.91,mean,1,279,0.871875
+A) Eight schools,VEHTARI,2.92,mean,1,280,0.875
+A) Eight schools,VEHTARI,2.93,mean,1,281,0.878125
+A) Eight schools,VEHTARI,2.94,mean,1,282,0.88125
+A) Eight schools,VEHTARI,2.95,mean,1,283,0.884375
+A) Eight schools,VEHTARI,2.98,mean,2,285,0.890625
+A) Eight schools,VEHTARI,3.07,mean,1,286,0.89375
+A) Eight schools,VEHTARI,3.08,mean,1,287,0.896875
+A) Eight schools,VEHTARI,3.09,mean,1,288,0.9
+A) Eight schools,VEHTARI,3.11,mean,1,289,0.903125
+A) Eight schools,VEHTARI,3.13,mean,1,290,0.90625
+A) Eight schools,VEHTARI,3.17,mean,2,292,0.9125
+A) Eight schools,VEHTARI,3.25,mean,1,293,0.915625
+A) Eight schools,VEHTARI,3.3,mean,1,294,0.91875
+A) Eight schools,VEHTARI,3.32,mean,1,295,0.921875
+A) Eight schools,VEHTARI,3.33,mean,2,297,0.928125
+A) Eight schools,VEHTARI,3.38,mean,1,298,0.93125
+A) Eight schools,VEHTARI,3.39,mean,1,299,0.934375
+A) Eight schools,VEHTARI,3.44,mean,1,300,0.9375
+A) Eight schools,VEHTARI,3.46,mean,1,301,0.940625
+A) Eight schools,VEHTARI,3.49,mean,1,302,0.94375
+A) Eight schools,VEHTARI,3.58,mean,1,303,0.946875
+A) Eight schools,VEHTARI,3.62,mean,1,304,0.95
+A) Eight schools,VEHTARI,3.63,mean,1,305,0.953125
+A) Eight schools,VEHTARI,3.73,mean,2,307,0.959375
+A) Eight schools,VEHTARI,3.77,mean,1,308,0.9625
+A) Eight schools,VEHTARI,3.9,mean,1,309,0.965625
+A) Eight schools,VEHTARI,4.35,mean,1,310,0.96875
+A) Eight schools,VEHTARI,4.52,mean,1,311,0.971875
+A) Eight schools,VEHTARI,4.58,mean,1,312,0.975
+A) Eight schools,VEHTARI,4.6,mean,1,313,0.978125
+A) Eight schools,VEHTARI,4.73,mean,1,314,0.98125
+A) Eight schools,VEHTARI,5.25,mean,1,315,0.984375
+A) Eight schools,VEHTARI,5.41,mean,1,316,0.9875
+A) Eight schools,VEHTARI,5.68,mean,1,317,0.990625
+A) Eight schools,VEHTARI,5.7,mean,1,318,0.99375
+A) Eight schools,VEHTARI,5.75,mean,1,319,0.996875
+A) Eight schools,VEHTARI,7.04,mean,1,320,1
+A) Eight schools,VEHTARI,NA,mode,320,320,1
+D) ESP,AXE,0,mean,47,47,0.6438356164383562
+D) ESP,AXE,0.01,mean,25,72,0.9863013698630136
+D) ESP,AXE,0.02,mean,1,73,1
+D) ESP,AXE,NA,mode,73,73,1
+D) ESP,GHOST,NA,mean,73,73,1
+D) ESP,GHOST,NA,mode,73,73,1
+D) ESP,iIS,0,mean,16,16,0.2191780821917808
+D) ESP,iIS,0.01,mean,11,27,0.3698630136986301
+D) ESP,iIS,0.02,mean,7,34,0.4657534246575342
+D) ESP,iIS,0.03,mean,7,41,0.5616438356164384
+D) ESP,iIS,0.04,mean,2,43,0.589041095890411
+D) ESP,iIS,0.05,mean,1,44,0.6027397260273972
+D) ESP,iIS,0.06,mean,1,45,0.6164383561643836
+D) ESP,iIS,0.07,mean,2,47,0.6438356164383562
+D) ESP,iIS,0.08,mean,2,49,0.6712328767123288
+D) ESP,iIS,0.1,mean,1,50,0.684931506849315
+D) ESP,iIS,0.13,mean,1,51,0.6986301369863014
+D) ESP,iIS,0.16,mean,2,53,0.726027397260274
+D) ESP,iIS,0.17,mean,1,54,0.7397260273972602
+D) ESP,iIS,0.26,mean,1,55,0.7534246575342466
+D) ESP,iIS,0.29,mean,1,56,0.7671232876712328
+D) ESP,iIS,0.39,mean,1,57,0.7808219178082192
+D) ESP,iIS,0.43,mean,1,58,0.7945205479452054
+D) ESP,iIS,0.48,mean,1,59,0.8082191780821918
+D) ESP,iIS,0.5,mean,1,60,0.821917808219178
+D) ESP,iIS,0.56,mean,1,61,0.8356164383561644
+D) ESP,iIS,0.63,mean,1,62,0.8493150684931506
+D) ESP,iIS,0.65,mean,1,63,0.863013698630137
+D) ESP,iIS,0.69,mean,1,64,0.8767123287671232
+D) ESP,iIS,0.7,mean,1,65,0.8904109589041096
+D) ESP,iIS,0.71,mean,1,66,0.9041095890410958
+D) ESP,iIS,0.72,mean,3,69,0.9452054794520548
+D) ESP,iIS,0.98,mean,1,70,0.958904109589041
+D) ESP,iIS,1.06,mean,1,71,0.9726027397260274
+D) ESP,iIS,1.29,mean,1,72,0.9863013698630136
+D) ESP,iIS,1.33,mean,1,73,1
+D) ESP,iIS,NA,mode,73,73,1
+D) ESP,iIS-A,0.2,mean,1,1,0.0136986301369863
+D) ESP,iIS-A,0.21,mean,1,2,0.0273972602739726
+D) ESP,iIS-A,0.22,mean,1,3,0.0410958904109589
+D) ESP,iIS-A,0.23,mean,1,4,0.0547945205479452
+D) ESP,iIS-A,0.26,mean,1,5,0.0684931506849315
+D) ESP,iIS-A,0.27,mean,2,7,0.0958904109589041
+D) ESP,iIS-A,0.28,mean,1,8,0.1095890410958904
+D) ESP,iIS-A,0.35,mean,1,9,0.1232876712328767
+D) ESP,iIS-A,0.38,mean,2,11,0.1506849315068493
+D) ESP,iIS-A,0.39,mean,1,12,0.1643835616438356
+D) ESP,iIS-A,0.4,mean,1,13,0.1780821917808219
+D) ESP,iIS-A,0.43,mean,1,14,0.1917808219178082
+D) ESP,iIS-A,0.44,mean,2,16,0.2191780821917808
+D) ESP,iIS-A,0.46,mean,3,19,0.2602739726027397
+D) ESP,iIS-A,0.48,mean,1,20,0.273972602739726
+D) ESP,iIS-A,0.53,mean,2,22,0.3013698630136986
+D) ESP,iIS-A,0.54,mean,2,24,0.3287671232876712
+D) ESP,iIS-A,0.56,mean,1,25,0.3424657534246575
+D) ESP,iIS-A,0.58,mean,2,27,0.3698630136986301
+D) ESP,iIS-A,0.6,mean,1,28,0.3835616438356164
+D) ESP,iIS-A,0.61,mean,4,32,0.4383561643835616
+D) ESP,iIS-A,0.64,mean,4,36,0.4931506849315068
+D) ESP,iIS-A,0.68,mean,2,38,0.5205479452054794
+D) ESP,iIS-A,0.75,mean,1,39,0.5342465753424658
+D) ESP,iIS-A,0.76,mean,2,41,0.5616438356164384
+D) ESP,iIS-A,0.77,mean,1,42,0.5753424657534246
+D) ESP,iIS-A,0.79,mean,2,44,0.6027397260273972
+D) ESP,iIS-A,0.81,mean,1,45,0.6164383561643836
+D) ESP,iIS-A,0.82,mean,2,47,0.6438356164383562
+D) ESP,iIS-A,0.92,mean,1,48,0.6575342465753424
+D) ESP,iIS-A,0.96,mean,1,49,0.6712328767123288
+D) ESP,iIS-A,0.98,mean,1,50,0.684931506849315
+D) ESP,iIS-A,1.03,mean,1,51,0.6986301369863014
+D) ESP,iIS-A,1.09,mean,1,52,0.7123287671232876
+D) ESP,iIS-A,1.22,mean,1,53,0.726027397260274
+D) ESP,iIS-A,1.27,mean,1,54,0.7397260273972602
+D) ESP,iIS-A,1.39,mean,1,55,0.7534246575342466
+D) ESP,iIS-A,1.44,mean,1,56,0.7671232876712328
+D) ESP,iIS-A,1.47,mean,1,57,0.7808219178082192
+D) ESP,iIS-A,1.48,mean,1,58,0.7945205479452054
+D) ESP,iIS-A,1.65,mean,1,59,0.8082191780821918
+D) ESP,iIS-A,1.69,mean,1,60,0.821917808219178
+D) ESP,iIS-A,1.74,mean,1,61,0.8356164383561644
+D) ESP,iIS-A,1.76,mean,1,62,0.8493150684931506
+D) ESP,iIS-A,2.15,mean,1,63,0.863013698630137
+D) ESP,iIS-A,2.29,mean,1,64,0.8767123287671232
+D) ESP,iIS-A,2.79,mean,1,65,0.8904109589041096
+D) ESP,iIS-A,2.84,mean,1,66,0.9041095890410958
+D) ESP,iIS-A,2.91,mean,1,67,0.9178082191780822
+D) ESP,iIS-A,2.98,mean,1,68,0.9315068493150684
+D) ESP,iIS-A,3.2,mean,1,69,0.9452054794520548
+D) ESP,iIS-A,3.33,mean,1,70,0.958904109589041
+D) ESP,iIS-A,3.5,mean,1,71,0.9726027397260274
+D) ESP,iIS-A,3.67,mean,1,72,0.9863013698630136
+D) ESP,iIS-A,3.88,mean,1,73,1
+D) ESP,iIS-A,NA,mode,73,73,1
+D) ESP,IJ-A,0.01,mode,2,2,0.0273972602739726
+D) ESP,IJ-A,0.02,mode,2,4,0.0547945205479452
+D) ESP,IJ-A,0.04,mode,3,7,0.0958904109589041
+D) ESP,IJ-A,0.05,mode,2,9,0.1232876712328767
+D) ESP,IJ-A,0.06,mode,4,13,0.1780821917808219
+D) ESP,IJ-A,0.07,mode,2,15,0.2054794520547945
+D) ESP,IJ-A,0.08,mode,4,19,0.2602739726027397
+D) ESP,IJ-A,0.09,mode,2,21,0.2876712328767123
+D) ESP,IJ-A,0.1,mode,2,23,0.3150684931506849
+D) ESP,IJ-A,0.11,mode,1,24,0.3287671232876712
+D) ESP,IJ-A,0.12,mode,3,27,0.3698630136986301
+D) ESP,IJ-A,0.14,mode,2,29,0.3972602739726027
+D) ESP,IJ-A,0.17,mode,4,33,0.4520547945205479
+D) ESP,IJ-A,0.18,mode,2,35,0.4794520547945205
+D) ESP,IJ-A,0.19,mode,4,39,0.5342465753424658
+D) ESP,IJ-A,0.2,mode,3,42,0.5753424657534246
+D) ESP,IJ-A,0.21,mode,4,46,0.6301369863013698
+D) ESP,IJ-A,0.22,mode,1,47,0.6438356164383562
+D) ESP,IJ-A,0.24,mode,3,50,0.684931506849315
+D) ESP,IJ-A,0.25,mode,1,51,0.6986301369863014
+D) ESP,IJ-A,0.26,mode,2,53,0.726027397260274
+D) ESP,IJ-A,0.27,mode,1,54,0.7397260273972602
+D) ESP,IJ-A,0.28,mode,1,55,0.7534246575342466
+D) ESP,IJ-A,0.29,mode,1,56,0.7671232876712328
+D) ESP,IJ-A,0.32,mode,2,58,0.7945205479452054
+D) ESP,IJ-A,0.33,mode,2,60,0.821917808219178
+D) ESP,IJ-A,0.34,mode,1,61,0.8356164383561644
+D) ESP,IJ-A,0.36,mode,1,62,0.8493150684931506
+D) ESP,IJ-A,0.37,mode,2,64,0.8767123287671232
+D) ESP,IJ-A,0.4,mode,1,65,0.8904109589041096
+D) ESP,IJ-A,0.41,mode,2,67,0.9178082191780822
+D) ESP,IJ-A,0.42,mode,1,68,0.9315068493150684
+D) ESP,IJ-A,0.48,mode,1,69,0.9452054794520548
+D) ESP,IJ-A,0.51,mode,1,70,0.958904109589041
+D) ESP,IJ-A,0.61,mode,1,71,0.9726027397260274
+D) ESP,IJ-A,0.8,mode,1,72,0.9863013698630136
+D) ESP,IJ-A,0.93,mode,1,73,1
+D) ESP,IJ-A,NA,mean,73,73,1
+D) ESP,IJ-C,0.02,mode,1,1,0.0136986301369863
+D) ESP,IJ-C,0.07,mode,1,2,0.0273972602739726
+D) ESP,IJ-C,0.14,mode,1,3,0.0410958904109589
+D) ESP,IJ-C,0.21,mode,1,4,0.0547945205479452
+D) ESP,IJ-C,0.22,mode,1,5,0.0684931506849315
+D) ESP,IJ-C,0.35,mode,1,6,0.0821917808219178
+D) ESP,IJ-C,0.42,mode,1,7,0.0958904109589041
+D) ESP,IJ-C,0.44,mode,1,8,0.1095890410958904
+D) ESP,IJ-C,0.46,mode,1,9,0.1232876712328767
+D) ESP,IJ-C,0.47,mode,1,10,0.136986301369863
+D) ESP,IJ-C,0.55,mode,1,11,0.1506849315068493
+D) ESP,IJ-C,0.58,mode,1,12,0.1643835616438356
+D) ESP,IJ-C,0.6,mode,1,13,0.1780821917808219
+D) ESP,IJ-C,0.61,mode,2,15,0.2054794520547945
+D) ESP,IJ-C,0.62,mode,1,16,0.2191780821917808
+D) ESP,IJ-C,0.63,mode,2,18,0.2465753424657534
+D) ESP,IJ-C,0.65,mode,1,19,0.2602739726027397
+D) ESP,IJ-C,0.66,mode,1,20,0.273972602739726
+D) ESP,IJ-C,0.67,mode,2,22,0.3013698630136986
+D) ESP,IJ-C,0.69,mode,1,23,0.3150684931506849
+D) ESP,IJ-C,0.74,mode,1,24,0.3287671232876712
+D) ESP,IJ-C,0.75,mode,2,26,0.3561643835616438
+D) ESP,IJ-C,0.76,mode,1,27,0.3698630136986301
+D) ESP,IJ-C,0.78,mode,1,28,0.3835616438356164
+D) ESP,IJ-C,0.79,mode,2,30,0.410958904109589
+D) ESP,IJ-C,0.8,mode,1,31,0.4246575342465753
+D) ESP,IJ-C,0.83,mode,1,32,0.4383561643835616
+D) ESP,IJ-C,0.84,mode,2,34,0.4657534246575342
+D) ESP,IJ-C,0.88,mode,2,36,0.4931506849315068
+D) ESP,IJ-C,0.9,mode,1,37,0.5068493150684932
+D) ESP,IJ-C,0.95,mode,1,38,0.5205479452054794
+D) ESP,IJ-C,0.99,mode,2,40,0.547945205479452
+D) ESP,IJ-C,1,mode,2,42,0.5753424657534246
+D) ESP,IJ-C,1.01,mode,2,44,0.6027397260273972
+D) ESP,IJ-C,1.03,mode,1,45,0.6164383561643836
+D) ESP,IJ-C,1.05,mode,1,46,0.6301369863013698
+D) ESP,IJ-C,1.06,mode,1,47,0.6438356164383562
+D) ESP,IJ-C,1.07,mode,1,48,0.6575342465753424
+D) ESP,IJ-C,1.1,mode,1,49,0.6712328767123288
+D) ESP,IJ-C,1.13,mode,1,50,0.684931506849315
+D) ESP,IJ-C,1.2,mode,1,51,0.6986301369863014
+D) ESP,IJ-C,1.21,mode,2,53,0.726027397260274
+D) ESP,IJ-C,1.26,mode,1,54,0.7397260273972602
+D) ESP,IJ-C,1.28,mode,1,55,0.7534246575342466
+D) ESP,IJ-C,1.31,mode,1,56,0.7671232876712328
+D) ESP,IJ-C,1.42,mode,1,57,0.7808219178082192
+D) ESP,IJ-C,1.46,mode,1,58,0.7945205479452054
+D) ESP,IJ-C,1.49,mode,1,59,0.8082191780821918
+D) ESP,IJ-C,1.57,mode,1,60,0.821917808219178
+D) ESP,IJ-C,1.73,mode,1,61,0.8356164383561644
+D) ESP,IJ-C,1.75,mode,1,62,0.8493150684931506
+D) ESP,IJ-C,1.82,mode,1,63,0.863013698630137
+D) ESP,IJ-C,1.88,mode,1,64,0.8767123287671232
+D) ESP,IJ-C,2.05,mode,1,65,0.8904109589041096
+D) ESP,IJ-C,2.12,mode,1,66,0.9041095890410958
+D) ESP,IJ-C,2.32,mode,1,67,0.9178082191780822
+D) ESP,IJ-C,2.51,mode,1,68,0.9315068493150684
+D) ESP,IJ-C,2.82,mode,1,69,0.9452054794520548
+D) ESP,IJ-C,2.87,mode,1,70,0.958904109589041
+D) ESP,IJ-C,2.98,mode,1,71,0.9726027397260274
+D) ESP,IJ-C,3.2,mode,1,72,0.9863013698630136
+D) ESP,IJ-C,4.46,mode,1,73,1
+D) ESP,IJ-C,NA,mean,73,73,1
+D) ESP,NS-A,0.04,mode,1,1,0.0136986301369863
+D) ESP,NS-A,0.06,mode,1,2,0.0273972602739726
+D) ESP,NS-A,0.08,mode,1,3,0.0410958904109589
+D) ESP,NS-A,0.1,mode,1,4,0.0547945205479452
+D) ESP,NS-A,0.11,mode,1,5,0.0684931506849315
+D) ESP,NS-A,0.13,mode,1,6,0.0821917808219178
+D) ESP,NS-A,0.16,mode,1,7,0.0958904109589041
+D) ESP,NS-A,0.19,mode,1,8,0.1095890410958904
+D) ESP,NS-A,0.3,mode,1,9,0.1232876712328767
+D) ESP,NS-A,0.31,mode,1,10,0.136986301369863
+D) ESP,NS-A,0.36,mode,1,11,0.1506849315068493
+D) ESP,NS-A,0.37,mode,1,12,0.1643835616438356
+D) ESP,NS-A,0.41,mode,1,13,0.1780821917808219
+D) ESP,NS-A,0.46,mode,1,14,0.1917808219178082
+D) ESP,NS-A,0.5,mode,1,15,0.2054794520547945
+D) ESP,NS-A,0.51,mode,1,16,0.2191780821917808
+D) ESP,NS-A,0.54,mode,1,17,0.2328767123287671
+D) ESP,NS-A,0.55,mode,2,19,0.2602739726027397
+D) ESP,NS-A,0.57,mode,1,20,0.273972602739726
+D) ESP,NS-A,0.59,mode,1,21,0.2876712328767123
+D) ESP,NS-A,0.82,mode,1,22,0.3013698630136986
+D) ESP,NS-A,0.92,mode,1,23,0.3150684931506849
+D) ESP,NS-A,0.95,mode,2,25,0.3424657534246575
+D) ESP,NS-A,0.98,mode,1,26,0.3561643835616438
+D) ESP,NS-A,0.99,mode,1,27,0.3698630136986301
+D) ESP,NS-A,1.02,mode,2,29,0.3972602739726027
+D) ESP,NS-A,1.06,mode,1,30,0.410958904109589
+D) ESP,NS-A,1.09,mode,1,31,0.4246575342465753
+D) ESP,NS-A,1.19,mode,1,32,0.4383561643835616
+D) ESP,NS-A,1.23,mode,1,33,0.4520547945205479
+D) ESP,NS-A,1.24,mode,1,34,0.4657534246575342
+D) ESP,NS-A,1.31,mode,1,35,0.4794520547945205
+D) ESP,NS-A,1.32,mode,2,37,0.5068493150684932
+D) ESP,NS-A,1.45,mode,1,38,0.5205479452054794
+D) ESP,NS-A,1.49,mode,1,39,0.5342465753424658
+D) ESP,NS-A,1.5,mode,1,40,0.547945205479452
+D) ESP,NS-A,1.51,mode,1,41,0.5616438356164384
+D) ESP,NS-A,1.52,mode,1,42,0.5753424657534246
+D) ESP,NS-A,1.59,mode,1,43,0.589041095890411
+D) ESP,NS-A,1.7,mode,1,44,0.6027397260273972
+D) ESP,NS-A,1.74,mode,1,45,0.6164383561643836
+D) ESP,NS-A,1.8,mode,1,46,0.6301369863013698
+D) ESP,NS-A,1.81,mode,1,47,0.6438356164383562
+D) ESP,NS-A,1.83,mode,1,48,0.6575342465753424
+D) ESP,NS-A,1.84,mode,1,49,0.6712328767123288
+D) ESP,NS-A,1.89,mode,1,50,0.684931506849315
+D) ESP,NS-A,1.9,mode,1,51,0.6986301369863014
+D) ESP,NS-A,1.91,mode,1,52,0.7123287671232876
+D) ESP,NS-A,1.93,mode,1,53,0.726027397260274
+D) ESP,NS-A,1.94,mode,1,54,0.7397260273972602
+D) ESP,NS-A,1.96,mode,1,55,0.7534246575342466
+D) ESP,NS-A,2,mode,1,56,0.7671232876712328
+D) ESP,NS-A,2.06,mode,1,57,0.7808219178082192
+D) ESP,NS-A,2.12,mode,1,58,0.7945205479452054
+D) ESP,NS-A,2.17,mode,1,59,0.8082191780821918
+D) ESP,NS-A,2.25,mode,1,60,0.821917808219178
+D) ESP,NS-A,2.26,mode,1,61,0.8356164383561644
+D) ESP,NS-A,2.3,mode,1,62,0.8493150684931506
+D) ESP,NS-A,2.31,mode,2,64,0.8767123287671232
+D) ESP,NS-A,2.34,mode,1,65,0.8904109589041096
+D) ESP,NS-A,2.4,mode,1,66,0.9041095890410958
+D) ESP,NS-A,2.41,mode,1,67,0.9178082191780822
+D) ESP,NS-A,2.48,mode,1,68,0.9315068493150684
+D) ESP,NS-A,2.54,mode,1,69,0.9452054794520548
+D) ESP,NS-A,2.6,mode,1,70,0.958904109589041
+D) ESP,NS-A,2.66,mode,1,71,0.9726027397260274
+D) ESP,NS-A,2.79,mode,1,72,0.9863013698630136
+D) ESP,NS-A,2.82,mode,1,73,1
+D) ESP,NS-A,NA,mean,73,73,1
+D) ESP,NS-C,0.05,mode,1,1,0.0136986301369863
+D) ESP,NS-C,0.07,mode,2,3,0.0410958904109589
+D) ESP,NS-C,0.09,mode,1,4,0.0547945205479452
+D) ESP,NS-C,0.1,mode,1,5,0.0684931506849315
+D) ESP,NS-C,0.11,mode,1,6,0.0821917808219178
+D) ESP,NS-C,0.24,mode,2,8,0.1095890410958904
+D) ESP,NS-C,0.27,mode,2,10,0.136986301369863
+D) ESP,NS-C,0.32,mode,1,11,0.1506849315068493
+D) ESP,NS-C,0.37,mode,1,12,0.1643835616438356
+D) ESP,NS-C,0.38,mode,1,13,0.1780821917808219
+D) ESP,NS-C,0.43,mode,1,14,0.1917808219178082
+D) ESP,NS-C,0.48,mode,3,17,0.2328767123287671
+D) ESP,NS-C,0.49,mode,1,18,0.2465753424657534
+D) ESP,NS-C,0.5,mode,1,19,0.2602739726027397
+D) ESP,NS-C,0.51,mode,1,20,0.273972602739726
+D) ESP,NS-C,0.56,mode,1,21,0.2876712328767123
+D) ESP,NS-C,0.61,mode,1,22,0.3013698630136986
+D) ESP,NS-C,0.63,mode,2,24,0.3287671232876712
+D) ESP,NS-C,0.67,mode,1,25,0.3424657534246575
+D) ESP,NS-C,0.69,mode,1,26,0.3561643835616438
+D) ESP,NS-C,0.73,mode,1,27,0.3698630136986301
+D) ESP,NS-C,0.76,mode,1,28,0.3835616438356164
+D) ESP,NS-C,0.77,mode,1,29,0.3972602739726027
+D) ESP,NS-C,0.79,mode,1,30,0.410958904109589
+D) ESP,NS-C,0.8,mode,1,31,0.4246575342465753
+D) ESP,NS-C,0.81,mode,1,32,0.4383561643835616
+D) ESP,NS-C,0.83,mode,1,33,0.4520547945205479
+D) ESP,NS-C,0.87,mode,1,34,0.4657534246575342
+D) ESP,NS-C,0.88,mode,1,35,0.4794520547945205
+D) ESP,NS-C,1.04,mode,1,36,0.4931506849315068
+D) ESP,NS-C,1.07,mode,1,37,0.5068493150684932
+D) ESP,NS-C,1.11,mode,2,39,0.5342465753424658
+D) ESP,NS-C,1.19,mode,1,40,0.547945205479452
+D) ESP,NS-C,1.21,mode,1,41,0.5616438356164384
+D) ESP,NS-C,1.22,mode,1,42,0.5753424657534246
+D) ESP,NS-C,1.28,mode,1,43,0.589041095890411
+D) ESP,NS-C,1.31,mode,1,44,0.6027397260273972
+D) ESP,NS-C,1.36,mode,1,45,0.6164383561643836
+D) ESP,NS-C,1.37,mode,1,46,0.6301369863013698
+D) ESP,NS-C,1.76,mode,1,47,0.6438356164383562
+D) ESP,NS-C,2.03,mode,1,48,0.6575342465753424
+D) ESP,NS-C,2.06,mode,1,49,0.6712328767123288
+D) ESP,NS-C,2.08,mode,1,50,0.684931506849315
+D) ESP,NS-C,2.15,mode,1,51,0.6986301369863014
+D) ESP,NS-C,2.3,mode,1,52,0.7123287671232876
+D) ESP,NS-C,2.49,mode,1,53,0.726027397260274
+D) ESP,NS-C,2.61,mode,1,54,0.7397260273972602
+D) ESP,NS-C,2.62,mode,1,55,0.7534246575342466
+D) ESP,NS-C,2.67,mode,1,56,0.7671232876712328
+D) ESP,NS-C,2.73,mode,1,57,0.7808219178082192
+D) ESP,NS-C,2.88,mode,1,58,0.7945205479452054
+D) ESP,NS-C,3.38,mode,1,59,0.8082191780821918
+D) ESP,NS-C,3.42,mode,1,60,0.821917808219178
+D) ESP,NS-C,3.77,mode,1,61,0.8356164383561644
+D) ESP,NS-C,3.9,mode,1,62,0.8493150684931506
+D) ESP,NS-C,4.22,mode,1,63,0.863013698630137
+D) ESP,NS-C,4.59,mode,1,64,0.8767123287671232
+D) ESP,NS-C,4.63,mode,2,66,0.9041095890410958
+D) ESP,NS-C,4.95,mode,1,67,0.9178082191780822
+D) ESP,NS-C,4.97,mode,1,68,0.9315068493150684
+D) ESP,NS-C,5.2,mode,1,69,0.9452054794520548
+D) ESP,NS-C,5.22,mode,1,70,0.958904109589041
+D) ESP,NS-C,5.46,mode,1,71,0.9726027397260274
+D) ESP,NS-C,6.14,mode,1,72,0.9863013698630136
+D) ESP,NS-C,6.76,mode,1,73,1
+D) ESP,NS-C,NA,mean,73,73,1
+D) ESP,PSIS-LOO,NA,mean,73,73,1
+D) ESP,PSIS-LOO,NA,mode,73,73,1
+D) ESP,VEHTARI,0,mean,4,4,0.0547945205479452
+D) ESP,VEHTARI,0.01,mean,9,13,0.1780821917808219
+D) ESP,VEHTARI,0.02,mean,9,22,0.3013698630136986
+D) ESP,VEHTARI,0.03,mean,11,33,0.4520547945205479
+D) ESP,VEHTARI,0.04,mean,6,39,0.5342465753424658
+D) ESP,VEHTARI,0.05,mean,6,45,0.6164383561643836
+D) ESP,VEHTARI,0.06,mean,6,51,0.6986301369863014
+D) ESP,VEHTARI,0.07,mean,3,54,0.7397260273972602
+D) ESP,VEHTARI,0.08,mean,1,55,0.7534246575342466
+D) ESP,VEHTARI,0.09,mean,2,57,0.7808219178082192
+D) ESP,VEHTARI,0.1,mean,1,58,0.7945205479452054
+D) ESP,VEHTARI,0.11,mean,3,61,0.8356164383561644
+D) ESP,VEHTARI,0.12,mean,3,64,0.8767123287671232
+D) ESP,VEHTARI,0.13,mean,2,66,0.9041095890410958
+D) ESP,VEHTARI,0.14,mean,1,67,0.9178082191780822
+D) ESP,VEHTARI,0.16,mean,1,68,0.9315068493150684
+D) ESP,VEHTARI,0.17,mean,2,70,0.958904109589041
+D) ESP,VEHTARI,0.2,mean,1,71,0.9726027397260274
+D) ESP,VEHTARI,0.28,mean,2,73,1
+D) ESP,VEHTARI,NA,mode,73,73,1
+B) Radon,AXE,0,mean,80,80,0.3137254901960784
+B) Radon,AXE,0.01,mean,86,166,0.6509803921568628
+B) Radon,AXE,0.02,mean,42,208,0.8156862745098039
+B) Radon,AXE,0.03,mean,23,231,0.9058823529411765
+B) Radon,AXE,0.04,mean,8,239,0.9372549019607843
+B) Radon,AXE,0.05,mean,4,243,0.9529411764705882
+B) Radon,AXE,0.06,mean,2,245,0.9607843137254902
+B) Radon,AXE,0.07,mean,3,248,0.9725490196078431
+B) Radon,AXE,0.08,mean,1,249,0.9764705882352941
+B) Radon,AXE,0.1,mean,1,250,0.9803921568627451
+B) Radon,AXE,0.11,mean,1,251,0.984313725490196
+B) Radon,AXE,0.15,mean,1,252,0.9882352941176471
+B) Radon,AXE,0.19,mean,1,253,0.9921568627450981
+B) Radon,AXE,0.39,mean,1,254,0.996078431372549
+B) Radon,AXE,2.21,mean,1,255,1
+B) Radon,AXE,NA,mode,255,255,1
+B) Radon,GHOST,0,mean,69,69,0.27058823529411763
+B) Radon,GHOST,0.01,mean,83,152,0.596078431372549
+B) Radon,GHOST,0.02,mean,46,198,0.7764705882352941
+B) Radon,GHOST,0.03,mean,29,227,0.8901960784313725
+B) Radon,GHOST,0.04,mean,9,236,0.9254901960784314
+B) Radon,GHOST,0.05,mean,5,241,0.9450980392156862
+B) Radon,GHOST,0.06,mean,1,242,0.9490196078431372
+B) Radon,GHOST,0.07,mean,5,247,0.9686274509803922
+B) Radon,GHOST,0.08,mean,1,248,0.9725490196078431
+B) Radon,GHOST,0.09,mean,1,249,0.9764705882352941
+B) Radon,GHOST,0.1,mean,1,250,0.9803921568627451
+B) Radon,GHOST,0.11,mean,1,251,0.984313725490196
+B) Radon,GHOST,0.12,mean,1,252,0.9882352941176471
+B) Radon,GHOST,0.24,mean,1,253,0.9921568627450981
+B) Radon,GHOST,0.29,mean,1,254,0.996078431372549
+B) Radon,GHOST,2.48,mean,1,255,1
+B) Radon,GHOST,NA,mode,255,255,1
+B) Radon,iIS,0,mean,75,75,0.29411764705882354
+B) Radon,iIS,0.01,mean,79,154,0.6039215686274509
+B) Radon,iIS,0.02,mean,45,199,0.7803921568627451
+B) Radon,iIS,0.03,mean,29,228,0.8941176470588236
+B) Radon,iIS,0.04,mean,9,237,0.9294117647058824
+B) Radon,iIS,0.05,mean,5,242,0.9490196078431372
+B) Radon,iIS,0.06,mean,2,244,0.9568627450980393
+B) Radon,iIS,0.07,mean,4,248,0.9725490196078431
+B) Radon,iIS,0.08,mean,1,249,0.9764705882352941
+B) Radon,iIS,0.1,mean,1,250,0.9803921568627451
+B) Radon,iIS,0.12,mean,1,251,0.984313725490196
+B) Radon,iIS,0.14,mean,1,252,0.9882352941176471
+B) Radon,iIS,0.21,mean,1,253,0.9921568627450981
+B) Radon,iIS,0.37,mean,1,254,0.996078431372549
+B) Radon,iIS,2.26,mean,1,255,1
+B) Radon,iIS,NA,mode,255,255,1
+B) Radon,iIS-A,0,mean,83,83,0.3254901960784314
+B) Radon,iIS-A,0.01,mean,81,164,0.6431372549019608
+B) Radon,iIS-A,0.02,mean,41,205,0.803921568627451
+B) Radon,iIS-A,0.03,mean,26,231,0.9058823529411765
+B) Radon,iIS-A,0.04,mean,9,240,0.9411764705882353
+B) Radon,iIS-A,0.05,mean,3,243,0.9529411764705882
+B) Radon,iIS-A,0.06,mean,2,245,0.9607843137254902
+B) Radon,iIS-A,0.07,mean,3,248,0.9725490196078431
+B) Radon,iIS-A,0.08,mean,1,249,0.9764705882352941
+B) Radon,iIS-A,0.1,mean,1,250,0.9803921568627451
+B) Radon,iIS-A,0.12,mean,1,251,0.984313725490196
+B) Radon,iIS-A,0.15,mean,1,252,0.9882352941176471
+B) Radon,iIS-A,0.2,mean,1,253,0.9921568627450981
+B) Radon,iIS-A,0.38,mean,1,254,0.996078431372549
+B) Radon,iIS-A,2.22,mean,1,255,1
+B) Radon,iIS-A,NA,mode,255,255,1
+B) Radon,IJ-A,0,mode,19,19,0.07450980392156863
+B) Radon,IJ-A,0.01,mode,24,43,0.16862745098039217
+B) Radon,IJ-A,0.02,mode,25,68,0.26666666666666666
+B) Radon,IJ-A,0.03,mode,22,90,0.35294117647058826
+B) Radon,IJ-A,0.04,mode,13,103,0.403921568627451
+B) Radon,IJ-A,0.05,mode,20,123,0.4823529411764706
+B) Radon,IJ-A,0.06,mode,20,143,0.5607843137254902
+B) Radon,IJ-A,0.07,mode,8,151,0.592156862745098
+B) Radon,IJ-A,0.08,mode,10,161,0.6313725490196078
+B) Radon,IJ-A,0.09,mode,8,169,0.6627450980392157
+B) Radon,IJ-A,0.1,mode,12,181,0.7098039215686275
+B) Radon,IJ-A,0.11,mode,8,189,0.7411764705882353
+B) Radon,IJ-A,0.12,mode,15,204,0.8
+B) Radon,IJ-A,0.13,mode,3,207,0.8117647058823529
+B) Radon,IJ-A,0.14,mode,2,209,0.8196078431372549
+B) Radon,IJ-A,0.15,mode,4,213,0.8352941176470589
+B) Radon,IJ-A,0.16,mode,5,218,0.8549019607843137
+B) Radon,IJ-A,0.17,mode,3,221,0.8666666666666667
+B) Radon,IJ-A,0.18,mode,6,227,0.8901960784313725
+B) Radon,IJ-A,0.19,mode,3,230,0.9019607843137255
+B) Radon,IJ-A,0.2,mode,3,233,0.9137254901960784
+B) Radon,IJ-A,0.21,mode,2,235,0.9215686274509803
+B) Radon,IJ-A,0.22,mode,3,238,0.9333333333333333
+B) Radon,IJ-A,0.24,mode,2,240,0.9411764705882353
+B) Radon,IJ-A,0.26,mode,2,242,0.9490196078431372
+B) Radon,IJ-A,0.27,mode,2,244,0.9568627450980393
+B) Radon,IJ-A,0.29,mode,1,245,0.9607843137254902
+B) Radon,IJ-A,0.3,mode,1,246,0.9647058823529412
+B) Radon,IJ-A,0.35,mode,1,247,0.9686274509803922
+B) Radon,IJ-A,0.37,mode,1,248,0.9725490196078431
+B) Radon,IJ-A,0.46,mode,1,249,0.9764705882352941
+B) Radon,IJ-A,0.47,mode,1,250,0.9803921568627451
+B) Radon,IJ-A,0.56,mode,2,252,0.9882352941176471
+B) Radon,IJ-A,0.65,mode,1,253,0.9921568627450981
+B) Radon,IJ-A,1,mode,1,254,0.996078431372549
+B) Radon,IJ-A,2.42,mode,1,255,1
+B) Radon,IJ-A,NA,mean,255,255,1
+B) Radon,IJ-C,0,mode,4,4,0.01568627450980392
+B) Radon,IJ-C,0.01,mode,19,23,0.09019607843137255
+B) Radon,IJ-C,0.02,mode,15,38,0.14901960784313725
+B) Radon,IJ-C,0.03,mode,11,49,0.19215686274509805
+B) Radon,IJ-C,0.04,mode,15,64,0.25098039215686274
+B) Radon,IJ-C,0.05,mode,5,69,0.27058823529411763
+B) Radon,IJ-C,0.06,mode,14,83,0.3254901960784314
+B) Radon,IJ-C,0.07,mode,12,95,0.37254901960784315
+B) Radon,IJ-C,0.08,mode,5,100,0.39215686274509803
+B) Radon,IJ-C,0.09,mode,6,106,0.41568627450980394
+B) Radon,IJ-C,0.1,mode,9,115,0.45098039215686275
+B) Radon,IJ-C,0.11,mode,3,118,0.4627450980392157
+B) Radon,IJ-C,0.12,mode,5,123,0.4823529411764706
+B) Radon,IJ-C,0.13,mode,5,128,0.5019607843137255
+B) Radon,IJ-C,0.14,mode,3,131,0.5137254901960784
+B) Radon,IJ-C,0.15,mode,6,137,0.5372549019607843
+B) Radon,IJ-C,0.16,mode,8,145,0.5686274509803921
+B) Radon,IJ-C,0.17,mode,4,149,0.5843137254901961
+B) Radon,IJ-C,0.18,mode,7,156,0.611764705882353
+B) Radon,IJ-C,0.19,mode,3,159,0.6235294117647059
+B) Radon,IJ-C,0.2,mode,3,162,0.6352941176470588
+B) Radon,IJ-C,0.21,mode,4,166,0.6509803921568628
+B) Radon,IJ-C,0.22,mode,2,168,0.6588235294117647
+B) Radon,IJ-C,0.23,mode,4,172,0.6745098039215687
+B) Radon,IJ-C,0.24,mode,2,174,0.6823529411764706
+B) Radon,IJ-C,0.25,mode,2,176,0.6901960784313725
+B) Radon,IJ-C,0.26,mode,6,182,0.7137254901960784
+B) Radon,IJ-C,0.27,mode,4,186,0.7294117647058823
+B) Radon,IJ-C,0.28,mode,2,188,0.7372549019607844
+B) Radon,IJ-C,0.29,mode,2,190,0.7450980392156863
+B) Radon,IJ-C,0.3,mode,3,193,0.7568627450980392
+B) Radon,IJ-C,0.31,mode,2,195,0.7647058823529411
+B) Radon,IJ-C,0.32,mode,3,198,0.7764705882352941
+B) Radon,IJ-C,0.33,mode,1,199,0.7803921568627451
+B) Radon,IJ-C,0.34,mode,1,200,0.7843137254901961
+B) Radon,IJ-C,0.35,mode,1,201,0.788235294117647
+B) Radon,IJ-C,0.36,mode,1,202,0.792156862745098
+B) Radon,IJ-C,0.37,mode,1,203,0.796078431372549
+B) Radon,IJ-C,0.38,mode,1,204,0.8
+B) Radon,IJ-C,0.4,mode,2,206,0.807843137254902
+B) Radon,IJ-C,0.41,mode,1,207,0.8117647058823529
+B) Radon,IJ-C,0.42,mode,2,209,0.8196078431372549
+B) Radon,IJ-C,0.43,mode,1,210,0.8235294117647058
+B) Radon,IJ-C,0.44,mode,2,212,0.8313725490196079
+B) Radon,IJ-C,0.45,mode,1,213,0.8352941176470589
+B) Radon,IJ-C,0.48,mode,2,215,0.8431372549019608
+B) Radon,IJ-C,0.49,mode,1,216,0.8470588235294118
+B) Radon,IJ-C,0.51,mode,1,217,0.8509803921568627
+B) Radon,IJ-C,0.52,mode,1,218,0.8549019607843137
+B) Radon,IJ-C,0.54,mode,1,219,0.8588235294117647
+B) Radon,IJ-C,0.55,mode,1,220,0.8627450980392157
+B) Radon,IJ-C,0.56,mode,1,221,0.8666666666666667
+B) Radon,IJ-C,0.57,mode,1,222,0.8705882352941177
+B) Radon,IJ-C,0.58,mode,2,224,0.8784313725490196
+B) Radon,IJ-C,0.59,mode,1,225,0.8823529411764706
+B) Radon,IJ-C,0.61,mode,2,227,0.8901960784313725
+B) Radon,IJ-C,0.63,mode,1,228,0.8941176470588236
+B) Radon,IJ-C,0.64,mode,1,229,0.8980392156862745
+B) Radon,IJ-C,0.66,mode,2,231,0.9058823529411765
+B) Radon,IJ-C,0.67,mode,1,232,0.9098039215686274
+B) Radon,IJ-C,0.69,mode,2,234,0.9176470588235294
+B) Radon,IJ-C,0.71,mode,1,235,0.9215686274509803
+B) Radon,IJ-C,0.73,mode,1,236,0.9254901960784314
+B) Radon,IJ-C,0.76,mode,1,237,0.9294117647058824
+B) Radon,IJ-C,0.78,mode,2,239,0.9372549019607843
+B) Radon,IJ-C,0.8,mode,2,241,0.9450980392156862
+B) Radon,IJ-C,0.82,mode,1,242,0.9490196078431372
+B) Radon,IJ-C,0.85,mode,1,243,0.9529411764705882
+B) Radon,IJ-C,0.86,mode,2,245,0.9607843137254902
+B) Radon,IJ-C,0.9,mode,1,246,0.9647058823529412
+B) Radon,IJ-C,0.93,mode,1,247,0.9686274509803922
+B) Radon,IJ-C,0.98,mode,1,248,0.9725490196078431
+B) Radon,IJ-C,1,mode,1,249,0.9764705882352941
+B) Radon,IJ-C,1.01,mode,1,250,0.9803921568627451
+B) Radon,IJ-C,1.06,mode,1,251,0.984313725490196
+B) Radon,IJ-C,1.14,mode,1,252,0.9882352941176471
+B) Radon,IJ-C,1.23,mode,1,253,0.9921568627450981
+B) Radon,IJ-C,1.71,mode,1,254,0.996078431372549
+B) Radon,IJ-C,2.55,mode,1,255,1
+B) Radon,IJ-C,NA,mean,255,255,1
+B) Radon,NS-A,0,mode,4,4,0.01568627450980392
+B) Radon,NS-A,0.01,mode,4,8,0.03137254901960784
+B) Radon,NS-A,0.02,mode,9,17,0.06666666666666667
+B) Radon,NS-A,0.03,mode,2,19,0.07450980392156863
+B) Radon,NS-A,0.04,mode,4,23,0.09019607843137255
+B) Radon,NS-A,0.05,mode,4,27,0.10588235294117647
+B) Radon,NS-A,0.06,mode,3,30,0.11764705882352941
+B) Radon,NS-A,0.07,mode,2,32,0.12549019607843137
+B) Radon,NS-A,0.08,mode,4,36,0.1411764705882353
+B) Radon,NS-A,0.09,mode,6,42,0.16470588235294117
+B) Radon,NS-A,0.1,mode,1,43,0.16862745098039217
+B) Radon,NS-A,0.11,mode,7,50,0.19607843137254902
+B) Radon,NS-A,0.12,mode,4,54,0.21176470588235294
+B) Radon,NS-A,0.13,mode,4,58,0.22745098039215686
+B) Radon,NS-A,0.14,mode,2,60,0.23529411764705882
+B) Radon,NS-A,0.15,mode,1,61,0.23921568627450981
+B) Radon,NS-A,0.16,mode,3,64,0.25098039215686274
+B) Radon,NS-A,0.17,mode,5,69,0.27058823529411763
+B) Radon,NS-A,0.18,mode,5,74,0.2901960784313726
+B) Radon,NS-A,0.19,mode,4,78,0.3058823529411765
+B) Radon,NS-A,0.2,mode,5,83,0.3254901960784314
+B) Radon,NS-A,0.21,mode,2,85,0.3333333333333333
+B) Radon,NS-A,0.22,mode,1,86,0.33725490196078434
+B) Radon,NS-A,0.23,mode,1,87,0.3411764705882353
+B) Radon,NS-A,0.24,mode,3,90,0.35294117647058826
+B) Radon,NS-A,0.25,mode,6,96,0.3764705882352941
+B) Radon,NS-A,0.26,mode,3,99,0.38823529411764707
+B) Radon,NS-A,0.27,mode,4,103,0.403921568627451
+B) Radon,NS-A,0.28,mode,3,106,0.41568627450980394
+B) Radon,NS-A,0.29,mode,4,110,0.43137254901960786
+B) Radon,NS-A,0.3,mode,3,113,0.44313725490196076
+B) Radon,NS-A,0.31,mode,3,116,0.4549019607843137
+B) Radon,NS-A,0.32,mode,5,121,0.4745098039215686
+B) Radon,NS-A,0.33,mode,3,124,0.48627450980392156
+B) Radon,NS-A,0.34,mode,4,128,0.5019607843137255
+B) Radon,NS-A,0.35,mode,4,132,0.5176470588235295
+B) Radon,NS-A,0.36,mode,2,134,0.5254901960784314
+B) Radon,NS-A,0.37,mode,4,138,0.5411764705882353
+B) Radon,NS-A,0.38,mode,2,140,0.5490196078431373
+B) Radon,NS-A,0.39,mode,1,141,0.5529411764705883
+B) Radon,NS-A,0.4,mode,3,144,0.5647058823529412
+B) Radon,NS-A,0.41,mode,1,145,0.5686274509803921
+B) Radon,NS-A,0.42,mode,3,148,0.5803921568627451
+B) Radon,NS-A,0.43,mode,2,150,0.5882352941176471
+B) Radon,NS-A,0.44,mode,2,152,0.596078431372549
+B) Radon,NS-A,0.45,mode,1,153,0.6
+B) Radon,NS-A,0.46,mode,3,156,0.611764705882353
+B) Radon,NS-A,0.47,mode,6,162,0.6352941176470588
+B) Radon,NS-A,0.49,mode,2,164,0.6431372549019608
+B) Radon,NS-A,0.51,mode,3,167,0.6549019607843137
+B) Radon,NS-A,0.52,mode,3,170,0.6666666666666666
+B) Radon,NS-A,0.53,mode,4,174,0.6823529411764706
+B) Radon,NS-A,0.54,mode,1,175,0.6862745098039216
+B) Radon,NS-A,0.56,mode,6,181,0.7098039215686275
+B) Radon,NS-A,0.57,mode,4,185,0.7254901960784313
+B) Radon,NS-A,0.58,mode,1,186,0.7294117647058823
+B) Radon,NS-A,0.59,mode,1,187,0.7333333333333333
+B) Radon,NS-A,0.6,mode,4,191,0.7490196078431373
+B) Radon,NS-A,0.61,mode,3,194,0.7607843137254902
+B) Radon,NS-A,0.62,mode,3,197,0.7725490196078432
+B) Radon,NS-A,0.63,mode,2,199,0.7803921568627451
+B) Radon,NS-A,0.64,mode,2,201,0.788235294117647
+B) Radon,NS-A,0.65,mode,1,202,0.792156862745098
+B) Radon,NS-A,0.66,mode,3,205,0.803921568627451
+B) Radon,NS-A,0.67,mode,3,208,0.8156862745098039
+B) Radon,NS-A,0.68,mode,3,211,0.8274509803921568
+B) Radon,NS-A,0.69,mode,1,212,0.8313725490196079
+B) Radon,NS-A,0.7,mode,2,214,0.8392156862745098
+B) Radon,NS-A,0.71,mode,2,216,0.8470588235294118
+B) Radon,NS-A,0.72,mode,1,217,0.8509803921568627
+B) Radon,NS-A,0.75,mode,1,218,0.8549019607843137
+B) Radon,NS-A,0.76,mode,2,220,0.8627450980392157
+B) Radon,NS-A,0.77,mode,1,221,0.8666666666666667
+B) Radon,NS-A,0.78,mode,3,224,0.8784313725490196
+B) Radon,NS-A,0.79,mode,3,227,0.8901960784313725
+B) Radon,NS-A,0.81,mode,1,228,0.8941176470588236
+B) Radon,NS-A,0.84,mode,2,230,0.9019607843137255
+B) Radon,NS-A,0.86,mode,2,232,0.9098039215686274
+B) Radon,NS-A,0.9,mode,1,233,0.9137254901960784
+B) Radon,NS-A,0.91,mode,1,234,0.9176470588235294
+B) Radon,NS-A,0.92,mode,1,235,0.9215686274509803
+B) Radon,NS-A,0.93,mode,2,237,0.9294117647058824
+B) Radon,NS-A,0.96,mode,2,239,0.9372549019607843
+B) Radon,NS-A,1.04,mode,1,240,0.9411764705882353
+B) Radon,NS-A,1.06,mode,1,241,0.9450980392156862
+B) Radon,NS-A,1.08,mode,1,242,0.9490196078431372
+B) Radon,NS-A,1.16,mode,1,243,0.9529411764705882
+B) Radon,NS-A,1.17,mode,1,244,0.9568627450980393
+B) Radon,NS-A,1.23,mode,1,245,0.9607843137254902
+B) Radon,NS-A,1.26,mode,1,246,0.9647058823529412
+B) Radon,NS-A,1.28,mode,1,247,0.9686274509803922
+B) Radon,NS-A,1.37,mode,1,248,0.9725490196078431
+B) Radon,NS-A,1.5,mode,1,249,0.9764705882352941
+B) Radon,NS-A,1.54,mode,1,250,0.9803921568627451
+B) Radon,NS-A,1.97,mode,2,252,0.9882352941176471
+B) Radon,NS-A,2.5,mode,1,253,0.9921568627450981
+B) Radon,NS-A,2.59,mode,1,254,0.996078431372549
+B) Radon,NS-A,3.05,mode,1,255,1
+B) Radon,NS-A,NA,mean,255,255,1
+B) Radon,NS-C,0,mode,9,9,0.03529411764705882
+B) Radon,NS-C,0.01,mode,12,21,0.08235294117647059
+B) Radon,NS-C,0.02,mode,11,32,0.12549019607843137
+B) Radon,NS-C,0.03,mode,16,48,0.18823529411764706
+B) Radon,NS-C,0.04,mode,13,61,0.23921568627450981
+B) Radon,NS-C,0.05,mode,8,69,0.27058823529411763
+B) Radon,NS-C,0.06,mode,9,78,0.3058823529411765
+B) Radon,NS-C,0.07,mode,11,89,0.34901960784313724
+B) Radon,NS-C,0.08,mode,6,95,0.37254901960784315
+B) Radon,NS-C,0.09,mode,5,100,0.39215686274509803
+B) Radon,NS-C,0.1,mode,5,105,0.4117647058823529
+B) Radon,NS-C,0.11,mode,6,111,0.43529411764705883
+B) Radon,NS-C,0.12,mode,8,119,0.4666666666666667
+B) Radon,NS-C,0.13,mode,7,126,0.49411764705882355
+B) Radon,NS-C,0.14,mode,8,134,0.5254901960784314
+B) Radon,NS-C,0.15,mode,12,146,0.5725490196078431
+B) Radon,NS-C,0.16,mode,8,154,0.6039215686274509
+B) Radon,NS-C,0.17,mode,4,158,0.6196078431372549
+B) Radon,NS-C,0.18,mode,6,164,0.6431372549019608
+B) Radon,NS-C,0.19,mode,8,172,0.6745098039215687
+B) Radon,NS-C,0.2,mode,1,173,0.6784313725490196
+B) Radon,NS-C,0.21,mode,3,176,0.6901960784313725
+B) Radon,NS-C,0.22,mode,2,178,0.6980392156862745
+B) Radon,NS-C,0.23,mode,3,181,0.7098039215686275
+B) Radon,NS-C,0.25,mode,4,185,0.7254901960784313
+B) Radon,NS-C,0.27,mode,1,186,0.7294117647058823
+B) Radon,NS-C,0.28,mode,3,189,0.7411764705882353
+B) Radon,NS-C,0.29,mode,1,190,0.7450980392156863
+B) Radon,NS-C,0.3,mode,4,194,0.7607843137254902
+B) Radon,NS-C,0.31,mode,2,196,0.7686274509803922
+B) Radon,NS-C,0.32,mode,2,198,0.7764705882352941
+B) Radon,NS-C,0.33,mode,2,200,0.7843137254901961
+B) Radon,NS-C,0.34,mode,3,203,0.796078431372549
+B) Radon,NS-C,0.35,mode,1,204,0.8
+B) Radon,NS-C,0.37,mode,1,205,0.803921568627451
+B) Radon,NS-C,0.38,mode,3,208,0.8156862745098039
+B) Radon,NS-C,0.4,mode,1,209,0.8196078431372549
+B) Radon,NS-C,0.41,mode,3,212,0.8313725490196079
+B) Radon,NS-C,0.43,mode,1,213,0.8352941176470589
+B) Radon,NS-C,0.44,mode,3,216,0.8470588235294118
+B) Radon,NS-C,0.45,mode,3,219,0.8588235294117647
+B) Radon,NS-C,0.46,mode,1,220,0.8627450980392157
+B) Radon,NS-C,0.47,mode,3,223,0.8745098039215686
+B) Radon,NS-C,0.48,mode,3,226,0.8862745098039215
+B) Radon,NS-C,0.49,mode,1,227,0.8901960784313725
+B) Radon,NS-C,0.51,mode,1,228,0.8941176470588236
+B) Radon,NS-C,0.52,mode,1,229,0.8980392156862745
+B) Radon,NS-C,0.57,mode,1,230,0.9019607843137255
+B) Radon,NS-C,0.62,mode,1,231,0.9058823529411765
+B) Radon,NS-C,0.63,mode,1,232,0.9098039215686274
+B) Radon,NS-C,0.64,mode,1,233,0.9137254901960784
+B) Radon,NS-C,0.66,mode,1,234,0.9176470588235294
+B) Radon,NS-C,0.68,mode,1,235,0.9215686274509803
+B) Radon,NS-C,0.7,mode,1,236,0.9254901960784314
+B) Radon,NS-C,0.72,mode,1,237,0.9294117647058824
+B) Radon,NS-C,0.73,mode,1,238,0.9333333333333333
+B) Radon,NS-C,0.74,mode,1,239,0.9372549019607843
+B) Radon,NS-C,0.81,mode,1,240,0.9411764705882353
+B) Radon,NS-C,0.82,mode,1,241,0.9450980392156862
+B) Radon,NS-C,0.87,mode,1,242,0.9490196078431372
+B) Radon,NS-C,0.95,mode,1,243,0.9529411764705882
+B) Radon,NS-C,1,mode,2,245,0.9607843137254902
+B) Radon,NS-C,1.08,mode,1,246,0.9647058823529412
+B) Radon,NS-C,1.13,mode,2,248,0.9725490196078431
+B) Radon,NS-C,1.15,mode,1,249,0.9764705882352941
+B) Radon,NS-C,1.29,mode,1,250,0.9803921568627451
+B) Radon,NS-C,1.36,mode,2,252,0.9882352941176471
+B) Radon,NS-C,1.61,mode,1,253,0.9921568627450981
+B) Radon,NS-C,1.82,mode,1,254,0.996078431372549
+B) Radon,NS-C,1.88,mode,1,255,1
+B) Radon,NS-C,NA,mean,255,255,1
+B) Radon,PSIS-LOO,NA,mean,255,255,1
+B) Radon,PSIS-LOO,NA,mode,255,255,1
+B) Radon,VEHTARI,0,mean,6,6,0.023529411764705882
+B) Radon,VEHTARI,0.01,mean,13,19,0.07450980392156863
+B) Radon,VEHTARI,0.02,mean,8,27,0.10588235294117647
+B) Radon,VEHTARI,0.03,mean,7,34,0.13333333333333333
+B) Radon,VEHTARI,0.04,mean,13,47,0.1843137254901961
+B) Radon,VEHTARI,0.05,mean,7,54,0.21176470588235294
+B) Radon,VEHTARI,0.06,mean,12,66,0.25882352941176473
+B) Radon,VEHTARI,0.07,mean,8,74,0.2901960784313726
+B) Radon,VEHTARI,0.08,mean,7,81,0.3176470588235294
+B) Radon,VEHTARI,0.09,mean,4,85,0.3333333333333333
+B) Radon,VEHTARI,0.1,mean,9,94,0.3686274509803922
+B) Radon,VEHTARI,0.11,mean,6,100,0.39215686274509803
+B) Radon,VEHTARI,0.12,mean,15,115,0.45098039215686275
+B) Radon,VEHTARI,0.14,mean,2,117,0.4588235294117647
+B) Radon,VEHTARI,0.15,mean,5,122,0.47843137254901963
+B) Radon,VEHTARI,0.16,mean,4,126,0.49411764705882355
+B) Radon,VEHTARI,0.17,mean,5,131,0.5137254901960784
+B) Radon,VEHTARI,0.18,mean,6,137,0.5372549019607843
+B) Radon,VEHTARI,0.19,mean,3,140,0.5490196078431373
+B) Radon,VEHTARI,0.2,mean,4,144,0.5647058823529412
+B) Radon,VEHTARI,0.21,mean,3,147,0.5764705882352941
+B) Radon,VEHTARI,0.22,mean,4,151,0.592156862745098
+B) Radon,VEHTARI,0.23,mean,3,154,0.6039215686274509
+B) Radon,VEHTARI,0.24,mean,3,157,0.615686274509804
+B) Radon,VEHTARI,0.25,mean,1,158,0.6196078431372549
+B) Radon,VEHTARI,0.26,mean,4,162,0.6352941176470588
+B) Radon,VEHTARI,0.27,mean,4,166,0.6509803921568628
+B) Radon,VEHTARI,0.28,mean,4,170,0.6666666666666666
+B) Radon,VEHTARI,0.29,mean,1,171,0.6705882352941176
+B) Radon,VEHTARI,0.3,mean,4,175,0.6862745098039216
+B) Radon,VEHTARI,0.31,mean,4,179,0.7019607843137254
+B) Radon,VEHTARI,0.32,mean,1,180,0.7058823529411765
+B) Radon,VEHTARI,0.33,mean,3,183,0.7176470588235294
+B) Radon,VEHTARI,0.34,mean,3,186,0.7294117647058823
+B) Radon,VEHTARI,0.35,mean,3,189,0.7411764705882353
+B) Radon,VEHTARI,0.36,mean,2,191,0.7490196078431373
+B) Radon,VEHTARI,0.37,mean,4,195,0.7647058823529411
+B) Radon,VEHTARI,0.39,mean,1,196,0.7686274509803922
+B) Radon,VEHTARI,0.4,mean,3,199,0.7803921568627451
+B) Radon,VEHTARI,0.41,mean,2,201,0.788235294117647
+B) Radon,VEHTARI,0.42,mean,1,202,0.792156862745098
+B) Radon,VEHTARI,0.43,mean,1,203,0.796078431372549
+B) Radon,VEHTARI,0.44,mean,2,205,0.803921568627451
+B) Radon,VEHTARI,0.45,mean,2,207,0.8117647058823529
+B) Radon,VEHTARI,0.46,mean,1,208,0.8156862745098039
+B) Radon,VEHTARI,0.48,mean,1,209,0.8196078431372549
+B) Radon,VEHTARI,0.5,mean,1,210,0.8235294117647058
+B) Radon,VEHTARI,0.51,mean,1,211,0.8274509803921568
+B) Radon,VEHTARI,0.52,mean,1,212,0.8313725490196079
+B) Radon,VEHTARI,0.54,mean,1,213,0.8352941176470589
+B) Radon,VEHTARI,0.55,mean,1,214,0.8392156862745098
+B) Radon,VEHTARI,0.56,mean,1,215,0.8431372549019608
+B) Radon,VEHTARI,0.57,mean,2,217,0.8509803921568627
+B) Radon,VEHTARI,0.6,mean,3,220,0.8627450980392157
+B) Radon,VEHTARI,0.62,mean,1,221,0.8666666666666667
+B) Radon,VEHTARI,0.63,mean,1,222,0.8705882352941177
+B) Radon,VEHTARI,0.64,mean,1,223,0.8745098039215686
+B) Radon,VEHTARI,0.65,mean,2,225,0.8823529411764706
+B) Radon,VEHTARI,0.68,mean,2,227,0.8901960784313725
+B) Radon,VEHTARI,0.69,mean,1,228,0.8941176470588236
+B) Radon,VEHTARI,0.7,mean,6,234,0.9176470588235294
+B) Radon,VEHTARI,0.71,mean,2,236,0.9254901960784314
+B) Radon,VEHTARI,0.72,mean,1,237,0.9294117647058824
+B) Radon,VEHTARI,0.73,mean,1,238,0.9333333333333333
+B) Radon,VEHTARI,0.74,mean,1,239,0.9372549019607843
+B) Radon,VEHTARI,0.78,mean,1,240,0.9411764705882353
+B) Radon,VEHTARI,0.8,mean,1,241,0.9450980392156862
+B) Radon,VEHTARI,0.81,mean,2,243,0.9529411764705882
+B) Radon,VEHTARI,0.83,mean,1,244,0.9568627450980393
+B) Radon,VEHTARI,0.86,mean,1,245,0.9607843137254902
+B) Radon,VEHTARI,0.87,mean,1,246,0.9647058823529412
+B) Radon,VEHTARI,0.89,mean,1,247,0.9686274509803922
+B) Radon,VEHTARI,0.92,mean,1,248,0.9725490196078431
+B) Radon,VEHTARI,0.97,mean,1,249,0.9764705882352941
+B) Radon,VEHTARI,0.99,mean,2,251,0.984313725490196
+B) Radon,VEHTARI,1.01,mean,1,252,0.9882352941176471
+B) Radon,VEHTARI,1.08,mean,1,253,0.9921568627450981
+B) Radon,VEHTARI,1.61,mean,1,254,0.996078431372549
+B) Radon,VEHTARI,2.18,mean,1,255,1
+B) Radon,VEHTARI,NA,mode,255,255,1
+C) Radon subsets,AXE,0,mean,1318,1318,0.2978531073446328
+C) Radon subsets,AXE,0.01,mean,1556,2874,0.6494915254237288
+C) Radon subsets,AXE,0.02,mean,661,3535,0.7988700564971751
+C) Radon subsets,AXE,0.03,mean,364,3899,0.8811299435028248
+C) Radon subsets,AXE,0.04,mean,238,4137,0.9349152542372882
+C) Radon subsets,AXE,0.05,mean,98,4235,0.9570621468926553
+C) Radon subsets,AXE,0.06,mean,59,4294,0.9703954802259886
+C) Radon subsets,AXE,0.07,mean,37,4331,0.9787570621468926
+C) Radon subsets,AXE,0.08,mean,23,4354,0.983954802259887
+C) Radon subsets,AXE,0.09,mean,20,4374,0.9884745762711864
+C) Radon subsets,AXE,0.1,mean,13,4387,0.991412429378531
+C) Radon subsets,AXE,0.11,mean,6,4393,0.9927683615819209
+C) Radon subsets,AXE,0.12,mean,4,4397,0.9936723163841807
+C) Radon subsets,AXE,0.13,mean,2,4399,0.9941242937853108
+C) Radon subsets,AXE,0.14,mean,7,4406,0.9957062146892656
+C) Radon subsets,AXE,0.15,mean,3,4409,0.9963841807909605
+C) Radon subsets,AXE,0.16,mean,3,4412,0.9970621468926554
+C) Radon subsets,AXE,0.17,mean,2,4414,0.9975141242937853
+C) Radon subsets,AXE,0.18,mean,1,4415,0.9977401129943503
+C) Radon subsets,AXE,0.19,mean,2,4417,0.9981920903954802
+C) Radon subsets,AXE,0.21,mean,1,4418,0.9984180790960452
+C) Radon subsets,AXE,0.24,mean,2,4420,0.9988700564971752
+C) Radon subsets,AXE,0.27,mean,2,4422,0.9993220338983051
+C) Radon subsets,AXE,0.3,mean,1,4423,0.9995480225988701
+C) Radon subsets,AXE,0.41,mean,1,4424,0.999774011299435
+C) Radon subsets,AXE,0.44,mean,1,4425,1
+C) Radon subsets,AXE,NA,mode,4425,4425,1
+C) Radon subsets,GHOST,0,mean,378,378,0.08542372881355932
+C) Radon subsets,GHOST,0.01,mean,486,864,0.1952542372881356
+C) Radon subsets,GHOST,0.02,mean,371,1235,0.2790960451977401
+C) Radon subsets,GHOST,0.03,mean,352,1587,0.3586440677966102
+C) Radon subsets,GHOST,0.04,mean,308,1895,0.42824858757062145
+C) Radon subsets,GHOST,0.05,mean,235,2130,0.48135593220338985
+C) Radon subsets,GHOST,0.06,mean,261,2391,0.5403389830508475
+C) Radon subsets,GHOST,0.07,mean,240,2631,0.5945762711864406
+C) Radon subsets,GHOST,0.08,mean,200,2831,0.639774011299435
+C) Radon subsets,GHOST,0.09,mean,179,3010,0.6802259887005649
+C) Radon subsets,GHOST,0.1,mean,161,3171,0.7166101694915255
+C) Radon subsets,GHOST,0.11,mean,121,3292,0.743954802259887
+C) Radon subsets,GHOST,0.12,mean,135,3427,0.7744632768361582
+C) Radon subsets,GHOST,0.13,mean,98,3525,0.7966101694915254
+C) Radon subsets,GHOST,0.14,mean,91,3616,0.8171751412429379
+C) Radon subsets,GHOST,0.15,mean,64,3680,0.831638418079096
+C) Radon subsets,GHOST,0.16,mean,77,3757,0.8490395480225988
+C) Radon subsets,GHOST,0.17,mean,66,3823,0.863954802259887
+C) Radon subsets,GHOST,0.18,mean,69,3892,0.8795480225988701
+C) Radon subsets,GHOST,0.19,mean,71,3963,0.895593220338983
+C) Radon subsets,GHOST,0.2,mean,54,4017,0.9077966101694915
+C) Radon subsets,GHOST,0.21,mean,41,4058,0.9170621468926554
+C) Radon subsets,GHOST,0.22,mean,42,4100,0.9265536723163842
+C) Radon subsets,GHOST,0.23,mean,24,4124,0.9319774011299435
+C) Radon subsets,GHOST,0.24,mean,24,4148,0.9374011299435028
+C) Radon subsets,GHOST,0.25,mean,13,4161,0.9403389830508475
+C) Radon subsets,GHOST,0.26,mean,14,4175,0.943502824858757
+C) Radon subsets,GHOST,0.27,mean,9,4184,0.9455367231638419
+C) Radon subsets,GHOST,0.28,mean,21,4205,0.9502824858757062
+C) Radon subsets,GHOST,0.29,mean,18,4223,0.9543502824858757
+C) Radon subsets,GHOST,0.3,mean,14,4237,0.9575141242937854
+C) Radon subsets,GHOST,0.31,mean,13,4250,0.96045197740113
+C) Radon subsets,GHOST,0.32,mean,12,4262,0.9631638418079096
+C) Radon subsets,GHOST,0.33,mean,6,4268,0.9645197740112994
+C) Radon subsets,GHOST,0.34,mean,11,4279,0.9670056497175141
+C) Radon subsets,GHOST,0.35,mean,16,4295,0.9706214689265537
+C) Radon subsets,GHOST,0.36,mean,4,4299,0.9715254237288136
+C) Radon subsets,GHOST,0.37,mean,7,4306,0.9731073446327684
+C) Radon subsets,GHOST,0.38,mean,3,4309,0.9737853107344633
+C) Radon subsets,GHOST,0.39,mean,8,4317,0.9755932203389831
+C) Radon subsets,GHOST,0.4,mean,5,4322,0.9767231638418079
+C) Radon subsets,GHOST,0.41,mean,2,4324,0.9771751412429378
+C) Radon subsets,GHOST,0.42,mean,4,4328,0.9780790960451977
+C) Radon subsets,GHOST,0.43,mean,3,4331,0.9787570621468926
+C) Radon subsets,GHOST,0.44,mean,3,4334,0.9794350282485875
+C) Radon subsets,GHOST,0.45,mean,7,4341,0.9810169491525423
+C) Radon subsets,GHOST,0.46,mean,3,4344,0.9816949152542372
+C) Radon subsets,GHOST,0.47,mean,2,4346,0.9821468926553673
+C) Radon subsets,GHOST,0.48,mean,7,4353,0.9837288135593221
+C) Radon subsets,GHOST,0.49,mean,2,4355,0.984180790960452
+C) Radon subsets,GHOST,0.5,mean,4,4359,0.9850847457627119
+C) Radon subsets,GHOST,0.52,mean,1,4360,0.9853107344632769
+C) Radon subsets,GHOST,0.53,mean,2,4362,0.9857627118644068
+C) Radon subsets,GHOST,0.54,mean,4,4366,0.9866666666666667
+C) Radon subsets,GHOST,0.55,mean,5,4371,0.9877966101694915
+C) Radon subsets,GHOST,0.56,mean,1,4372,0.9880225988700565
+C) Radon subsets,GHOST,0.57,mean,1,4373,0.9882485875706215
+C) Radon subsets,GHOST,0.58,mean,2,4375,0.9887005649717514
+C) Radon subsets,GHOST,0.59,mean,5,4380,0.9898305084745763
+C) Radon subsets,GHOST,0.61,mean,1,4381,0.9900564971751412
+C) Radon subsets,GHOST,0.62,mean,3,4384,0.9907344632768361
+C) Radon subsets,GHOST,0.63,mean,1,4385,0.9909604519774011
+C) Radon subsets,GHOST,0.64,mean,1,4386,0.9911864406779661
+C) Radon subsets,GHOST,0.66,mean,2,4388,0.991638418079096
+C) Radon subsets,GHOST,0.67,mean,2,4390,0.992090395480226
+C) Radon subsets,GHOST,0.69,mean,1,4391,0.9923163841807909
+C) Radon subsets,GHOST,0.7,mean,1,4392,0.9925423728813559
+C) Radon subsets,GHOST,0.71,mean,1,4393,0.9927683615819209
+C) Radon subsets,GHOST,0.72,mean,1,4394,0.9929943502824858
+C) Radon subsets,GHOST,0.74,mean,1,4395,0.9932203389830508
+C) Radon subsets,GHOST,0.75,mean,1,4396,0.9934463276836158
+C) Radon subsets,GHOST,0.76,mean,1,4397,0.9936723163841807
+C) Radon subsets,GHOST,0.78,mean,1,4398,0.9938983050847457
+C) Radon subsets,GHOST,0.8,mean,1,4399,0.9941242937853108
+C) Radon subsets,GHOST,0.81,mean,1,4400,0.9943502824858758
+C) Radon subsets,GHOST,0.82,mean,1,4401,0.9945762711864407
+C) Radon subsets,GHOST,0.83,mean,2,4403,0.9950282485875707
+C) Radon subsets,GHOST,0.9,mean,1,4404,0.9952542372881356
+C) Radon subsets,GHOST,0.91,mean,1,4405,0.9954802259887006
+C) Radon subsets,GHOST,0.92,mean,1,4406,0.9957062146892656
+C) Radon subsets,GHOST,0.95,mean,2,4408,0.9961581920903955
+C) Radon subsets,GHOST,0.98,mean,1,4409,0.9963841807909605
+C) Radon subsets,GHOST,1,mean,1,4410,0.9966101694915255
+C) Radon subsets,GHOST,1.02,mean,1,4411,0.9968361581920904
+C) Radon subsets,GHOST,1.07,mean,2,4413,0.9972881355932204
+C) Radon subsets,GHOST,1.08,mean,1,4414,0.9975141242937853
+C) Radon subsets,GHOST,1.16,mean,1,4415,0.9977401129943503
+C) Radon subsets,GHOST,1.21,mean,1,4416,0.9979661016949153
+C) Radon subsets,GHOST,1.27,mean,1,4417,0.9981920903954802
+C) Radon subsets,GHOST,1.54,mean,1,4418,0.9984180790960452
+C) Radon subsets,GHOST,1.55,mean,1,4419,0.9986440677966102
+C) Radon subsets,GHOST,1.57,mean,1,4420,0.9988700564971752
+C) Radon subsets,GHOST,1.77,mean,1,4421,0.9990960451977401
+C) Radon subsets,GHOST,1.89,mean,1,4422,0.9993220338983051
+C) Radon subsets,GHOST,2.25,mean,1,4423,0.9995480225988701
+C) Radon subsets,GHOST,2.39,mean,1,4424,0.999774011299435
+C) Radon subsets,GHOST,2.43,mean,1,4425,1
+C) Radon subsets,GHOST,NA,mode,4425,4425,1
+C) Radon subsets,iIS,0,mean,212,212,0.04790960451977401
+C) Radon subsets,iIS,0.01,mean,254,466,0.10531073446327684
+C) Radon subsets,iIS,0.02,mean,176,642,0.14508474576271185
+C) Radon subsets,iIS,0.03,mean,135,777,0.17559322033898306
+C) Radon subsets,iIS,0.04,mean,173,950,0.21468926553672316
+C) Radon subsets,iIS,0.05,mean,134,1084,0.24497175141242938
+C) Radon subsets,iIS,0.06,mean,152,1236,0.27932203389830507
+C) Radon subsets,iIS,0.07,mean,127,1363,0.3080225988700565
+C) Radon subsets,iIS,0.08,mean,102,1465,0.3310734463276836
+C) Radon subsets,iIS,0.09,mean,126,1591,0.35954802259887003
+C) Radon subsets,iIS,0.1,mean,151,1742,0.39367231638418076
+C) Radon subsets,iIS,0.11,mean,124,1866,0.4216949152542373
+C) Radon subsets,iIS,0.12,mean,145,2011,0.45446327683615817
+C) Radon subsets,iIS,0.13,mean,120,2131,0.4815819209039548
+C) Radon subsets,iIS,0.14,mean,143,2274,0.5138983050847458
+C) Radon subsets,iIS,0.15,mean,110,2384,0.5387570621468927
+C) Radon subsets,iIS,0.16,mean,129,2513,0.567909604519774
+C) Radon subsets,iIS,0.17,mean,116,2629,0.5941242937853107
+C) Radon subsets,iIS,0.18,mean,117,2746,0.6205649717514125
+C) Radon subsets,iIS,0.19,mean,95,2841,0.6420338983050847
+C) Radon subsets,iIS,0.2,mean,122,2963,0.6696045197740113
+C) Radon subsets,iIS,0.21,mean,73,3036,0.6861016949152542
+C) Radon subsets,iIS,0.22,mean,118,3154,0.7127683615819209
+C) Radon subsets,iIS,0.23,mean,90,3244,0.7331073446327684
+C) Radon subsets,iIS,0.24,mean,90,3334,0.7534463276836159
+C) Radon subsets,iIS,0.25,mean,73,3407,0.7699435028248588
+C) Radon subsets,iIS,0.26,mean,96,3503,0.7916384180790961
+C) Radon subsets,iIS,0.27,mean,49,3552,0.8027118644067797
+C) Radon subsets,iIS,0.28,mean,80,3632,0.8207909604519774
+C) Radon subsets,iIS,0.29,mean,53,3685,0.8327683615819209
+C) Radon subsets,iIS,0.3,mean,64,3749,0.8472316384180791
+C) Radon subsets,iIS,0.31,mean,46,3795,0.8576271186440678
+C) Radon subsets,iIS,0.32,mean,51,3846,0.8691525423728813
+C) Radon subsets,iIS,0.33,mean,37,3883,0.8775141242937853
+C) Radon subsets,iIS,0.34,mean,49,3932,0.888587570621469
+C) Radon subsets,iIS,0.35,mean,53,3985,0.9005649717514125
+C) Radon subsets,iIS,0.36,mean,43,4028,0.9102824858757063
+C) Radon subsets,iIS,0.37,mean,37,4065,0.9186440677966101
+C) Radon subsets,iIS,0.38,mean,31,4096,0.9256497175141243
+C) Radon subsets,iIS,0.39,mean,27,4123,0.9317514124293785
+C) Radon subsets,iIS,0.4,mean,24,4147,0.9371751412429379
+C) Radon subsets,iIS,0.41,mean,31,4178,0.9441807909604519
+C) Radon subsets,iIS,0.42,mean,18,4196,0.9482485875706215
+C) Radon subsets,iIS,0.43,mean,16,4212,0.951864406779661
+C) Radon subsets,iIS,0.44,mean,20,4232,0.9563841807909604
+C) Radon subsets,iIS,0.45,mean,14,4246,0.9595480225988701
+C) Radon subsets,iIS,0.46,mean,6,4252,0.9609039548022599
+C) Radon subsets,iIS,0.47,mean,13,4265,0.9638418079096045
+C) Radon subsets,iIS,0.48,mean,11,4276,0.9663276836158192
+C) Radon subsets,iIS,0.49,mean,7,4283,0.967909604519774
+C) Radon subsets,iIS,0.5,mean,15,4298,0.9712994350282486
+C) Radon subsets,iIS,0.51,mean,12,4310,0.9740112994350283
+C) Radon subsets,iIS,0.52,mean,15,4325,0.9774011299435028
+C) Radon subsets,iIS,0.53,mean,9,4334,0.9794350282485875
+C) Radon subsets,iIS,0.54,mean,9,4343,0.9814689265536723
+C) Radon subsets,iIS,0.55,mean,4,4347,0.9823728813559321
+C) Radon subsets,iIS,0.56,mean,7,4354,0.983954802259887
+C) Radon subsets,iIS,0.57,mean,4,4358,0.9848587570621469
+C) Radon subsets,iIS,0.58,mean,5,4363,0.9859887005649718
+C) Radon subsets,iIS,0.59,mean,6,4369,0.9873446327683616
+C) Radon subsets,iIS,0.6,mean,4,4373,0.9882485875706215
+C) Radon subsets,iIS,0.62,mean,6,4379,0.9896045197740113
+C) Radon subsets,iIS,0.63,mean,4,4383,0.9905084745762712
+C) Radon subsets,iIS,0.64,mean,2,4385,0.9909604519774011
+C) Radon subsets,iIS,0.65,mean,2,4387,0.991412429378531
+C) Radon subsets,iIS,0.66,mean,1,4388,0.991638418079096
+C) Radon subsets,iIS,0.67,mean,2,4390,0.992090395480226
+C) Radon subsets,iIS,0.68,mean,1,4391,0.9923163841807909
+C) Radon subsets,iIS,0.69,mean,1,4392,0.9925423728813559
+C) Radon subsets,iIS,0.7,mean,2,4394,0.9929943502824858
+C) Radon subsets,iIS,0.72,mean,1,4395,0.9932203389830508
+C) Radon subsets,iIS,0.75,mean,2,4397,0.9936723163841807
+C) Radon subsets,iIS,0.76,mean,2,4399,0.9941242937853108
+C) Radon subsets,iIS,0.77,mean,1,4400,0.9943502824858758
+C) Radon subsets,iIS,0.78,mean,1,4401,0.9945762711864407
+C) Radon subsets,iIS,0.79,mean,2,4403,0.9950282485875707
+C) Radon subsets,iIS,0.81,mean,2,4405,0.9954802259887006
+C) Radon subsets,iIS,0.83,mean,1,4406,0.9957062146892656
+C) Radon subsets,iIS,0.86,mean,3,4409,0.9963841807909605
+C) Radon subsets,iIS,0.89,mean,1,4410,0.9966101694915255
+C) Radon subsets,iIS,0.9,mean,2,4412,0.9970621468926554
+C) Radon subsets,iIS,0.91,mean,1,4413,0.9972881355932204
+C) Radon subsets,iIS,0.93,mean,1,4414,0.9975141242937853
+C) Radon subsets,iIS,0.94,mean,1,4415,0.9977401129943503
+C) Radon subsets,iIS,0.95,mean,2,4417,0.9981920903954802
+C) Radon subsets,iIS,1,mean,1,4418,0.9984180790960452
+C) Radon subsets,iIS,1.01,mean,1,4419,0.9986440677966102
+C) Radon subsets,iIS,1.03,mean,1,4420,0.9988700564971752
+C) Radon subsets,iIS,1.16,mean,1,4421,0.9990960451977401
+C) Radon subsets,iIS,1.32,mean,1,4422,0.9993220338983051
+C) Radon subsets,iIS,1.39,mean,2,4424,0.999774011299435
+C) Radon subsets,iIS,1.44,mean,1,4425,1
+C) Radon subsets,iIS,NA,mode,4425,4425,1
+C) Radon subsets,iIS-A,0,mean,1671,1671,0.3776271186440678
+C) Radon subsets,iIS-A,0.01,mean,1767,3438,0.7769491525423728
+C) Radon subsets,iIS-A,0.02,mean,554,3992,0.9021468926553672
+C) Radon subsets,iIS-A,0.03,mean,217,4209,0.9511864406779661
+C) Radon subsets,iIS-A,0.04,mean,101,4310,0.9740112994350283
+C) Radon subsets,iIS-A,0.05,mean,35,4345,0.9819209039548022
+C) Radon subsets,iIS-A,0.06,mean,20,4365,0.9864406779661017
+C) Radon subsets,iIS-A,0.07,mean,11,4376,0.9889265536723164
+C) Radon subsets,iIS-A,0.08,mean,9,4385,0.9909604519774011
+C) Radon subsets,iIS-A,0.09,mean,9,4394,0.9929943502824858
+C) Radon subsets,iIS-A,0.1,mean,3,4397,0.9936723163841807
+C) Radon subsets,iIS-A,0.11,mean,5,4402,0.9948022598870057
+C) Radon subsets,iIS-A,0.12,mean,4,4406,0.9957062146892656
+C) Radon subsets,iIS-A,0.13,mean,1,4407,0.9959322033898305
+C) Radon subsets,iIS-A,0.14,mean,5,4412,0.9970621468926554
+C) Radon subsets,iIS-A,0.15,mean,1,4413,0.9972881355932204
+C) Radon subsets,iIS-A,0.16,mean,2,4415,0.9977401129943503
+C) Radon subsets,iIS-A,0.17,mean,1,4416,0.9979661016949153
+C) Radon subsets,iIS-A,0.18,mean,1,4417,0.9981920903954802
+C) Radon subsets,iIS-A,0.19,mean,1,4418,0.9984180790960452
+C) Radon subsets,iIS-A,0.21,mean,1,4419,0.9986440677966102
+C) Radon subsets,iIS-A,0.24,mean,2,4421,0.9990960451977401
+C) Radon subsets,iIS-A,0.26,mean,1,4422,0.9993220338983051
+C) Radon subsets,iIS-A,0.3,mean,1,4423,0.9995480225988701
+C) Radon subsets,iIS-A,0.41,mean,1,4424,0.999774011299435
+C) Radon subsets,iIS-A,0.44,mean,1,4425,1
+C) Radon subsets,iIS-A,NA,mode,4425,4425,1
+C) Radon subsets,IJ-A,0,mode,93,93,0.021016949152542375
+C) Radon subsets,IJ-A,0.01,mode,170,263,0.05943502824858757
+C) Radon subsets,IJ-A,0.02,mode,146,409,0.09242937853107344
+C) Radon subsets,IJ-A,0.03,mode,136,545,0.12316384180790961
+C) Radon subsets,IJ-A,0.04,mode,166,711,0.1606779661016949
+C) Radon subsets,IJ-A,0.05,mode,115,826,0.18666666666666668
+C) Radon subsets,IJ-A,0.06,mode,152,978,0.22101694915254239
+C) Radon subsets,IJ-A,0.07,mode,116,1094,0.2472316384180791
+C) Radon subsets,IJ-A,0.08,mode,91,1185,0.2677966101694915
+C) Radon subsets,IJ-A,0.09,mode,95,1280,0.28926553672316385
+C) Radon subsets,IJ-A,0.1,mode,87,1367,0.30892655367231636
+C) Radon subsets,IJ-A,0.11,mode,82,1449,0.32745762711864407
+C) Radon subsets,IJ-A,0.12,mode,84,1533,0.3464406779661017
+C) Radon subsets,IJ-A,0.13,mode,55,1588,0.3588700564971751
+C) Radon subsets,IJ-A,0.14,mode,87,1675,0.3785310734463277
+C) Radon subsets,IJ-A,0.15,mode,62,1737,0.3925423728813559
+C) Radon subsets,IJ-A,0.16,mode,84,1821,0.41152542372881357
+C) Radon subsets,IJ-A,0.17,mode,82,1903,0.4300564971751412
+C) Radon subsets,IJ-A,0.18,mode,57,1960,0.4429378531073446
+C) Radon subsets,IJ-A,0.19,mode,59,2019,0.456271186440678
+C) Radon subsets,IJ-A,0.2,mode,64,2083,0.47073446327683616
+C) Radon subsets,IJ-A,0.21,mode,49,2132,0.4818079096045198
+C) Radon subsets,IJ-A,0.22,mode,62,2194,0.495819209039548
+C) Radon subsets,IJ-A,0.23,mode,58,2252,0.5089265536723164
+C) Radon subsets,IJ-A,0.24,mode,49,2301,0.52
+C) Radon subsets,IJ-A,0.25,mode,38,2339,0.5285875706214689
+C) Radon subsets,IJ-A,0.26,mode,47,2386,0.5392090395480226
+C) Radon subsets,IJ-A,0.27,mode,48,2434,0.5500564971751413
+C) Radon subsets,IJ-A,0.28,mode,54,2488,0.5622598870056498
+C) Radon subsets,IJ-A,0.29,mode,38,2526,0.5708474576271186
+C) Radon subsets,IJ-A,0.3,mode,48,2574,0.5816949152542373
+C) Radon subsets,IJ-A,0.31,mode,43,2617,0.5914124293785311
+C) Radon subsets,IJ-A,0.32,mode,33,2650,0.5988700564971752
+C) Radon subsets,IJ-A,0.33,mode,38,2688,0.607457627118644
+C) Radon subsets,IJ-A,0.34,mode,36,2724,0.615593220338983
+C) Radon subsets,IJ-A,0.35,mode,31,2755,0.6225988700564972
+C) Radon subsets,IJ-A,0.36,mode,28,2783,0.6289265536723164
+C) Radon subsets,IJ-A,0.37,mode,32,2815,0.6361581920903955
+C) Radon subsets,IJ-A,0.38,mode,37,2852,0.6445197740112995
+C) Radon subsets,IJ-A,0.39,mode,29,2881,0.6510734463276836
+C) Radon subsets,IJ-A,0.4,mode,25,2906,0.656723163841808
+C) Radon subsets,IJ-A,0.41,mode,28,2934,0.6630508474576271
+C) Radon subsets,IJ-A,0.42,mode,29,2963,0.6696045197740113
+C) Radon subsets,IJ-A,0.43,mode,22,2985,0.6745762711864407
+C) Radon subsets,IJ-A,0.44,mode,35,3020,0.6824858757062147
+C) Radon subsets,IJ-A,0.45,mode,26,3046,0.6883615819209039
+C) Radon subsets,IJ-A,0.46,mode,34,3080,0.696045197740113
+C) Radon subsets,IJ-A,0.47,mode,28,3108,0.7023728813559322
+C) Radon subsets,IJ-A,0.48,mode,38,3146,0.7109604519774011
+C) Radon subsets,IJ-A,0.49,mode,25,3171,0.7166101694915255
+C) Radon subsets,IJ-A,0.5,mode,29,3200,0.7231638418079096
+C) Radon subsets,IJ-A,0.51,mode,30,3230,0.7299435028248588
+C) Radon subsets,IJ-A,0.52,mode,24,3254,0.7353672316384181
+C) Radon subsets,IJ-A,0.53,mode,23,3277,0.7405649717514124
+C) Radon subsets,IJ-A,0.54,mode,20,3297,0.7450847457627119
+C) Radon subsets,IJ-A,0.55,mode,25,3322,0.7507344632768361
+C) Radon subsets,IJ-A,0.56,mode,23,3345,0.7559322033898305
+C) Radon subsets,IJ-A,0.57,mode,22,3367,0.7609039548022599
+C) Radon subsets,IJ-A,0.58,mode,25,3392,0.7665536723163842
+C) Radon subsets,IJ-A,0.59,mode,12,3404,0.7692655367231639
+C) Radon subsets,IJ-A,0.6,mode,28,3432,0.775593220338983
+C) Radon subsets,IJ-A,0.61,mode,26,3458,0.7814689265536723
+C) Radon subsets,IJ-A,0.62,mode,28,3486,0.7877966101694915
+C) Radon subsets,IJ-A,0.63,mode,22,3508,0.7927683615819209
+C) Radon subsets,IJ-A,0.64,mode,28,3536,0.7990960451977401
+C) Radon subsets,IJ-A,0.65,mode,21,3557,0.8038418079096045
+C) Radon subsets,IJ-A,0.66,mode,24,3581,0.8092655367231638
+C) Radon subsets,IJ-A,0.67,mode,21,3602,0.8140112994350283
+C) Radon subsets,IJ-A,0.68,mode,19,3621,0.8183050847457627
+C) Radon subsets,IJ-A,0.69,mode,14,3635,0.8214689265536723
+C) Radon subsets,IJ-A,0.7,mode,23,3658,0.8266666666666667
+C) Radon subsets,IJ-A,0.71,mode,15,3673,0.8300564971751413
+C) Radon subsets,IJ-A,0.72,mode,25,3698,0.8357062146892655
+C) Radon subsets,IJ-A,0.73,mode,20,3718,0.840225988700565
+C) Radon subsets,IJ-A,0.74,mode,17,3735,0.8440677966101695
+C) Radon subsets,IJ-A,0.75,mode,14,3749,0.8472316384180791
+C) Radon subsets,IJ-A,0.76,mode,13,3762,0.8501694915254238
+C) Radon subsets,IJ-A,0.77,mode,22,3784,0.8551412429378531
+C) Radon subsets,IJ-A,0.78,mode,21,3805,0.8598870056497175
+C) Radon subsets,IJ-A,0.79,mode,6,3811,0.8612429378531073
+C) Radon subsets,IJ-A,0.8,mode,16,3827,0.8648587570621469
+C) Radon subsets,IJ-A,0.81,mode,8,3835,0.8666666666666667
+C) Radon subsets,IJ-A,0.82,mode,17,3852,0.8705084745762712
+C) Radon subsets,IJ-A,0.83,mode,13,3865,0.8734463276836159
+C) Radon subsets,IJ-A,0.84,mode,16,3881,0.8770621468926554
+C) Radon subsets,IJ-A,0.85,mode,18,3899,0.8811299435028248
+C) Radon subsets,IJ-A,0.86,mode,10,3909,0.8833898305084745
+C) Radon subsets,IJ-A,0.87,mode,7,3916,0.8849717514124293
+C) Radon subsets,IJ-A,0.88,mode,12,3928,0.8876836158192091
+C) Radon subsets,IJ-A,0.89,mode,11,3939,0.8901694915254237
+C) Radon subsets,IJ-A,0.9,mode,18,3957,0.8942372881355932
+C) Radon subsets,IJ-A,0.91,mode,7,3964,0.895819209039548
+C) Radon subsets,IJ-A,0.92,mode,13,3977,0.8987570621468927
+C) Radon subsets,IJ-A,0.93,mode,11,3988,0.9012429378531074
+C) Radon subsets,IJ-A,0.94,mode,12,4000,0.903954802259887
+C) Radon subsets,IJ-A,0.95,mode,7,4007,0.9055367231638418
+C) Radon subsets,IJ-A,0.96,mode,11,4018,0.9080225988700565
+C) Radon subsets,IJ-A,0.97,mode,13,4031,0.9109604519774012
+C) Radon subsets,IJ-A,0.98,mode,10,4041,0.9132203389830509
+C) Radon subsets,IJ-A,0.99,mode,7,4048,0.9148022598870057
+C) Radon subsets,IJ-A,1,mode,9,4057,0.9168361581920904
+C) Radon subsets,IJ-A,1.01,mode,9,4066,0.9188700564971751
+C) Radon subsets,IJ-A,1.02,mode,15,4081,0.9222598870056498
+C) Radon subsets,IJ-A,1.03,mode,8,4089,0.9240677966101695
+C) Radon subsets,IJ-A,1.04,mode,12,4101,0.9267796610169492
+C) Radon subsets,IJ-A,1.05,mode,11,4112,0.9292655367231638
+C) Radon subsets,IJ-A,1.06,mode,9,4121,0.9312994350282486
+C) Radon subsets,IJ-A,1.07,mode,12,4133,0.9340112994350283
+C) Radon subsets,IJ-A,1.08,mode,12,4145,0.9367231638418079
+C) Radon subsets,IJ-A,1.09,mode,5,4150,0.9378531073446328
+C) Radon subsets,IJ-A,1.1,mode,9,4159,0.9398870056497175
+C) Radon subsets,IJ-A,1.11,mode,16,4175,0.943502824858757
+C) Radon subsets,IJ-A,1.12,mode,6,4181,0.944858757062147
+C) Radon subsets,IJ-A,1.13,mode,9,4190,0.9468926553672317
+C) Radon subsets,IJ-A,1.14,mode,10,4200,0.9491525423728814
+C) Radon subsets,IJ-A,1.15,mode,10,4210,0.9514124293785311
+C) Radon subsets,IJ-A,1.16,mode,7,4217,0.9529943502824859
+C) Radon subsets,IJ-A,1.17,mode,9,4226,0.9550282485875706
+C) Radon subsets,IJ-A,1.18,mode,6,4232,0.9563841807909604
+C) Radon subsets,IJ-A,1.19,mode,6,4238,0.9577401129943502
+C) Radon subsets,IJ-A,1.2,mode,8,4246,0.9595480225988701
+C) Radon subsets,IJ-A,1.21,mode,7,4253,0.9611299435028249
+C) Radon subsets,IJ-A,1.22,mode,6,4259,0.9624858757062147
+C) Radon subsets,IJ-A,1.23,mode,6,4265,0.9638418079096045
+C) Radon subsets,IJ-A,1.24,mode,9,4274,0.9658757062146892
+C) Radon subsets,IJ-A,1.25,mode,8,4282,0.967683615819209
+C) Radon subsets,IJ-A,1.26,mode,8,4290,0.9694915254237289
+C) Radon subsets,IJ-A,1.27,mode,5,4295,0.9706214689265537
+C) Radon subsets,IJ-A,1.28,mode,1,4296,0.9708474576271187
+C) Radon subsets,IJ-A,1.29,mode,3,4299,0.9715254237288136
+C) Radon subsets,IJ-A,1.3,mode,4,4303,0.9724293785310735
+C) Radon subsets,IJ-A,1.31,mode,12,4315,0.9751412429378531
+C) Radon subsets,IJ-A,1.32,mode,5,4320,0.976271186440678
+C) Radon subsets,IJ-A,1.33,mode,5,4325,0.9774011299435028
+C) Radon subsets,IJ-A,1.34,mode,4,4329,0.9783050847457627
+C) Radon subsets,IJ-A,1.35,mode,3,4332,0.9789830508474576
+C) Radon subsets,IJ-A,1.36,mode,10,4342,0.9812429378531073
+C) Radon subsets,IJ-A,1.37,mode,3,4345,0.9819209039548022
+C) Radon subsets,IJ-A,1.38,mode,3,4348,0.9825988700564972
+C) Radon subsets,IJ-A,1.39,mode,4,4352,0.9835028248587571
+C) Radon subsets,IJ-A,1.4,mode,2,4354,0.983954802259887
+C) Radon subsets,IJ-A,1.41,mode,2,4356,0.984406779661017
+C) Radon subsets,IJ-A,1.42,mode,3,4359,0.9850847457627119
+C) Radon subsets,IJ-A,1.43,mode,4,4363,0.9859887005649718
+C) Radon subsets,IJ-A,1.45,mode,1,4364,0.9862146892655367
+C) Radon subsets,IJ-A,1.46,mode,4,4368,0.9871186440677966
+C) Radon subsets,IJ-A,1.47,mode,5,4373,0.9882485875706215
+C) Radon subsets,IJ-A,1.48,mode,2,4375,0.9887005649717514
+C) Radon subsets,IJ-A,1.49,mode,3,4378,0.9893785310734463
+C) Radon subsets,IJ-A,1.5,mode,1,4379,0.9896045197740113
+C) Radon subsets,IJ-A,1.51,mode,2,4381,0.9900564971751412
+C) Radon subsets,IJ-A,1.52,mode,1,4382,0.9902824858757062
+C) Radon subsets,IJ-A,1.53,mode,5,4387,0.991412429378531
+C) Radon subsets,IJ-A,1.54,mode,2,4389,0.991864406779661
+C) Radon subsets,IJ-A,1.55,mode,1,4390,0.992090395480226
+C) Radon subsets,IJ-A,1.56,mode,4,4394,0.9929943502824858
+C) Radon subsets,IJ-A,1.57,mode,4,4398,0.9938983050847457
+C) Radon subsets,IJ-A,1.58,mode,1,4399,0.9941242937853108
+C) Radon subsets,IJ-A,1.6,mode,2,4401,0.9945762711864407
+C) Radon subsets,IJ-A,1.61,mode,2,4403,0.9950282485875707
+C) Radon subsets,IJ-A,1.63,mode,1,4404,0.9952542372881356
+C) Radon subsets,IJ-A,1.66,mode,1,4405,0.9954802259887006
+C) Radon subsets,IJ-A,1.67,mode,1,4406,0.9957062146892656
+C) Radon subsets,IJ-A,1.68,mode,2,4408,0.9961581920903955
+C) Radon subsets,IJ-A,1.69,mode,2,4410,0.9966101694915255
+C) Radon subsets,IJ-A,1.7,mode,1,4411,0.9968361581920904
+C) Radon subsets,IJ-A,1.71,mode,1,4412,0.9970621468926554
+C) Radon subsets,IJ-A,1.72,mode,1,4413,0.9972881355932204
+C) Radon subsets,IJ-A,1.73,mode,1,4414,0.9975141242937853
+C) Radon subsets,IJ-A,1.75,mode,1,4415,0.9977401129943503
+C) Radon subsets,IJ-A,1.77,mode,1,4416,0.9979661016949153
+C) Radon subsets,IJ-A,1.8,mode,2,4418,0.9984180790960452
+C) Radon subsets,IJ-A,1.83,mode,1,4419,0.9986440677966102
+C) Radon subsets,IJ-A,1.87,mode,2,4421,0.9990960451977401
+C) Radon subsets,IJ-A,1.91,mode,1,4422,0.9993220338983051
+C) Radon subsets,IJ-A,2,mode,1,4423,0.9995480225988701
+C) Radon subsets,IJ-A,2.06,mode,1,4424,0.999774011299435
+C) Radon subsets,IJ-A,2.29,mode,1,4425,1
+C) Radon subsets,IJ-A,NA,mean,4425,4425,1
+C) Radon subsets,IJ-C,0,mode,168,168,0.03796610169491525
+C) Radon subsets,IJ-C,0.01,mode,324,492,0.1111864406779661
+C) Radon subsets,IJ-C,0.02,mode,283,775,0.1751412429378531
+C) Radon subsets,IJ-C,0.03,mode,268,1043,0.23570621468926553
+C) Radon subsets,IJ-C,0.04,mode,307,1350,0.3050847457627119
+C) Radon subsets,IJ-C,0.05,mode,224,1574,0.35570621468926555
+C) Radon subsets,IJ-C,0.06,mode,245,1819,0.4110734463276836
+C) Radon subsets,IJ-C,0.07,mode,226,2045,0.46214689265536724
+C) Radon subsets,IJ-C,0.08,mode,185,2230,0.503954802259887
+C) Radon subsets,IJ-C,0.09,mode,151,2381,0.5380790960451978
+C) Radon subsets,IJ-C,0.1,mode,201,2582,0.583502824858757
+C) Radon subsets,IJ-C,0.11,mode,139,2721,0.6149152542372881
+C) Radon subsets,IJ-C,0.12,mode,132,2853,0.6447457627118645
+C) Radon subsets,IJ-C,0.13,mode,86,2939,0.664180790960452
+C) Radon subsets,IJ-C,0.14,mode,131,3070,0.6937853107344633
+C) Radon subsets,IJ-C,0.15,mode,77,3147,0.7111864406779661
+C) Radon subsets,IJ-C,0.16,mode,120,3267,0.7383050847457627
+C) Radon subsets,IJ-C,0.17,mode,86,3353,0.7577401129943503
+C) Radon subsets,IJ-C,0.18,mode,77,3430,0.7751412429378531
+C) Radon subsets,IJ-C,0.19,mode,66,3496,0.7900564971751413
+C) Radon subsets,IJ-C,0.2,mode,82,3578,0.8085875706214689
+C) Radon subsets,IJ-C,0.21,mode,52,3630,0.8203389830508474
+C) Radon subsets,IJ-C,0.22,mode,74,3704,0.8370621468926553
+C) Radon subsets,IJ-C,0.23,mode,56,3760,0.8497175141242937
+C) Radon subsets,IJ-C,0.24,mode,49,3809,0.8607909604519774
+C) Radon subsets,IJ-C,0.25,mode,43,3852,0.8705084745762712
+C) Radon subsets,IJ-C,0.26,mode,43,3895,0.880225988700565
+C) Radon subsets,IJ-C,0.27,mode,31,3926,0.8872316384180791
+C) Radon subsets,IJ-C,0.28,mode,37,3963,0.895593220338983
+C) Radon subsets,IJ-C,0.29,mode,25,3988,0.9012429378531074
+C) Radon subsets,IJ-C,0.3,mode,28,4016,0.9075706214689265
+C) Radon subsets,IJ-C,0.31,mode,21,4037,0.912316384180791
+C) Radon subsets,IJ-C,0.32,mode,25,4062,0.9179661016949152
+C) Radon subsets,IJ-C,0.33,mode,26,4088,0.9238418079096046
+C) Radon subsets,IJ-C,0.34,mode,26,4114,0.9297175141242938
+C) Radon subsets,IJ-C,0.35,mode,20,4134,0.9342372881355933
+C) Radon subsets,IJ-C,0.36,mode,19,4153,0.9385310734463277
+C) Radon subsets,IJ-C,0.37,mode,21,4174,0.9432768361581921
+C) Radon subsets,IJ-C,0.38,mode,19,4193,0.9475706214689266
+C) Radon subsets,IJ-C,0.39,mode,13,4206,0.9505084745762712
+C) Radon subsets,IJ-C,0.4,mode,13,4219,0.9534463276836158
+C) Radon subsets,IJ-C,0.41,mode,12,4231,0.9561581920903954
+C) Radon subsets,IJ-C,0.42,mode,12,4243,0.9588700564971752
+C) Radon subsets,IJ-C,0.43,mode,11,4254,0.9613559322033899
+C) Radon subsets,IJ-C,0.44,mode,7,4261,0.9629378531073446
+C) Radon subsets,IJ-C,0.45,mode,9,4270,0.9649717514124294
+C) Radon subsets,IJ-C,0.46,mode,11,4281,0.967457627118644
+C) Radon subsets,IJ-C,0.47,mode,7,4288,0.9690395480225988
+C) Radon subsets,IJ-C,0.48,mode,13,4301,0.9719774011299435
+C) Radon subsets,IJ-C,0.49,mode,7,4308,0.9735593220338983
+C) Radon subsets,IJ-C,0.5,mode,6,4314,0.9749152542372881
+C) Radon subsets,IJ-C,0.51,mode,5,4319,0.976045197740113
+C) Radon subsets,IJ-C,0.52,mode,5,4324,0.9771751412429378
+C) Radon subsets,IJ-C,0.53,mode,3,4327,0.9778531073446328
+C) Radon subsets,IJ-C,0.54,mode,7,4334,0.9794350282485875
+C) Radon subsets,IJ-C,0.55,mode,6,4340,0.9807909604519774
+C) Radon subsets,IJ-C,0.56,mode,3,4343,0.9814689265536723
+C) Radon subsets,IJ-C,0.57,mode,6,4349,0.9828248587570622
+C) Radon subsets,IJ-C,0.58,mode,10,4359,0.9850847457627119
+C) Radon subsets,IJ-C,0.59,mode,2,4361,0.9855367231638418
+C) Radon subsets,IJ-C,0.6,mode,6,4367,0.9868926553672316
+C) Radon subsets,IJ-C,0.61,mode,5,4372,0.9880225988700565
+C) Radon subsets,IJ-C,0.62,mode,2,4374,0.9884745762711864
+C) Radon subsets,IJ-C,0.64,mode,2,4376,0.9889265536723164
+C) Radon subsets,IJ-C,0.65,mode,2,4378,0.9893785310734463
+C) Radon subsets,IJ-C,0.66,mode,4,4382,0.9902824858757062
+C) Radon subsets,IJ-C,0.69,mode,1,4383,0.9905084745762712
+C) Radon subsets,IJ-C,0.71,mode,3,4386,0.9911864406779661
+C) Radon subsets,IJ-C,0.72,mode,2,4388,0.991638418079096
+C) Radon subsets,IJ-C,0.73,mode,2,4390,0.992090395480226
+C) Radon subsets,IJ-C,0.74,mode,1,4391,0.9923163841807909
+C) Radon subsets,IJ-C,0.75,mode,1,4392,0.9925423728813559
+C) Radon subsets,IJ-C,0.76,mode,1,4393,0.9927683615819209
+C) Radon subsets,IJ-C,0.77,mode,1,4394,0.9929943502824858
+C) Radon subsets,IJ-C,0.79,mode,1,4395,0.9932203389830508
+C) Radon subsets,IJ-C,0.86,mode,2,4397,0.9936723163841807
+C) Radon subsets,IJ-C,0.87,mode,1,4398,0.9938983050847457
+C) Radon subsets,IJ-C,0.88,mode,1,4399,0.9941242937853108
+C) Radon subsets,IJ-C,0.92,mode,1,4400,0.9943502824858758
+C) Radon subsets,IJ-C,0.95,mode,1,4401,0.9945762711864407
+C) Radon subsets,IJ-C,0.98,mode,1,4402,0.9948022598870057
+C) Radon subsets,IJ-C,1.02,mode,3,4405,0.9954802259887006
+C) Radon subsets,IJ-C,1.03,mode,1,4406,0.9957062146892656
+C) Radon subsets,IJ-C,1.05,mode,2,4408,0.9961581920903955
+C) Radon subsets,IJ-C,1.09,mode,1,4409,0.9963841807909605
+C) Radon subsets,IJ-C,1.12,mode,2,4411,0.9968361581920904
+C) Radon subsets,IJ-C,1.13,mode,1,4412,0.9970621468926554
+C) Radon subsets,IJ-C,1.14,mode,1,4413,0.9972881355932204
+C) Radon subsets,IJ-C,1.24,mode,1,4414,0.9975141242937853
+C) Radon subsets,IJ-C,1.3,mode,1,4415,0.9977401129943503
+C) Radon subsets,IJ-C,1.32,mode,1,4416,0.9979661016949153
+C) Radon subsets,IJ-C,1.33,mode,1,4417,0.9981920903954802
+C) Radon subsets,IJ-C,1.37,mode,1,4418,0.9984180790960452
+C) Radon subsets,IJ-C,1.42,mode,1,4419,0.9986440677966102
+C) Radon subsets,IJ-C,1.48,mode,1,4420,0.9988700564971752
+C) Radon subsets,IJ-C,1.69,mode,1,4421,0.9990960451977401
+C) Radon subsets,IJ-C,1.89,mode,1,4422,0.9993220338983051
+C) Radon subsets,IJ-C,2.1,mode,1,4423,0.9995480225988701
+C) Radon subsets,IJ-C,2.4,mode,1,4424,0.999774011299435
+C) Radon subsets,IJ-C,2.41,mode,1,4425,1
+C) Radon subsets,IJ-C,NA,mean,4425,4425,1
+C) Radon subsets,NS-A,0,mode,41,41,0.009265536723163843
+C) Radon subsets,NS-A,0.01,mode,92,133,0.030056497175141243
+C) Radon subsets,NS-A,0.02,mode,66,199,0.04497175141242938
+C) Radon subsets,NS-A,0.03,mode,63,262,0.0592090395480226
+C) Radon subsets,NS-A,0.04,mode,65,327,0.07389830508474576
+C) Radon subsets,NS-A,0.05,mode,52,379,0.0856497175141243
+C) Radon subsets,NS-A,0.06,mode,54,433,0.09785310734463276
+C) Radon subsets,NS-A,0.07,mode,46,479,0.10824858757062147
+C) Radon subsets,NS-A,0.08,mode,57,536,0.12112994350282486
+C) Radon subsets,NS-A,0.09,mode,52,588,0.13288135593220338
+C) Radon subsets,NS-A,0.1,mode,47,635,0.14350282485875707
+C) Radon subsets,NS-A,0.11,mode,47,682,0.15412429378531073
+C) Radon subsets,NS-A,0.12,mode,62,744,0.168135593220339
+C) Radon subsets,NS-A,0.13,mode,34,778,0.17581920903954804
+C) Radon subsets,NS-A,0.14,mode,45,823,0.18598870056497174
+C) Radon subsets,NS-A,0.15,mode,32,855,0.19322033898305085
+C) Radon subsets,NS-A,0.16,mode,44,899,0.2031638418079096
+C) Radon subsets,NS-A,0.17,mode,32,931,0.2103954802259887
+C) Radon subsets,NS-A,0.18,mode,26,957,0.21627118644067797
+C) Radon subsets,NS-A,0.19,mode,38,995,0.2248587570621469
+C) Radon subsets,NS-A,0.2,mode,30,1025,0.23163841807909605
+C) Radon subsets,NS-A,0.21,mode,37,1062,0.24
+C) Radon subsets,NS-A,0.22,mode,25,1087,0.2456497175141243
+C) Radon subsets,NS-A,0.23,mode,26,1113,0.25152542372881354
+C) Radon subsets,NS-A,0.24,mode,29,1142,0.25807909604519774
+C) Radon subsets,NS-A,0.25,mode,18,1160,0.2621468926553672
+C) Radon subsets,NS-A,0.26,mode,43,1203,0.271864406779661
+C) Radon subsets,NS-A,0.27,mode,34,1237,0.27954802259887007
+C) Radon subsets,NS-A,0.28,mode,44,1281,0.2894915254237288
+C) Radon subsets,NS-A,0.29,mode,29,1310,0.296045197740113
+C) Radon subsets,NS-A,0.3,mode,33,1343,0.30350282485875707
+C) Radon subsets,NS-A,0.31,mode,22,1365,0.30847457627118646
+C) Radon subsets,NS-A,0.32,mode,28,1393,0.31480225988700566
+C) Radon subsets,NS-A,0.33,mode,32,1425,0.3220338983050847
+C) Radon subsets,NS-A,0.34,mode,30,1455,0.3288135593220339
+C) Radon subsets,NS-A,0.35,mode,30,1485,0.33559322033898303
+C) Radon subsets,NS-A,0.36,mode,48,1533,0.3464406779661017
+C) Radon subsets,NS-A,0.37,mode,30,1563,0.35322033898305083
+C) Radon subsets,NS-A,0.38,mode,29,1592,0.35977401129943504
+C) Radon subsets,NS-A,0.39,mode,29,1621,0.3663276836158192
+C) Radon subsets,NS-A,0.4,mode,16,1637,0.36994350282485877
+C) Radon subsets,NS-A,0.41,mode,28,1665,0.376271186440678
+C) Radon subsets,NS-A,0.42,mode,34,1699,0.383954802259887
+C) Radon subsets,NS-A,0.43,mode,28,1727,0.39028248587570624
+C) Radon subsets,NS-A,0.44,mode,29,1756,0.3968361581920904
+C) Radon subsets,NS-A,0.45,mode,22,1778,0.4018079096045198
+C) Radon subsets,NS-A,0.46,mode,28,1806,0.408135593220339
+C) Radon subsets,NS-A,0.47,mode,22,1828,0.4131073446327684
+C) Radon subsets,NS-A,0.48,mode,23,1851,0.4183050847457627
+C) Radon subsets,NS-A,0.49,mode,28,1879,0.4246327683615819
+C) Radon subsets,NS-A,0.5,mode,29,1908,0.4311864406779661
+C) Radon subsets,NS-A,0.51,mode,25,1933,0.4368361581920904
+C) Radon subsets,NS-A,0.52,mode,29,1962,0.4433898305084746
+C) Radon subsets,NS-A,0.53,mode,25,1987,0.4490395480225989
+C) Radon subsets,NS-A,0.54,mode,31,2018,0.456045197740113
+C) Radon subsets,NS-A,0.55,mode,37,2055,0.46440677966101696
+C) Radon subsets,NS-A,0.56,mode,30,2085,0.4711864406779661
+C) Radon subsets,NS-A,0.57,mode,42,2127,0.48067796610169494
+C) Radon subsets,NS-A,0.58,mode,28,2155,0.48700564971751414
+C) Radon subsets,NS-A,0.59,mode,29,2184,0.4935593220338983
+C) Radon subsets,NS-A,0.6,mode,27,2211,0.49966101694915255
+C) Radon subsets,NS-A,0.61,mode,20,2231,0.504180790960452
+C) Radon subsets,NS-A,0.62,mode,28,2259,0.5105084745762711
+C) Radon subsets,NS-A,0.63,mode,20,2279,0.5150282485875706
+C) Radon subsets,NS-A,0.64,mode,34,2313,0.5227118644067796
+C) Radon subsets,NS-A,0.65,mode,27,2340,0.5288135593220339
+C) Radon subsets,NS-A,0.66,mode,29,2369,0.535367231638418
+C) Radon subsets,NS-A,0.67,mode,28,2397,0.5416949152542373
+C) Radon subsets,NS-A,0.68,mode,34,2431,0.5493785310734464
+C) Radon subsets,NS-A,0.69,mode,27,2458,0.5554802259887006
+C) Radon subsets,NS-A,0.7,mode,36,2494,0.5636158192090396
+C) Radon subsets,NS-A,0.71,mode,25,2519,0.5692655367231638
+C) Radon subsets,NS-A,0.72,mode,32,2551,0.576497175141243
+C) Radon subsets,NS-A,0.73,mode,20,2571,0.5810169491525424
+C) Radon subsets,NS-A,0.74,mode,29,2600,0.5875706214689266
+C) Radon subsets,NS-A,0.75,mode,22,2622,0.5925423728813559
+C) Radon subsets,NS-A,0.76,mode,33,2655,0.6
+C) Radon subsets,NS-A,0.77,mode,31,2686,0.6070056497175141
+C) Radon subsets,NS-A,0.78,mode,28,2714,0.6133333333333333
+C) Radon subsets,NS-A,0.79,mode,23,2737,0.6185310734463276
+C) Radon subsets,NS-A,0.8,mode,27,2764,0.6246327683615819
+C) Radon subsets,NS-A,0.81,mode,16,2780,0.6282485875706215
+C) Radon subsets,NS-A,0.82,mode,27,2807,0.6343502824858757
+C) Radon subsets,NS-A,0.83,mode,26,2833,0.640225988700565
+C) Radon subsets,NS-A,0.84,mode,27,2860,0.6463276836158192
+C) Radon subsets,NS-A,0.85,mode,12,2872,0.6490395480225989
+C) Radon subsets,NS-A,0.86,mode,24,2896,0.6544632768361582
+C) Radon subsets,NS-A,0.87,mode,19,2915,0.6587570621468927
+C) Radon subsets,NS-A,0.88,mode,26,2941,0.6646327683615819
+C) Radon subsets,NS-A,0.89,mode,13,2954,0.6675706214689265
+C) Radon subsets,NS-A,0.9,mode,19,2973,0.671864406779661
+C) Radon subsets,NS-A,0.91,mode,18,2991,0.6759322033898305
+C) Radon subsets,NS-A,0.92,mode,26,3017,0.6818079096045198
+C) Radon subsets,NS-A,0.93,mode,21,3038,0.6865536723163842
+C) Radon subsets,NS-A,0.94,mode,31,3069,0.6935593220338983
+C) Radon subsets,NS-A,0.95,mode,18,3087,0.6976271186440678
+C) Radon subsets,NS-A,0.96,mode,20,3107,0.7021468926553672
+C) Radon subsets,NS-A,0.97,mode,20,3127,0.7066666666666667
+C) Radon subsets,NS-A,0.98,mode,24,3151,0.712090395480226
+C) Radon subsets,NS-A,0.99,mode,18,3169,0.7161581920903954
+C) Radon subsets,NS-A,1,mode,16,3185,0.7197740112994351
+C) Radon subsets,NS-A,1.01,mode,22,3207,0.7247457627118644
+C) Radon subsets,NS-A,1.02,mode,12,3219,0.727457627118644
+C) Radon subsets,NS-A,1.03,mode,19,3238,0.7317514124293786
+C) Radon subsets,NS-A,1.04,mode,18,3256,0.735819209039548
+C) Radon subsets,NS-A,1.05,mode,18,3274,0.7398870056497175
+C) Radon subsets,NS-A,1.06,mode,15,3289,0.7432768361581921
+C) Radon subsets,NS-A,1.07,mode,25,3314,0.7489265536723164
+C) Radon subsets,NS-A,1.08,mode,17,3331,0.752768361581921
+C) Radon subsets,NS-A,1.09,mode,11,3342,0.7552542372881356
+C) Radon subsets,NS-A,1.1,mode,22,3364,0.760225988700565
+C) Radon subsets,NS-A,1.11,mode,15,3379,0.7636158192090395
+C) Radon subsets,NS-A,1.12,mode,20,3399,0.768135593220339
+C) Radon subsets,NS-A,1.13,mode,14,3413,0.7712994350282486
+C) Radon subsets,NS-A,1.14,mode,18,3431,0.775367231638418
+C) Radon subsets,NS-A,1.15,mode,19,3450,0.7796610169491526
+C) Radon subsets,NS-A,1.16,mode,17,3467,0.7835028248587571
+C) Radon subsets,NS-A,1.17,mode,20,3487,0.7880225988700565
+C) Radon subsets,NS-A,1.18,mode,11,3498,0.7905084745762712
+C) Radon subsets,NS-A,1.19,mode,15,3513,0.7938983050847458
+C) Radon subsets,NS-A,1.2,mode,17,3530,0.7977401129943503
+C) Radon subsets,NS-A,1.21,mode,16,3546,0.8013559322033899
+C) Radon subsets,NS-A,1.22,mode,9,3555,0.8033898305084746
+C) Radon subsets,NS-A,1.23,mode,21,3576,0.808135593220339
+C) Radon subsets,NS-A,1.24,mode,11,3587,0.8106214689265536
+C) Radon subsets,NS-A,1.25,mode,20,3607,0.8151412429378531
+C) Radon subsets,NS-A,1.26,mode,14,3621,0.8183050847457627
+C) Radon subsets,NS-A,1.27,mode,17,3638,0.8221468926553672
+C) Radon subsets,NS-A,1.28,mode,14,3652,0.8253107344632769
+C) Radon subsets,NS-A,1.29,mode,9,3661,0.8273446327683616
+C) Radon subsets,NS-A,1.3,mode,13,3674,0.8302824858757062
+C) Radon subsets,NS-A,1.31,mode,11,3685,0.8327683615819209
+C) Radon subsets,NS-A,1.32,mode,8,3693,0.8345762711864407
+C) Radon subsets,NS-A,1.33,mode,14,3707,0.83774011299435025
+C) Radon subsets,NS-A,1.34,mode,15,3722,0.8411299435028249
+C) Radon subsets,NS-A,1.35,mode,8,3730,0.8429378531073446
+C) Radon subsets,NS-A,1.36,mode,11,3741,0.8454237288135593
+C) Radon subsets,NS-A,1.37,mode,18,3759,0.8494915254237289
+C) Radon subsets,NS-A,1.38,mode,13,3772,0.8524293785310735
+C) Radon subsets,NS-A,1.39,mode,12,3784,0.8551412429378531
+C) Radon subsets,NS-A,1.4,mode,17,3801,0.8589830508474576
+C) Radon subsets,NS-A,1.41,mode,10,3811,0.8612429378531073
+C) Radon subsets,NS-A,1.42,mode,16,3827,0.8648587570621469
+C) Radon subsets,NS-A,1.43,mode,6,3833,0.8662146892655367
+C) Radon subsets,NS-A,1.44,mode,12,3845,0.8689265536723164
+C) Radon subsets,NS-A,1.45,mode,19,3864,0.8732203389830508
+C) Radon subsets,NS-A,1.46,mode,8,3872,0.8750282485875707
+C) Radon subsets,NS-A,1.47,mode,14,3886,0.8781920903954802
+C) Radon subsets,NS-A,1.48,mode,13,3899,0.8811299435028248
+C) Radon subsets,NS-A,1.49,mode,13,3912,0.8840677966101695
+C) Radon subsets,NS-A,1.5,mode,9,3921,0.8861016949152543
+C) Radon subsets,NS-A,1.51,mode,10,3931,0.888361581920904
+C) Radon subsets,NS-A,1.52,mode,11,3942,0.8908474576271187
+C) Radon subsets,NS-A,1.53,mode,7,3949,0.8924293785310734
+C) Radon subsets,NS-A,1.54,mode,13,3962,0.895367231638418
+C) Radon subsets,NS-A,1.55,mode,10,3972,0.8976271186440677
+C) Radon subsets,NS-A,1.56,mode,9,3981,0.8996610169491526
+C) Radon subsets,NS-A,1.57,mode,8,3989,0.9014689265536723
+C) Radon subsets,NS-A,1.58,mode,10,3999,0.903728813559322
+C) Radon subsets,NS-A,1.59,mode,11,4010,0.9062146892655367
+C) Radon subsets,NS-A,1.6,mode,10,4020,0.9084745762711864
+C) Radon subsets,NS-A,1.61,mode,10,4030,0.9107344632768362
+C) Radon subsets,NS-A,1.62,mode,5,4035,0.911864406779661
+C) Radon subsets,NS-A,1.63,mode,8,4043,0.9136723163841808
+C) Radon subsets,NS-A,1.64,mode,7,4050,0.9152542372881356
+C) Radon subsets,NS-A,1.65,mode,4,4054,0.9161581920903955
+C) Radon subsets,NS-A,1.66,mode,7,4061,0.9177401129943503
+C) Radon subsets,NS-A,1.67,mode,10,4071,0.92
+C) Radon subsets,NS-A,1.68,mode,8,4079,0.9218079096045197
+C) Radon subsets,NS-A,1.69,mode,9,4088,0.9238418079096046
+C) Radon subsets,NS-A,1.7,mode,6,4094,0.9251977401129944
+C) Radon subsets,NS-A,1.71,mode,9,4103,0.9272316384180791
+C) Radon subsets,NS-A,1.72,mode,6,4109,0.9285875706214689
+C) Radon subsets,NS-A,1.73,mode,5,4114,0.9297175141242938
+C) Radon subsets,NS-A,1.74,mode,9,4123,0.9317514124293785
+C) Radon subsets,NS-A,1.75,mode,6,4129,0.9331073446327683
+C) Radon subsets,NS-A,1.76,mode,4,4133,0.9340112994350283
+C) Radon subsets,NS-A,1.77,mode,6,4139,0.9353672316384181
+C) Radon subsets,NS-A,1.78,mode,8,4147,0.9371751412429379
+C) Radon subsets,NS-A,1.79,mode,6,4153,0.9385310734463277
+C) Radon subsets,NS-A,1.8,mode,9,4162,0.9405649717514124
+C) Radon subsets,NS-A,1.81,mode,9,4171,0.9425988700564972
+C) Radon subsets,NS-A,1.82,mode,8,4179,0.9444067796610169
+C) Radon subsets,NS-A,1.83,mode,7,4186,0.9459887005649718
+C) Radon subsets,NS-A,1.84,mode,7,4193,0.9475706214689266
+C) Radon subsets,NS-A,1.85,mode,5,4198,0.9487005649717514
+C) Radon subsets,NS-A,1.86,mode,5,4203,0.9498305084745763
+C) Radon subsets,NS-A,1.87,mode,5,4208,0.9509604519774011
+C) Radon subsets,NS-A,1.89,mode,1,4209,0.9511864406779661
+C) Radon subsets,NS-A,1.9,mode,13,4222,0.9541242937853107
+C) Radon subsets,NS-A,1.91,mode,4,4226,0.9550282485875706
+C) Radon subsets,NS-A,1.92,mode,5,4231,0.9561581920903954
+C) Radon subsets,NS-A,1.93,mode,5,4236,0.9572881355932203
+C) Radon subsets,NS-A,1.94,mode,3,4239,0.9579661016949153
+C) Radon subsets,NS-A,1.95,mode,4,4243,0.9588700564971752
+C) Radon subsets,NS-A,1.96,mode,5,4248,0.96
+C) Radon subsets,NS-A,1.97,mode,3,4251,0.9606779661016949
+C) Radon subsets,NS-A,1.98,mode,1,4252,0.9609039548022599
+C) Radon subsets,NS-A,1.99,mode,3,4255,0.9615819209039548
+C) Radon subsets,NS-A,2,mode,7,4262,0.9631638418079096
+C) Radon subsets,NS-A,2.01,mode,5,4267,0.9642937853107345
+C) Radon subsets,NS-A,2.02,mode,6,4273,0.9656497175141243
+C) Radon subsets,NS-A,2.03,mode,3,4276,0.9663276836158192
+C) Radon subsets,NS-A,2.04,mode,6,4282,0.967683615819209
+C) Radon subsets,NS-A,2.05,mode,5,4287,0.968813559322034
+C) Radon subsets,NS-A,2.06,mode,2,4289,0.9692655367231638
+C) Radon subsets,NS-A,2.07,mode,4,4293,0.9701694915254238
+C) Radon subsets,NS-A,2.08,mode,4,4297,0.9710734463276837
+C) Radon subsets,NS-A,2.09,mode,5,4302,0.9722033898305085
+C) Radon subsets,NS-A,2.1,mode,1,4303,0.9724293785310735
+C) Radon subsets,NS-A,2.11,mode,1,4304,0.9726553672316384
+C) Radon subsets,NS-A,2.12,mode,2,4306,0.9731073446327684
+C) Radon subsets,NS-A,2.13,mode,5,4311,0.9742372881355932
+C) Radon subsets,NS-A,2.14,mode,1,4312,0.9744632768361582
+C) Radon subsets,NS-A,2.15,mode,2,4314,0.9749152542372881
+C) Radon subsets,NS-A,2.16,mode,2,4316,0.9753672316384181
+C) Radon subsets,NS-A,2.17,mode,6,4322,0.9767231638418079
+C) Radon subsets,NS-A,2.18,mode,2,4324,0.9771751412429378
+C) Radon subsets,NS-A,2.19,mode,2,4326,0.9776271186440678
+C) Radon subsets,NS-A,2.21,mode,2,4328,0.9780790960451977
+C) Radon subsets,NS-A,2.22,mode,2,4330,0.9785310734463277
+C) Radon subsets,NS-A,2.23,mode,4,4334,0.9794350282485875
+C) Radon subsets,NS-A,2.24,mode,4,4338,0.9803389830508474
+C) Radon subsets,NS-A,2.25,mode,2,4340,0.9807909604519774
+C) Radon subsets,NS-A,2.26,mode,1,4341,0.9810169491525423
+C) Radon subsets,NS-A,2.27,mode,2,4343,0.9814689265536723
+C) Radon subsets,NS-A,2.28,mode,4,4347,0.9823728813559321
+C) Radon subsets,NS-A,2.3,mode,4,4351,0.9832768361581921
+C) Radon subsets,NS-A,2.31,mode,3,4354,0.983954802259887
+C) Radon subsets,NS-A,2.33,mode,1,4355,0.984180790960452
+C) Radon subsets,NS-A,2.34,mode,1,4356,0.984406779661017
+C) Radon subsets,NS-A,2.35,mode,3,4359,0.9850847457627119
+C) Radon subsets,NS-A,2.36,mode,1,4360,0.9853107344632769
+C) Radon subsets,NS-A,2.37,mode,3,4363,0.9859887005649718
+C) Radon subsets,NS-A,2.38,mode,2,4365,0.9864406779661017
+C) Radon subsets,NS-A,2.39,mode,4,4369,0.9873446327683616
+C) Radon subsets,NS-A,2.4,mode,2,4371,0.9877966101694915
+C) Radon subsets,NS-A,2.41,mode,2,4373,0.9882485875706215
+C) Radon subsets,NS-A,2.43,mode,2,4375,0.9887005649717514
+C) Radon subsets,NS-A,2.44,mode,2,4377,0.9891525423728813
+C) Radon subsets,NS-A,2.45,mode,1,4378,0.9893785310734463
+C) Radon subsets,NS-A,2.47,mode,1,4379,0.9896045197740113
+C) Radon subsets,NS-A,2.5,mode,3,4382,0.9902824858757062
+C) Radon subsets,NS-A,2.51,mode,1,4383,0.9905084745762712
+C) Radon subsets,NS-A,2.52,mode,1,4384,0.9907344632768361
+C) Radon subsets,NS-A,2.53,mode,1,4385,0.9909604519774011
+C) Radon subsets,NS-A,2.54,mode,2,4387,0.991412429378531
+C) Radon subsets,NS-A,2.56,mode,3,4390,0.992090395480226
+C) Radon subsets,NS-A,2.57,mode,1,4391,0.9923163841807909
+C) Radon subsets,NS-A,2.58,mode,1,4392,0.9925423728813559
+C) Radon subsets,NS-A,2.59,mode,2,4394,0.9929943502824858
+C) Radon subsets,NS-A,2.61,mode,2,4396,0.9934463276836158
+C) Radon subsets,NS-A,2.64,mode,1,4397,0.9936723163841807
+C) Radon subsets,NS-A,2.66,mode,4,4401,0.9945762711864407
+C) Radon subsets,NS-A,2.68,mode,1,4402,0.9948022598870057
+C) Radon subsets,NS-A,2.69,mode,1,4403,0.9950282485875707
+C) Radon subsets,NS-A,2.72,mode,1,4404,0.9952542372881356
+C) Radon subsets,NS-A,2.73,mode,1,4405,0.9954802259887006
+C) Radon subsets,NS-A,2.74,mode,1,4406,0.9957062146892656
+C) Radon subsets,NS-A,2.75,mode,3,4409,0.9963841807909605
+C) Radon subsets,NS-A,2.77,mode,1,4410,0.9966101694915255
+C) Radon subsets,NS-A,2.81,mode,1,4411,0.9968361581920904
+C) Radon subsets,NS-A,2.84,mode,2,4413,0.9972881355932204
+C) Radon subsets,NS-A,2.88,mode,1,4414,0.9975141242937853
+C) Radon subsets,NS-A,2.89,mode,1,4415,0.9977401129943503
+C) Radon subsets,NS-A,2.91,mode,1,4416,0.9979661016949153
+C) Radon subsets,NS-A,2.94,mode,1,4417,0.9981920903954802
+C) Radon subsets,NS-A,2.95,mode,2,4419,0.9986440677966102
+C) Radon subsets,NS-A,2.96,mode,1,4420,0.9988700564971752
+C) Radon subsets,NS-A,2.98,mode,1,4421,0.9990960451977401
+C) Radon subsets,NS-A,3.08,mode,1,4422,0.9993220338983051
+C) Radon subsets,NS-A,3.14,mode,1,4423,0.9995480225988701
+C) Radon subsets,NS-A,3.15,mode,1,4424,0.999774011299435
+C) Radon subsets,NS-A,3.47,mode,1,4425,1
+C) Radon subsets,NS-A,NA,mean,4425,4425,1
+C) Radon subsets,NS-C,0,mode,87,87,0.01966101694915254
+C) Radon subsets,NS-C,0.01,mode,140,227,0.05129943502824859
+C) Radon subsets,NS-C,0.02,mode,132,359,0.08112994350282486
+C) Radon subsets,NS-C,0.03,mode,156,515,0.11638418079096045
+C) Radon subsets,NS-C,0.04,mode,154,669,0.1511864406779661
+C) Radon subsets,NS-C,0.05,mode,116,785,0.17740112994350282
+C) Radon subsets,NS-C,0.06,mode,136,921,0.20813559322033898
+C) Radon subsets,NS-C,0.07,mode,102,1023,0.2311864406779661
+C) Radon subsets,NS-C,0.08,mode,83,1106,0.24994350282485875
+C) Radon subsets,NS-C,0.09,mode,83,1189,0.26870056497175143
+C) Radon subsets,NS-C,0.1,mode,95,1284,0.2901694915254237
+C) Radon subsets,NS-C,0.11,mode,89,1373,0.3102824858757062
+C) Radon subsets,NS-C,0.12,mode,78,1451,0.327909604519774
+C) Radon subsets,NS-C,0.13,mode,61,1512,0.3416949152542373
+C) Radon subsets,NS-C,0.14,mode,83,1595,0.36045197740112994
+C) Radon subsets,NS-C,0.15,mode,57,1652,0.37333333333333335
+C) Radon subsets,NS-C,0.16,mode,62,1714,0.38734463276836156
+C) Radon subsets,NS-C,0.17,mode,62,1776,0.40135593220338983
+C) Radon subsets,NS-C,0.18,mode,56,1832,0.41401129943502823
+C) Radon subsets,NS-C,0.19,mode,47,1879,0.4246327683615819
+C) Radon subsets,NS-C,0.2,mode,66,1945,0.43954802259887005
+C) Radon subsets,NS-C,0.21,mode,44,1989,0.44949152542372883
+C) Radon subsets,NS-C,0.22,mode,57,2046,0.4623728813559322
+C) Radon subsets,NS-C,0.23,mode,42,2088,0.471864406779661
+C) Radon subsets,NS-C,0.24,mode,56,2144,0.4845197740112994
+C) Radon subsets,NS-C,0.25,mode,45,2189,0.49468926553672316
+C) Radon subsets,NS-C,0.26,mode,43,2232,0.504406779661017
+C) Radon subsets,NS-C,0.27,mode,33,2265,0.511864406779661
+C) Radon subsets,NS-C,0.28,mode,46,2311,0.5222598870056497
+C) Radon subsets,NS-C,0.29,mode,29,2340,0.5288135593220339
+C) Radon subsets,NS-C,0.3,mode,41,2381,0.5380790960451978
+C) Radon subsets,NS-C,0.31,mode,30,2411,0.5448587570621469
+C) Radon subsets,NS-C,0.32,mode,46,2457,0.5552542372881356
+C) Radon subsets,NS-C,0.33,mode,36,2493,0.5633898305084746
+C) Radon subsets,NS-C,0.34,mode,32,2525,0.5706214689265536
+C) Radon subsets,NS-C,0.35,mode,25,2550,0.576271186440678
+C) Radon subsets,NS-C,0.36,mode,40,2590,0.5853107344632769
+C) Radon subsets,NS-C,0.37,mode,27,2617,0.5914124293785311
+C) Radon subsets,NS-C,0.38,mode,33,2650,0.5988700564971752
+C) Radon subsets,NS-C,0.39,mode,25,2675,0.6045197740112994
+C) Radon subsets,NS-C,0.4,mode,32,2707,0.6117514124293786
+C) Radon subsets,NS-C,0.41,mode,32,2739,0.6189830508474576
+C) Radon subsets,NS-C,0.42,mode,34,2773,0.6266666666666667
+C) Radon subsets,NS-C,0.43,mode,32,2805,0.6338983050847458
+C) Radon subsets,NS-C,0.44,mode,21,2826,0.6386440677966102
+C) Radon subsets,NS-C,0.45,mode,30,2856,0.6454237288135594
+C) Radon subsets,NS-C,0.46,mode,19,2875,0.6497175141242938
+C) Radon subsets,NS-C,0.47,mode,32,2907,0.6569491525423728
+C) Radon subsets,NS-C,0.48,mode,35,2942,0.6648587570621469
+C) Radon subsets,NS-C,0.49,mode,28,2970,0.6711864406779661
+C) Radon subsets,NS-C,0.5,mode,28,2998,0.6775141242937853
+C) Radon subsets,NS-C,0.51,mode,29,3027,0.6840677966101695
+C) Radon subsets,NS-C,0.52,mode,30,3057,0.6908474576271186
+C) Radon subsets,NS-C,0.53,mode,20,3077,0.6953672316384181
+C) Radon subsets,NS-C,0.54,mode,35,3112,0.7032768361581921
+C) Radon subsets,NS-C,0.55,mode,13,3125,0.7062146892655368
+C) Radon subsets,NS-C,0.56,mode,36,3161,0.7143502824858757
+C) Radon subsets,NS-C,0.57,mode,24,3185,0.7197740112994351
+C) Radon subsets,NS-C,0.58,mode,31,3216,0.7267796610169491
+C) Radon subsets,NS-C,0.59,mode,24,3240,0.7322033898305085
+C) Radon subsets,NS-C,0.6,mode,31,3271,0.7392090395480226
+C) Radon subsets,NS-C,0.61,mode,25,3296,0.7448587570621469
+C) Radon subsets,NS-C,0.62,mode,30,3326,0.751638418079096
+C) Radon subsets,NS-C,0.63,mode,20,3346,0.7561581920903955
+C) Radon subsets,NS-C,0.64,mode,20,3366,0.7606779661016949
+C) Radon subsets,NS-C,0.65,mode,20,3386,0.7651977401129944
+C) Radon subsets,NS-C,0.66,mode,22,3408,0.7701694915254237
+C) Radon subsets,NS-C,0.67,mode,18,3426,0.7742372881355932
+C) Radon subsets,NS-C,0.68,mode,21,3447,0.7789830508474577
+C) Radon subsets,NS-C,0.69,mode,22,3469,0.783954802259887
+C) Radon subsets,NS-C,0.7,mode,23,3492,0.7891525423728813
+C) Radon subsets,NS-C,0.71,mode,21,3513,0.7938983050847458
+C) Radon subsets,NS-C,0.72,mode,20,3533,0.7984180790960452
+C) Radon subsets,NS-C,0.73,mode,17,3550,0.8022598870056498
+C) Radon subsets,NS-C,0.74,mode,29,3579,0.8088135593220339
+C) Radon subsets,NS-C,0.75,mode,20,3599,0.8133333333333334
+C) Radon subsets,NS-C,0.76,mode,25,3624,0.8189830508474576
+C) Radon subsets,NS-C,0.77,mode,18,3642,0.8230508474576271
+C) Radon subsets,NS-C,0.78,mode,19,3661,0.8273446327683616
+C) Radon subsets,NS-C,0.79,mode,14,3675,0.8305084745762712
+C) Radon subsets,NS-C,0.8,mode,20,3695,0.8350282485875706
+C) Radon subsets,NS-C,0.81,mode,16,3711,0.8386440677966102
+C) Radon subsets,NS-C,0.82,mode,13,3724,0.8415819209039548
+C) Radon subsets,NS-C,0.83,mode,23,3747,0.8467796610169491
+C) Radon subsets,NS-C,0.84,mode,21,3768,0.8515254237288136
+C) Radon subsets,NS-C,0.85,mode,21,3789,0.856271186440678
+C) Radon subsets,NS-C,0.86,mode,17,3806,0.8601129943502824
+C) Radon subsets,NS-C,0.87,mode,16,3822,0.8637288135593221
+C) Radon subsets,NS-C,0.88,mode,15,3837,0.8671186440677966
+C) Radon subsets,NS-C,0.89,mode,16,3853,0.8707344632768361
+C) Radon subsets,NS-C,0.9,mode,10,3863,0.8729943502824858
+C) Radon subsets,NS-C,0.91,mode,14,3877,0.8761581920903955
+C) Radon subsets,NS-C,0.92,mode,15,3892,0.8795480225988701
+C) Radon subsets,NS-C,0.93,mode,11,3903,0.8820338983050847
+C) Radon subsets,NS-C,0.94,mode,10,3913,0.8842937853107344
+C) Radon subsets,NS-C,0.95,mode,15,3928,0.8876836158192091
+C) Radon subsets,NS-C,0.96,mode,16,3944,0.8912994350282486
+C) Radon subsets,NS-C,0.97,mode,10,3954,0.8935593220338983
+C) Radon subsets,NS-C,0.98,mode,15,3969,0.8969491525423728
+C) Radon subsets,NS-C,0.99,mode,10,3979,0.8992090395480226
+C) Radon subsets,NS-C,1,mode,12,3991,0.9019209039548023
+C) Radon subsets,NS-C,1.01,mode,12,4003,0.9046327683615819
+C) Radon subsets,NS-C,1.02,mode,13,4016,0.9075706214689265
+C) Radon subsets,NS-C,1.03,mode,14,4030,0.9107344632768362
+C) Radon subsets,NS-C,1.04,mode,17,4047,0.9145762711864407
+C) Radon subsets,NS-C,1.05,mode,11,4058,0.9170621468926554
+C) Radon subsets,NS-C,1.06,mode,12,4070,0.919774011299435
+C) Radon subsets,NS-C,1.07,mode,12,4082,0.9224858757062147
+C) Radon subsets,NS-C,1.08,mode,7,4089,0.9240677966101695
+C) Radon subsets,NS-C,1.09,mode,9,4098,0.9261016949152543
+C) Radon subsets,NS-C,1.1,mode,12,4110,0.9288135593220339
+C) Radon subsets,NS-C,1.11,mode,7,4117,0.9303954802259887
+C) Radon subsets,NS-C,1.12,mode,13,4130,0.9333333333333333
+C) Radon subsets,NS-C,1.13,mode,11,4141,0.9358192090395481
+C) Radon subsets,NS-C,1.14,mode,8,4149,0.9376271186440678
+C) Radon subsets,NS-C,1.15,mode,7,4156,0.9392090395480226
+C) Radon subsets,NS-C,1.16,mode,6,4162,0.9405649717514124
+C) Radon subsets,NS-C,1.17,mode,7,4169,0.9421468926553672
+C) Radon subsets,NS-C,1.18,mode,8,4177,0.943954802259887
+C) Radon subsets,NS-C,1.19,mode,10,4187,0.9462146892655368
+C) Radon subsets,NS-C,1.2,mode,3,4190,0.9468926553672317
+C) Radon subsets,NS-C,1.21,mode,5,4195,0.9480225988700565
+C) Radon subsets,NS-C,1.22,mode,10,4205,0.9502824858757062
+C) Radon subsets,NS-C,1.23,mode,9,4214,0.952316384180791
+C) Radon subsets,NS-C,1.24,mode,6,4220,0.9536723163841808
+C) Radon subsets,NS-C,1.26,mode,9,4229,0.9557062146892655
+C) Radon subsets,NS-C,1.27,mode,7,4236,0.9572881355932203
+C) Radon subsets,NS-C,1.28,mode,4,4240,0.9581920903954803
+C) Radon subsets,NS-C,1.29,mode,13,4253,0.9611299435028249
+C) Radon subsets,NS-C,1.3,mode,8,4261,0.9629378531073446
+C) Radon subsets,NS-C,1.31,mode,10,4271,0.9651977401129943
+C) Radon subsets,NS-C,1.32,mode,7,4278,0.9667796610169491
+C) Radon subsets,NS-C,1.33,mode,7,4285,0.9683615819209039
+C) Radon subsets,NS-C,1.34,mode,6,4291,0.9697175141242937
+C) Radon subsets,NS-C,1.35,mode,4,4295,0.9706214689265537
+C) Radon subsets,NS-C,1.36,mode,1,4296,0.9708474576271187
+C) Radon subsets,NS-C,1.37,mode,2,4298,0.9712994350282486
+C) Radon subsets,NS-C,1.38,mode,3,4301,0.9719774011299435
+C) Radon subsets,NS-C,1.39,mode,4,4305,0.9728813559322034
+C) Radon subsets,NS-C,1.4,mode,5,4310,0.9740112994350283
+C) Radon subsets,NS-C,1.41,mode,4,4314,0.9749152542372881
+C) Radon subsets,NS-C,1.42,mode,1,4315,0.9751412429378531
+C) Radon subsets,NS-C,1.43,mode,4,4319,0.976045197740113
+C) Radon subsets,NS-C,1.44,mode,2,4321,0.9764971751412429
+C) Radon subsets,NS-C,1.45,mode,6,4327,0.9778531073446328
+C) Radon subsets,NS-C,1.46,mode,1,4328,0.9780790960451977
+C) Radon subsets,NS-C,1.47,mode,2,4330,0.9785310734463277
+C) Radon subsets,NS-C,1.48,mode,1,4331,0.9787570621468926
+C) Radon subsets,NS-C,1.49,mode,3,4334,0.9794350282485875
+C) Radon subsets,NS-C,1.5,mode,2,4336,0.9798870056497175
+C) Radon subsets,NS-C,1.51,mode,3,4339,0.9805649717514124
+C) Radon subsets,NS-C,1.52,mode,3,4342,0.9812429378531073
+C) Radon subsets,NS-C,1.53,mode,2,4344,0.9816949152542372
+C) Radon subsets,NS-C,1.54,mode,4,4348,0.9825988700564972
+C) Radon subsets,NS-C,1.55,mode,2,4350,0.9830508474576272
+C) Radon subsets,NS-C,1.56,mode,3,4353,0.9837288135593221
+C) Radon subsets,NS-C,1.57,mode,5,4358,0.9848587570621469
+C) Radon subsets,NS-C,1.58,mode,2,4360,0.9853107344632769
+C) Radon subsets,NS-C,1.59,mode,1,4361,0.9855367231638418
+C) Radon subsets,NS-C,1.6,mode,4,4365,0.9864406779661017
+C) Radon subsets,NS-C,1.61,mode,2,4367,0.9868926553672316
+C) Radon subsets,NS-C,1.62,mode,3,4370,0.9875706214689266
+C) Radon subsets,NS-C,1.63,mode,3,4373,0.9882485875706215
+C) Radon subsets,NS-C,1.64,mode,4,4377,0.9891525423728813
+C) Radon subsets,NS-C,1.66,mode,1,4378,0.9893785310734463
+C) Radon subsets,NS-C,1.68,mode,1,4379,0.9896045197740113
+C) Radon subsets,NS-C,1.69,mode,1,4380,0.9898305084745763
+C) Radon subsets,NS-C,1.7,mode,2,4382,0.9902824858757062
+C) Radon subsets,NS-C,1.71,mode,2,4384,0.9907344632768361
+C) Radon subsets,NS-C,1.72,mode,1,4385,0.9909604519774011
+C) Radon subsets,NS-C,1.73,mode,4,4389,0.991864406779661
+C) Radon subsets,NS-C,1.74,mode,1,4390,0.992090395480226
+C) Radon subsets,NS-C,1.75,mode,1,4391,0.9923163841807909
+C) Radon subsets,NS-C,1.77,mode,1,4392,0.9925423728813559
+C) Radon subsets,NS-C,1.78,mode,1,4393,0.9927683615819209
+C) Radon subsets,NS-C,1.83,mode,1,4394,0.9929943502824858
+C) Radon subsets,NS-C,1.84,mode,1,4395,0.9932203389830508
+C) Radon subsets,NS-C,1.85,mode,2,4397,0.9936723163841807
+C) Radon subsets,NS-C,1.86,mode,1,4398,0.9938983050847457
+C) Radon subsets,NS-C,1.88,mode,2,4400,0.9943502824858758
+C) Radon subsets,NS-C,1.89,mode,2,4402,0.9948022598870057
+C) Radon subsets,NS-C,1.91,mode,1,4403,0.9950282485875707
+C) Radon subsets,NS-C,1.92,mode,2,4405,0.9954802259887006
+C) Radon subsets,NS-C,1.93,mode,1,4406,0.9957062146892656
+C) Radon subsets,NS-C,1.94,mode,2,4408,0.9961581920903955
+C) Radon subsets,NS-C,1.96,mode,2,4410,0.9966101694915255
+C) Radon subsets,NS-C,1.97,mode,1,4411,0.9968361581920904
+C) Radon subsets,NS-C,2,mode,1,4412,0.9970621468926554
+C) Radon subsets,NS-C,2.03,mode,2,4414,0.9975141242937853
+C) Radon subsets,NS-C,2.07,mode,1,4415,0.9977401129943503
+C) Radon subsets,NS-C,2.09,mode,1,4416,0.9979661016949153
+C) Radon subsets,NS-C,2.1,mode,1,4417,0.9981920903954802
+C) Radon subsets,NS-C,2.13,mode,3,4420,0.9988700564971752
+C) Radon subsets,NS-C,2.32,mode,1,4421,0.9990960451977401
+C) Radon subsets,NS-C,2.33,mode,1,4422,0.9993220338983051
+C) Radon subsets,NS-C,2.54,mode,1,4423,0.9995480225988701
+C) Radon subsets,NS-C,2.6,mode,1,4424,0.999774011299435
+C) Radon subsets,NS-C,7.87,mode,1,4425,1
+C) Radon subsets,NS-C,NA,mean,4425,4425,1
+C) Radon subsets,PSIS-LOO,NA,mean,4425,4425,1
+C) Radon subsets,PSIS-LOO,NA,mode,4425,4425,1
+C) Radon subsets,VEHTARI,0,mean,313,313,0.07073446327683616
+C) Radon subsets,VEHTARI,0.01,mean,385,698,0.15774011299435028
+C) Radon subsets,VEHTARI,0.02,mean,239,937,0.21175141242937853
+C) Radon subsets,VEHTARI,0.03,mean,218,1155,0.26101694915254237
+C) Radon subsets,VEHTARI,0.04,mean,232,1387,0.3134463276836158
+C) Radon subsets,VEHTARI,0.05,mean,175,1562,0.3529943502824859
+C) Radon subsets,VEHTARI,0.06,mean,179,1741,0.3934463276836158
+C) Radon subsets,VEHTARI,0.07,mean,153,1894,0.4280225988700565
+C) Radon subsets,VEHTARI,0.08,mean,153,2047,0.4625988700564972
+C) Radon subsets,VEHTARI,0.09,mean,143,2190,0.49491525423728816
+C) Radon subsets,VEHTARI,0.1,mean,159,2349,0.5308474576271186
+C) Radon subsets,VEHTARI,0.11,mean,121,2470,0.5581920903954802
+C) Radon subsets,VEHTARI,0.12,mean,135,2605,0.5887005649717514
+C) Radon subsets,VEHTARI,0.13,mean,106,2711,0.6126553672316384
+C) Radon subsets,VEHTARI,0.14,mean,134,2845,0.6429378531073446
+C) Radon subsets,VEHTARI,0.15,mean,109,2954,0.6675706214689265
+C) Radon subsets,VEHTARI,0.16,mean,140,3094,0.6992090395480226
+C) Radon subsets,VEHTARI,0.17,mean,131,3225,0.7288135593220338
+C) Radon subsets,VEHTARI,0.18,mean,115,3340,0.7548022598870057
+C) Radon subsets,VEHTARI,0.19,mean,115,3455,0.7807909604519774
+C) Radon subsets,VEHTARI,0.2,mean,112,3567,0.8061016949152542
+C) Radon subsets,VEHTARI,0.21,mean,89,3656,0.8262146892655368
+C) Radon subsets,VEHTARI,0.22,mean,104,3760,0.8497175141242937
+C) Radon subsets,VEHTARI,0.23,mean,79,3839,0.8675706214689266
+C) Radon subsets,VEHTARI,0.24,mean,66,3905,0.8824858757062147
+C) Radon subsets,VEHTARI,0.25,mean,56,3961,0.8951412429378531
+C) Radon subsets,VEHTARI,0.26,mean,49,4010,0.9062146892655367
+C) Radon subsets,VEHTARI,0.27,mean,37,4047,0.9145762711864407
+C) Radon subsets,VEHTARI,0.28,mean,42,4089,0.9240677966101695
+C) Radon subsets,VEHTARI,0.29,mean,21,4110,0.9288135593220339
+C) Radon subsets,VEHTARI,0.3,mean,27,4137,0.9349152542372882
+C) Radon subsets,VEHTARI,0.31,mean,12,4149,0.9376271186440678
+C) Radon subsets,VEHTARI,0.32,mean,16,4165,0.9412429378531073
+C) Radon subsets,VEHTARI,0.33,mean,23,4188,0.9464406779661017
+C) Radon subsets,VEHTARI,0.34,mean,16,4204,0.9500564971751413
+C) Radon subsets,VEHTARI,0.35,mean,11,4215,0.9525423728813559
+C) Radon subsets,VEHTARI,0.36,mean,20,4235,0.9570621468926553
+C) Radon subsets,VEHTARI,0.37,mean,9,4244,0.9590960451977402
+C) Radon subsets,VEHTARI,0.38,mean,10,4254,0.9613559322033899
+C) Radon subsets,VEHTARI,0.39,mean,10,4264,0.9636158192090396
+C) Radon subsets,VEHTARI,0.4,mean,9,4273,0.9656497175141243
+C) Radon subsets,VEHTARI,0.41,mean,6,4279,0.9670056497175141
+C) Radon subsets,VEHTARI,0.42,mean,10,4289,0.9692655367231638
+C) Radon subsets,VEHTARI,0.43,mean,4,4293,0.9701694915254238
+C) Radon subsets,VEHTARI,0.44,mean,9,4302,0.9722033898305085
+C) Radon subsets,VEHTARI,0.45,mean,7,4309,0.9737853107344633
+C) Radon subsets,VEHTARI,0.46,mean,6,4315,0.9751412429378531
+C) Radon subsets,VEHTARI,0.47,mean,4,4319,0.976045197740113
+C) Radon subsets,VEHTARI,0.48,mean,7,4326,0.9776271186440678
+C) Radon subsets,VEHTARI,0.49,mean,8,4334,0.9794350282485875
+C) Radon subsets,VEHTARI,0.5,mean,4,4338,0.9803389830508474
+C) Radon subsets,VEHTARI,0.51,mean,3,4341,0.9810169491525423
+C) Radon subsets,VEHTARI,0.52,mean,5,4346,0.9821468926553673
+C) Radon subsets,VEHTARI,0.53,mean,2,4348,0.9825988700564972
+C) Radon subsets,VEHTARI,0.54,mean,3,4351,0.9832768361581921
+C) Radon subsets,VEHTARI,0.55,mean,3,4354,0.983954802259887
+C) Radon subsets,VEHTARI,0.56,mean,1,4355,0.984180790960452
+C) Radon subsets,VEHTARI,0.57,mean,2,4357,0.9846327683615819
+C) Radon subsets,VEHTARI,0.58,mean,6,4363,0.9859887005649718
+C) Radon subsets,VEHTARI,0.59,mean,3,4366,0.9866666666666667
+C) Radon subsets,VEHTARI,0.6,mean,4,4370,0.9875706214689266
+C) Radon subsets,VEHTARI,0.61,mean,2,4372,0.9880225988700565
+C) Radon subsets,VEHTARI,0.62,mean,3,4375,0.9887005649717514
+C) Radon subsets,VEHTARI,0.63,mean,2,4377,0.9891525423728813
+C) Radon subsets,VEHTARI,0.64,mean,2,4379,0.9896045197740113
+C) Radon subsets,VEHTARI,0.65,mean,2,4381,0.9900564971751412
+C) Radon subsets,VEHTARI,0.66,mean,2,4383,0.9905084745762712
+C) Radon subsets,VEHTARI,0.67,mean,1,4384,0.9907344632768361
+C) Radon subsets,VEHTARI,0.68,mean,3,4387,0.991412429378531
+C) Radon subsets,VEHTARI,0.7,mean,1,4388,0.991638418079096
+C) Radon subsets,VEHTARI,0.71,mean,3,4391,0.9923163841807909
+C) Radon subsets,VEHTARI,0.73,mean,1,4392,0.9925423728813559
+C) Radon subsets,VEHTARI,0.75,mean,4,4396,0.9934463276836158
+C) Radon subsets,VEHTARI,0.76,mean,1,4397,0.9936723163841807
+C) Radon subsets,VEHTARI,0.81,mean,2,4399,0.9941242937853108
+C) Radon subsets,VEHTARI,0.82,mean,2,4401,0.9945762711864407
+C) Radon subsets,VEHTARI,0.83,mean,1,4402,0.9948022598870057
+C) Radon subsets,VEHTARI,0.88,mean,2,4404,0.9952542372881356
+C) Radon subsets,VEHTARI,0.9,mean,1,4405,0.9954802259887006
+C) Radon subsets,VEHTARI,0.91,mean,2,4407,0.9959322033898305
+C) Radon subsets,VEHTARI,0.93,mean,2,4409,0.9963841807909605
+C) Radon subsets,VEHTARI,0.97,mean,1,4410,0.9966101694915255
+C) Radon subsets,VEHTARI,1,mean,1,4411,0.9968361581920904
+C) Radon subsets,VEHTARI,1.02,mean,1,4412,0.9970621468926554
+C) Radon subsets,VEHTARI,1.05,mean,1,4413,0.9972881355932204
+C) Radon subsets,VEHTARI,1.07,mean,1,4414,0.9975141242937853
+C) Radon subsets,VEHTARI,1.08,mean,1,4415,0.9977401129943503
+C) Radon subsets,VEHTARI,1.13,mean,2,4417,0.9981920903954802
+C) Radon subsets,VEHTARI,1.36,mean,1,4418,0.9984180790960452
+C) Radon subsets,VEHTARI,1.37,mean,1,4419,0.9986440677966102
+C) Radon subsets,VEHTARI,1.55,mean,1,4420,0.9988700564971752
+C) Radon subsets,VEHTARI,1.56,mean,1,4421,0.9990960451977401
+C) Radon subsets,VEHTARI,1.66,mean,1,4422,0.9993220338983051
+C) Radon subsets,VEHTARI,1.88,mean,1,4423,0.9995480225988701
+C) Radon subsets,VEHTARI,2.2,mean,1,4424,0.999774011299435
+C) Radon subsets,VEHTARI,2.24,mean,1,4425,1
+C) Radon subsets,VEHTARI,NA,mode,4425,4425,1
+E) SLC,AXE,0,mean,2,2,0.03571428571428571
+E) SLC,AXE,0.01,mean,3,5,0.08928571428571429
+E) SLC,AXE,0.02,mean,1,6,0.10714285714285714
+E) SLC,AXE,0.03,mean,1,7,0.125
+E) SLC,AXE,0.04,mean,2,9,0.16071428571428573
+E) SLC,AXE,0.06,mean,3,12,0.21428571428571427
+E) SLC,AXE,0.07,mean,3,15,0.26785714285714285
+E) SLC,AXE,0.08,mean,1,16,0.2857142857142857
+E) SLC,AXE,0.09,mean,2,18,0.32142857142857145
+E) SLC,AXE,0.1,mean,3,21,0.375
+E) SLC,AXE,0.13,mean,1,22,0.39285714285714285
+E) SLC,AXE,0.14,mean,1,23,0.4107142857142857
+E) SLC,AXE,0.15,mean,4,27,0.48214285714285715
+E) SLC,AXE,0.16,mean,1,28,0.5
+E) SLC,AXE,0.17,mean,2,30,0.5357142857142857
+E) SLC,AXE,0.19,mean,1,31,0.5535714285714286
+E) SLC,AXE,0.2,mean,1,32,0.5714285714285714
+E) SLC,AXE,0.21,mean,1,33,0.5892857142857143
+E) SLC,AXE,0.22,mean,2,35,0.625
+E) SLC,AXE,0.24,mean,1,36,0.6428571428571429
+E) SLC,AXE,0.25,mean,1,37,0.6607142857142857
+E) SLC,AXE,0.28,mean,1,38,0.6785714285714286
+E) SLC,AXE,0.31,mean,1,39,0.6964285714285714
+E) SLC,AXE,0.34,mean,1,40,0.7142857142857143
+E) SLC,AXE,0.36,mean,2,42,0.75
+E) SLC,AXE,0.39,mean,1,43,0.7678571428571429
+E) SLC,AXE,0.42,mean,1,44,0.7857142857142857
+E) SLC,AXE,0.47,mean,1,45,0.8035714285714286
+E) SLC,AXE,0.48,mean,1,46,0.8214285714285714
+E) SLC,AXE,0.52,mean,1,47,0.8392857142857143
+E) SLC,AXE,0.55,mean,1,48,0.8571428571428571
+E) SLC,AXE,0.6,mean,1,49,0.875
+E) SLC,AXE,0.71,mean,1,50,0.8928571428571429
+E) SLC,AXE,0.72,mean,1,51,0.9107142857142857
+E) SLC,AXE,0.78,mean,1,52,0.9285714285714286
+E) SLC,AXE,0.96,mean,1,53,0.9464285714285714
+E) SLC,AXE,1.02,mean,1,54,0.9642857142857143
+E) SLC,AXE,1.37,mean,1,55,0.9821428571428571
+E) SLC,AXE,2.59,mean,1,56,1
+E) SLC,AXE,NA,mode,56,56,1
+E) SLC,GHOST,NA,mean,56,56,1
+E) SLC,GHOST,NA,mode,56,56,1
+E) SLC,iIS,0.02,mean,1,1,0.017857142857142856
+E) SLC,iIS,0.03,mean,1,2,0.03571428571428571
+E) SLC,iIS,0.04,mean,1,3,0.05357142857142857
+E) SLC,iIS,0.05,mean,1,4,0.07142857142857142
+E) SLC,iIS,0.06,mean,2,6,0.10714285714285714
+E) SLC,iIS,0.07,mean,1,7,0.125
+E) SLC,iIS,0.09,mean,2,9,0.16071428571428573
+E) SLC,iIS,0.1,mean,2,11,0.19642857142857142
+E) SLC,iIS,0.11,mean,1,12,0.21428571428571427
+E) SLC,iIS,0.12,mean,2,14,0.25
+E) SLC,iIS,0.14,mean,2,16,0.2857142857142857
+E) SLC,iIS,0.15,mean,3,19,0.3392857142857143
+E) SLC,iIS,0.16,mean,1,20,0.35714285714285715
+E) SLC,iIS,0.17,mean,1,21,0.375
+E) SLC,iIS,0.2,mean,2,23,0.4107142857142857
+E) SLC,iIS,0.21,mean,1,24,0.42857142857142855
+E) SLC,iIS,0.23,mean,1,25,0.44642857142857145
+E) SLC,iIS,0.24,mean,1,26,0.4642857142857143
+E) SLC,iIS,0.32,mean,1,27,0.48214285714285715
+E) SLC,iIS,0.36,mean,1,28,0.5
+E) SLC,iIS,0.37,mean,2,30,0.5357142857142857
+E) SLC,iIS,0.39,mean,1,31,0.5535714285714286
+E) SLC,iIS,0.4,mean,1,32,0.5714285714285714
+E) SLC,iIS,0.42,mean,2,34,0.6071428571428571
+E) SLC,iIS,0.43,mean,1,35,0.625
+E) SLC,iIS,0.46,mean,2,37,0.6607142857142857
+E) SLC,iIS,0.51,mean,1,38,0.6785714285714286
+E) SLC,iIS,0.57,mean,2,40,0.7142857142857143
+E) SLC,iIS,0.59,mean,1,41,0.7321428571428571
+E) SLC,iIS,0.61,mean,2,43,0.7678571428571429
+E) SLC,iIS,0.7,mean,1,44,0.7857142857142857
+E) SLC,iIS,0.72,mean,1,45,0.8035714285714286
+E) SLC,iIS,0.79,mean,1,46,0.8214285714285714
+E) SLC,iIS,0.89,mean,1,47,0.8392857142857143
+E) SLC,iIS,0.97,mean,1,48,0.8571428571428571
+E) SLC,iIS,1.01,mean,1,49,0.875
+E) SLC,iIS,1.02,mean,1,50,0.8928571428571429
+E) SLC,iIS,1.09,mean,1,51,0.9107142857142857
+E) SLC,iIS,1.12,mean,1,52,0.9285714285714286
+E) SLC,iIS,1.52,mean,1,53,0.9464285714285714
+E) SLC,iIS,1.56,mean,1,54,0.9642857142857143
+E) SLC,iIS,1.84,mean,1,55,0.9821428571428571
+E) SLC,iIS,2.88,mean,1,56,1
+E) SLC,iIS,NA,mode,56,56,1
+E) SLC,iIS-A,NA,mean,56,56,1
+E) SLC,iIS-A,NA,mode,56,56,1
+E) SLC,IJ-A,NA,mean,56,56,1
+E) SLC,IJ-A,NA,mode,56,56,1
+E) SLC,IJ-C,NA,mean,56,56,1
+E) SLC,IJ-C,NA,mode,56,56,1
+E) SLC,NS-A,0.03,mode,1,1,0.017857142857142856
+E) SLC,NS-A,0.08,mode,1,2,0.03571428571428571
+E) SLC,NS-A,0.14,mode,2,4,0.07142857142857142
+E) SLC,NS-A,0.15,mode,1,5,0.08928571428571429
+E) SLC,NS-A,0.16,mode,1,6,0.10714285714285714
+E) SLC,NS-A,0.17,mode,1,7,0.125
+E) SLC,NS-A,0.18,mode,1,8,0.14285714285714285
+E) SLC,NS-A,0.2,mode,1,9,0.16071428571428573
+E) SLC,NS-A,0.21,mode,3,12,0.21428571428571427
+E) SLC,NS-A,0.22,mode,1,13,0.23214285714285715
+E) SLC,NS-A,0.23,mode,1,14,0.25
+E) SLC,NS-A,0.27,mode,2,16,0.2857142857142857
+E) SLC,NS-A,0.28,mode,1,17,0.30357142857142855
+E) SLC,NS-A,0.29,mode,1,18,0.32142857142857145
+E) SLC,NS-A,0.3,mode,1,19,0.3392857142857143
+E) SLC,NS-A,0.35,mode,1,20,0.35714285714285715
+E) SLC,NS-A,0.46,mode,3,23,0.4107142857142857
+E) SLC,NS-A,0.47,mode,2,25,0.44642857142857145
+E) SLC,NS-A,0.5,mode,2,27,0.48214285714285715
+E) SLC,NS-A,0.52,mode,2,29,0.5178571428571429
+E) SLC,NS-A,0.53,mode,1,30,0.5357142857142857
+E) SLC,NS-A,0.54,mode,1,31,0.5535714285714286
+E) SLC,NS-A,0.57,mode,1,32,0.5714285714285714
+E) SLC,NS-A,0.67,mode,1,33,0.5892857142857143
+E) SLC,NS-A,0.72,mode,1,34,0.6071428571428571
+E) SLC,NS-A,0.9,mode,1,35,0.625
+E) SLC,NS-A,0.91,mode,1,36,0.6428571428571429
+E) SLC,NS-A,0.96,mode,1,37,0.6607142857142857
+E) SLC,NS-A,1.03,mode,1,38,0.6785714285714286
+E) SLC,NS-A,1.09,mode,1,39,0.6964285714285714
+E) SLC,NS-A,1.15,mode,1,40,0.7142857142857143
+E) SLC,NS-A,1.16,mode,1,41,0.7321428571428571
+E) SLC,NS-A,1.19,mode,1,42,0.75
+E) SLC,NS-A,1.3,mode,1,43,0.7678571428571429
+E) SLC,NS-A,1.47,mode,1,44,0.7857142857142857
+E) SLC,NS-A,1.75,mode,1,45,0.8035714285714286
+E) SLC,NS-A,1.77,mode,2,47,0.8392857142857143
+E) SLC,NS-A,1.86,mode,1,48,0.8571428571428571
+E) SLC,NS-A,2.37,mode,1,49,0.875
+E) SLC,NS-A,2.59,mode,1,50,0.8928571428571429
+E) SLC,NS-A,3.01,mode,1,51,0.9107142857142857
+E) SLC,NS-A,3.13,mode,1,52,0.9285714285714286
+E) SLC,NS-A,3.33,mode,1,53,0.9464285714285714
+E) SLC,NS-A,4.04,mode,1,54,0.9642857142857143
+E) SLC,NS-A,5.08,mode,1,55,0.9821428571428571
+E) SLC,NS-A,5.27,mode,1,56,1
+E) SLC,NS-A,NA,mean,56,56,1
+E) SLC,NS-C,0.02,mode,1,1,0.017857142857142856
+E) SLC,NS-C,0.04,mode,1,2,0.03571428571428571
+E) SLC,NS-C,0.07,mode,1,3,0.05357142857142857
+E) SLC,NS-C,0.19,mode,1,4,0.07142857142857142
+E) SLC,NS-C,0.21,mode,1,5,0.08928571428571429
+E) SLC,NS-C,0.26,mode,1,6,0.10714285714285714
+E) SLC,NS-C,0.29,mode,2,8,0.14285714285714285
+E) SLC,NS-C,0.4,mode,1,9,0.16071428571428573
+E) SLC,NS-C,0.41,mode,3,12,0.21428571428571427
+E) SLC,NS-C,0.43,mode,1,13,0.23214285714285715
+E) SLC,NS-C,0.46,mode,1,14,0.25
+E) SLC,NS-C,0.48,mode,1,15,0.26785714285714285
+E) SLC,NS-C,0.51,mode,1,16,0.2857142857142857
+E) SLC,NS-C,0.56,mode,4,20,0.35714285714285715
+E) SLC,NS-C,0.57,mode,1,21,0.375
+E) SLC,NS-C,0.61,mode,1,22,0.39285714285714285
+E) SLC,NS-C,0.63,mode,1,23,0.4107142857142857
+E) SLC,NS-C,0.66,mode,1,24,0.42857142857142855
+E) SLC,NS-C,0.67,mode,1,25,0.44642857142857145
+E) SLC,NS-C,0.69,mode,1,26,0.4642857142857143
+E) SLC,NS-C,0.7,mode,1,27,0.48214285714285715
+E) SLC,NS-C,0.78,mode,1,28,0.5
+E) SLC,NS-C,0.84,mode,1,29,0.5178571428571429
+E) SLC,NS-C,0.89,mode,1,30,0.5357142857142857
+E) SLC,NS-C,0.91,mode,1,31,0.5535714285714286
+E) SLC,NS-C,0.92,mode,1,32,0.5714285714285714
+E) SLC,NS-C,0.96,mode,2,34,0.6071428571428571
+E) SLC,NS-C,1.03,mode,1,35,0.625
+E) SLC,NS-C,1.08,mode,1,36,0.6428571428571429
+E) SLC,NS-C,1.1,mode,2,38,0.6785714285714286
+E) SLC,NS-C,1.16,mode,1,39,0.6964285714285714
+E) SLC,NS-C,1.22,mode,1,40,0.7142857142857143
+E) SLC,NS-C,1.33,mode,1,41,0.7321428571428571
+E) SLC,NS-C,1.74,mode,2,43,0.7678571428571429
+E) SLC,NS-C,1.9,mode,1,44,0.7857142857142857
+E) SLC,NS-C,1.96,mode,1,45,0.8035714285714286
+E) SLC,NS-C,2.06,mode,1,46,0.8214285714285714
+E) SLC,NS-C,2.07,mode,1,47,0.8392857142857143
+E) SLC,NS-C,2.12,mode,1,48,0.8571428571428571
+E) SLC,NS-C,3.39,mode,1,49,0.875
+E) SLC,NS-C,3.88,mode,1,50,0.8928571428571429
+E) SLC,NS-C,4.45,mode,1,51,0.9107142857142857
+E) SLC,NS-C,4.9,mode,1,52,0.9285714285714286
+E) SLC,NS-C,5.03,mode,1,53,0.9464285714285714
+E) SLC,NS-C,5.38,mode,1,54,0.9642857142857143
+E) SLC,NS-C,5.81,mode,1,55,0.9821428571428571
+E) SLC,NS-C,11.01,mode,1,56,1
+E) SLC,NS-C,NA,mean,56,56,1
+E) SLC,PSIS-LOO,NA,mean,56,56,1
+E) SLC,PSIS-LOO,NA,mode,56,56,1
+E) SLC,VEHTARI,0.01,mean,1,1,0.017857142857142856
+E) SLC,VEHTARI,0.02,mean,2,3,0.05357142857142857
+E) SLC,VEHTARI,0.03,mean,1,4,0.07142857142857142
+E) SLC,VEHTARI,0.04,mean,3,7,0.125
+E) SLC,VEHTARI,0.06,mean,2,9,0.16071428571428573
+E) SLC,VEHTARI,0.11,mean,2,11,0.19642857142857142
+E) SLC,VEHTARI,0.14,mean,1,12,0.21428571428571427
+E) SLC,VEHTARI,0.17,mean,1,13,0.23214285714285715
+E) SLC,VEHTARI,0.21,mean,1,14,0.25
+E) SLC,VEHTARI,0.24,mean,3,17,0.30357142857142855
+E) SLC,VEHTARI,0.34,mean,1,18,0.32142857142857145
+E) SLC,VEHTARI,0.4,mean,2,20,0.35714285714285715
+E) SLC,VEHTARI,0.42,mean,1,21,0.375
+E) SLC,VEHTARI,0.46,mean,1,22,0.39285714285714285
+E) SLC,VEHTARI,0.48,mean,2,24,0.42857142857142855
+E) SLC,VEHTARI,0.49,mean,1,25,0.44642857142857145
+E) SLC,VEHTARI,0.5,mean,1,26,0.4642857142857143
+E) SLC,VEHTARI,0.52,mean,1,27,0.48214285714285715
+E) SLC,VEHTARI,0.53,mean,1,28,0.5
+E) SLC,VEHTARI,0.54,mean,1,29,0.5178571428571429
+E) SLC,VEHTARI,0.57,mean,2,31,0.5535714285714286
+E) SLC,VEHTARI,0.65,mean,1,32,0.5714285714285714
+E) SLC,VEHTARI,0.68,mean,1,33,0.5892857142857143
+E) SLC,VEHTARI,0.81,mean,1,34,0.6071428571428571
+E) SLC,VEHTARI,0.84,mean,1,35,0.625
+E) SLC,VEHTARI,0.85,mean,2,37,0.6607142857142857
+E) SLC,VEHTARI,0.86,mean,1,38,0.6785714285714286
+E) SLC,VEHTARI,0.88,mean,1,39,0.6964285714285714
+E) SLC,VEHTARI,0.9,mean,2,41,0.7321428571428571
+E) SLC,VEHTARI,1.03,mean,1,42,0.75
+E) SLC,VEHTARI,1.1,mean,1,43,0.7678571428571429
+E) SLC,VEHTARI,1.31,mean,1,44,0.7857142857142857
+E) SLC,VEHTARI,1.36,mean,1,45,0.8035714285714286
+E) SLC,VEHTARI,1.37,mean,1,46,0.8214285714285714
+E) SLC,VEHTARI,1.43,mean,2,48,0.8571428571428571
+E) SLC,VEHTARI,1.54,mean,1,49,0.875
+E) SLC,VEHTARI,1.75,mean,1,50,0.8928571428571429
+E) SLC,VEHTARI,1.97,mean,1,51,0.9107142857142857
+E) SLC,VEHTARI,2.18,mean,1,52,0.9285714285714286
+E) SLC,VEHTARI,2.39,mean,1,53,0.9464285714285714
+E) SLC,VEHTARI,2.52,mean,1,54,0.9642857142857143
+E) SLC,VEHTARI,2.72,mean,1,55,0.9821428571428571
+E) SLC,VEHTARI,3.59,mean,1,56,1
+E) SLC,VEHTARI,NA,mode,56,56,1
+F) SRD,AXE,0,mean,17,17,0.06273062730627306
+F) SRD,AXE,0.01,mean,25,42,0.15498154981549817
+F) SRD,AXE,0.02,mean,35,77,0.28413284132841327
+F) SRD,AXE,0.03,mean,32,109,0.4022140221402214
+F) SRD,AXE,0.04,mean,48,157,0.5793357933579336
+F) SRD,AXE,0.05,mean,32,189,0.6974169741697417
+F) SRD,AXE,0.06,mean,19,208,0.7675276752767528
+F) SRD,AXE,0.07,mean,13,221,0.8154981549815498
+F) SRD,AXE,0.08,mean,11,232,0.8560885608856088
+F) SRD,AXE,0.09,mean,8,240,0.8856088560885609
+F) SRD,AXE,0.1,mean,10,250,0.922509225092251
+F) SRD,AXE,0.11,mean,6,256,0.9446494464944649
+F) SRD,AXE,0.12,mean,5,261,0.9630996309963099
+F) SRD,AXE,0.13,mean,3,264,0.974169741697417
+F) SRD,AXE,0.14,mean,3,267,0.985239852398524
+F) SRD,AXE,0.15,mean,2,269,0.992619926199262
+F) SRD,AXE,0.18,mean,1,270,0.996309963099631
+F) SRD,AXE,0.19,mean,1,271,1
+F) SRD,AXE,NA,mode,271,271,1
+F) SRD,GHOST,NA,mean,271,271,1
+F) SRD,GHOST,NA,mode,271,271,1
+F) SRD,iIS,0.01,mean,3,3,0.01107011070110701
+F) SRD,iIS,0.02,mean,3,6,0.02214022140221402
+F) SRD,iIS,0.03,mean,3,9,0.033210332103321034
+F) SRD,iIS,0.04,mean,6,15,0.055350553505535055
+F) SRD,iIS,0.05,mean,2,17,0.06273062730627306
+F) SRD,iIS,0.06,mean,3,20,0.07380073800738007
+F) SRD,iIS,0.07,mean,1,21,0.07749077490774908
+F) SRD,iIS,0.08,mean,1,22,0.08118081180811808
+F) SRD,iIS,0.09,mean,4,26,0.0959409594095941
+F) SRD,iIS,0.1,mean,3,29,0.1070110701107011
+F) SRD,iIS,0.11,mean,1,30,0.11070110701107011
+F) SRD,iIS,0.12,mean,3,33,0.12177121771217712
+F) SRD,iIS,0.13,mean,3,36,0.13284132841328414
+F) SRD,iIS,0.14,mean,4,40,0.14760147601476015
+F) SRD,iIS,0.15,mean,2,42,0.15498154981549817
+F) SRD,iIS,0.16,mean,4,46,0.16974169741697417
+F) SRD,iIS,0.18,mean,3,49,0.18081180811808117
+F) SRD,iIS,0.19,mean,2,51,0.1881918819188192
+F) SRD,iIS,0.2,mean,4,55,0.2029520295202952
+F) SRD,iIS,0.21,mean,3,58,0.2140221402214022
+F) SRD,iIS,0.22,mean,3,61,0.22509225092250923
+F) SRD,iIS,0.23,mean,2,63,0.23247232472324722
+F) SRD,iIS,0.24,mean,5,68,0.25092250922509224
+F) SRD,iIS,0.26,mean,1,69,0.25461254612546125
+F) SRD,iIS,0.27,mean,4,73,0.2693726937269373
+F) SRD,iIS,0.28,mean,3,76,0.28044280442804426
+F) SRD,iIS,0.29,mean,2,78,0.2878228782287823
+F) SRD,iIS,0.3,mean,3,81,0.2988929889298893
+F) SRD,iIS,0.31,mean,1,82,0.3025830258302583
+F) SRD,iIS,0.32,mean,7,89,0.3284132841328413
+F) SRD,iIS,0.33,mean,2,91,0.33579335793357934
+F) SRD,iIS,0.34,mean,1,92,0.33948339483394835
+F) SRD,iIS,0.35,mean,1,93,0.34317343173431736
+F) SRD,iIS,0.36,mean,2,95,0.3505535055350554
+F) SRD,iIS,0.37,mean,1,96,0.35424354243542433
+F) SRD,iIS,0.38,mean,4,100,0.36900369003690037
+F) SRD,iIS,0.39,mean,2,102,0.3763837638376384
+F) SRD,iIS,0.4,mean,1,103,0.3800738007380074
+F) SRD,iIS,0.41,mean,1,104,0.3837638376383764
+F) SRD,iIS,0.42,mean,5,109,0.4022140221402214
+F) SRD,iIS,0.43,mean,2,111,0.4095940959409594
+F) SRD,iIS,0.44,mean,2,113,0.41697416974169743
+F) SRD,iIS,0.46,mean,3,116,0.4280442804428044
+F) SRD,iIS,0.47,mean,1,117,0.4317343173431734
+F) SRD,iIS,0.48,mean,2,119,0.43911439114391143
+F) SRD,iIS,0.49,mean,3,122,0.45018450184501846
+F) SRD,iIS,0.5,mean,6,128,0.47232472324723246
+F) SRD,iIS,0.51,mean,3,131,0.4833948339483395
+F) SRD,iIS,0.52,mean,2,133,0.4907749077490775
+F) SRD,iIS,0.53,mean,4,137,0.5055350553505535
+F) SRD,iIS,0.54,mean,1,138,0.5092250922509225
+F) SRD,iIS,0.55,mean,1,139,0.5129151291512916
+F) SRD,iIS,0.56,mean,2,141,0.5202952029520295
+F) SRD,iIS,0.58,mean,7,148,0.5461254612546126
+F) SRD,iIS,0.6,mean,2,150,0.5535055350553506
+F) SRD,iIS,0.62,mean,5,155,0.5719557195571956
+F) SRD,iIS,0.63,mean,3,158,0.5830258302583026
+F) SRD,iIS,0.64,mean,3,161,0.5940959409594095
+F) SRD,iIS,0.66,mean,2,163,0.6014760147601476
+F) SRD,iIS,0.67,mean,4,167,0.6162361623616236
+F) SRD,iIS,0.68,mean,3,170,0.6273062730627307
+F) SRD,iIS,0.69,mean,1,171,0.6309963099630996
+F) SRD,iIS,0.7,mean,4,175,0.6457564575645757
+F) SRD,iIS,0.71,mean,1,176,0.6494464944649446
+F) SRD,iIS,0.72,mean,3,179,0.6605166051660517
+F) SRD,iIS,0.73,mean,3,182,0.6715867158671587
+F) SRD,iIS,0.74,mean,4,186,0.6863468634686347
+F) SRD,iIS,0.75,mean,1,187,0.6900369003690037
+F) SRD,iIS,0.76,mean,3,190,0.7011070110701108
+F) SRD,iIS,0.77,mean,2,192,0.7084870848708487
+F) SRD,iIS,0.78,mean,3,195,0.7195571955719557
+F) SRD,iIS,0.79,mean,1,196,0.7232472324723247
+F) SRD,iIS,0.8,mean,3,199,0.7343173431734318
+F) SRD,iIS,0.81,mean,1,200,0.7380073800738007
+F) SRD,iIS,0.82,mean,1,201,0.7416974169741697
+F) SRD,iIS,0.83,mean,2,203,0.7490774907749077
+F) SRD,iIS,0.84,mean,3,206,0.7601476014760148
+F) SRD,iIS,0.85,mean,4,210,0.7749077490774908
+F) SRD,iIS,0.86,mean,3,213,0.7859778597785978
+F) SRD,iIS,0.87,mean,2,215,0.7933579335793358
+F) SRD,iIS,0.88,mean,3,218,0.8044280442804428
+F) SRD,iIS,0.89,mean,2,220,0.8118081180811808
+F) SRD,iIS,0.9,mean,1,221,0.8154981549815498
+F) SRD,iIS,0.91,mean,1,222,0.8191881918819188
+F) SRD,iIS,0.92,mean,2,224,0.8265682656826568
+F) SRD,iIS,0.93,mean,2,226,0.8339483394833949
+F) SRD,iIS,0.94,mean,2,228,0.8413284132841329
+F) SRD,iIS,0.95,mean,4,232,0.8560885608856088
+F) SRD,iIS,0.96,mean,1,233,0.8597785977859779
+F) SRD,iIS,0.97,mean,1,234,0.8634686346863468
+F) SRD,iIS,0.99,mean,2,236,0.8708487084870848
+F) SRD,iIS,1,mean,3,239,0.8819188191881919
+F) SRD,iIS,1.01,mean,1,240,0.8856088560885609
+F) SRD,iIS,1.02,mean,1,241,0.8892988929889298
+F) SRD,iIS,1.03,mean,3,244,0.9003690036900369
+F) SRD,iIS,1.04,mean,1,245,0.9040590405904059
+F) SRD,iIS,1.05,mean,3,248,0.915129151291513
+F) SRD,iIS,1.06,mean,1,249,0.9188191881918819
+F) SRD,iIS,1.07,mean,1,250,0.922509225092251
+F) SRD,iIS,1.08,mean,1,251,0.9261992619926199
+F) SRD,iIS,1.12,mean,1,252,0.9298892988929889
+F) SRD,iIS,1.16,mean,1,253,0.933579335793358
+F) SRD,iIS,1.18,mean,1,254,0.9372693726937269
+F) SRD,iIS,1.2,mean,2,256,0.9446494464944649
+F) SRD,iIS,1.22,mean,1,257,0.948339483394834
+F) SRD,iIS,1.23,mean,3,260,0.959409594095941
+F) SRD,iIS,1.24,mean,1,261,0.9630996309963099
+F) SRD,iIS,1.28,mean,1,262,0.966789667896679
+F) SRD,iIS,1.29,mean,1,263,0.9704797047970479
+F) SRD,iIS,1.43,mean,2,265,0.977859778597786
+F) SRD,iIS,1.47,mean,1,266,0.981549815498155
+F) SRD,iIS,1.54,mean,1,267,0.985239852398524
+F) SRD,iIS,1.59,mean,1,268,0.988929889298893
+F) SRD,iIS,1.74,mean,1,269,0.992619926199262
+F) SRD,iIS,2.08,mean,1,270,0.996309963099631
+F) SRD,iIS,2.23,mean,1,271,1
+F) SRD,iIS,NA,mode,271,271,1
+F) SRD,iIS-A,NA,mean,271,271,1
+F) SRD,iIS-A,NA,mode,271,271,1
+F) SRD,IJ-A,NA,mean,271,271,1
+F) SRD,IJ-A,NA,mode,271,271,1
+F) SRD,IJ-C,NA,mean,271,271,1
+F) SRD,IJ-C,NA,mode,271,271,1
+F) SRD,NS-A,0,mode,1,1,0.0036900369003690036
+F) SRD,NS-A,0.03,mode,2,3,0.01107011070110701
+F) SRD,NS-A,0.04,mode,2,5,0.01845018450184502
+F) SRD,NS-A,0.09,mode,1,6,0.02214022140221402
+F) SRD,NS-A,0.11,mode,1,7,0.025830258302583026
+F) SRD,NS-A,0.12,mode,1,8,0.02952029520295203
+F) SRD,NS-A,0.14,mode,1,9,0.033210332103321034
+F) SRD,NS-A,0.15,mode,1,10,0.03690036900369004
+F) SRD,NS-A,0.16,mode,3,13,0.04797047970479705
+F) SRD,NS-A,0.19,mode,2,15,0.055350553505535055
+F) SRD,NS-A,0.2,mode,1,16,0.05904059040590406
+F) SRD,NS-A,0.22,mode,1,17,0.06273062730627306
+F) SRD,NS-A,0.29,mode,2,19,0.07011070110701106
+F) SRD,NS-A,0.34,mode,1,20,0.07380073800738007
+F) SRD,NS-A,0.35,mode,1,21,0.07749077490774908
+F) SRD,NS-A,0.39,mode,2,23,0.08487084870848709
+F) SRD,NS-A,0.4,mode,1,24,0.08856088560885608
+F) SRD,NS-A,0.41,mode,3,27,0.0996309963099631
+F) SRD,NS-A,0.42,mode,1,28,0.1033210332103321
+F) SRD,NS-A,0.44,mode,2,30,0.11070110701107011
+F) SRD,NS-A,0.45,mode,2,32,0.11808118081180811
+F) SRD,NS-A,0.49,mode,1,33,0.12177121771217712
+F) SRD,NS-A,0.52,mode,1,34,0.12546125461254612
+F) SRD,NS-A,0.54,mode,1,35,0.12915129151291513
+F) SRD,NS-A,0.55,mode,2,37,0.13653136531365315
+F) SRD,NS-A,0.56,mode,2,39,0.14391143911439114
+F) SRD,NS-A,0.57,mode,2,41,0.15129151291512916
+F) SRD,NS-A,0.59,mode,2,43,0.15867158671586715
+F) SRD,NS-A,0.62,mode,2,45,0.16605166051660517
+F) SRD,NS-A,0.63,mode,1,46,0.16974169741697417
+F) SRD,NS-A,0.65,mode,2,48,0.17712177121771217
+F) SRD,NS-A,0.66,mode,2,50,0.18450184501845018
+F) SRD,NS-A,0.67,mode,3,53,0.19557195571955718
+F) SRD,NS-A,0.68,mode,2,55,0.2029520295202952
+F) SRD,NS-A,0.69,mode,3,58,0.2140221402214022
+F) SRD,NS-A,0.7,mode,4,62,0.22878228782287824
+F) SRD,NS-A,0.71,mode,4,66,0.24354243542435425
+F) SRD,NS-A,0.72,mode,1,67,0.24723247232472326
+F) SRD,NS-A,0.74,mode,4,71,0.26199261992619927
+F) SRD,NS-A,0.75,mode,6,77,0.28413284132841327
+F) SRD,NS-A,0.77,mode,2,79,0.2915129151291513
+F) SRD,NS-A,0.78,mode,4,83,0.3062730627306273
+F) SRD,NS-A,0.79,mode,3,86,0.3173431734317343
+F) SRD,NS-A,0.8,mode,2,88,0.3247232472324723
+F) SRD,NS-A,0.81,mode,2,90,0.33210332103321033
+F) SRD,NS-A,0.82,mode,7,97,0.35793357933579334
+F) SRD,NS-A,0.84,mode,2,99,0.36531365313653136
+F) SRD,NS-A,0.85,mode,4,103,0.3800738007380074
+F) SRD,NS-A,0.86,mode,1,104,0.3837638376383764
+F) SRD,NS-A,0.87,mode,1,105,0.3874538745387454
+F) SRD,NS-A,0.88,mode,2,107,0.3948339483394834
+F) SRD,NS-A,0.89,mode,3,110,0.4059040590405904
+F) SRD,NS-A,0.9,mode,3,113,0.41697416974169743
+F) SRD,NS-A,0.91,mode,1,114,0.42066420664206644
+F) SRD,NS-A,0.92,mode,4,118,0.4354243542435424
+F) SRD,NS-A,0.93,mode,1,119,0.43911439114391143
+F) SRD,NS-A,0.94,mode,5,124,0.4575645756457565
+F) SRD,NS-A,0.96,mode,3,127,0.46863468634686345
+F) SRD,NS-A,0.98,mode,3,130,0.4797047970479705
+F) SRD,NS-A,0.99,mode,2,132,0.4870848708487085
+F) SRD,NS-A,1.01,mode,2,134,0.4944649446494465
+F) SRD,NS-A,1.02,mode,2,136,0.5018450184501845
+F) SRD,NS-A,1.03,mode,1,137,0.5055350553505535
+F) SRD,NS-A,1.04,mode,3,140,0.5166051660516605
+F) SRD,NS-A,1.05,mode,1,141,0.5202952029520295
+F) SRD,NS-A,1.06,mode,3,144,0.5313653136531366
+F) SRD,NS-A,1.07,mode,2,146,0.5387453874538746
+F) SRD,NS-A,1.08,mode,3,149,0.5498154981549815
+F) SRD,NS-A,1.09,mode,6,155,0.5719557195571956
+F) SRD,NS-A,1.1,mode,3,158,0.5830258302583026
+F) SRD,NS-A,1.11,mode,7,165,0.6088560885608856
+F) SRD,NS-A,1.12,mode,1,166,0.6125461254612546
+F) SRD,NS-A,1.13,mode,2,168,0.6199261992619927
+F) SRD,NS-A,1.14,mode,4,172,0.6346863468634686
+F) SRD,NS-A,1.15,mode,3,175,0.6457564575645757
+F) SRD,NS-A,1.16,mode,3,178,0.6568265682656826
+F) SRD,NS-A,1.18,mode,4,182,0.6715867158671587
+F) SRD,NS-A,1.19,mode,3,185,0.6826568265682657
+F) SRD,NS-A,1.2,mode,3,188,0.6937269372693727
+F) SRD,NS-A,1.22,mode,1,189,0.6974169741697417
+F) SRD,NS-A,1.23,mode,2,191,0.7047970479704797
+F) SRD,NS-A,1.25,mode,5,196,0.7232472324723247
+F) SRD,NS-A,1.26,mode,2,198,0.7306273062730627
+F) SRD,NS-A,1.27,mode,3,201,0.7416974169741697
+F) SRD,NS-A,1.28,mode,2,203,0.7490774907749077
+F) SRD,NS-A,1.29,mode,1,204,0.7527675276752768
+F) SRD,NS-A,1.3,mode,5,209,0.7712177121771218
+F) SRD,NS-A,1.31,mode,1,210,0.7749077490774908
+F) SRD,NS-A,1.32,mode,3,213,0.7859778597785978
+F) SRD,NS-A,1.33,mode,1,214,0.7896678966789668
+F) SRD,NS-A,1.34,mode,2,216,0.7970479704797048
+F) SRD,NS-A,1.35,mode,1,217,0.8007380073800738
+F) SRD,NS-A,1.36,mode,3,220,0.8118081180811808
+F) SRD,NS-A,1.37,mode,1,221,0.8154981549815498
+F) SRD,NS-A,1.38,mode,2,223,0.8228782287822878
+F) SRD,NS-A,1.39,mode,4,227,0.8376383763837638
+F) SRD,NS-A,1.4,mode,3,230,0.8487084870848709
+F) SRD,NS-A,1.41,mode,1,231,0.8523985239852399
+F) SRD,NS-A,1.43,mode,1,232,0.8560885608856088
+F) SRD,NS-A,1.44,mode,1,233,0.8597785977859779
+F) SRD,NS-A,1.45,mode,2,235,0.8671586715867159
+F) SRD,NS-A,1.47,mode,1,236,0.8708487084870848
+F) SRD,NS-A,1.48,mode,3,239,0.8819188191881919
+F) SRD,NS-A,1.5,mode,1,240,0.8856088560885609
+F) SRD,NS-A,1.55,mode,1,241,0.8892988929889298
+F) SRD,NS-A,1.56,mode,2,243,0.8966789667896679
+F) SRD,NS-A,1.58,mode,2,245,0.9040590405904059
+F) SRD,NS-A,1.59,mode,1,246,0.9077490774907749
+F) SRD,NS-A,1.6,mode,1,247,0.9114391143911439
+F) SRD,NS-A,1.63,mode,2,249,0.9188191881918819
+F) SRD,NS-A,1.65,mode,1,250,0.922509225092251
+F) SRD,NS-A,1.66,mode,2,252,0.9298892988929889
+F) SRD,NS-A,1.68,mode,1,253,0.933579335793358
+F) SRD,NS-A,1.69,mode,2,255,0.940959409594096
+F) SRD,NS-A,1.75,mode,2,257,0.948339483394834
+F) SRD,NS-A,1.76,mode,1,258,0.9520295202952029
+F) SRD,NS-A,1.77,mode,1,259,0.955719557195572
+F) SRD,NS-A,1.78,mode,1,260,0.959409594095941
+F) SRD,NS-A,1.86,mode,1,261,0.9630996309963099
+F) SRD,NS-A,1.92,mode,1,262,0.966789667896679
+F) SRD,NS-A,1.95,mode,1,263,0.9704797047970479
+F) SRD,NS-A,1.96,mode,1,264,0.974169741697417
+F) SRD,NS-A,1.97,mode,1,265,0.977859778597786
+F) SRD,NS-A,2,mode,1,266,0.981549815498155
+F) SRD,NS-A,2.04,mode,1,267,0.985239852398524
+F) SRD,NS-A,2.12,mode,1,268,0.988929889298893
+F) SRD,NS-A,2.2,mode,1,269,0.992619926199262
+F) SRD,NS-A,2.22,mode,1,270,0.996309963099631
+F) SRD,NS-A,2.43,mode,1,271,1
+F) SRD,NS-A,NA,mean,271,271,1
+F) SRD,NS-C,0.55,mode,1,1,0.0036900369003690036
+F) SRD,NS-C,0.61,mode,1,2,0.007380073800738007
+F) SRD,NS-C,0.73,mode,1,3,0.01107011070110701
+F) SRD,NS-C,1.25,mode,1,4,0.014760147601476014
+F) SRD,NS-C,1.55,mode,1,5,0.01845018450184502
+F) SRD,NS-C,1.84,mode,1,6,0.02214022140221402
+F) SRD,NS-C,1.96,mode,1,7,0.025830258302583026
+F) SRD,NS-C,NA,mean,271,271,1
+F) SRD,NS-C,NA,mode,264,271,1
+F) SRD,PSIS-LOO,NA,mean,271,271,1
+F) SRD,PSIS-LOO,NA,mode,271,271,1
+F) SRD,VEHTARI,NA,mean,271,271,1
+F) SRD,VEHTARI,NA,mode,271,271,1
