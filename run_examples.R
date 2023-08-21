@@ -61,7 +61,8 @@ radon_2$posteriors <- dplyr::full_join(
   radon_2$posterior_summary,
   radon_2$lco$iis_yhats
 ) %>%
-  dplyr::full_join(radon_2$lco$ghst_yhats)
+  dplyr::full_join(radon_2$lco$ghst_yhats) %>%
+    dplyr::full_join(radon_2$lco$vt_yhats)
 
 radon_2$cv_yhats <- mcv_radon_simul(n_cores = 6)
 

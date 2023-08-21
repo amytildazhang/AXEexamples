@@ -360,7 +360,7 @@ yhats_radon2 |>
 
 
 
-# Times for all
+# Times for all ------
 
 
 # Randomly select 6 MCV folds
@@ -423,6 +423,7 @@ full_join(
 
 
 # LRR figure 1 -----
+method_subset <-  c("AXE", "GHOST",  "iIS")
 dlabels <- sprintf("%s) %s", LETTERS[1:6], datasets)
 lrr_all_vs_perc <- bind_rows(
   mutate(vs_mean, reference = 'mean'),
@@ -452,6 +453,8 @@ max_lrr_all <- log(2)
 j <- length(method_subset) - 1
 lwd <- c(1.5, rep(0.75, j))
 names(lwd) <- method_subset
+
+
 p_lrr <- lrr_all_vs_perc |>
     filter(method %in% method_subset) |>
   filter(round_lrr <= max_lrr_all, !is.na(method)) |>
@@ -461,7 +464,7 @@ p_lrr <- lrr_all_vs_perc |>
   geom_line(aes(size = method, linetype = method)) +
   scale_size_manual(values = lwd) +
   scale_color_manual(values = method_colors[method_subset]) +
-  facet_wrap(~data) +
+  facet_wrap(~data, nrow = 2) +
   labs(
     x = "|LRR|, truncated at log(2)",
        y =  expression(paste("Proportion of CV folds j with ", ~group("|", "LRR", "|")[j] <= group("|", "LRR", "|"))),
@@ -477,12 +480,12 @@ p_lrr <- lrr_all_vs_perc |>
   ) +
   guides(col = guide_legend(nrow = 3, byrow = TRUE))
 
-p_lrr <- lemon::reposition_legend(p_lrr, panel = "panel-3-2", position = "bottom right")
+p_lrr <- lemon::reposition_legend(p_lrr, panel = "panel-2-2", position = "bottom right")
 ggsave("output/lrr_percentage.png", plot = p_lrr, width = 9.5, height = 5)
 
 
 # LRR figure appendix -----
-method_subset <- order[-8]
+method_subset <- order
 j <- length(method_subset) - 1
 lwd <- c(1.5, rep(0.75, j))
 method_lty <- map_chr(method_subset, ~ifelse(str_detect(., "-C"), "dashed", "solid"))
@@ -513,7 +516,7 @@ p_lrr_all <-
   ) +
   guides(col = guide_legend(nrow = 3, byrow = TRUE))
 
-p_lrr_all <- lemon::reposition_legend(p_lrr_all, panel = "panel-3-2", position = "bottom right")
+# p_lrr_all <- lemon::reposition_legend(p_lrr_all, panel = "panel-3-2", position = "bottom right")
 ggsave("output/lrr_percentage_all.png", plot = p_lrr_all, width = 9.5, height = 5)
 
 
@@ -570,8 +573,18 @@ times_df[, c(1, 4, 3, 2, 10, 6:9, 5)] |>
 
 
 
+# A closer look at VT -----
 
+ggplot(eight_results, aes(x = yhat_cv, y = yhat_vt, color = data_scale)) +
+    geom_point() +
+    geom_abline(slope = 1, intercept = 0) +
+    labs(x = "Yhat (Manual CV)", y = "Yhat (Vehtari)") +
+    theme_minimal()
 
-
+ggplot(eight_results, aes(x = y, y = yhat_vt)) +
+    geom_point() +
+    geom_abline(slope = 1, intercept = 0) +
+    theme_minimal() +
+    labs(y = "Vehtari's method", x = "Y")
 
 
